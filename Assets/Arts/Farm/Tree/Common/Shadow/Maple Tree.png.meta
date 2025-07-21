@@ -127,7 +127,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -162,10 +162,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -219,10 +219,10 @@ TextureImporter:
       name: Maple Tree_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 145
-        width: 9
-        height: 6
+        x: 0
+        y: 144
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,10 +241,10 @@ TextureImporter:
       name: Maple Tree_1
       rect:
         serializedVersion: 2
-        x: 42
-        y: 145
-        width: 11
-        height: 14
+        x: 32
+        y: 144
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,10 +263,10 @@ TextureImporter:
       name: Maple Tree_2
       rect:
         serializedVersion: 2
-        x: 70
+        x: 64
         y: 144
-        width: 22
-        height: 35
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -285,10 +285,10 @@ TextureImporter:
       name: Maple Tree_3
       rect:
         serializedVersion: 2
-        x: 102
+        x: 96
         y: 144
-        width: 22
-        height: 35
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,10 +307,10 @@ TextureImporter:
       name: Maple Tree_4
       rect:
         serializedVersion: 2
-        x: 134
+        x: 128
         y: 144
-        width: 22
-        height: 35
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -329,10 +329,10 @@ TextureImporter:
       name: Maple Tree_5
       rect:
         serializedVersion: 2
-        x: 166
+        x: 160
         y: 144
-        width: 22
-        height: 35
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -351,10 +351,10 @@ TextureImporter:
       name: Maple Tree_6
       rect:
         serializedVersion: 2
-        x: 198
+        x: 192
         y: 144
-        width: 22
-        height: 35
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -375,7 +375,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 96
-        width: 33
+        width: 32
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -395,9 +395,9 @@ TextureImporter:
       name: Maple Tree_8
       rect:
         serializedVersion: 2
-        x: 31
+        x: 32
         y: 96
-        width: 34
+        width: 32
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -417,9 +417,9 @@ TextureImporter:
       name: Maple Tree_9
       rect:
         serializedVersion: 2
-        x: 63
+        x: 64
         y: 96
-        width: 34
+        width: 32
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -439,9 +439,9 @@ TextureImporter:
       name: Maple Tree_10
       rect:
         serializedVersion: 2
-        x: 95
+        x: 96
         y: 96
-        width: 34
+        width: 32
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -461,10 +461,10 @@ TextureImporter:
       name: Maple Tree_11
       rect:
         serializedVersion: 2
-        x: 129
+        x: 128
         y: 96
-        width: 30
-        height: 44
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -483,9 +483,9 @@ TextureImporter:
       name: Maple Tree_12
       rect:
         serializedVersion: 2
-        x: 159
+        x: 160
         y: 96
-        width: 34
+        width: 32
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -505,9 +505,9 @@ TextureImporter:
       name: Maple Tree_13
       rect:
         serializedVersion: 2
-        x: 191
+        x: 192
         y: 96
-        width: 34
+        width: 32
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -527,9 +527,9 @@ TextureImporter:
       name: Maple Tree_14
       rect:
         serializedVersion: 2
-        x: 223
+        x: 224
         y: 96
-        width: 34
+        width: 32
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -549,9 +549,9 @@ TextureImporter:
       name: Maple Tree_15
       rect:
         serializedVersion: 2
-        x: 255
+        x: 256
         y: 96
-        width: 33
+        width: 32
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -571,10 +571,10 @@ TextureImporter:
       name: Maple Tree_16
       rect:
         serializedVersion: 2
-        x: 8
+        x: 0
         y: 48
-        width: 16
-        height: 14
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -593,10 +593,10 @@ TextureImporter:
       name: Maple Tree_17
       rect:
         serializedVersion: 2
-        x: 40
+        x: 32
         y: 48
-        width: 16
-        height: 14
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -615,10 +615,10 @@ TextureImporter:
       name: Maple Tree_18
       rect:
         serializedVersion: 2
-        x: 72
+        x: 64
         y: 48
-        width: 16
-        height: 14
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -637,10 +637,10 @@ TextureImporter:
       name: Maple Tree_19
       rect:
         serializedVersion: 2
-        x: 104
+        x: 96
         y: 48
-        width: 16
-        height: 14
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -659,10 +659,10 @@ TextureImporter:
       name: Maple Tree_20
       rect:
         serializedVersion: 2
-        x: 145
-        y: 56
-        width: 11
-        height: 9
+        x: 128
+        y: 48
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -681,10 +681,10 @@ TextureImporter:
       name: Maple Tree_21
       rect:
         serializedVersion: 2
-        x: 176
-        y: 56
-        width: 11
-        height: 11
+        x: 160
+        y: 48
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -703,10 +703,10 @@ TextureImporter:
       name: Maple Tree_22
       rect:
         serializedVersion: 2
-        x: 207
-        y: 59
-        width: 14
-        height: 15
+        x: 192
+        y: 48
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -725,10 +725,10 @@ TextureImporter:
       name: Maple Tree_23
       rect:
         serializedVersion: 2
-        x: 238
-        y: 58
-        width: 16
-        height: 17
+        x: 224
+        y: 48
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -747,10 +747,10 @@ TextureImporter:
       name: Maple Tree_24
       rect:
         serializedVersion: 2
-        x: 271
-        y: 59
-        width: 14
-        height: 15
+        x: 256
+        y: 48
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -769,10 +769,10 @@ TextureImporter:
       name: Maple Tree_25
       rect:
         serializedVersion: 2
-        x: 6
+        x: 0
         y: 0
-        width: 22
-        height: 35
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -791,9 +791,9 @@ TextureImporter:
       name: Maple Tree_26
       rect:
         serializedVersion: 2
-        x: 31
+        x: 32
         y: 0
-        width: 34
+        width: 32
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -813,10 +813,10 @@ TextureImporter:
       name: Maple Tree_27
       rect:
         serializedVersion: 2
-        x: 65
+        x: 64
         y: 0
-        width: 30
-        height: 44
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -835,10 +835,10 @@ TextureImporter:
       name: Maple Tree_28
       rect:
         serializedVersion: 2
-        x: 104
+        x: 96
         y: 0
-        width: 16
-        height: 14
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -857,9 +857,9 @@ TextureImporter:
       name: Maple Tree_29
       rect:
         serializedVersion: 2
-        x: 127
+        x: 128
         y: 0
-        width: 34
+        width: 32
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -879,9 +879,9 @@ TextureImporter:
       name: Maple Tree_30
       rect:
         serializedVersion: 2
-        x: 159
+        x: 160
         y: 0
-        width: 34
+        width: 32
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -901,7 +901,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 777d6f5bc03a0f345a3accfce53165c4
     internalID: 0
     vertices: []
     indices: 
