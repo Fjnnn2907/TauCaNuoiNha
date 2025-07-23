@@ -23,6 +23,7 @@ public class KeySpawner : MonoBehaviour
                 spawnRate = 0.8f;
                 break;
         }
+        Debug.Log(difficulty.ToString());
     }
 
     public void SetDifficulty(string difficulty)
