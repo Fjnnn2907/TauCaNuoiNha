@@ -8,6 +8,7 @@ public class FishingManager : Singleton<FishingManager>
     public GameObject rhythmMinigame;
     public FishingSlider fishingSlider;
     public KeySpawner keySpawner;
+    public FishingRodData CurrentRod { get; set; }
 
     [Header("Timing")]
     public float waitTimeMin = 3f;
@@ -26,7 +27,9 @@ public class FishingManager : Singleton<FishingManager>
     public void PrepareCastWithSlider()
     {
         if (currentState != FishingState.Idle) return;
-        fishingSlider.StartSlider(OnSliderResult);
+
+        float totalBonusRate = bonusRareRate + bonusLegendaryRate;
+        fishingSlider.StartSlider(OnSliderResult, totalBonusRate);
     }
 
     private void OnSliderResult(bool isInGreenZone)

@@ -45,7 +45,10 @@ public class FishingSlider : MonoBehaviour
         }
     }
 
-    public void StartSlider(Action<bool> callback)
+    /// <summary>
+    /// Gọi khi bắt đầu thanh slider, truyền callback và bonusRate để tăng độ rộng vùng xanh
+    /// </summary>
+    public void StartSlider(Action<bool> callback, float bonusRate)
     {
         gameObject.SetActive(true);
         value = 0f;
@@ -53,13 +56,24 @@ public class FishingSlider : MonoBehaviour
         movingRight = true;
         isHolding = true;
         onResult = callback;
-        RandomizeGreenZone();
+
+        RandomizeGreenZone(bonusRate);
     }
 
-    private void RandomizeGreenZone()
+    /// <summary>
+    /// Sinh vùng xanh ngẫu nhiên, và tăng độ rộng nếu bonusRate cao
+    /// </summary>
+    private void RandomizeGreenZone(float bonusRate)
     {
         float parentWidth = sliderHandleArea.rect.width;
-        float randomWidth = UnityEngine.Random.Range(greenZoneMinWidth, greenZoneMaxWidth);
+
+        // Chuyển bonusRate thành % (giới hạn từ 0 đến 1)
+        float bonusPercent = Mathf.Clamp01(bonusRate / 100f);
+
+        // Tính độ rộng vùng xanh dựa theo bonus
+        float effectiveMaxWidth = Mathf.Lerp(greenZoneMinWidth, greenZoneMaxWidth, bonusPercent);
+        float randomWidth = UnityEngine.Random.Range(greenZoneMinWidth, effectiveMaxWidth);
+
         float maxStart = parentWidth - randomWidth;
         float randomStart = UnityEngine.Random.Range(0f, maxStart);
 
