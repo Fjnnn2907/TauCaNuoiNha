@@ -39,15 +39,15 @@ public class FishingRodButton : MonoBehaviour
                 button.onClick.AddListener(() =>
                 {
                     FishingManager.Instance.CurrentRod = rodData;
-                    FishingManager.Instance.SetBonusRate(rodData.bonusRareRate, rodData.bonusLegendaryRate);
-                    FindObjectOfType<FishingRodUI>().UpdateSelectedRodIcon(rodData.icon);
-                    FindObjectOfType<FishingRodUI>().RefreshUI();
+                    FishingManager.Instance.SetRodBonus(rodData);
+                    FishingRodUI.Instance.UpdateSelectedRodIcon(rodData.icon);
+                    FishingRodUI.Instance.RefreshUI();
                 });
             }
         }
         else
         {
-            useButtonText.text = $"Mua ({rodData.price}💰)";
+            useButtonText.text = $"Mua ({rodData.price} VND)";
             button.onClick.AddListener(() =>
             {
                 if (CoinManager.Instance.SpendCoins(rodData.price))
@@ -56,10 +56,10 @@ public class FishingRodButton : MonoBehaviour
                     isOwned = true;
 
                     FishingManager.Instance.CurrentRod = rodData;
-                    FishingManager.Instance.SetBonusRate(rodData.bonusRareRate, rodData.bonusLegendaryRate);
-                    FindObjectOfType<FishingRodUI>().UpdateSelectedRodIcon(rodData.icon);
+                    FishingManager.Instance.SetRodBonus(rodData);
+                    FishingRodUI.Instance.UpdateSelectedRodIcon(rodData.icon);
 
-                    FindObjectOfType<FishingRodUI>().RefreshUI();
+                    FishingRodUI.Instance.RefreshUI();
                 }
                 else
                 {

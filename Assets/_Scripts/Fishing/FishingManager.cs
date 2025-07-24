@@ -9,28 +9,63 @@ public class FishingManager : Singleton<FishingManager>
     public FishingSlider fishingSlider;
     public KeySpawner keySpawner;
     public FishingRodData CurrentRod { get; set; }
+    public FishingBaitData CurrentBait { get; set; }
 
     [Header("Timing")]
     public float waitTimeMin = 3f;
     public float waitTimeMax = 8f;
 
-    [Header("Bonus Rate Settings")]
-    [Range(0, 100)] public float bonusRareRate = 0f;
-    [Range(0, 100)] public float bonusLegendaryRate = 0f;
+    [Header("Rate")]
+    [SerializeField][Range(0, 100)] private float rodBonusRare = 0f;
+    [SerializeField][Range(0, 100)] private float rodBonusLegendary = 0f;
+    [SerializeField][Range(0, 100)] private float baitBonusRare = 0f;
+    [SerializeField][Range(0, 100)] private float baitBonusLegendary = 0f;
 
     private FishingState currentState = FishingState.Idle;
     private Coroutine currentCoroutine;
     private FishRarity selectedRarity = FishRarity.Common;
 
-    // ---------------------- ENTRY POINT ------------------------
+    public float TotalBonusRareRate => rodBonusRare + baitBonusRare;
+    public float TotalBonusLegendaryRate => rodBonusLegendary + baitBonusLegendary;
+
+    public void SetRodBonus(FishingRodData rod)
+    {
+        rodBonusRare = rod != null ? rod.bonusRareRate : 0f;
+        rodBonusLegendary = rod != null ? rod.bonusLegendaryRate : 0f;
+    }
+
+    public void SetBaitBonus(FishingBaitData bait)
+    {
+        baitBonusRare = bait != null ? bait.bonusRareRate : 0f;
+        baitBonusLegendary = bait != null ? bait.bonusLegendaryRate : 0f;
+    }
 
     public void PrepareCastWithSlider()
     {
         if (currentState != FishingState.Idle) return;
 
-        float totalBonusRate = bonusRareRate + bonusLegendaryRate;
+        if (CurrentRod == null)
+        {
+            Debug.Log("⚠️ Bạn chưa chọn cần câu!");
+            return;
+        }
+
+        if (CurrentBait == null)
+        {
+            Debug.Log("⚠️ Bạn chưa chọn mồi câu!");
+            return;
+        }
+
+        if (CurrentBait != null && !BaitInventory.Instance.ConsumeBait(CurrentBait))
+        {
+            Debug.Log("⚠️ Không đủ mồi để câu!");
+            return;
+        }
+
+        float totalBonusRate = TotalBonusRareRate + TotalBonusLegendaryRate;
         fishingSlider.StartSlider(OnSliderResult, totalBonusRate);
     }
+
 
     private void OnSliderResult(bool isInGreenZone)
     {
@@ -40,7 +75,7 @@ public class FishingManager : Singleton<FishingManager>
 
     public void OnMinigameWin()
     {
-        Debug.Log("🏆 Win: " + selectedRarity);
+        Debug.Log("\uD83C\uDFC6 Win: " + selectedRarity);
         rhythmMinigame.SetActive(false);
         ChangeState(FishingState.Pulling);
     }
@@ -49,8 +84,6 @@ public class FishingManager : Singleton<FishingManager>
     {
         ChangeState(FishingState.Idle);
     }
-
-    // ---------------------- STATE MACHINE ----------------------------
 
     private void ChangeState(FishingState newState)
     {
@@ -72,10 +105,7 @@ public class FishingManager : Singleton<FishingManager>
         }
     }
 
-    private void IdleState()
-    {
-        playerAnimator.Play("Idle");
-    }
+    private void IdleState() => playerAnimator.Play("Idle");
 
     private void QuangCanState()
     {
@@ -102,11 +132,6 @@ public class FishingManager : Singleton<FishingManager>
         currentCoroutine = StartCoroutine(DelayThen(() => ChangeState(FishingState.Idle), 0.5f));
     }
 
-    // ---------------------- UTILITY ----------------------------
-
-    /// <summary>
-    /// Trả về độ hiếm cá dựa vào vùng xanh và bonus
-    /// </summary>
     private FishRarity GetFishRarity(bool isInGreenZone)
     {
         float roll = Random.Range(0f, 100f);
@@ -114,12 +139,8 @@ public class FishingManager : Singleton<FishingManager>
         float baseRare = isInGreenZone ? 30f : 5f;
         float baseLegendary = isInGreenZone ? 10f : 2f;
 
-        float finalRareChance = baseRare + bonusRareRate;
-        float finalLegendaryChance = baseLegendary + bonusLegendaryRate;
-
-        // Giới hạn để tránh vượt 100%
-        finalRareChance = Mathf.Clamp(finalRareChance, 0f, 100f);
-        finalLegendaryChance = Mathf.Clamp(finalLegendaryChance, 0f, 100f);
+        float finalRareChance = Mathf.Clamp(baseRare + TotalBonusRareRate, 0f, 100f);
+        float finalLegendaryChance = Mathf.Clamp(baseLegendary + TotalBonusLegendaryRate, 0f, 100f);
 
         if (roll < finalLegendaryChance) return FishRarity.Legendary;
         if (roll < finalLegendaryChance + finalRareChance) return FishRarity.Rare;
@@ -149,34 +170,7 @@ public class FishingManager : Singleton<FishingManager>
         yield return new WaitForSeconds(delay);
         callback?.Invoke();
     }
-
-    // ---------------------- BONUS RATE API ----------------------------
-
-    /// <summary>
-    /// Gọi hàm này sau khi người chơi chọn cần hoặc mồi để cập nhật tỉ lệ thưởng
-    /// </summary>
-    public void SetBonusRate(float rareBonus, float legendaryBonus)
-    {
-        bonusRareRate = rareBonus;
-        bonusLegendaryRate = legendaryBonus;
-        Debug.Log($"🎣 Bonus Updated: +{rareBonus}% Rare, +{legendaryBonus}% Legendary");
-    }
 }
 
-// ---------------------- ENUMS ----------------------------
-
-public enum FishRarity
-{
-    Common,
-    Rare,
-    Legendary
-}
-
-public enum FishingState
-{
-    Idle,
-    Casting,
-    Waiting,
-    Minigame,
-    Pulling
-}
+public enum FishRarity { Common, Rare, Legendary }
+public enum FishingState { Idle, Casting, Waiting, Minigame, Pulling }
