@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43b6088cc3158304a9457fcd8fbe3795, type: 3}
   m_Name: 5
   m_EditorClassIdentifier: 
-  baitName: 5
-  icon: {fileID: 2020632296251204212, guid: 8e745739cf38aaf40bfc33630e8b042d, type: 3}
+  baitName: Dynamite Baits
+  icon: {fileID: -4725872483281334863, guid: 1f8378477a8129f4290996d5a629c346, type: 3}
   quantityRequired: 1
-  bonusRareRate: 50
-  bonusLegendaryRate: 50
-  price: 10
+  bonusRareRate: 22
+  bonusLegendaryRate: 15
+  price: 70

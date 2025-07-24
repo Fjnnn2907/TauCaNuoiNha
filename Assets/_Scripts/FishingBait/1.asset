@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43b6088cc3158304a9457fcd8fbe3795, type: 3}
   m_Name: 1
   m_EditorClassIdentifier: 
-  baitName: 1
-  icon: {fileID: -8376875835600029233, guid: 8e745739cf38aaf40bfc33630e8b042d, type: 3}
+  baitName: "Giun \u0111\u1EA5t"
+  icon: {fileID: -4725872483281334863, guid: f31c3420065a7d24e908a02ded09779a, type: 3}
   quantityRequired: 1
-  bonusRareRate: 10
-  bonusLegendaryRate: 10
+  bonusRareRate: 5
+  bonusLegendaryRate: 2
   price: 10

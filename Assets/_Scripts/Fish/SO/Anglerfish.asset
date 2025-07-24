@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13cedc19e1f45b3489e7c883b8521986, type: 3}
+  m_Name: Anglerfish
+  m_EditorClassIdentifier: 
+  fishName: Anglerfish
+  sprite: {fileID: 1249149584347041918, guid: 018f056a688b8484a95e6704817db81b, type: 3}
+  description: Anglerfish
+  rarity: 0
+  sellPrice: 100

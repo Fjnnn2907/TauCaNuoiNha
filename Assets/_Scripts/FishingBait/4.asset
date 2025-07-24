@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43b6088cc3158304a9457fcd8fbe3795, type: 3}
   m_Name: 4
   m_EditorClassIdentifier: 
-  baitName: 4
-  icon: {fileID: -1004129852825769205, guid: 8e745739cf38aaf40bfc33630e8b042d, type: 3}
+  baitName: "m\u1ED3i t\u1EF1 nhi\xEAn"
+  icon: {fileID: -4725872483281334863, guid: 892f9d98275414f4f80b961a28d4e000, type: 3}
   quantityRequired: 1
-  bonusRareRate: 40
-  bonusLegendaryRate: 40
-  price: 10
+  bonusRareRate: 16
+  bonusLegendaryRate: 10
+  price: 40

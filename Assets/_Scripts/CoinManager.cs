@@ -31,6 +31,6 @@ public class CoinManager : Singleton<CoinManager>
     private void UpdateUI()
     {
         if (coinText != null)
-            coinText.text = $"{currentCoins} 💰";
+            coinText.text = $"{currentCoins}";
     }
 }

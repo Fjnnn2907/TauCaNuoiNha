@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 078d29d5f86dee547b104fc9763c2a34, type: 3}
   m_Name: 3
   m_EditorClassIdentifier: 
-  rodName: 3
-  icon: {fileID: -1915776564401465818, guid: 42d1c88a2cc563e48bd08379299bfc62, type: 3}
-  price: 400
+  rodName: "Cao c\u1EA5p"
+  icon: {fileID: 1319984137252439487, guid: 77dfd8aee65849b43b71ea0d84ae1864, type: 3}
+  price: 10000
   bonusRareRate: 20
   bonusLegendaryRate: 20

@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 078d29d5f86dee547b104fc9763c2a34, type: 3}
   m_Name: 1
   m_EditorClassIdentifier: 
-  rodName: 1
-  icon: {fileID: -1181076974519126152, guid: 42d1c88a2cc563e48bd08379299bfc62, type: 3}
+  rodName: "Ph\u1ED5 th\xF4ng"
+  icon: {fileID: 3357079768526042575, guid: 77dfd8aee65849b43b71ea0d84ae1864, type: 3}
+  price: 500
   bonusRareRate: 0
   bonusLegendaryRate: 0

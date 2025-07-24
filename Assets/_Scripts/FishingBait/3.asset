@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43b6088cc3158304a9457fcd8fbe3795, type: 3}
   m_Name: 3
   m_EditorClassIdentifier: 
-  baitName: 3
-  icon: {fileID: -3509428340774410562, guid: 8e745739cf38aaf40bfc33630e8b042d, type: 3}
+  baitName: Berkley PowerBait
+  icon: {fileID: -4725872483281334863, guid: d481c19f82900ad4bbdc93a0cd39d894, type: 3}
   quantityRequired: 1
-  bonusRareRate: 30
-  bonusLegendaryRate: 30
-  price: 10
+  bonusRareRate: 12
+  bonusLegendaryRate: 5
+  price: 30

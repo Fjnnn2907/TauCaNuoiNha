@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43b6088cc3158304a9457fcd8fbe3795, type: 3}
+  m_Name: 6
+  m_EditorClassIdentifier: 
+  baitName: Megabass
+  icon: {fileID: -4725872483281334863, guid: 56bea56ebb6188447807aede3cc56613, type: 3}
+  quantityRequired: 1
+  bonusRareRate: 24
+  bonusLegendaryRate: 17
+  price: 80

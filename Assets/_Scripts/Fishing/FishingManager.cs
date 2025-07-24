@@ -21,6 +21,8 @@ public class FishingManager : Singleton<FishingManager>
     [SerializeField][Range(0, 100)] private float baitBonusRare = 0f;
     [SerializeField][Range(0, 100)] private float baitBonusLegendary = 0f;
 
+    [Header("UI Hiển thị cá")]
+    public GameObject fishSprite; // Prefab UI
     private FishingState currentState = FishingState.Idle;
     private Coroutine currentCoroutine;
     private FishRarity selectedRarity = FishRarity.Common;
@@ -56,16 +58,15 @@ public class FishingManager : Singleton<FishingManager>
             return;
         }
 
-        if (CurrentBait != null && !BaitInventory.Instance.ConsumeBait(CurrentBait))
+        if (!BaitInventory.Instance.ConsumeBait(CurrentBait))
         {
-            Debug.Log("⚠️ Không đủ mồi để câu!");
+            Debug.Log("⚠️ Không đủ mồi!");
             return;
         }
 
         float totalBonusRate = TotalBonusRareRate + TotalBonusLegendaryRate;
         fishingSlider.StartSlider(OnSliderResult, totalBonusRate);
     }
-
 
     private void OnSliderResult(bool isInGreenZone)
     {
@@ -75,14 +76,56 @@ public class FishingManager : Singleton<FishingManager>
 
     public void OnMinigameWin()
     {
-        Debug.Log("\uD83C\uDFC6 Win: " + selectedRarity);
         rhythmMinigame.SetActive(false);
+
+        FishData fish = FishDatabase.Instance.GetRandomFish(selectedRarity);
+        if (fish != null)
+        {
+            FishInventory.Instance.AddFish(fish); // Add vào kho
+            ShowCaughtFish(fish);
+        }
+
         ChangeState(FishingState.Pulling);
     }
 
-    public void ResetToIdle()
+    private void ShowCaughtFish(FishData fish)
     {
-        ChangeState(FishingState.Idle);
+        if (fish == null || fishSprite == null) return;
+
+        SpriteRenderer sr = fishSprite.GetComponentInChildren<SpriteRenderer>();
+        if (sr != null) sr.sprite = fish.sprite;
+
+        fishSprite.SetActive(true);
+        StartCoroutine(AutoHideFish(fishSprite));
+    }
+
+    private IEnumerator AutoHideFish(GameObject go)
+    {
+        float timer = 0f;
+        float maxTime = 5f;
+
+        while (timer < maxTime && !Input.GetMouseButtonDown(0))
+        {
+            timer += Time.deltaTime;
+            yield return null;
+        }
+
+        go.SetActive(false);
+    }
+
+    private FishRarity GetFishRarity(bool isInGreenZone)
+    {
+        float roll = Random.Range(0f, 100f);
+
+        float baseRare = isInGreenZone ? 30f : 5f;
+        float baseLegendary = isInGreenZone ? 10f : 2f;
+
+        float finalRareChance = Mathf.Clamp(baseRare + TotalBonusRareRate, 0f, 100f);
+        float finalLegendaryChance = Mathf.Clamp(baseLegendary + TotalBonusLegendaryRate, 0f, 100f);
+
+        if (roll < finalLegendaryChance) return FishRarity.Legendary;
+        if (roll < finalLegendaryChance + finalRareChance) return FishRarity.Rare;
+        return FishRarity.Common;
     }
 
     private void ChangeState(FishingState newState)
@@ -95,7 +138,7 @@ public class FishingManager : Singleton<FishingManager>
 
         currentState = newState;
 
-        switch (currentState)
+        switch (newState)
         {
             case FishingState.Idle: IdleState(); break;
             case FishingState.Casting: QuangCanState(); break;
@@ -132,32 +175,6 @@ public class FishingManager : Singleton<FishingManager>
         currentCoroutine = StartCoroutine(DelayThen(() => ChangeState(FishingState.Idle), 0.5f));
     }
 
-    private FishRarity GetFishRarity(bool isInGreenZone)
-    {
-        float roll = Random.Range(0f, 100f);
-
-        float baseRare = isInGreenZone ? 30f : 5f;
-        float baseLegendary = isInGreenZone ? 10f : 2f;
-
-        float finalRareChance = Mathf.Clamp(baseRare + TotalBonusRareRate, 0f, 100f);
-        float finalLegendaryChance = Mathf.Clamp(baseLegendary + TotalBonusLegendaryRate, 0f, 100f);
-
-        if (roll < finalLegendaryChance) return FishRarity.Legendary;
-        if (roll < finalLegendaryChance + finalRareChance) return FishRarity.Rare;
-        return FishRarity.Common;
-    }
-
-    private DifficultyLevel GetDifficultyFromRarity(FishRarity rarity)
-    {
-        switch (rarity)
-        {
-            case FishRarity.Common: return DifficultyLevel.Easy;
-            case FishRarity.Rare: return DifficultyLevel.Medium;
-            case FishRarity.Legendary: return DifficultyLevel.Hard;
-            default: return DifficultyLevel.Easy;
-        }
-    }
-
     private IEnumerator WaitForFishCoroutine()
     {
         float waitTime = Random.Range(waitTimeMin, waitTimeMax);
@@ -169,6 +186,17 @@ public class FishingManager : Singleton<FishingManager>
     {
         yield return new WaitForSeconds(delay);
         callback?.Invoke();
+    }
+
+    private DifficultyLevel GetDifficultyFromRarity(FishRarity rarity)
+    {
+        return rarity switch
+        {
+            FishRarity.Common => DifficultyLevel.Easy,
+            FishRarity.Rare => DifficultyLevel.Medium,
+            FishRarity.Legendary => DifficultyLevel.Hard,
+            _ => DifficultyLevel.Easy
+        };
     }
 }
 

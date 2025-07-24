@@ -47,7 +47,7 @@ public class FishingRodButton : MonoBehaviour
         }
         else
         {
-            useButtonText.text = $"Mua ({rodData.price} VND)";
+            useButtonText.text = $"Mua ({rodData.price})";
             button.onClick.AddListener(() =>
             {
                 if (CoinManager.Instance.SpendCoins(rodData.price))
