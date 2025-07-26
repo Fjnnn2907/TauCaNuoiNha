@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13cedc19e1f45b3489e7c883b8521986, type: 3}
   m_Name: CaThu
   m_EditorClassIdentifier: 
+  fishID: CaThu
   fishName: "C\xE1 thu"
   sprite: {fileID: 5217242515685064863, guid: 6e3468edeae1dbf43994ec42606ad6a8, type: 3}
+  shadowSprite: {fileID: 5217242515685064863, guid: 42e4bf24d8f232d43bcfb58b54b9b11e, type: 3}
   description: "C\xE1 n\u01B0\u1EDBc m\u1EB7n, th\xE2n d\xE0i, b\xE9o, s\u1ED1ng
     xa b\u1EDD"
   rarity: 1

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43b6088cc3158304a9457fcd8fbe3795, type: 3}
   m_Name: 9
   m_EditorClassIdentifier: 
+  id: MoiHormone
   baitName: Hormone
   icon: {fileID: -4725872483281334863, guid: 0c87956d5b3180b4e8be33c7f6d06831, type: 3}
   quantityRequired: 1

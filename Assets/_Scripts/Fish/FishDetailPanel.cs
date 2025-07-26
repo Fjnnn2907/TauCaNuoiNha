@@ -39,12 +39,12 @@ public class FishDetailPanel : Singleton<FishDetailPanel>
         priceText.text = $"Giá: {fish.sellPrice}";
 
         // Đổi màu tên cá theo độ hiếm
-        rarityText.color = fish.rarity switch
+        rarityText.text = fish.rarity switch
         {
-            FishRarity.Common => Color.white,
-            FishRarity.Rare => Color.cyan,
-            FishRarity.Legendary => Color.yellow,
-            _ => Color.white
+            FishRarity.Common => $"<color=#656565>PL: {fish.rarity}</color>",
+            FishRarity.Rare => $"<color=#0069BF>PL: {fish.rarity}</color>",
+            FishRarity.Legendary => $"<color=#BF001C>PL: {fish.rarity}</color>",
+            _ => $"<color=#656565>PL: {fish.rarity}</color>"
         };
 
         sellButton.interactable = quantity > 0;

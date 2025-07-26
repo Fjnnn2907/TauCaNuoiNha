@@ -1,8 +1,8 @@
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
 using System.Collections;
 
-public class KeySpawner : MonoBehaviour
+public class KeySpawner : Singleton<KeySpawner>
 {
     public TextMeshProUGUI keyText;
     public float spawnRate = 2f;

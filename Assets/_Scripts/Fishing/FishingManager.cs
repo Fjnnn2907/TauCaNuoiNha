@@ -7,7 +7,6 @@ public class FishingManager : Singleton<FishingManager>
     public Animator playerAnimator;
     public GameObject rhythmMinigame;
     public FishingSlider fishingSlider;
-    public KeySpawner keySpawner;
     public FishingRodData CurrentRod { get; set; }
     public FishingBaitData CurrentBait { get; set; }
 
@@ -125,16 +124,23 @@ public class FishingManager : Singleton<FishingManager>
     {
         float roll = Random.Range(0f, 100f);
 
-        float baseRare = isInGreenZone ? 30f : 5f;
-        float baseLegendary = isInGreenZone ? 10f : 2f;
+        float baseRare = isInGreenZone ? 15f : 5f;
+        float baseLegendary = isInGreenZone ? 5f : 1f;
 
-        float finalRareChance = Mathf.Clamp(baseRare + TotalBonusRareRate, 0f, 100f);
-        float finalLegendaryChance = Mathf.Clamp(baseLegendary + TotalBonusLegendaryRate, 0f, 100f);
+        // Tăng theo tỷ lệ logarithm để giảm độ tăng đột ngột khi lên cao
+        float scaledRareBonus = Mathf.Log10(Mathf.Max(1, TotalBonusRareRate - 20)) * 20f;   // ~ 0 → 40
+        float scaledLegendaryBonus = Mathf.Log10(Mathf.Max(1, baitBonusLegendary - 20)) * 25f; // ~ 0 → 50
 
-        if (roll < finalLegendaryChance) return FishRarity.Legendary;
-        if (roll < finalLegendaryChance + finalRareChance) return FishRarity.Rare;
+        float finalRareChance = Mathf.Clamp(baseRare + scaledRareBonus, 0f, 80f);
+        float finalLegendaryChance = Mathf.Clamp(baseLegendary + scaledLegendaryBonus, 0f, 20f);
+
+        if (roll < finalLegendaryChance)
+            return FishRarity.Legendary;
+        if (roll < finalLegendaryChance + finalRareChance)
+            return FishRarity.Rare;
         return FishRarity.Common;
     }
+
 
     private void ChangeState(FishingState newState)
     {
@@ -174,7 +180,7 @@ public class FishingManager : Singleton<FishingManager>
     {
         playerAnimator.Play("CanCau");
         rhythmMinigame.SetActive(true);
-        keySpawner.SetDifficulty(GetDifficultyFromRarity(selectedRarity));
+        KeySpawner.Instance?.SetDifficulty(GetDifficultyFromRarity(selectedRarity));
     }
 
     private void KeoCanState()

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 078d29d5f86dee547b104fc9763c2a34, type: 3}
   m_Name: 5
   m_EditorClassIdentifier: 
+  id: CanCauSieuPham
   rodName: "Si\xEAu ph\u1EA9m"
   icon: {fileID: -4725872483281334863, guid: 7f5021688ba2f0b4b95b27b103304beb, type: 3}
   price: 100000

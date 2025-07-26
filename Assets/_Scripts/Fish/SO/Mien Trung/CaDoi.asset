@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13cedc19e1f45b3489e7c883b8521986, type: 3}
   m_Name: CaDoi
   m_EditorClassIdentifier: 
+  fishID: CaDoi
   fishName: "C\xE1 \u0111\u1ED1i"
   sprite: {fileID: -8062708480011262309, guid: 95849f2c0db95494ebfa762675cc062b, type: 3}
+  shadowSprite: {fileID: -8062708480011262309, guid: a5a59334419aca045b88f295af93556d, type: 3}
   description: "B\u01A1i t\u1EEBng \u0111\xE0n, ph\u1ED5 bi\u1EBFn \u1EDF \u0111\u1EA7m,
     ph\xE1"
   rarity: 0

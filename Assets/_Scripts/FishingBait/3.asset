@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43b6088cc3158304a9457fcd8fbe3795, type: 3}
   m_Name: 3
   m_EditorClassIdentifier: 
-  baitName: Berkley PowerBait
+  id: MoiBerkleyPower
+  baitName: Berkley Power
   icon: {fileID: -4725872483281334863, guid: d481c19f82900ad4bbdc93a0cd39d894, type: 3}
   quantityRequired: 1
   bonusRareRate: 12

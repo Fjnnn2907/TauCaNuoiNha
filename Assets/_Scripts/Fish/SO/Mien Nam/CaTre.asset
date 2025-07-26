@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13cedc19e1f45b3489e7c883b8521986, type: 3}
   m_Name: CaTre
   m_EditorClassIdentifier: 
+  fishID: CaTre
   fishName: "C\xE1 tr\xEA"
   sprite: {fileID: -9131236631338918058, guid: 3d3cdb6c38b771d45b258fe7328b4e0e, type: 3}
+  shadowSprite: {fileID: -9131236631338918058, guid: 49960269af4d7c147b32e46a9370fdbd, type: 3}
   description: "C\xE1 da tr\u01A1n, d\u1EC5 s\u1ED1ng \u1EDF v\xF9ng n\u01B0\u1EDBc
     \u0111\u1EE5c"
   rarity: 0

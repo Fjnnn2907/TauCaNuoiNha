@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43b6088cc3158304a9457fcd8fbe3795, type: 3}
   m_Name: 2
   m_EditorClassIdentifier: 
+  id: MoiBanhMi
   baitName: "b\xE1nh m\xEC"
   icon: {fileID: -4725872483281334863, guid: 59a34ab70e366f44d8dec21f649dc6bf, type: 3}
   quantityRequired: 1

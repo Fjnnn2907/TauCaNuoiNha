@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13cedc19e1f45b3489e7c883b8521986, type: 3}
   m_Name: Ca Sinh
   m_EditorClassIdentifier: 
-  fishID: 00
+  fishID: Ca Sinh
   fishName: "C\xE1 S\u1EC9nh"
   sprite: {fileID: -516818571669109213, guid: fc63be4dca7b1d64ca4225d8bf0fa2b4, type: 3}
   shadowSprite: {fileID: -516818571669109213, guid: 097c08e5832008340ab4171018c298a4, type: 3}

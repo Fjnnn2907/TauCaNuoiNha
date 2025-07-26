@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43b6088cc3158304a9457fcd8fbe3795, type: 3}
   m_Name: 6
   m_EditorClassIdentifier: 
+  id: MoiMegabass
   baitName: Megabass
   icon: {fileID: -4725872483281334863, guid: 56bea56ebb6188447807aede3cc56613, type: 3}
   quantityRequired: 1

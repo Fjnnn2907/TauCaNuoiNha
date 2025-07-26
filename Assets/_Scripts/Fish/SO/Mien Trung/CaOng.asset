@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13cedc19e1f45b3489e7c883b8521986, type: 3}
   m_Name: CaOng
   m_EditorClassIdentifier: 
+  fishID: CaOng
   fishName: "C\xE1 \xD4ng:"
   sprite: {fileID: 868504884959497903, guid: 293cd9e37e15f1b4891d1d49380c12cd, type: 3}
+  shadowSprite: {fileID: 868504884959497903, guid: 1e96dee5cc5f487448c7d16fee354ffb, type: 3}
   description: "D\xE0i 10m, v\u1EA3y \u0111en tuy\u1EC1n, k\xE8m ti\u1EBFng h\xFA
     nh\u01B0 s\xE1o"
   rarity: 2

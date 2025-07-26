@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43b6088cc3158304a9457fcd8fbe3795, type: 3}
   m_Name: 8
   m_EditorClassIdentifier: 
+  id: MoiTrungKienVang
   baitName: "tr\u1EE9ng ki\u1EBFn v\xE0ng"
   icon: {fileID: -4725872483281334863, guid: 1616c7321d9212748a9d322b3870b4fb, type: 3}
   quantityRequired: 1

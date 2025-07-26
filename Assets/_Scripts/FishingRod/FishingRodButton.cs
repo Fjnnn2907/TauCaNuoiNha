@@ -9,6 +9,9 @@ public class FishingRodButton : MonoBehaviour
     public TextMeshProUGUI nameText;
     public Button button;
     public TextMeshProUGUI useButtonText;
+    public TextMeshProUGUI rareRateText;
+    public TextMeshProUGUI legendaryRateText;
+
 
     private FishingRodData rodData;
     private bool isOwned;
@@ -20,6 +23,8 @@ public class FishingRodButton : MonoBehaviour
 
         icon.sprite = rodData.icon;
         nameText.text = rodData.rodName;
+        rareRateText.text = $"R {data.bonusRareRate}";
+        legendaryRateText.text = $"L {data.bonusLegendaryRate}";
         button.onClick.RemoveAllListeners();
 
         UpdateButtonState();

@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13cedc19e1f45b3489e7c883b8521986, type: 3}
   m_Name: CaThuongLuong
   m_EditorClassIdentifier: 
+  fishID: CaThuongLuong
   fishName: "Thu\u1ED3ng lu\u1ED3ng"
   sprite: {fileID: 5897821563474178108, guid: 33c3d6db8e0d7204f811a8ad6101d2f3, type: 3}
+  shadowSprite: {fileID: 5897821563474178108, guid: d5a96f70876ab3945bea9c34463222b7, type: 3}
   description: "Th\u1EE7y qu\xE1i kh\u1ED5ng l\u1ED3, h\xECnh d\xE1ng nh\u01B0 r\u1EAFn"
   rarity: 2
   sellPrice: 6666

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43b6088cc3158304a9457fcd8fbe3795, type: 3}
   m_Name: 4
   m_EditorClassIdentifier: 
+  id: MoiTuNhien
   baitName: "m\u1ED3i t\u1EF1 nhi\xEAn"
   icon: {fileID: -4725872483281334863, guid: 892f9d98275414f4f80b961a28d4e000, type: 3}
   quantityRequired: 1

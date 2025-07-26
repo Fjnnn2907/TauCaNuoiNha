@@ -3,6 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Fishing/Fishing Bait")]
 public class FishingBaitData : ScriptableObject
 {
+    public string id;
     public string baitName;
     public Sprite icon;
     public int quantityRequired = 1;

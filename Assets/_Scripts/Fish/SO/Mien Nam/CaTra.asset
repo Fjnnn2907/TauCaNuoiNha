@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13cedc19e1f45b3489e7c883b8521986, type: 3}
   m_Name: CaTra
   m_EditorClassIdentifier: 
+  fishID: CaTra
   fishName: "C\xE1 tra"
   sprite: {fileID: 5715622415595491482, guid: f813df2a2d2c29b46b508285a368ebab, type: 3}
+  shadowSprite: {fileID: 5715622415595491482, guid: 69c58f4976b9dcb4eb509b7bdae9dabd, type: 3}
   description: "C\xE1 nh\u1ECF s\u1ED1ng theo m\xF9a n\u01B0\u1EDBc n\u1ED5i"
   rarity: 0
   sellPrice: 30

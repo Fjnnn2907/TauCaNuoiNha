@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
 using TMPro;
 
-public class CoinManager : Singleton<CoinManager>
+public class CoinManager : Singleton<CoinManager>, ISaveable
 {
-    public int currentCoins = 500; // số tiền ban đầu
+    public int currentCoins = 500; // Số tiền ban đầu
     public TextMeshProUGUI coinText;
 
     private void Start()
     {
+        SaveManager.Instance.RegisterSaveable(this);
         UpdateUI();
     }
 
@@ -32,5 +33,18 @@ public class CoinManager : Singleton<CoinManager>
     {
         if (coinText != null)
             coinText.text = $"{currentCoins}";
+    }
+
+    // ========== SAVE / LOAD ==========
+
+    public void SaveData(ref GameData data)
+    {
+        data.currentCoins = currentCoins;
+    }
+
+    public void LoadData(GameData data)
+    {
+        currentCoins = data.currentCoins;
+        UpdateUI();
     }
 }

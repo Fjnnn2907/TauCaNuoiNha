@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 078d29d5f86dee547b104fc9763c2a34, type: 3}
   m_Name: 2
   m_EditorClassIdentifier: 
+  id: CanCauTamTrung
   rodName: "T\u1EA7m trung"
   icon: {fileID: 1399329972039729351, guid: 77dfd8aee65849b43b71ea0d84ae1864, type: 3}
   price: 2000
-  bonusRareRate: 10
-  bonusLegendaryRate: 10
+  bonusRareRate: 8
+  bonusLegendaryRate: 3

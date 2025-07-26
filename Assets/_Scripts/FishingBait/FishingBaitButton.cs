@@ -11,6 +11,8 @@ public class FishingBaitButton : MonoBehaviour
     public Button buyButton;
     public Button actionButton;
     public TextMeshProUGUI actionButtonText;
+    public TextMeshProUGUI rareRateText;
+    public TextMeshProUGUI legendaryRateText;
 
     private FishingBaitData baitData;
 
@@ -20,6 +22,9 @@ public class FishingBaitButton : MonoBehaviour
 
         icon.sprite = bait.icon;
         nameText.text = bait.baitName;
+
+        rareRateText.text = $"R {bait.bonusRareRate}";
+        legendaryRateText.text = $"L {bait.bonusLegendaryRate}";
 
         SetupUseButton(currentQuantity);
         SetupBuyButton();

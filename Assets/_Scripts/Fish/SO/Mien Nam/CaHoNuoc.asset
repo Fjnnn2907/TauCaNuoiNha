@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13cedc19e1f45b3489e7c883b8521986, type: 3}
   m_Name: CaHoNuoc
   m_EditorClassIdentifier: 
+  fishID: CaHoNuoc
   fishName: "C\xE1 H\u1ED5 n\u01B0\u1EDBc"
   sprite: {fileID: -7765257397669829026, guid: 2cb39a27cf2049947aaa7794cf5eee73, type: 3}
+  shadowSprite: {fileID: -7765257397669829026, guid: 7681a3329c60bf64fac2f4cddc7c1db6, type: 3}
   description: "M\u1ED9t con th\u1EE7y qu\xE1i gi\u1ED1ng h\u1ED5"
   rarity: 2
   sellPrice: 4444

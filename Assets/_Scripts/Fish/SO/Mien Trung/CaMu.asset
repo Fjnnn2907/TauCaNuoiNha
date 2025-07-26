@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13cedc19e1f45b3489e7c883b8521986, type: 3}
   m_Name: CaMu
   m_EditorClassIdentifier: 
+  fishID: CaMu
   fishName: "C\xE1 m\xFA"
   sprite: {fileID: 5217242515685064863, guid: 1c1ab90da54706b46990fcc45b0be270, type: 3}
+  shadowSprite: {fileID: 5217242515685064863, guid: c9620da3df7f79449a6119432ced35ac, type: 3}
   description: "S\u1ED1ng v\xF9ng n\u01B0\u1EDBc m\u1EB7n - l\u1EE3"
   rarity: 1
   sellPrice: 250

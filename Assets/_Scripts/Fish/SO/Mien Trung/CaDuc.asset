@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13cedc19e1f45b3489e7c883b8521986, type: 3}
   m_Name: CaDuc
   m_EditorClassIdentifier: 
+  fishID: CaDuc
   fishName: "C\xE1 \u0111\u1EE5c"
   sprite: {fileID: 1842172672916735438, guid: aedd15c69c5287346abc8d2c72f8a280, type: 3}
+  shadowSprite: {fileID: 1842172672916735438, guid: 6d376780b46bb9b48a9636a5698c7631, type: 3}
   description: "C\xE1 n\u01B0\u1EDBc m\u1EB7n, th\xE2n h\xECnh nh\u1ECF, s\u1ED1ng
     ven bi\u1EC3n c\xE1t"
   rarity: 0
