@@ -17,5 +17,5 @@ MonoBehaviour:
   sprite: {fileID: 4866182238925101983, guid: b340d8d3aaff4e449a2d898f4a3ca2df, type: 3}
   shadowSprite: {fileID: 4866182238925101983, guid: fc0af31f1f1fcb34f81d52d0f21b209c, type: 3}
   description: "Lo\xE0i c\xE1 s\u0103n m\u1ED3i ph\u1ED5 bi\u1EBFn"
-  rarity: 0
+  rarity: 1
   sellPrice: 100

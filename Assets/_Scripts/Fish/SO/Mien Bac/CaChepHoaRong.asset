@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CaChepHoaRong
   m_EditorClassIdentifier: 
   fishID: CaChepHoaRong
-  fishName: "C\xE1 Ch\xE9p H\xF3a R\u1ED3ng:"
+  fishName: "C\xE1 Ch\xE9p H\xF3a R\u1ED3ng"
   sprite: {fileID: 7203339641779158459, guid: 16baf26ef1b711746aa61fc8020d5f30, type: 3}
   shadowSprite: {fileID: 7203339641779158459, guid: bb1417720ea77294084aeb7cd2a2f66c, type: 3}
   description: "V\u1EA3y v\xE0ng ch\xF3i, r\xE2u d\xE0i, ch\u1EC9 xu\u1EA5t hi\u1EC7n
