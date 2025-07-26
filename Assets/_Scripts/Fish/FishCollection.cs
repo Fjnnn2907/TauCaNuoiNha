@@ -1,22 +1,24 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class FishCollection : Singleton<FishCollection>
+public class FishCollection : Singleton<FishCollection>, ISaveable
 {
-    public List<FishCollectionSlot> allSlots; // Gán sẵn từ Unity Editor
+    public List<FishCollectionSlot> allSlots;
+    public List<FishData> allFish;
 
-    private HashSet<FishData> discovered = new();
+    private HashSet<string> discoveredFishIDs = new();
 
     private void Start()
     {
+        SaveManager.Instance.RegisterSaveable(this);
         RefreshUI();
     }
 
     public void DiscoverFish(FishData fish)
     {
-        if (!discovered.Contains(fish))
+        if (!discoveredFishIDs.Contains(fish.fishID))
         {
-            discovered.Add(fish);
+            discoveredFishIDs.Add(fish.fishID);
             RefreshUI();
         }
     }
@@ -25,11 +27,22 @@ public class FishCollection : Singleton<FishCollection>
     {
         for (int i = 0; i < allSlots.Count; i++)
         {
-            var fish = FishDatabase.Instance.allFish[i];
-            var isDiscovered = discovered.Contains(fish);
+            var fish = allFish[i];
+            var isDiscovered = discoveredFishIDs.Contains(fish.fishID);
             allSlots[i].Setup(fish, isDiscovered);
         }
     }
 
-    public bool IsDiscovered(FishData fish) => discovered.Contains(fish);
+    public bool IsDiscovered(FishData fish) => discoveredFishIDs.Contains(fish.fishID);
+
+    public void SaveData(ref GameData data)
+    {
+        data.discoveredFishIDs = new List<string>(discoveredFishIDs);
+    }
+
+    public void LoadData(GameData data)
+    {
+        discoveredFishIDs = new HashSet<string>(data.discoveredFishIDs);
+        RefreshUI();
+    }
 }

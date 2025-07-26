@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13cedc19e1f45b3489e7c883b8521986, type: 3}
   m_Name: CaChep
   m_EditorClassIdentifier: 
+  fishID: 03
   fishName: "C\xE1 Ch\xE9p"
   sprite: {fileID: 7203339641779158459, guid: 988f0b211896dbd4bba048906d3ac67a, type: 3}
   shadowSprite: {fileID: 7203339641779158459, guid: 114b4f914881dc746846a6eca531ae42, type: 3}

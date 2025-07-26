@@ -88,7 +88,13 @@ public class FishingManager : Singleton<FishingManager>
 
         ChangeState(FishingState.Pulling);
     }
+    public void OnMinigameLose()
+    {
+        Debug.Log("❌ Thua minigame vì hết giờ");
 
+        rhythmMinigame.SetActive(false); // Tắt minigame
+        ChangeState(FishingState.Idle);  // Quay lại trạng thái Idle
+    }
     private void ShowCaughtFish(FishData fish)
     {
         if (fish == null || fishSprite == null) return;

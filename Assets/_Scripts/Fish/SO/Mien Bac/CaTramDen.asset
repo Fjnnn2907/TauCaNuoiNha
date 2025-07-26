@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13cedc19e1f45b3489e7c883b8521986, type: 3}
   m_Name: CaTramDen
   m_EditorClassIdentifier: 
+  fishID: 07
   fishName: "C\xE1 Tr\u1EAFm \u0110en"
   sprite: {fileID: 7363028689128411309, guid: b48dba3e4ed7c464fbfe3befc1a1ba02, type: 3}
   shadowSprite: {fileID: 7363028689128411309, guid: 216fe962e50a62542a7cb0308cdf89c1, type: 3}

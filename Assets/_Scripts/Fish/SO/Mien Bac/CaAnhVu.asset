@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13cedc19e1f45b3489e7c883b8521986, type: 3}
   m_Name: CaAnhVu
   m_EditorClassIdentifier: 
+  fishID: 01
   fishName: "C\xE1 Anh V\u0169"
   sprite: {fileID: 4944402164476025713, guid: 9a91a383f1345d047b454a0e95bbad9c, type: 3}
   shadowSprite: {fileID: 4944402164476025713, guid: 597f68a29226db94e87ca5ad8d1dac13, type: 3}

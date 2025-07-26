@@ -3,6 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "FishData", menuName = "Fishing/FishData")]
 public class FishData : ScriptableObject
 {
+    public string fishID;
     public string fishName;
     public Sprite sprite;
     public Sprite shadowSprite;

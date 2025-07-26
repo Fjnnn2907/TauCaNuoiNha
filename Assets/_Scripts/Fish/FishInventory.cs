@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class FishInventory : Singleton<FishInventory>
+public class FishInventory : Singleton<FishInventory>, ISaveable
 {
     [Header("References")]
     public Transform slotParent;
@@ -9,7 +9,11 @@ public class FishInventory : Singleton<FishInventory>
 
     private Dictionary<FishData, int> fishCollection = new();
 
-    // Thêm cá vào kho
+    private void Start()
+    {
+        SaveManager.Instance.RegisterSaveable(this);
+    }
+
     public void AddFish(FishData fish)
     {
         if (fishCollection.ContainsKey(fish))
@@ -20,20 +24,17 @@ public class FishInventory : Singleton<FishInventory>
         RefreshUI();
     }
 
-    // Loại bỏ một số lượng cá nhất định
     public void RemoveFish(FishData fish, int amount)
     {
         if (!fishCollection.ContainsKey(fish)) return;
 
         fishCollection[fish] -= amount;
-
         if (fishCollection[fish] <= 0)
             fishCollection.Remove(fish);
 
         RefreshUI();
     }
 
-    // Lấy số lượng cá hiện có
     public int GetFishQuantity(FishData fish)
     {
         if (fishCollection.TryGetValue(fish, out int qty))
@@ -42,7 +43,6 @@ public class FishInventory : Singleton<FishInventory>
         return 0;
     }
 
-    // Làm mới UI hiển thị kho cá
     public void RefreshUI()
     {
         foreach (Transform child in slotParent)
@@ -53,5 +53,37 @@ public class FishInventory : Singleton<FishInventory>
             var go = Instantiate(slotPrefab, slotParent);
             go.GetComponent<FishInventorySlot>().Setup(pair.Key, pair.Value);
         }
+    }
+
+    // ====================================
+    // SAVE / LOAD
+    // ====================================
+
+    public void SaveData(ref GameData data)
+    {
+        data.fishInventory.Clear();
+
+        foreach (var pair in fishCollection)
+        {
+            string fishID = pair.Key.fishID;
+            int quantity = pair.Value;
+            data.fishInventory[fishID] = quantity;
+        }
+    }
+
+    public void LoadData(GameData data)
+    {
+        fishCollection.Clear();
+
+        foreach (var pair in data.fishInventory)
+        {
+            FishData fish = FishDatabase.Instance.allFish.Find(f => f.fishID == pair.Key);
+            if (fish != null)
+            {
+                fishCollection[fish] = pair.Value;
+            }
+        }
+
+        RefreshUI();
     }
 }

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13cedc19e1f45b3489e7c883b8521986, type: 3}
   m_Name: CaBong
   m_EditorClassIdentifier: 
+  fishID: 02
   fishName: "C\xE1 B\u1ED7ng"
   sprite: {fileID: 7363028689128411309, guid: 554dd2bb8b3ed2a4aa7b459a4f633746, type: 3}
   shadowSprite: {fileID: 7363028689128411309, guid: 977de5fd167f2c74b8666f6c07b6be53, type: 3}

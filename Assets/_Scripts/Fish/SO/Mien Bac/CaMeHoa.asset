@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13cedc19e1f45b3489e7c883b8521986, type: 3}
   m_Name: CaMeHoa
   m_EditorClassIdentifier: 
+  fishID: 05
   fishName: "C\xE1 M\xE8 Hoa"
   sprite: {fileID: 7363028689128411309, guid: 14b6379184a2e9a4ca6bdb77bef3b3dc, type: 3}
   shadowSprite: {fileID: 7363028689128411309, guid: 9f55f414fafbaf7439fdc2c153cd0e3f, type: 3}

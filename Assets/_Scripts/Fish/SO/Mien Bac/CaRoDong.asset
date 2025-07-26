@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13cedc19e1f45b3489e7c883b8521986, type: 3}
   m_Name: CaRoDong
   m_EditorClassIdentifier: 
+  fishID: 06
   fishName: "C\xE1 R\xF4 \u0110\u1ED3ng"
   sprite: {fileID: 2369705469474248773, guid: b7f967e7efd40044fb0eab74c16765d8, type: 3}
   shadowSprite: {fileID: 2369705469474248773, guid: dd9331689abf4324cbfb19e722886588, type: 3}
