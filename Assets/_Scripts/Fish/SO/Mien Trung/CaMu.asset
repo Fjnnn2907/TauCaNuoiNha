@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13cedc19e1f45b3489e7c883b8521986, type: 3}
+  m_Name: CaMu
+  m_EditorClassIdentifier: 
+  fishName: "C\xE1 m\xFA"
+  sprite: {fileID: 5217242515685064863, guid: 1c1ab90da54706b46990fcc45b0be270, type: 3}
+  description: "S\u1ED1ng v\xF9ng n\u01B0\u1EDBc m\u1EB7n - l\u1EE3"
+  rarity: 1
+  sellPrice: 250

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13cedc19e1f45b3489e7c883b8521986, type: 3}
+  m_Name: CaRoDong
+  m_EditorClassIdentifier: 
+  fishName: "C\xE1 R\xF4 \u0110\u1ED3ng"
+  sprite: {fileID: 2369705469474248773, guid: b7f967e7efd40044fb0eab74c16765d8, type: 3}
+  shadowSprite: {fileID: 2369705469474248773, guid: dd9331689abf4324cbfb19e722886588, type: 3}
+  description: "Th\xE2n xanh l\u1EE5c, gai l\u01B0ng s\u1EAFc nh\u1ECDn,   s\u1ED1ng
+    \u1EDF ru\u1ED9ng l\xFAa"
+  rarity: 0
+  sellPrice: 120

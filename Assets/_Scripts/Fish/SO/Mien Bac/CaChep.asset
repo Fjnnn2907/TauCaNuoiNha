@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13cedc19e1f45b3489e7c883b8521986, type: 3}
+  m_Name: CaChep
+  m_EditorClassIdentifier: 
+  fishName: "C\xE1 Ch\xE9p"
+  sprite: {fileID: 7203339641779158459, guid: 988f0b211896dbd4bba048906d3ac67a, type: 3}
+  shadowSprite: {fileID: 7203339641779158459, guid: 114b4f914881dc746846a6eca531ae42, type: 3}
+  description: "V\u1EA3y to b\u1EB1ng b\xE0n tay, l\u01B0ng g\xF9, m\u1EAFt \u0111\u1ECF"
+  rarity: 0
+  sellPrice: 300

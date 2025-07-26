@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FishDatabase : Singleton<FishDatabase>
 {
-    [SerializeField] private List<FishData> allFish;
+    public List<FishData> allFish;
 
     public FishData GetRandomFish(FishRarity rarity)
     {

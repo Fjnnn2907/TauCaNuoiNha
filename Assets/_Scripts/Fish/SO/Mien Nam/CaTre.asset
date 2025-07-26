@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13cedc19e1f45b3489e7c883b8521986, type: 3}
+  m_Name: CaTre
+  m_EditorClassIdentifier: 
+  fishName: "C\xE1 tr\xEA"
+  sprite: {fileID: -9131236631338918058, guid: 3d3cdb6c38b771d45b258fe7328b4e0e, type: 3}
+  description: "C\xE1 da tr\u01A1n, d\u1EC5 s\u1ED1ng \u1EDF v\xF9ng n\u01B0\u1EDBc
+    \u0111\u1EE5c"
+  rarity: 0
+  sellPrice: 50

@@ -64,6 +64,7 @@ public class FishingManager : Singleton<FishingManager>
             return;
         }
 
+        FishingBaitUI.Instance?.RefreshUI();
         float totalBonusRate = TotalBonusRareRate + TotalBonusLegendaryRate;
         fishingSlider.StartSlider(OnSliderResult, totalBonusRate);
     }
@@ -97,6 +98,7 @@ public class FishingManager : Singleton<FishingManager>
 
         fishSprite.SetActive(true);
         StartCoroutine(AutoHideFish(fishSprite));
+        FishCollection.Instance.DiscoverFish(fish);
     }
 
     private IEnumerator AutoHideFish(GameObject go)

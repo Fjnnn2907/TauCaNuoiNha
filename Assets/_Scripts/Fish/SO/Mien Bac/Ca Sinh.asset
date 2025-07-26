@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13cedc19e1f45b3489e7c883b8521986, type: 3}
+  m_Name: Ca Sinh
+  m_EditorClassIdentifier: 
+  fishName: "C\xE1 S\u1EC9nh"
+  sprite: {fileID: -516818571669109213, guid: fc63be4dca7b1d64ca4225d8bf0fa2b4, type: 3}
+  shadowSprite: {fileID: -516818571669109213, guid: 097c08e5832008340ab4171018c298a4, type: 3}
+  description: "Nh\u1ECF b\u1EB1ng ng\xF3n tay, v\u1EA3y l\u1EA5p l\xE1nh 7 m\xE0u"
+  rarity: 1
+  sellPrice: 600

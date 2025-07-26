@@ -13,33 +13,41 @@ public class FishingBaitButton : MonoBehaviour
     public TextMeshProUGUI actionButtonText;
 
     private FishingBaitData baitData;
-    private int quantity;
 
     public void Setup(FishingBaitData bait, int currentQuantity)
     {
         baitData = bait;
-        quantity = currentQuantity;
 
         icon.sprite = bait.icon;
-        nameText.text = $"{bait.baitName} x{quantity}";
+        nameText.text = bait.baitName;
 
-        SetupUseButton();
+        SetupUseButton(currentQuantity);
         SetupBuyButton();
     }
 
-    private void SetupUseButton()
+    private void SetupUseButton(int quantity)
     {
-        actionButton.interactable = quantity > 0;
-        actionButtonText.text = "Sử dụng";
-
         actionButton.onClick.RemoveAllListeners();
-        actionButton.onClick.AddListener(() =>
+
+        bool isSelected = FishingBaitUI.Instance.IsCurrentBait(baitData);
+
+        if (isSelected)
         {
-            if (quantity > 0)
+            actionButtonText.text = "Đã sử dụng";
+            actionButton.interactable = false;
+        }
+        else
+        {
+            actionButtonText.text = "Sử dụng";
+            actionButton.interactable = quantity > 0;
+            actionButton.onClick.AddListener(() =>
             {
-                UseBait();
-            }
-        });
+                if (quantity > 0)
+                {
+                    UseBait();
+                }
+            });
+        }
     }
 
     private void SetupBuyButton()
@@ -60,7 +68,7 @@ public class FishingBaitButton : MonoBehaviour
         if (CoinManager.Instance.SpendCoins(baitData.price))
         {
             BaitInventory.Instance.AddBait(baitData, 1);
-            FishingBaitUI.Instance.RefreshUI();
+            FishingBaitUI.Instance?.RefreshUI();
         }
         else
         {

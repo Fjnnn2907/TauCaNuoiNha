@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13cedc19e1f45b3489e7c883b8521986, type: 3}
+  m_Name: CaKinh
+  m_EditorClassIdentifier: 
+  fishName: "C\xE1 k\xECnh"
+  sprite: {fileID: -6378753199859526273, guid: d947033100a6e0f4eaf1ee3671d9aa60, type: 3}
+  description: "S\u1ED1ng v\xF9ng \u0111\u1EA7m ph\xE1, nh\u1ECF nh\u01B0ng th\u1ECBt
+    ch\u1EAFc"
+  rarity: 0
+  sellPrice: 100
