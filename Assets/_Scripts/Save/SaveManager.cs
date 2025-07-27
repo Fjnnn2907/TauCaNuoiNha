@@ -59,6 +59,9 @@ public class SaveManager : Singleton<SaveManager>
             saveable.LoadData(gameData);
     }
 
+    public GameData GetGameData()
+        => gameData;
+
     [ContextMenu("===Delete Data===")]
     public void DeleteSave()
         => dataHandler.DeleteData();

@@ -13,5 +13,6 @@ public class GameData
     public string currentRodID = "";             
 
     public SerializableDirectory<string, int> baitInventory = new();
-    public string currentBaitID = ""; 
+    public string currentBaitID = "";
+    public string currentSceneName;
 }

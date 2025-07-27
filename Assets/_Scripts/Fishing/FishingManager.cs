@@ -182,7 +182,8 @@ public class FishingManager : Singleton<FishingManager>
         rhythmMinigame.SetActive(true);
 
         KeySpawner.Instance?.SetDifficulty(GetDifficultyFromRarity(selectedRarity));
-        AuditionManager.Instance?.SetDifficulty(GetDifficultyFromRarity(selectedRarity));
+        if (AuditionManager.Instance != null)
+            AuditionManager.Instance?.SetDifficulty(GetDifficultyFromRarity(selectedRarity));
     }
 
     private void KeoCanState()
