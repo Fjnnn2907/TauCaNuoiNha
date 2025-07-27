@@ -15,12 +15,16 @@ public class AuditionManager : Singleton<AuditionManager>
     private List<Image> arrowImages = new List<Image>();
     private List<ArrowDirection> currentDirections = new List<ArrowDirection>();
     private DifficultyLevel currentDifficulty = DifficultyLevel.Easy;
-    public int sequenceLength = 3;
+    public int sequenceLength = 5;
 
-    private void OnEnable()
-    {
-        StartSequence(inputChecker);
-    }
+    public Slider timerSlider;
+    private float timeLimit = 10f;
+    private Coroutine countdownCoroutine;
+
+    //private void OnEnable()
+    //{
+    //    StartSequence(inputChecker);
+    //}
 
     public void SetDifficulty(DifficultyLevel difficulty)
     {
@@ -28,32 +32,68 @@ public class AuditionManager : Singleton<AuditionManager>
 
         switch (difficulty)
         {
-            case DifficultyLevel.Easy: sequenceLength = 5; break;
-            case DifficultyLevel.Medium: sequenceLength = 9; break;
-            case DifficultyLevel.Hard: sequenceLength = 15; break;
+            case DifficultyLevel.Easy:
+                sequenceLength = 5;
+                timeLimit = 10f;
+                break;
+            case DifficultyLevel.Medium:
+                sequenceLength = 9;
+                timeLimit = 8f;
+                break;
+            case DifficultyLevel.Hard:
+                sequenceLength = 15;
+                timeLimit = 6f;
+                break;
         }
+
+        StartSequence(inputChecker);
+        Debug.Log(difficulty);
     }
 
     public void StartSequence(PlayerInputChecker inputChecker)
     {
+        timerSlider.maxValue = timeLimit;
+        timerSlider.value = timeLimit;
+
         var sequence = GenerateAndDisplaySequence();
         inputChecker.ui = this;
         inputChecker.SetSequence(sequence);
+
+        // Stop any existing timer
+        if (countdownCoroutine != null)
+            StopCoroutine(countdownCoroutine);
+
+        // Start countdown timer
+        countdownCoroutine = StartCoroutine(CountdownTimer());
+
         inputChecker.OnSequenceEnd = (success) =>
         {
+            if (countdownCoroutine != null)
+                StopCoroutine(countdownCoroutine);
+
             if (success)
-            {
-                Debug.Log("🎉 Thành công!");
-                //StartSequence(inputChecker); // Tiếp tục vòng mới
                 WinGame();
-            }
             else
-            {
-                Debug.Log("❌ Thất bại!");
-                // Bạn có thể mở rộng xử lý thất bại ở đây
-            }
+                LoseGame();
         };
     }
+
+    private IEnumerator CountdownTimer()
+    {
+        float timer = timeLimit;
+
+        while (timer > 0)
+        {
+            timer -= Time.deltaTime;
+            timerSlider.value = timer;
+            yield return null;
+        }
+
+        timerSlider.value = 0;
+        Debug.Log("⏰ Hết thời gian!");
+        LoseGame();
+    }
+
 
     public List<ArrowDirection> GenerateAndDisplaySequence()
     {
@@ -140,6 +180,7 @@ public class AuditionManager : Singleton<AuditionManager>
             yield return new WaitForSeconds(flashDuration);
         }
     }
+
     private void WinGame()
     {
         FishingManager.Instance.OnMinigameWin();

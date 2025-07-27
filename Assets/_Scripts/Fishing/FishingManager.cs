@@ -129,7 +129,7 @@ public class FishingManager : Singleton<FishingManager>
 
         // Tăng theo tỷ lệ logarithm để giảm độ tăng đột ngột khi lên cao
         float scaledRareBonus = Mathf.Log10(Mathf.Max(1, TotalBonusRareRate - 20)) * 20f;   // ~ 0 → 40
-        float scaledLegendaryBonus = Mathf.Log10(Mathf.Max(1, baitBonusLegendary - 20)) * 25f; // ~ 0 → 50
+        float scaledLegendaryBonus = Mathf.Log10(Mathf.Max(1, TotalBonusLegendaryRate - 20)) * 25f; // ~ 0 → 50
 
         float finalRareChance = Mathf.Clamp(baseRare + scaledRareBonus, 0f, 80f);
         float finalLegendaryChance = Mathf.Clamp(baseLegendary + scaledLegendaryBonus, 0f, 20f);
@@ -180,6 +180,7 @@ public class FishingManager : Singleton<FishingManager>
     {
         playerAnimator.Play("CanCau");
         rhythmMinigame.SetActive(true);
+
         KeySpawner.Instance?.SetDifficulty(GetDifficultyFromRarity(selectedRarity));
         AuditionManager.Instance?.SetDifficulty(GetDifficultyFromRarity(selectedRarity));
     }
