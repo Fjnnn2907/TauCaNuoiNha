@@ -1207,6 +1207,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: button_44
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 387
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3603bd6faff9ae8489e438a014bfb117
+      internalID: 1449605772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -1260,6 +1282,7 @@ TextureImporter:
       button_41: 1679787044
       button_42: -1939533485
       button_43: 1352021919
+      button_44: 1449605772
       button_5: 4832351623212807583
       button_6: -2485853453045848371
       button_7: -2868591522439195930
