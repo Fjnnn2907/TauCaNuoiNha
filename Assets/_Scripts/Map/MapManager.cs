@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System.Threading.Tasks;
 
 public class MapManager : MonoBehaviour
 {
@@ -9,42 +10,49 @@ public class MapManager : MonoBehaviour
     public class LocationData
     {
         public string locationName;
-        [TextArea]
-        public string description;
-        public string sceneName; // Nếu bạn muốn load scene
+        [TextArea] public string description;
+        public string sceneName;
+        public int regionIndex; // Bắc = 0, Trung = 1, Nam = 2
     }
 
     public LocationData[] locations;
 
+    [Header("UI Elements")]
     public TextMeshProUGUI titleText;
     public TextMeshProUGUI descriptionText;
-    public TextMeshProUGUI currentLocationText; // ✅ Thêm text hiện khu vực hiện tại
+    public TextMeshProUGUI currentLocationText;
     public GameObject infoPanel;
     public Button goButton;
-    public TextMeshProUGUI goButtonText; // ✅ Thêm text để thay đổi dòng chữ nút
+    public TextMeshProUGUI goButtonText;
+
+    [Header("Transport UI")]
+    public GameObject transportPanel;
+    public TextMeshProUGUI bikeButtonText;
+    public TextMeshProUGUI planeButtonText;
+    public Button bikeButton;
+    public Button planeButton;
+
+    [Header("Travel Cost")]
+    public int costPerDistanceBike = 100;
+    public int costPerDistancePlane = 300;
 
     private int currentLocationIndex = -1;
-
     private string currentSceneName;
 
-    void Start()
+    private void Start()
     {
         infoPanel.SetActive(false);
-        goButton.onClick.AddListener(GoToLocation);
+        goButton.onClick.AddListener(OnGoButtonClick);
 
-        // ✅ Lấy scene hiện tại
         currentSceneName = SceneManager.GetActiveScene().name;
 
-        if (currentLocationText != null)
+        // Hiển thị tên khu vực hiện tại
+        foreach (var loc in locations)
         {
-            // Tìm xem scene hiện tại tương ứng khu vực nào
-            foreach (var loc in locations)
+            if (loc.sceneName == currentSceneName)
             {
-                if (loc.sceneName == currentSceneName)
-                {
-                    currentLocationText.text = "Bạn đang ở: " + loc.locationName;
-                    break;
-                }
+                currentLocationText.text = "Bạn đang ở: " + loc.locationName;
+                break;
             }
         }
     }
@@ -58,30 +66,93 @@ public class MapManager : MonoBehaviour
         descriptionText.text = data.description;
         infoPanel.SetActive(true);
 
-        // ✅ Nếu đang ở scene này
-        if (data.sceneName == currentSceneName)
+        bool isCurrentLocation = (data.sceneName == currentSceneName);
+        goButton.interactable = !isCurrentLocation;
+        goButtonText.text = isCurrentLocation ? "Đã tới" : "Đi tới";
+
+        // Tắt panel phương tiện nếu đang hiển thị
+        if (transportPanel.activeSelf)
         {
-            goButton.interactable = false;
-            goButtonText.text = "Đã tới";
-        }
-        else
-        {
-            goButton.interactable = true;
+            transportPanel.SetActive(false);
             goButtonText.text = "Đi tới";
         }
     }
 
-    public async void GoToLocation()
+    public void OnGoButtonClick()
     {
         if (currentLocationIndex < 0) return;
 
-        string sceneName = locations[currentLocationIndex].sceneName;
-        Debug.Log("Di chuyển đến: " + sceneName);
+        var target = locations[currentLocationIndex];
+        bool isCurrentLocation = (target.sceneName == currentSceneName);
 
+        if (isCurrentLocation) return;
+
+        // Nếu panel đang bật → tắt
+        if (transportPanel.activeSelf)
+        {
+            transportPanel.SetActive(false);
+            goButtonText.text = "Đi tới";
+            return;
+        }
+
+        // Hiển thị UI chọn phương tiện và đổi nút thành "Đóng"
+        transportPanel.SetActive(true);
+        goButtonText.text = "Đóng";
+
+        var current = GetCurrentLocationData();
+        int bikeCost = CalculateCost(current.regionIndex, target.regionIndex, "Bike");
+        int planeCost = CalculateCost(current.regionIndex, target.regionIndex, "Plane");
+
+        bikeButtonText.text = $"{bikeCost}";
+        planeButtonText.text = $"{planeCost}";
+
+        bikeButton.onClick.RemoveAllListeners();
+        planeButton.onClick.RemoveAllListeners();
+
+        bikeButton.onClick.AddListener(() => ConfirmTravel("Bike", bikeCost));
+        planeButton.onClick.AddListener(() => ConfirmTravel("Plane", planeCost));
+    }
+
+    private LocationData GetCurrentLocationData()
+    {
+        foreach (var loc in locations)
+        {
+            if (loc.sceneName == currentSceneName)
+                return loc;
+        }
+        return null;
+    }
+
+    private int CalculateDistance(int from, int to)
+    {
+        return Mathf.Abs(from - to);
+    }
+
+    private int CalculateCost(int from, int to, string transport)
+    {
+        int distance = CalculateDistance(from, to);
+        int costPerDistance = (transport == "Plane") ? costPerDistancePlane : costPerDistanceBike;
+        return distance * costPerDistance;
+    }
+
+    private async void ConfirmTravel(string transport, int cost)
+    {
+        if (!CoinManager.Instance.SpendCoins(cost))
+        {
+            Debug.Log("❌ Không đủ tiền để di chuyển!");
+            transportPanel.SetActive(false);
+            goButtonText.text = "Đi tới";
+            return;
+        }
+
+        // Lưu scene mới
         GameData data = SaveManager.Instance.GetGameData();
-        data.currentSceneName = sceneName;
+        data.currentSceneName = locations[currentLocationIndex].sceneName;
 
         await SaveManager.Instance.SaveGameAsync();
-        SceneManager.LoadScene(sceneName);
+
+        // Chuyển scene
+        transportPanel.SetActive(false);
+        SceneManager.LoadScene(locations[currentLocationIndex].sceneName);
     }
 }

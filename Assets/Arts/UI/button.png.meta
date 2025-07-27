@@ -1216,7 +1216,7 @@ TextureImporter:
         width: 9
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1225,6 +1225,50 @@ TextureImporter:
       bones: []
       spriteID: 3603bd6faff9ae8489e438a014bfb117
       internalID: 1449605772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: button_45
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 4
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 426adae816661f048a4474a4859e1e1c
+      internalID: -489599843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: button_46
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 1
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3bf5640e5f7a64384c434da51f3915
+      internalID: -1317008585
       vertices: []
       indices: 
       edges: []
@@ -1283,6 +1327,8 @@ TextureImporter:
       button_42: -1939533485
       button_43: 1352021919
       button_44: 1449605772
+      button_45: -489599843
+      button_46: -1317008585
       button_5: 4832351623212807583
       button_6: -2485853453045848371
       button_7: -2868591522439195930
