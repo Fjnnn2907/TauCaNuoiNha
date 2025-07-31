@@ -1,8 +1,7 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
+﻿using TMPro;
+using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Threading.Tasks;
+using UnityEngine.UI;
 
 public class MapManager : MonoBehaviour
 {

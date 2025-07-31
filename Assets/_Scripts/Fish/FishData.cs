@@ -10,4 +10,5 @@ public class FishData : ScriptableObject
     [TextArea] public string description;
     public FishRarity rarity;
     public int sellPrice = 10;
+    public string zone;
 }

@@ -82,6 +82,7 @@ public class FishingManager : Singleton<FishingManager>
         if (fish != null)
         {
             FishInventory.Instance.AddFish(fish); // Add vào kho
+            QuestManager.Instance.OnFishCaught(fish);
             ShowCaughtFish(fish);
         }
 

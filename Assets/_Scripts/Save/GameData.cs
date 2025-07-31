@@ -15,4 +15,11 @@ public class GameData
     public SerializableDirectory<string, int> baitInventory = new();
     public string currentBaitID = "";
     public string currentSceneName;
+
+    public string questFishName;
+    public FishRarity questRarity;
+    public int questAmount;
+    public int questProgress;
+    public int questReward;
+    public int questsCompleted;
 }
