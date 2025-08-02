@@ -185,6 +185,9 @@ public class FishingManager : Singleton<FishingManager>
         KeySpawner.Instance?.SetDifficulty(GetDifficultyFromRarity(selectedRarity));
         if (AuditionManager.Instance != null)
             AuditionManager.Instance?.SetDifficulty(GetDifficultyFromRarity(selectedRarity));
+
+        if (ScoreManager.Instance != null)
+            ScoreManager.Instance.StartMinigame(GetDifficultyFromRarity(selectedRarity));
     }
 
     private void KeoCanState()

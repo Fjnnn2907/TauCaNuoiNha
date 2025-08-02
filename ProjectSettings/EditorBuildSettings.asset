@@ -15,8 +15,8 @@ EditorBuildSettings:
     path: Assets/Scenes/DapCa.unity
     guid: 55b1237e358a1a642b41c648b592c82f
   - enabled: 1
-    path: Assets/Scenes/Het.unity
-    guid: d89170d246aede34c8bff51b14458aed
+    path: Assets/Scenes/MagicDraw.unity
+    guid: f2092e2b486c1714b98a9a457d505544
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
