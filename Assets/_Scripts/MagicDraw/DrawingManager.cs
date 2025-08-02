@@ -4,23 +4,23 @@ using TMPro;
 
 public class DrawingManager : MonoBehaviour
 {
-
     public List<SymbolPattern> patterns;
     public LineRenderer lineRenderer;
     public TMP_Text resultText;
     public SymbolManager symbolManager;
     public ScoreManager scoreManager; // Thêm lại ScoreManager
-    
+
     private List<Vector2> drawnPoints = new List<Vector2>();
     private bool isDrawing = false;
-    
+
     // Thêm các tham số để lọc điểm
     private const float MIN_DISTANCE = 0.1f; // Khoảng cách tối thiểu giữa các điểm
     private Vector2 lastAddedPoint;
 
     void Start()
     {
-        // Tạo 3 mẫu vẽ
+        lineRenderer.startColor = Color.green;
+        // Tạo 5 mẫu vẽ
         SymbolPattern circle = new SymbolPattern { name = "circle" };
         for (int i = 0; i < 24; i++)
         {
@@ -52,20 +52,49 @@ public class DrawingManager : MonoBehaviour
             }
         };
 
-        patterns = new List<SymbolPattern> { circle, zigzag, vshape };
-        
+        // Thêm pattern cho square (hình vuông)
+        SymbolPattern square = new SymbolPattern
+        {
+            name = "square",
+            points = new List<Vector2>
+            {
+                new Vector2(-0.8f, -0.8f), // Góc dưới trái
+                new Vector2(0.8f, -0.8f),  // Góc dưới phải
+                new Vector2(0.8f, 0.8f),   // Góc trên phải
+                new Vector2(-0.8f, 0.8f),  // Góc trên trái
+                new Vector2(-0.8f, -0.8f)  // Đóng hình (về điểm đầu)
+            }
+        };
+
+        // Thêm pattern cho triangle (hình tam giác)
+        SymbolPattern triangle = new SymbolPattern
+        {
+            name = "triangle",
+            points = new List<Vector2>
+            {
+                new Vector2(0f, 0.8f),     // Đỉnh tam giác
+                new Vector2(-0.8f, -0.8f), // Góc dưới trái
+                new Vector2(0.8f, -0.8f),  // Góc dưới phải
+                new Vector2(0f, 0.8f)      // Đóng hình (về đỉnh)
+            }
+        };
+
+
+
+        patterns = new List<SymbolPattern> { circle, zigzag, vshape, square, triangle };
+
         // Tạo symbol đầu tiên
         if (symbolManager != null)
         {
             symbolManager.GenerateNewSymbol();
         }
-        
+
         // Bắt đầu minigame với độ khó Easy
         if (scoreManager != null)
         {
             scoreManager.StartMinigame(DifficultyLevel.Easy);
         }
-        
+
         ClearDrawing();
     }
 
@@ -81,7 +110,7 @@ public class DrawingManager : MonoBehaviour
         if (Input.GetMouseButton(0) && isDrawing)
         {
             Vector2 point = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            
+
             // Chỉ thêm điểm nếu đủ xa điểm cuối cùng
             if (drawnPoints.Count == 0 || Vector2.Distance(point, lastAddedPoint) >= MIN_DISTANCE)
             {
@@ -95,7 +124,7 @@ public class DrawingManager : MonoBehaviour
         if (Input.GetMouseButtonUp(0) && isDrawing)
         {
             isDrawing = false;
-            
+
             // Tối ưu hóa điểm trước khi nhận dạng
             var optimizedPoints = OptimizePoints(drawnPoints);
             RecognizeSymbol(optimizedPoints);
@@ -139,9 +168,9 @@ public class DrawingManager : MonoBehaviour
 
         if (predicted == symbolManager.currentSymbol)
         {
-            resultText.text = "Đúng +" + (scoreManager?.pointsPerCorrectAnswer ?? 20) + " điểm";
+            resultText.text = "✅ Correct! +" + (scoreManager?.pointsPerCorrectAnswer ?? 20) + " điểm";
             resultText.color = Color.green;
-            
+
             // Tăng điểm khi nhận dạng đúng
             if (scoreManager != null)
             {
@@ -150,9 +179,9 @@ public class DrawingManager : MonoBehaviour
         }
         else
         {
-            resultText.text = $"Sai rồi -" + (scoreManager?.pointsDeductionPerWrong ?? 5) + " điểm";
+            resultText.text = $"❌ Wrong! ({predicted}) -" + (scoreManager?.pointsDeductionPerWrong ?? 5) + " điểm";
             resultText.color = Color.red;
-            
+
             // Trừ điểm khi vẽ sai
             if (scoreManager != null)
             {
@@ -162,20 +191,20 @@ public class DrawingManager : MonoBehaviour
 
         Invoke(nameof(ResetForNext), 1.5f);
     }
-    
+
     void ResetForNext()
     {
         resultText.text = "";
         resultText.color = Color.white;
         lineRenderer.positionCount = 0;
-        
+
         // Tạo symbol mới
         if (symbolManager != null)
         {
             symbolManager.GenerateNewSymbol();
         }
     }
-    
+
     // Xóa vẽ hiện tại
     public void ClearDrawing()
     {

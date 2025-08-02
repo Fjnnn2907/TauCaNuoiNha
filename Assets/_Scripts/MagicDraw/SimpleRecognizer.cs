@@ -4,7 +4,7 @@ using UnityEngine;
 public static class SimpleRecognizer
 {
     const int SAMPLE_COUNT = 32;
-    const float TOLERANCE = 0.25f; // càng nhỏ càng nghiêm, càng lớn càng dễ đúng
+    const float TOLERANCE = 0.22f; // càng nhỏ càng nghiêm, càng lớn càng dễ đúng
     const float MIN_POINT_DISTANCE = 0.05f; // Khoảng cách tối thiểu giữa các điểm
 
     public static string Recognize(List<Vector2> input, List<SymbolPattern> patterns)
@@ -66,18 +66,28 @@ public static class SimpleRecognizer
 
     static float Compare(List<Vector2> a, List<Vector2> b)
     {
-        float posScore = 0f;
+        float posScore1 = 0f;
+        float dirScore1 = CompareDirection(a, b) * SAMPLE_COUNT;
         for (int i = 0; i < SAMPLE_COUNT; i++)
-            posScore += Vector2.Distance(a[i], b[i]);
-
-        float dirScore = CompareDirection(a, b) * SAMPLE_COUNT;
-
-        // Thêm gấp khúc
+            posScore1 += Vector2.Distance(a[i], b[i]);
         int cornersA = CountDirectionChanges(a);
         int cornersB = CountDirectionChanges(b);
-        float cornerDiff = Mathf.Abs(cornersA - cornersB) / 10f; // normalize nhỏ
+        float cornerDiff1 = Mathf.Abs(cornersA - cornersB) / 10f;
 
-        return (posScore + dirScore + cornerDiff) / (2 * SAMPLE_COUNT); // hoặc chia 2.5 để bớt nhẹ
+        // So sánh với bản đảo ngược
+        b.Reverse();
+        float posScore2 = 0f;
+        float dirScore2 = CompareDirection(a, b) * SAMPLE_COUNT;
+        for (int i = 0; i < SAMPLE_COUNT; i++)
+            posScore2 += Vector2.Distance(a[i], b[i]);
+        int cornersBRev = CountDirectionChanges(b);
+        float cornerDiff2 = Mathf.Abs(cornersA - cornersBRev) / 10f;
+        b.Reverse(); // Trả lại đúng thứ tự mẫu
+
+        float score1 = (posScore1 + dirScore1 + cornerDiff1) / (2 * SAMPLE_COUNT);
+        float score2 = (posScore2 + dirScore2 + cornerDiff2) / (2 * SAMPLE_COUNT);
+
+        return Mathf.Min(score1, score2); // Dùng kết quả tốt hơn
     }
 
     static float CompareDirection(List<Vector2> a, List<Vector2> b)
@@ -92,7 +102,7 @@ public static class SimpleRecognizer
         }
         return sum / (a.Count - 1);
     }
-    
+
     static int CountDirectionChanges(List<Vector2> points)
     {
         int count = 0;
@@ -106,7 +116,7 @@ public static class SimpleRecognizer
         }
         return count;
     }
-    
+
     static List<Vector2> Resample(List<Vector2> points, int count)
     {
         if (points.Count <= 1) return points;
@@ -174,11 +184,11 @@ public static class SimpleRecognizer
     {
         Rect bounds = GetBounds(points);
         List<Vector2> scaled = new List<Vector2>();
-        
+
         // Tránh chia cho 0
         float width = Mathf.Max(bounds.width, 0.01f);
         float height = Mathf.Max(bounds.height, 0.01f);
-        
+
         foreach (var p in points)
         {
             float x = p.x / width;

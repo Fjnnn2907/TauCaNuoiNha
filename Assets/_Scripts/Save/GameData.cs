@@ -22,4 +22,7 @@ public class GameData
     public int questProgress;
     public int questReward;
     public int questsCompleted;
+
+    public float savedMusicVolume = .3f;
+    public float savedSFXVolume = .3f;
 }
