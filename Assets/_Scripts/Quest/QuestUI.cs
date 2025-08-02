@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class QuestUI : Singleton<QuestUI>
 {
+    public GameObject panel;
     [Header("UI References")]
     public TextMeshProUGUI questDescriptionText;
     public TextMeshProUGUI questProgressText;
@@ -13,7 +14,15 @@ public class QuestUI : Singleton<QuestUI>
     {
         UpdateUI();
     }
+    public void ToggleUI()
+    {
+        panel.SetActive(!panel.activeSelf);
 
+        if (panel.activeSelf)
+        {
+            UpdateUI();
+        }
+    }
     public void UpdateUI()
     {
         var quest = QuestManager.Instance.currentQuest;

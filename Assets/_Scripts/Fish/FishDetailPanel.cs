@@ -16,9 +16,14 @@ public class FishDetailPanel : Singleton<FishDetailPanel>
     private FishData currentFish;
     private int currentQuantity;
 
-    private void OnEnable()
+    private void Start()
     {
         sellButton.onClick.AddListener(SellFish);
+    }
+
+    private void OnEnable()
+    {
+        
         ClearPanel();
     }
 
