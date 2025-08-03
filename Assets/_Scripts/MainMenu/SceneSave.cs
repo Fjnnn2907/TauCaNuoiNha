@@ -16,8 +16,7 @@ public class SceneSave : MonoBehaviour, ISaveable
 
     public void SaveData(ref GameData data)
     {
-        if(data.currentSceneName == "")
-            data.currentSceneName = SceneManager.GetActiveScene().name;
+        data.currentSceneName = SceneManager.GetActiveScene().name;
     }
 
     public void LoadData(GameData data)

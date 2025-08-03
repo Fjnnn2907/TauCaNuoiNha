@@ -44,7 +44,7 @@ public class MainMenu : MonoBehaviour
         {
             Debug.Log("🆕 Lần đầu chơi -> Bắt đầu luôn không hỏi");
             SaveManager.Instance.DeleteSave();
-            StartCoroutine(LoadSceneAsync("Audition"));
+            StartCoroutine(LoadSceneAsync("CutScene"));
         }
         else
         {
@@ -57,7 +57,7 @@ public class MainMenu : MonoBehaviour
     {
         confirmNewGamePanel.SetActive(false);
         SaveManager.Instance.DeleteSave();
-        StartCoroutine(LoadSceneAsync("Audition"));
+        StartCoroutine(LoadSceneAsync("CutScene"));
     }
 
     private void OnContinueClicked()
