@@ -154,4 +154,14 @@ public class MapManager : MonoBehaviour
         transportPanel.SetActive(false);
         SceneManager.LoadScene(locations[currentLocationIndex].sceneName);
     }
+    private void OnApplicationQuit()
+    {
+        SaveCurrentSceneName();
+    }
+
+    private void SaveCurrentSceneName()
+    {
+        GameData data = SaveManager.Instance.GetGameData();
+        data.currentSceneName = SceneManager.GetActiveScene().name;
+    }
 }
