@@ -17001,19 +17001,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 842834019}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2060091867}
-        m_TargetAssemblyTypeName: FishingManager, Assembly-CSharp
-        m_MethodName: PrepareCastWithSlider
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &842834019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39566,6 +39554,8 @@ MonoBehaviour:
   slider: {fileID: 1800745562}
   greenZone: {fileID: 1443426521}
   sliderHandleArea: {fileID: 1195427398}
+  castButton: {fileID: 842834018}
+  castButtonText: {fileID: 437880672}
   speed: 1
   greenZoneMinWidth: 30
   greenZoneMaxWidth: 120
@@ -45987,6 +45977,7 @@ MonoBehaviour:
   playerAnimator: {fileID: 2060091868}
   rhythmMinigame: {fileID: 645402882}
   fishingSlider: {fileID: 1800745561}
+  cauButton: {fileID: 842834018}
   waitTimeMin: 3
   waitTimeMax: 8
   rodBonusRare: 0

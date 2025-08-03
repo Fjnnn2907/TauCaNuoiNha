@@ -73,7 +73,7 @@ public class FishingManager : Singleton<FishingManager>
         FishingBaitUI.Instance?.RefreshUI();
         float totalBonusRate = TotalBonusRareRate + TotalBonusLegendaryRate;
         fishingSlider.StartSlider(OnSliderResult, totalBonusRate);
-        cauButton.interactable = false;
+        //cauButton.interactable = false;
     }
 
     private void OnSliderResult(bool isInGreenZone)
@@ -201,7 +201,7 @@ public class FishingManager : Singleton<FishingManager>
     private void KeoCanState()
     {
         playerAnimator.Play("KeoCan");
-        cauButton.interactable = true;
+        //cauButton.interactable = true;
         currentCoroutine = StartCoroutine(DelayThen(() => ChangeState(FishingState.Idle), 0.5f));
     }
 

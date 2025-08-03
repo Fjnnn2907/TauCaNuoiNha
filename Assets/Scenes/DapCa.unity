@@ -7023,6 +7023,8 @@ MonoBehaviour:
   slider: {fileID: 375686034}
   greenZone: {fileID: 510333576}
   sliderHandleArea: {fileID: 322287927}
+  castButton: {fileID: 1105731699}
+  castButtonText: {fileID: 621420752}
   speed: 1
   greenZoneMinWidth: 30
   greenZoneMaxWidth: 120
@@ -24559,7 +24561,7 @@ Tilemap:
       - {fileID: 1394408354, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: 173622504, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: -358284151, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -7, y: 4, z: 0}
@@ -24649,7 +24651,7 @@ Tilemap:
       - {fileID: 1394408354, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: 173622504, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: -358284151, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -1, y: 4, z: 0}
@@ -24791,7 +24793,7 @@ Tilemap:
       - {fileID: 1958928613, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: -478653590, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: 2113070652, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
-      m_AnimationSpeed: 2.5
+      m_AnimationSpeed: 2.5000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -17, y: 5, z: 0}
@@ -24928,7 +24930,7 @@ Tilemap:
       - {fileID: -699266767, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: 1279504904, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: -1532116312, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -6, y: 5, z: 0}
@@ -25156,7 +25158,7 @@ Tilemap:
       - {fileID: 1958928613, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: -478653590, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: 2113070652, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
-      m_AnimationSpeed: 2.5000002
+      m_AnimationSpeed: 2.5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 10, y: 5, z: 0}
@@ -25167,7 +25169,7 @@ Tilemap:
       - {fileID: 1958928613, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: -478653590, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: 2113070652, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
-      m_AnimationSpeed: 2.5
+      m_AnimationSpeed: 2.5000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 11, y: 5, z: 0}
@@ -26762,19 +26764,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1105731700}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1348293874}
-        m_TargetAssemblyTypeName: FishingManager, Assembly-CSharp
-        m_MethodName: PrepareCastWithSlider
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1105731700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31666,6 +31656,7 @@ MonoBehaviour:
   playerAnimator: {fileID: 1348293875}
   rhythmMinigame: {fileID: 1326496587}
   fishingSlider: {fileID: 375686033}
+  cauButton: {fileID: 1105731699}
   waitTimeMin: 3
   waitTimeMax: 8
   rodBonusRare: 0

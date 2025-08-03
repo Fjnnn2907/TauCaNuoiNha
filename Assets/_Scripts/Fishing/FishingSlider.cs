@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System;
+using TMPro;
 
 public class FishingSlider : MonoBehaviour
 {
@@ -8,6 +9,10 @@ public class FishingSlider : MonoBehaviour
     public Slider slider;
     public RectTransform greenZone;
     public RectTransform sliderHandleArea;
+
+    [Header("Button")]
+    public Button castButton;
+    public TextMeshProUGUI castButtonText;
 
     [Header("Settings")]
     public float speed = 1f;
@@ -24,6 +29,9 @@ public class FishingSlider : MonoBehaviour
         slider.minValue = 0f;
         slider.maxValue = 1f;
         gameObject.SetActive(false);
+
+        if (castButton != null)
+            castButton.onClick.AddListener(OnCastButtonPressed);
     }
 
     void Update()
@@ -35,19 +43,8 @@ public class FishingSlider : MonoBehaviour
         else if (value <= 0f) { value = 0f; movingRight = true; }
 
         slider.value = value;
-
-        if (Input.GetKeyUp(KeyCode.Space))
-        {
-            isHolding = false;
-            bool inZone = CheckInGreenZone();
-            onResult?.Invoke(inZone);
-            gameObject.SetActive(false);
-        }
     }
 
-    /// <summary>
-    /// Gọi khi bắt đầu thanh slider, truyền callback và bonusRate để tăng độ rộng vùng xanh
-    /// </summary>
     public void StartSlider(Action<bool> callback, float bonusRate)
     {
         gameObject.SetActive(true);
@@ -58,19 +55,30 @@ public class FishingSlider : MonoBehaviour
         onResult = callback;
 
         RandomizeGreenZone(bonusRate);
+
+        if (castButton != null)
+        {
+            castButtonText.text = "Thả";
+        }
     }
 
-    /// <summary>
-    /// Sinh vùng xanh ngẫu nhiên, và tăng độ rộng nếu bonusRate cao
-    /// </summary>
+    private void OnCastButtonPressed()
+    {
+        if (!isHolding) return;
+
+        isHolding = false;
+        bool inZone = CheckInGreenZone();
+        onResult?.Invoke(inZone);
+        gameObject.SetActive(false);
+
+        if (castButton != null)
+            castButtonText.text = "Câu";
+    }
+
     private void RandomizeGreenZone(float bonusRate)
     {
         float parentWidth = sliderHandleArea.rect.width;
-
-        // Chuyển bonusRate thành % (giới hạn từ 0 đến 1)
         float bonusPercent = Mathf.Clamp01(bonusRate / 100f);
-
-        // Tính độ rộng vùng xanh dựa theo bonus
         float effectiveMaxWidth = Mathf.Lerp(greenZoneMinWidth, greenZoneMaxWidth, bonusPercent);
         float randomWidth = UnityEngine.Random.Range(greenZoneMinWidth, effectiveMaxWidth);
 
