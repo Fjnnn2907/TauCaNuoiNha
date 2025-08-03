@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FishingManager : Singleton<FishingManager>
 {
@@ -7,6 +8,7 @@ public class FishingManager : Singleton<FishingManager>
     public Animator playerAnimator;
     public GameObject rhythmMinigame;
     public FishingSlider fishingSlider;
+    public Button cauButton;
     public FishingRodData CurrentRod { get; set; }
     public FishingBaitData CurrentBait { get; set; }
 
@@ -28,6 +30,11 @@ public class FishingManager : Singleton<FishingManager>
 
     public float TotalBonusRareRate => rodBonusRare + baitBonusRare;
     public float TotalBonusLegendaryRate => rodBonusLegendary + baitBonusLegendary;
+
+    private void Start()
+    {
+        cauButton.onClick.AddListener(PrepareCastWithSlider);
+    }
 
     public void SetRodBonus(FishingRodData rod)
     {
@@ -66,6 +73,7 @@ public class FishingManager : Singleton<FishingManager>
         FishingBaitUI.Instance?.RefreshUI();
         float totalBonusRate = TotalBonusRareRate + TotalBonusLegendaryRate;
         fishingSlider.StartSlider(OnSliderResult, totalBonusRate);
+        cauButton.interactable = false;
     }
 
     private void OnSliderResult(bool isInGreenZone)
@@ -193,6 +201,7 @@ public class FishingManager : Singleton<FishingManager>
     private void KeoCanState()
     {
         playerAnimator.Play("KeoCan");
+        cauButton.interactable = true;
         currentCoroutine = StartCoroutine(DelayThen(() => ChangeState(FishingState.Idle), 0.5f));
     }
 
