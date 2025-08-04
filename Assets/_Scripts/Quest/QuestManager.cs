@@ -38,14 +38,16 @@ public class QuestManager : MonoBehaviour, ISaveable
 
         FishData targetFish = fishesOfRarity[Random.Range(0, fishesOfRarity.Count)];
         int amount = Random.Range(1, 6);
-        int reward = amount * (int)targetRarity * 15 + 30;
+        int baseReward = amount * (int)targetRarity * 15 + 30;
+        float rewardMultiplier = 1f + questsCompleted * 0.1f;
+        int finalReward = Mathf.RoundToInt(baseReward * rewardMultiplier);
 
         currentQuest = ScriptableObject.CreateInstance<QuestData>();
         currentQuest.questID = "quest_" + questsCompleted;
         currentQuest.requiredRarity = targetRarity;
         currentQuest.requiredFishName = targetFish.fishName;
         currentQuest.requiredAmount = amount;
-        currentQuest.rewardGold = reward;
+        currentQuest.rewardGold = finalReward;
         currentQuest.description = $"Câu {amount} con {targetFish.fishName} ({targetRarity})\n" +
                                    $"📍 Xuất hiện ở vùng: {targetFish.zone}";
 
@@ -76,9 +78,10 @@ public class QuestManager : MonoBehaviour, ISaveable
         Debug.Log($"✅ Đã hoàn thành nhiệm vụ! Nhận {currentQuest.rewardGold} vàng");
         questsCompleted++;
 
-        // TODO: Cộng vàng vào inventory ở đây
+        CoinManager.Instance?.AddCoins(currentQuest.rewardGold);
 
         QuestUI.Instance?.ShowCompleteEffect();
+        NotificationManager.Instance?.ShowNotification("Bạn có nhiệm vụ mới");
         GenerateNewQuest();
     }
 

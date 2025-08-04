@@ -15,6 +15,6 @@ MonoBehaviour:
   id: CanCauPhongThong
   rodName: "Ph\u1ED5 th\xF4ng"
   icon: {fileID: 3357079768526042575, guid: 77dfd8aee65849b43b71ea0d84ae1864, type: 3}
-  price: 500
+  price: 0
   bonusRareRate: 4
   bonusLegendaryRate: 2

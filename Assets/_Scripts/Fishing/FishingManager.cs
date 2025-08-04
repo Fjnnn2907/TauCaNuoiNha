@@ -55,18 +55,21 @@ public class FishingManager : Singleton<FishingManager>
         if (CurrentRod == null)
         {
             Debug.Log("⚠️ Bạn chưa chọn cần câu!");
+            NotificationManager.Instance?.ShowNotification("Hình như chưa có cần câu á");
             return;
         }
 
         if (CurrentBait == null)
         {
             Debug.Log("⚠️ Bạn chưa chọn mồi câu!");
+            NotificationManager.Instance?.ShowNotification("Bạn chưa chọn mồi câu");
             return;
         }
 
         if (!BaitInventory.Instance.ConsumeBait(CurrentBait))
         {
             Debug.Log("⚠️ Không đủ mồi!");
+            NotificationManager.Instance?.ShowNotification("Hết mồi mất tiêu rồi");
             return;
         }
 
@@ -196,6 +199,19 @@ public class FishingManager : Singleton<FishingManager>
 
         if (ScoreManager.Instance != null)
             ScoreManager.Instance.StartMinigame(GetDifficultyFromRarity(selectedRarity));
+    }
+
+    private void NotificationTotDifficulty(FishRarity rarity)
+    {
+        switch (rarity)
+        {
+            case FishRarity.Common:
+                break;
+            case FishRarity.Rare:
+                break;
+            case FishRarity.Legendary:
+                break;
+        }
     }
 
     private void KeoCanState()
