@@ -16,8 +16,12 @@ MonoBehaviour:
   fishName: "C\xE1 \u0111\u1EE5c"
   sprite: {fileID: 1842172672916735438, guid: aedd15c69c5287346abc8d2c72f8a280, type: 3}
   shadowSprite: {fileID: 1842172672916735438, guid: 6d376780b46bb9b48a9636a5698c7631, type: 3}
-  description: "C\xE1 n\u01B0\u1EDBc m\u1EB7n, th\xE2n h\xECnh nh\u1ECF, s\u1ED1ng
-    ven bi\u1EC3n c\xE1t"
+  description: "Th\xE2n h\xECnh trong su\u1ED1t l\u1ED9 r\xF5 tr\xE1i tim \u0111\u1ECF
+    r\u1EF1c, s\u1ED1ng n\u01A1i giao thoa gi\u1EEFa s\u1EF1 s\u1ED1ng v\xE0 c\xE1i
+    ch\u1EBFt. D\xE2n gian tin ch\xFAng l\xE0 linh h\u1ED3n tr\u1EBB th\u01A1 h\xF3a
+    th\xE0nh, mang theo nh\u1EEFng l\u1EDDi nh\u1EAFn t\u1EEB th\u1EBF gi\u1EDBi
+    b\xEAn kia. Ai \u0103n ph\u1EA3i c\xE1 \u0111\u1EE5c v\u1EA3y \u0111\u1ECF s\u1EBD
+    th\u1EA5y nh\u1EEFng \u0111i\u1EC1u kh\xF4ng n\xEAn th\u1EA5y."
   rarity: 0
   sellPrice: 70
   zone: "Mi\u1EC1n Trung"

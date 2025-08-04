@@ -105,7 +105,7 @@ public class QuestManager : Singleton<QuestManager>, ISaveable
     {
         Debug.Log($"✅ Đã hoàn thành nhiệm vụ! Nhận {currentQuest.rewardGold} vàng");
         questsCompleted++;
-
+        NotificationManager.Instance?.ShowNotification($"Bạn hoàn thành nhiệm vụ nhận {currentQuest.rewardGold} vàng");
         CoinManager.Instance?.AddCoins(currentQuest.rewardGold);
 
         QuestUI.Instance?.ShowCompleteEffect();

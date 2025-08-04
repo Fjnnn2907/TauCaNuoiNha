@@ -16,7 +16,13 @@ MonoBehaviour:
   fishName: "C\xE1 Ch\xE9p"
   sprite: {fileID: 7203339641779158459, guid: 988f0b211896dbd4bba048906d3ac67a, type: 3}
   shadowSprite: {fileID: 7203339641779158459, guid: 114b4f914881dc746846a6eca531ae42, type: 3}
-  description: "V\u1EA3y to b\u1EB1ng b\xE0n tay, l\u01B0ng g\xF9, m\u1EAFt \u0111\u1ECF"
+  description: "C\xE1 ch\xE9p k\xEDnh tr\u01A1n tru nh\u01B0 vi\xEAn ng\u1ECDc th\u1EE7y
+    sinh, da l\u1ED9 ra t\u1EEBng th\u1EDB th\u1ECBt h\u1ED3ng h\xE0o. Ch\xFAng l\xE0
+    h\u1EADu du\u1EC7 c\u1EE7a nh\u1EEFng con c\xE1 ch\xE9p h\xF3a r\u1ED3ng b\u1ECB
+    l\u01B0u \u0111\xE0y v\xEC kh\xF4ng v\u01B0\u1EE3t n\u1ED5i V\u0169 M\xF4n. \u0110\xEAm
+    tr\u0103ng, n\u1EBFu th\u1EA5y ch\xE9p k\xEDnh ph\xF3ng l\xEAn kh\u1ECFi m\u1EB7t
+    n\u01B0\u1EDBc, \u1EA5y l\xE0 ch\xFAng \u0111ang t\u1EADp luy\u1EC7n cho ki\u1EBFp
+    sau \u2013 ki\u1EBFp l\xE0m r\u1ED3ng.\"\r"
   rarity: 0
   sellPrice: 300
   zone: "Mi\u1EC1n B\u1EAFc"

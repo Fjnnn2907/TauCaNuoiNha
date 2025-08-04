@@ -16,8 +16,13 @@ MonoBehaviour:
   fishName: "C\xE1 Anh V\u0169"
   sprite: {fileID: 4944402164476025713, guid: 9a91a383f1345d047b454a0e95bbad9c, type: 3}
   shadowSprite: {fileID: 4944402164476025713, guid: 597f68a29226db94e87ca5ad8d1dac13, type: 3}
-  description: "V\xE0ng \xF3ng nh\u01B0 g\u1EA5m, m\xF4i tr\u1EC1 nh\u01B0 \u0111ang
-    ph\xF9ng"
+  description: "Trong hang \u0111\xE1 s\xF4ng Gi\u0103ng, c\xE1 anh v\u0169 kho\xE1c
+    b\u1ED9 c\xE1nh m\xE0u ng\u1ECDc b\xEDch, m\xF4i \u0111\u1ECF nh\u01B0 son ti\xEAn
+    n\u1EEF. T\u01B0\u01A1ng truy\u1EC1n ch\xFAng l\xE0 h\xF3a th\xE2n c\u1EE7a nh\u1EEFng
+    nh\xE0 s\u01B0 tu luy\u1EC7n ng\xE0n n\u0103m, ch\u1EC9 \u0103n r\xEAu tinh khi\u1EBFt
+    n\xEAn th\u1ECBt th\u01A1m t\u1EF1a tr\u1EA7m h\u01B0\u01A1ng. Ai \u0103n ph\u1EA3i
+    c\xE1 anh v\u0169 ch\u01B0a th\xE0nh ni\xEAn s\u1EBD b\u1ECB l\u1EDDi nguy\u1EC1n
+    'm\xF9 m\u1ECBt nh\u01B0 s\u01B0\u01A1ng Y\xEAn T\u1EED'."
   rarity: 1
   sellPrice: 1500
   zone: "Mi\u1EC1n B\u1EAFc"

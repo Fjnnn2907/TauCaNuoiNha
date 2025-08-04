@@ -5,13 +5,13 @@ public class SceneSave : MonoBehaviour, ISaveable
 {
     private void Awake()
     {
-        SaveManager.Instance.RegisterSaveable(this);
+        SaveManager.Instance?.RegisterSaveable(this);
     }
 
     private void OnDestroy()
     {
         if (SaveManager.Instance != null)
-            SaveManager.Instance.UnregisterSaveable(this);
+            SaveManager.Instance?.UnregisterSaveable(this);
     }
 
     public void SaveData(ref GameData data)

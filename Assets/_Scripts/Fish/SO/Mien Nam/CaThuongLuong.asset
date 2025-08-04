@@ -16,7 +16,14 @@ MonoBehaviour:
   fishName: "Thu\u1ED3ng lu\u1ED3ng"
   sprite: {fileID: 5897821563474178108, guid: 33c3d6db8e0d7204f811a8ad6101d2f3, type: 3}
   shadowSprite: {fileID: 5897821563474178108, guid: d5a96f70876ab3945bea9c34463222b7, type: 3}
-  description: "Th\u1EE7y qu\xE1i kh\u1ED5ng l\u1ED3, h\xECnh d\xE1ng nh\u01B0 r\u1EAFn"
+  description: "Th\u1EE7y qu\xE1i r\u1EAFn m\xECnh d\xE0i tr\u0103m th\u01B0\u1EDBc,
+    m\u1EAFt l\u1EEDa \u0111\u1ECF r\u1EF1c nh\u01B0 c\u1EE5c than h\u1ED3ng, chuy\xEAn
+    d\xECm ch\u1EBFt k\u1EBB x\xE2m ph\u1EA1m l\xE3nh \u0111\u1ECBa s\xF4ng s\xE2u.
+    T\u01B0\u01A1ng truy\u1EC1n ch\xFAng l\xE0 linh th\xFA canh gi\u1EEF kho b\xE1u
+    c\u1EE7a Long V\u01B0\u01A1ng, ch\u1EC9 khu\u1EA5t ph\u1EE5c tr\u01B0\u1EDBc
+    ph\xE9p thu\u1EADt c\u1EE7a \u0111\u1EA1o s\u0129. X\u01B0\u01A1ng thu\u1ED3ng
+    lu\u1ED3ng \u0111\u01B0\u1EE3c t\xE1ng trong \u0111\xECnh l\xE0ng nh\u01B0 v\u1EADt
+    tr\u1EA5n y\u1EC3m, ng\u0103n l\u0169 qu\xE9t."
   rarity: 2
   sellPrice: 6666
   zone: "Mi\u1EC1n Nam"

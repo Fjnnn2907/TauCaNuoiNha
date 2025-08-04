@@ -16,8 +16,14 @@ MonoBehaviour:
   fishName: "C\xE1 Ch\xE9p H\xF3a R\u1ED3ng"
   sprite: {fileID: 7203339641779158459, guid: 16baf26ef1b711746aa61fc8020d5f30, type: 3}
   shadowSprite: {fileID: 7203339641779158459, guid: bb1417720ea77294084aeb7cd2a2f66c, type: 3}
-  description: "V\u1EA3y v\xE0ng ch\xF3i, r\xE2u d\xE0i, ch\u1EC9 xu\u1EA5t hi\u1EC7n
-    sau m\u01B0a b\xE3o"
+  description: "C\u1ED5 t\xEDch k\u1EC3 r\u1EB1ng ch\xE9p \u0111\u1ECF v\u01B0\u1EE3t
+    V\u0169 M\xF4n s\u1EBD h\xF3a r\u1ED3ng, v\u1EA3y r\u1EE5ng th\xE0nh ph\xE1o
+    hoa, r\xE2u d\xE0i ra nh\u01B0 t\u01A1 tr\u1EDDi. Nh\u01B0ng \xEDt ai bi\u1EBFt:
+    nh\u1EEFng con kh\xF4ng qua \u1EA3i s\u1EBD th\xE0nh 'ng\u1EA1ch ng\u01B0' -
+    qu\u1EF7 n\u01B0\u1EDBc m\u1EB7t ch\xE9p th\xE2n r\u1ED3ng, chuy\xEAn k\xE9o
+    \u0111\u1EAFm thuy\u1EC1n k\u1EBB ki\xEAu ng\u1EA1o. M\u1ED7i m\xF9a m\u01B0a
+    b\xE3o, ng\u01B0\u1EDDi ta th\u1EA3 ch\xE9p \u0111\u1ECF xu\u1ED1ng s\xF4ng nh\u01B0
+    l\u1EC5 v\u1EADt t\u1EBF th\u1EA7n."
   rarity: 2
   sellPrice: 9999
   zone: "Mi\u1EC1n B\u1EAFc"

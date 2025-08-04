@@ -116,6 +116,7 @@ public class FishingManager : Singleton<FishingManager>
         fishSprite.SetActive(true);
         StartCoroutine(AutoHideFish(fishSprite));
         FishCollection.Instance.DiscoverFish(fish);
+        NotificationManager.Instance?.ShowNotification($"Bạn câu được cá {fish.fishName} ({fish.rarity})");
     }
 
     private IEnumerator AutoHideFish(GameObject go)

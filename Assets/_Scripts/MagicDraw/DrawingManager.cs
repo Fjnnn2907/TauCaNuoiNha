@@ -168,7 +168,7 @@ public class DrawingManager : MonoBehaviour
 
         if (predicted == symbolManager.currentSymbol)
         {
-            resultText.text = "✅ Correct! +" + (scoreManager?.pointsPerCorrectAnswer ?? 20) + " điểm";
+            resultText.text = "Đúng +" + (scoreManager?.pointsPerCorrectAnswer ?? 20) + " điểm";
             resultText.color = Color.green;
 
             // Tăng điểm khi nhận dạng đúng
@@ -179,7 +179,7 @@ public class DrawingManager : MonoBehaviour
         }
         else
         {
-            resultText.text = $"❌ Wrong! ({predicted}) -" + (scoreManager?.pointsDeductionPerWrong ?? 5) + " điểm";
+            resultText.text = $"Sai rồi ({predicted}) -" + (scoreManager?.pointsDeductionPerWrong ?? 5) + " điểm";
             resultText.color = Color.red;
 
             // Trừ điểm khi vẽ sai

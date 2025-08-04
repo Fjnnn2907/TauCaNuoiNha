@@ -16,8 +16,12 @@ MonoBehaviour:
   fishName: "C\xE1 tr\xEA"
   sprite: {fileID: -9131236631338918058, guid: 3d3cdb6c38b771d45b258fe7328b4e0e, type: 3}
   shadowSprite: {fileID: -9131236631338918058, guid: 49960269af4d7c147b32e46a9370fdbd, type: 3}
-  description: "C\xE1 da tr\u01A1n, d\u1EC5 s\u1ED1ng \u1EDF v\xF9ng n\u01B0\u1EDBc
-    \u0111\u1EE5c"
+  description: "Lo\xE0i \u0103n t\u1EA1p dai s\u1EE9c, nu\u1ED1t ch\u1EEDng c\u1EA3
+    ngh\u1ECBch c\u1EA3nh l\u1EABn x\xE1c th\u1ED1i. R\xE2u d\xE0i nh\u01B0 \u0103ng-ten
+    b\u1EAFt t\xEDn hi\u1EC7u t\u1EEB c\xF5i \xE2m, x\u01B0\u01A1ng c\xE1 khi \u0111\u1ED1t
+    l\xEAn ph\xE1t ra ti\u1EBFng kh\xF3c ma qu\xE1i. Bi\u1EC3u t\u01B0\u1EE3ng cho
+    nh\u1EEFng k\u1EBB c\xF9ng kh\u1ED5 v\u1EABn s\u1ED1ng s\xF3t gi\u1EEFa b\xF9n
+    l\u1EA7y cu\u1ED9c \u0111\u1EDDi."
   rarity: 0
   sellPrice: 50
   zone: "Mi\u1EC1n Nam"

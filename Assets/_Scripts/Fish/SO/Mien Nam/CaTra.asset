@@ -16,7 +16,11 @@ MonoBehaviour:
   fishName: "C\xE1 tra"
   sprite: {fileID: 5715622415595491482, guid: f813df2a2d2c29b46b508285a368ebab, type: 3}
   shadowSprite: {fileID: 5715622415595491482, guid: 69c58f4976b9dcb4eb509b7bdae9dabd, type: 3}
-  description: "C\xE1 nh\u1ECF s\u1ED1ng theo m\xF9a n\u01B0\u1EDBc n\u1ED5i"
+  description: "\"V\xE0ng tr\u1EAFng\" s\xF4ng Mekong, th\xE2n d\xE0i nh\u01B0 chi\u1EBFc
+    thuy\u1EC1n nan thu nh\u1ECF. T\u01B0\u01A1ng truy\u1EC1n ch\xFAng l\xE0 h\u1EA1t
+    g\u1EA1o c\u1EE7a n\u1EEF th\u1EA7n l\xFAa h\xF3a th\xE0nh \u0111\u1EC3 c\u1EE9u
+    \u0111\xF3i d\xE2n l\xE0ng. V\u1EA3y c\xE1 ph\u01A1i kh\xF4 \u0111\u01B0\u1EE3c
+    d\xF9ng l\xE0m b\xF9a h\u1ED9 m\u1EC7nh cho nh\u1EEFng chuy\u1EBFn \u0111i xa."
   rarity: 0
   sellPrice: 30
   zone: "Mi\u1EC1n Nam"
