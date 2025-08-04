@@ -22,13 +22,18 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private Button btnConfirmOK;
     [SerializeField] private Button btnConfirmCancel;
 
-    private bool hasSaveData;
+    //private void OnEnable()
+    //{
+    //    CheckSaveData(); // Kiểm tra mỗi khi màn hình Menu được bật lại
+    //}
 
-    private void Start()
+    private IEnumerator Start()
     {
-        hasSaveData = SaveManager.Instance.HasSaveData();
+        // Đợi cho đến khi GameData được load
+        while (SaveManager.Instance.GetGameData() == null)
+            yield return null;
 
-        btnContinue.gameObject.SetActive(hasSaveData);
+        CheckSaveData();
 
         btnNewGame.onClick.AddListener(OnNewGameClicked);
         btnContinue.onClick.AddListener(OnContinueClicked);
@@ -38,9 +43,22 @@ public class MainMenu : MonoBehaviour
         btnConfirmCancel.onClick.AddListener(() => confirmNewGamePanel.SetActive(false));
     }
 
+    private void CheckSaveData()
+    {
+        var gameData = SaveManager.Instance.GetGameData();
+        bool hasValidScene = SaveManager.Instance.HasSaveData() && !string.IsNullOrEmpty(gameData?.currentSceneName);
+
+        btnContinue.gameObject.SetActive(hasValidScene);
+
+        Debug.Log($"🔍 Kiểm tra Save: Tồn tại={SaveManager.Instance.HasSaveData()} | Scene={gameData?.currentSceneName}");
+    }
+
     private void OnNewGameClicked()
     {
-        if (!hasSaveData)
+        var gameData = SaveManager.Instance.GetGameData();
+        bool hasValidScene = SaveManager.Instance.HasSaveData() && !string.IsNullOrEmpty(gameData?.currentSceneName);
+
+        if (!hasValidScene)
         {
             Debug.Log("🆕 Lần đầu chơi -> Bắt đầu luôn không hỏi");
             SaveManager.Instance.DeleteSave();
@@ -62,8 +80,17 @@ public class MainMenu : MonoBehaviour
 
     private void OnContinueClicked()
     {
-        Debug.Log("▶️ Chơi tiếp");
-        StartCoroutine(LoadSceneAsync(SaveManager.Instance?.GetGameData().currentSceneName));
+        string sceneToLoad = SaveManager.Instance?.GetGameData()?.currentSceneName;
+
+        if (!string.IsNullOrEmpty(sceneToLoad))
+        {
+            Debug.Log("▶️ Chơi tiếp");
+            StartCoroutine(LoadSceneAsync(sceneToLoad));
+        }
+        else
+        {
+            Debug.LogWarning("❌ Không có scene để tiếp tục!");
+        }
     }
 
     private IEnumerator LoadSceneAsync(string sceneName)
