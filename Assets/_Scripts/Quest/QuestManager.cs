@@ -1,34 +1,54 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
-public class QuestManager : MonoBehaviour, ISaveable
+public class QuestManager : Singleton<QuestManager>, ISaveable
 {
-    public static QuestManager Instance;
-
     public QuestData currentQuest;
     private int currentProgress = 0;
     private int questsCompleted = 0;
 
-    private void Awake()
-    {
-        if (Instance == null) Instance = this;
-        else Destroy(gameObject);
-    }
+    private string currentZone;
+    private int zoneLockedQuestCount = 0;
+    private int zoneQuestLimit = 0; // sẽ random trong Start
 
     private void Start()
     {
         SaveManager.Instance.RegisterSaveable(this);
         // Không gọi GenerateNewQuest ở đây nếu đã có data load
+
+        zoneQuestLimit = Random.Range(3, 6);
     }
 
     public void GenerateNewQuest()
     {
         FishRarity targetRarity = GetRarityByProgress(questsCompleted);
 
-        List<FishData> fishesOfRarity = FishDatabase.Instance.allFish
-            .Where(f => f.rarity == targetRarity)
-            .ToList();
+        currentZone = GetCurrentZoneFromScene();
+        List<FishData> fishesOfRarity;
+
+        if (zoneLockedQuestCount < zoneQuestLimit)
+        {
+            fishesOfRarity = FishDatabase.Instance.allFish
+                .Where(f => f.rarity == targetRarity && f.zone == currentZone)
+                .ToList();
+
+            if (fishesOfRarity.Count > 0)
+                zoneLockedQuestCount++;
+            else
+            {
+                fishesOfRarity = FishDatabase.Instance.allFish
+                    .Where(f => f.rarity == targetRarity)
+                    .ToList();
+            }
+        }
+        else
+        {
+            fishesOfRarity = FishDatabase.Instance.allFish
+                .Where(f => f.rarity == targetRarity)
+                .ToList();
+        }
 
         if (fishesOfRarity.Count == 0)
         {
@@ -57,6 +77,14 @@ public class QuestManager : MonoBehaviour, ISaveable
         Debug.Log($"📜 Nhiệm vụ mới: {currentQuest.description}");
     }
 
+
+
+    private string GetCurrentZoneFromScene()
+    {
+        string sceneName = SceneManager.GetActiveScene().name;
+        var location = MapManager.Instance.locations.FirstOrDefault(loc => loc.sceneName == sceneName);
+        return location != null ? location.locationName : "Không xác định";
+    }
     public void OnFishCaught(FishData fish)
     {
         if (fish.fishName == currentQuest.requiredFishName &&
@@ -107,6 +135,9 @@ public class QuestManager : MonoBehaviour, ISaveable
         data.questProgress = currentProgress;
         data.questReward = currentQuest.rewardGold;
         data.questsCompleted = questsCompleted;
+
+        data.zoneQuestLimit = zoneQuestLimit;
+        data.zoneLockedQuestCount = zoneLockedQuestCount;
     }
 
     public void LoadData(GameData data)
@@ -128,6 +159,9 @@ public class QuestManager : MonoBehaviour, ISaveable
         currentQuest.description = $"Câu {data.questAmount} con {data.questFishName} ({data.questRarity})";
 
         currentProgress = data.questProgress;
+
+        zoneQuestLimit = data.zoneQuestLimit;
+        zoneLockedQuestCount = data.zoneLockedQuestCount;
 
         Debug.Log($"🔁 Đã load nhiệm vụ: {currentQuest.description}, Tiến độ: {currentProgress}/{currentQuest.requiredAmount}");
 

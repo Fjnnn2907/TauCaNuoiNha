@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class MapManager : MonoBehaviour
+public class MapManager : Singleton<MapManager>
 {
     [System.Serializable]
     public class LocationData

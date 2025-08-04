@@ -23,6 +23,9 @@ public class GameData
     public int questReward;
     public int questsCompleted;
 
+    public int zoneQuestLimit;
+    public int zoneLockedQuestCount;
+
     public float savedMusicVolume = .3f;
     public float savedSFXVolume = .3f;
 }
