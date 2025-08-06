@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
+  m_Name: LuomRuongGo
+  m_EditorClassIdentifier: 
+  tenBienCo: "L\u01B0\u1EE3m R\u01B0\u01A1ng G\u1ED7 "
+  moTaBienCo: "M\u1ED9t NPC \u0111\u1EBFn xin h\u1EBFt m\u1ED3i v\xEC \u201Ch\xF4m
+    nay kh\xF4ng c\xE2u n\u1ED5i\u201D."
+  iconBienCo: {fileID: 0}
+  loaiBienCo: 1
+  xacSuatXuatHien: 1
+  giaTriTien: 500
+  rodData: {fileID: 0}
+  soLuongCanCau: 0
+  baitData: {fileID: 0}
+  soLuongMoiCau: 0
+  fishEffects: []
+  baitEffects: []

@@ -1,6 +1,20 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public class FishEffect
+{
+    public FishData fish;
+    public int quantity;
+}
+
+[System.Serializable]
+public class BaitEffect
+{
+    public FishingBaitData bait;
+    public int quantity;
+}
+
 [CreateAssetMenu(fileName = "BienCoData", menuName = "BienCo")]
 public class BienCoSO : ScriptableObject
 {
@@ -9,7 +23,7 @@ public class BienCoSO : ScriptableObject
     public Sprite iconBienCo;
     public bienCoType loaiBienCo;
 
-    [Range(0f, 1f)] public float xacSuatXuatHien = 1f;
+    public float xacSuatXuatHien = 1f;
 
     public int giaTriTien;
 
@@ -19,7 +33,8 @@ public class BienCoSO : ScriptableObject
     public FishingBaitData baitData;
     public int soLuongMoiCau;
 
-    public List<FishEffect> fishEffects = new List<FishEffect>();
+    public List<FishEffect> fishEffects = new();
+    public List<BaitEffect> baitEffects = new();
 }
 
 public enum bienCoType
@@ -33,10 +48,4 @@ public enum bienCoType
     BanCa,
     MatCa,
     DuocThemCa
-}
-[System.Serializable]
-public class FishEffect
-{
-    public FishData fish;
-    public int quantity;
 }

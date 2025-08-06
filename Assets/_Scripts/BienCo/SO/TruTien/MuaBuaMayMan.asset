@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
+  m_Name: MuaBuaMayMan
+  m_EditorClassIdentifier: 
+  tenBienCo: "Mua B\xF9a C\xE2u May"
+  moTaBienCo: "B\u1EA1n mua b\xF9a c\u1EE7a \xF4ng th\u1EA7y b\xF3i b\xEAn b\u1EDD
+    ao \u0111\u1EC3 c\xE2u c\xE1 may m\u1EAFn."
+  iconBienCo: {fileID: 0}
+  loaiBienCo: 0
+  xacSuatXuatHien: 0.7
+  giaTriTien: 250
+  rodData: {fileID: 0}
+  soLuongCanCau: 0
+  baitData: {fileID: 0}
+  soLuongMoiCau: 0
+  fishEffects: []
+  baitEffects: []

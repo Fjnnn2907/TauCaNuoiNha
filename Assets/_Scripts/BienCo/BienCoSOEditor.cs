@@ -8,7 +8,6 @@ public class BienCoSOEditor : Editor
     {
         BienCoSO bienCo = (BienCoSO)target;
 
-        // Thông tin cơ bản
         EditorGUILayout.LabelField("Thông tin cơ bản", EditorStyles.boldLabel);
         bienCo.tenBienCo = EditorGUILayout.TextField("Tên Biến Cố", bienCo.tenBienCo);
         bienCo.moTaBienCo = EditorGUILayout.TextArea(bienCo.moTaBienCo, GUILayout.Height(60));
@@ -17,7 +16,7 @@ public class BienCoSOEditor : Editor
         bienCo.xacSuatXuatHien = EditorGUILayout.Slider("Tỉ lệ xuất hiện", bienCo.xacSuatXuatHien, 0f, 1f);
 
         EditorGUILayout.Space();
-        EditorGUILayout.LabelField("Dữ liệu tùy theo loại biến cố", EditorStyles.boldLabel);
+        EditorGUILayout.LabelField("Dữ liệu theo loại biến cố", EditorStyles.boldLabel);
 
         switch (bienCo.loaiBienCo)
         {
@@ -34,8 +33,22 @@ public class BienCoSOEditor : Editor
 
             case bienCoType.MatMoiCau:
             case bienCoType.ThemMoiCau:
-                bienCo.baitData = (FishingBaitData)EditorGUILayout.ObjectField("Mồi câu", bienCo.baitData, typeof(FishingBaitData), false);
-                bienCo.soLuongMoiCau = EditorGUILayout.IntField("Số lượng mồi câu", bienCo.soLuongMoiCau);
+                EditorGUILayout.LabelField("Danh sách mồi câu", EditorStyles.boldLabel);
+                for (int i = 0; i < bienCo.baitEffects.Count; i++)
+                {
+                    EditorGUILayout.BeginHorizontal();
+                    bienCo.baitEffects[i].bait = (FishingBaitData)EditorGUILayout.ObjectField(bienCo.baitEffects[i].bait, typeof(FishingBaitData), false);
+                    bienCo.baitEffects[i].quantity = EditorGUILayout.IntField(bienCo.baitEffects[i].quantity);
+                    if (GUILayout.Button("-", GUILayout.Width(20)))
+                    {
+                        bienCo.baitEffects.RemoveAt(i);
+                        break;
+                    }
+                    EditorGUILayout.EndHorizontal();
+                }
+                if (GUILayout.Button("+ Thêm mồi"))
+                    bienCo.baitEffects.Add(new BaitEffect());
+
                 break;
 
             case bienCoType.MatCa:
@@ -56,9 +69,7 @@ public class BienCoSOEditor : Editor
                 }
 
                 if (GUILayout.Button("+ Thêm cá"))
-                {
                     bienCo.fishEffects.Add(new FishEffect());
-                }
                 break;
 
             default:

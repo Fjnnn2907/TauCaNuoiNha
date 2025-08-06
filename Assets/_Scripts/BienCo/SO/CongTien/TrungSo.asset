@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
+  m_Name: TrungSo
+  m_EditorClassIdentifier: 
+  tenBienCo: " Tr\xFAng S\u1ED1"
+  moTaBienCo: "B\u1EA1n tham gia mini-event quay s\u1ED1 v\xE0 \u0111\u01B0\u1EE3c
+    ti\u1EC1n."
+  iconBienCo: {fileID: 0}
+  loaiBienCo: 1
+  xacSuatXuatHien: 0.3
+  giaTriTien: 1000
+  rodData: {fileID: 0}
+  soLuongCanCau: 0
+  baitData: {fileID: 0}
+  soLuongMoiCau: 0
+  fishEffects: []
+  baitEffects: []

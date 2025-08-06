@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
+  m_Name: EchNhayVaoGiatMoi
+  m_EditorClassIdentifier: 
+  tenBienCo: "\u1EBEch nh\u1EA3y v\xE0o gi\u1EADt m\u1ED3i"
+  moTaBienCo: "M\u1ED9t con \u1EBFch nh\u1EA3y l\xEAn gi\u1EADt m\u1ED3i ch\u01A1i,
+    m\u1ED3i m\u1EA5t lu\xF4n."
+  iconBienCo: {fileID: 0}
+  loaiBienCo: 4
+  xacSuatXuatHien: 0.55
+  giaTriTien: 0
+  rodData: {fileID: 0}
+  soLuongCanCau: 0
+  baitData: {fileID: 11400000, guid: 678a64f10a3aee44e8aa4462bc176e67, type: 2}
+  soLuongMoiCau: 1
+  fishEffects: []
+  baitEffects:
+  - bait: {fileID: 11400000, guid: 678a64f10a3aee44e8aa4462bc176e67, type: 2}
+    quantity: 1
+  - bait: {fileID: 11400000, guid: 41844266140a53f43a212eb72e9fcfc3, type: 2}
+    quantity: 1
+  - bait: {fileID: 11400000, guid: aeb7f28d1114c8542b38c9b02cfe2097, type: 2}
+    quantity: 1
+  - bait: {fileID: 11400000, guid: d0a4be128eabf2845ab9e4f6eba5d12b, type: 2}
+    quantity: 1
+  - bait: {fileID: 11400000, guid: ba495e4b391076049b280de92a07ca43, type: 2}
+    quantity: 1
+  - bait: {fileID: 11400000, guid: 5f07eb55cf5a8bc40b0a959b73a3c510, type: 2}
+    quantity: 1
+  - bait: {fileID: 11400000, guid: 45604dfbad83254459ed75190b1c29b3, type: 2}
+    quantity: 1
+  - bait: {fileID: 11400000, guid: f2e43dd54ca74894888af4c123d46e8d, type: 2}
+    quantity: 1
+  - bait: {fileID: 11400000, guid: 3a3e234f4a504694a860dae1e6a6e1d5, type: 2}
+    quantity: 1

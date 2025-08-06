@@ -55,6 +55,29 @@ public class FishInventory : Singleton<FishInventory>, ISaveable
         }
     }
 
+    // ✅ Trả về danh sách các loài cá đang có trong kho
+    public List<FishData> GetAllOwnedFish()
+    {
+        List<FishData> result = new();
+        foreach (var pair in fishCollection)
+        {
+            if (pair.Value > 0)
+                result.Add(pair.Key);
+        }
+        return result;
+    }
+
+    // ✅ Kiểm tra xem kho có cá không
+    public bool HasAnyFish()
+    {
+        foreach (var pair in fishCollection)
+        {
+            if (pair.Value > 0)
+                return true;
+        }
+        return false;
+    }
+
     // ====================================
     // SAVE / LOAD
     // ====================================
