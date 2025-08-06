@@ -17,7 +17,7 @@ MonoBehaviour:
     nay kh\xF4ng c\xE2u n\u1ED5i\u201D."
   iconBienCo: {fileID: 0}
   loaiBienCo: 1
-  xacSuatXuatHien: 1
+  xacSuatXuatHien: 0
   giaTriTien: 500
   rodData: {fileID: 0}
   soLuongCanCau: 0

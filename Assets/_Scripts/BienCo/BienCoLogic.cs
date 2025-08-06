@@ -1,5 +1,6 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections.Generic;
+using System.Linq;
 
 public static class BienCoLogic
 {
@@ -8,21 +9,14 @@ public static class BienCoLogic
         switch (bienCo.loaiBienCo)
         {
             case bienCoType.MatCa:
-                return FishInventory.Instance.HasAnyFish();
-
             case bienCoType.BanCa:
-                return FishInventory.Instance.HasAnyFish();
+                return bienCo.fishEffects.Any(f => f.fish != null && FishInventory.Instance.GetFishQuantity(f.fish) > 0);
 
             case bienCoType.MatMoiCau:
-                foreach (var eff in bienCo.baitEffects)
-                {
-                    if (BaitInventory.Instance.GetQuantity(eff.bait) > 0)
-                        return true;
-                }
-                return false;
+                return bienCo.baitEffects.Any(b => b.bait != null && BaitInventory.Instance.GetQuantity(b.bait) > 0);
 
             case bienCoType.MatCanCau:
-                return FishingInventory.Instance.HasRod(bienCo.rodData);
+                return bienCo.rodData != null && FishingInventory.Instance.HasRod(bienCo.rodData);
 
             case bienCoType.TruTien:
                 return CoinManager.Instance.currentCoins >= bienCo.giaTriTien;
@@ -32,8 +26,51 @@ public static class BienCoLogic
         }
     }
 
+    public static void PrepareBienCoData(BienCoSO bienCo)
+    {
+        var bcm = BienCoManager.Instance;
+
+        if (bienCo.loaiBienCo == bienCoType.MatMoiCau)
+        {
+            var validBaits = bienCo.baitEffects
+                .Where(b => b.bait != null && BaitInventory.Instance.GetQuantity(b.bait) > 0)
+                .OrderBy(x => Random.value)
+                .ToList();
+
+            int numToRemove = Mathf.Min(Random.Range(1, 3), validBaits.Count);
+
+            for (int i = 0; i < numToRemove; i++)
+            {
+                var baitEff = validBaits[i];
+                int owned = BaitInventory.Instance.GetQuantity(baitEff.bait);
+                int qty = Random.Range(1, Mathf.Min(owned, baitEff.quantity) + 1);
+                bcm.lastLostBaits.Add((baitEff.bait, qty));
+            }
+        }
+
+        if (bienCo.loaiBienCo == bienCoType.MatCa || bienCo.loaiBienCo == bienCoType.BanCa)
+        {
+            var validFish = bienCo.fishEffects
+                .Where(f => f.fish != null && FishInventory.Instance.GetFishQuantity(f.fish) > 0)
+                .OrderBy(x => Random.value)
+                .ToList();
+
+            int numToRemove = Mathf.Min(Random.Range(1, 3), validFish.Count);
+
+            for (int i = 0; i < numToRemove; i++)
+            {
+                var fishEff = validFish[i];
+                int owned = FishInventory.Instance.GetFishQuantity(fishEff.fish);
+                int qty = Random.Range(1, Mathf.Min(owned, fishEff.quantity) + 1);
+                bcm.lastAffectedFish.Add((fishEff.fish, qty));
+            }
+        }
+    }
+
     public static void XuLyBienCo(BienCoSO bienCo)
     {
+        var bcm = BienCoManager.Instance;
+
         switch (bienCo.loaiBienCo)
         {
             case bienCoType.TruTien:
@@ -55,13 +92,12 @@ public static class BienCoLogic
 
             case bienCoType.ThemCanCau:
                 for (int i = 0; i < bienCo.soLuongCanCau; i++)
-                {
                     FishingInventory.Instance.AddRod(bienCo.rodData);
-                }
                 break;
 
             case bienCoType.MatMoiCau:
-                RandomMatMoiCau(bienCo);
+                foreach (var baitInfo in bcm.lastLostBaits)
+                    BaitInventory.Instance.AddBait(baitInfo.bait, -baitInfo.quantity);
                 break;
 
             case bienCoType.ThemMoiCau:
@@ -69,93 +105,17 @@ public static class BienCoLogic
                 break;
 
             case bienCoType.MatCa:
-                RandomMatCa(bienCo);
-                break;
-
-            case bienCoType.DuocThemCa:
-                foreach (var fishEff in bienCo.fishEffects)
-                {
-                    for (int i = 0; i < fishEff.quantity; i++)
-                        FishInventory.Instance.AddFish(fishEff.fish);
-                }
+                foreach (var fishInfo in bcm.lastAffectedFish)
+                    FishInventory.Instance.RemoveFish(fishInfo.fish, fishInfo.quantity);
                 break;
 
             case bienCoType.BanCa:
-                RandomBanCa(bienCo);
+                foreach (var fishInfo in bcm.lastAffectedFish)
+                {
+                    FishInventory.Instance.RemoveFish(fishInfo.fish, fishInfo.quantity);
+                    CoinManager.Instance.AddCoins(fishInfo.quantity * fishInfo.fish.sellPrice);
+                }
                 break;
-
-            default:
-                Debug.LogWarning("Loại biến cố chưa xử lý: " + bienCo.loaiBienCo);
-                break;
-        }
-    }
-
-    private static void RandomMatMoiCau(BienCoSO bienCo)
-    {
-        List<FishingBaitData> moiCo = new();
-        foreach (var eff in bienCo.baitEffects)
-        {
-            if (BaitInventory.Instance.GetQuantity(eff.bait) > 0)
-                moiCo.Add(eff.bait);
-        }
-
-        if (moiCo.Count == 0) return;
-
-        int soLoaiMat = Random.Range(1, Mathf.Min(moiCo.Count + 1, 4));
-
-        for (int i = 0; i < soLoaiMat; i++)
-        {
-            if (moiCo.Count == 0) break;
-
-            FishingBaitData bait = moiCo[Random.Range(0, moiCo.Count)];
-            int slHienTai = BaitInventory.Instance.GetQuantity(bait);
-            int soLuongMat = Random.Range(1, slHienTai + 1);
-            BaitInventory.Instance.AddBait(bait, -soLuongMat);
-            moiCo.Remove(bait);
-        }
-    }
-
-    private static void RandomMatCa(BienCoSO bienCo)
-    {
-        var dsCaCo = FishInventory.Instance.GetAllOwnedFish();
-        if (dsCaCo.Count == 0) return;
-
-        int soLoaiMat = Random.Range(1, Mathf.Min(dsCaCo.Count + 1, 4));
-
-        for (int i = 0; i < soLoaiMat; i++)
-        {
-            if (dsCaCo.Count == 0) break;
-
-            FishData ca = dsCaCo[Random.Range(0, dsCaCo.Count)];
-            int sl = FishInventory.Instance.GetFishQuantity(ca);
-            int slMat = Random.Range(1, sl + 1);
-            FishInventory.Instance.RemoveFish(ca, slMat);
-            dsCaCo.Remove(ca);
-        }
-    }
-
-    private static void RandomBanCa(BienCoSO bienCo)
-    {
-        var dsCaCo = FishInventory.Instance.GetAllOwnedFish();
-        if (dsCaCo.Count == 0) return;
-
-        int soLoaiBan = Random.Range(1, Mathf.Min(dsCaCo.Count + 1, 4));
-
-        for (int i = 0; i < soLoaiBan; i++)
-        {
-            if (dsCaCo.Count == 0) break;
-
-            FishData ca = dsCaCo[Random.Range(0, dsCaCo.Count)];
-            int slCo = FishInventory.Instance.GetFishQuantity(ca);
-            int slBan = Random.Range(1, slCo + 1);
-
-            float tyLeGia = Random.Range(0.8f, 1.2f);
-            int tongTien = Mathf.RoundToInt(slBan * ca.sellPrice * tyLeGia);
-
-            FishInventory.Instance.RemoveFish(ca, slBan);
-            CoinManager.Instance.AddCoins(tongTien);
-
-            dsCaCo.Remove(ca);
         }
     }
 }

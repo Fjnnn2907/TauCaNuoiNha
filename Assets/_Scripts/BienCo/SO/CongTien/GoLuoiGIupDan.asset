@@ -17,7 +17,7 @@ MonoBehaviour:
     \u0111\u01B0\u1EE3c th\u01B0\u1EDFng."
   iconBienCo: {fileID: 0}
   loaiBienCo: 1
-  xacSuatXuatHien: 1
+  xacSuatXuatHien: 0
   giaTriTien: 120
   rodData: {fileID: 0}
   soLuongCanCau: 0

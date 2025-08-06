@@ -12,6 +12,9 @@ public class BienCoManager : Singleton<BienCoManager>
     [Header("Tham chiếu hệ thống")]
     public BienCoUI bienCoUI;
 
+    public List<(FishingBaitData bait, int quantity)> lastLostBaits = new();
+    public List<(FishData fish, int quantity)> lastAffectedFish = new();
+
     private void Start()
     {
         ResetTimer();
@@ -19,8 +22,10 @@ public class BienCoManager : Singleton<BienCoManager>
 
     private void Update()
     {
-        timer -= Time.deltaTime;
+        if (FishingManager.Instance.isPlayMiniGame)
+            return;
 
+        timer -= Time.deltaTime;
         if (timer <= 0f)
         {
             KichHoatBienCoNgauNhien();
@@ -52,6 +57,11 @@ public class BienCoManager : Singleton<BienCoManager>
         }
 
         BienCoSO bienCoChon = danhSachHopLe[Random.Range(0, danhSachHopLe.Count)];
+
+        lastLostBaits.Clear();
+        lastAffectedFish.Clear();
+        BienCoLogic.PrepareBienCoData(bienCoChon);
+
         bienCoUI.ShowBienCo(bienCoChon);
     }
 

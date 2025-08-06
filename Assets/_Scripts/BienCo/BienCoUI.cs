@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using TMPro;
 
-public class BienCoUI : MonoBehaviour
+public class BienCoUI : Singleton<BienCoUI>
 {
     [Header("UI References")]
     public GameObject panel;
@@ -27,12 +27,14 @@ public class BienCoUI : MonoBehaviour
         moTaPhanThuongText.text = GenerateRewardDescription(bienCo);
 
         panel.SetActive(true);
+        Time.timeScale = 0;
     }
 
     public void OnAcceptBienCo()
     {
         BienCoManager.Instance.XuLyBienCo(bienCoDangHien);
         Close();
+        Time.timeScale = 1;
     }
 
     public void Close()
@@ -40,57 +42,66 @@ public class BienCoUI : MonoBehaviour
         panel.SetActive(false);
     }
 
-    // ✅ Tạo mô tả phần thưởng hoặc hình phạt
     private string GenerateRewardDescription(BienCoSO bienCo)
     {
         switch (bienCo.loaiBienCo)
         {
             case bienCoType.CongTien:
-                return $" Nhận +{bienCo.giaTriTien} vàng";
+                return $"Nhận +{bienCo.giaTriTien} vàng";
 
             case bienCoType.TruTien:
-                return $" Mất {bienCo.giaTriTien} vàng";
+                return $"Mất {bienCo.giaTriTien} vàng";
 
             case bienCoType.MatCanCau:
-                return $" Mất {bienCo.soLuongCanCau} cần câu: {bienCo.rodData?.name}";
+                return $"Mất {bienCo.soLuongCanCau} cần câu: {bienCo.rodData?.name}";
 
             case bienCoType.ThemCanCau:
-                return $" Nhận {bienCo.soLuongCanCau} cần câu: {bienCo.rodData?.name}";
+                return $"Nhận {bienCo.soLuongCanCau} cần câu: {bienCo.rodData?.name}";
 
             case bienCoType.MatMoiCau:
-                return $" Mất {bienCo.soLuongMoiCau} mồi: {bienCo.baitData?.name}";
+                return GenerateLostBaitDescription();
 
             case bienCoType.ThemMoiCau:
-                return $" Nhận {bienCo.soLuongMoiCau} mồi: {bienCo.baitData?.name}";
+                return $"Nhận {bienCo.soLuongMoiCau} mồi: {bienCo.baitData?.name}";
 
             case bienCoType.MatCa:
-                return GenerateFishEffectDescription(bienCo, " Mất");
-
-            case bienCoType.DuocThemCa:
-                return GenerateFishEffectDescription(bienCo, " Nhận");
+                return GenerateFishEffectDescription("Mất");
 
             case bienCoType.BanCa:
-                return GenerateFishEffectDescription(bienCo, " Bán");
+                return GenerateFishEffectDescription("Bán");
 
             default:
                 return "⚠ Không xác định phần thưởng hoặc hình phạt";
         }
     }
 
-    // ✅ Sinh mô tả từ fishEffects
-    private string GenerateFishEffectDescription(BienCoSO bienCo, string prefix)
+    private string GenerateLostBaitDescription()
     {
-        if (bienCo.fishEffects == null || bienCo.fishEffects.Count == 0)
+        var lostBaits = BienCoManager.Instance.lastLostBaits;
+        if (lostBaits == null || lostBaits.Count == 0)
+            return "Mất mồi câu";
+
+        string result = "Mất ";
+        foreach (var baitInfo in lostBaits)
+        {
+            if (baitInfo.bait != null && baitInfo.quantity > 0)
+                result += $"{baitInfo.quantity}x {baitInfo.bait.baitName}, ";
+        }
+        return result.TrimEnd(' ', ',');
+    }
+
+    private string GenerateFishEffectDescription(string prefix)
+    {
+        var fishList = BienCoManager.Instance.lastAffectedFish;
+        if (fishList == null || fishList.Count == 0)
             return $"{prefix} cá";
 
         string result = "";
-        foreach (var eff in bienCo.fishEffects)
+        foreach (var info in fishList)
         {
-            if (eff.fish != null && eff.quantity > 0)
-            {
-                result += $"{prefix} {eff.quantity}x {eff.fish.fishName}, ";
-            }
+            if (info.fish != null && info.quantity > 0)
+                result += $"{prefix} {info.quantity}x {info.fish.fishName}, ";
         }
-        return result.TrimEnd();
+        return result.TrimEnd(' ', ',');
     }
 }

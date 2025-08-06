@@ -17,7 +17,7 @@ MonoBehaviour:
     trai m\xE0 c\xE2u c\xE1 gi\u1ECFi\u201D."
   iconBienCo: {fileID: 0}
   loaiBienCo: 1
-  xacSuatXuatHien: 1
+  xacSuatXuatHien: 0
   giaTriTien: 500
   rodData: {fileID: 0}
   soLuongCanCau: 0

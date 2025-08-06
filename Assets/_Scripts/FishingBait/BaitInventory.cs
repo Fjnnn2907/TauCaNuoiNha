@@ -15,6 +15,8 @@ public class BaitInventory : Singleton<BaitInventory>, ISaveable
         if (!baitQuantities.ContainsKey(bait))
             baitQuantities[bait] = 0;
         baitQuantities[bait] += quantity;
+
+        FishingBaitUI.Instance?.RefreshUI();
     }
 
     public bool HasBait(FishingBaitData bait)

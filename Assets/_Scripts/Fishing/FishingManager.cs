@@ -31,6 +31,7 @@ public class FishingManager : Singleton<FishingManager>
     public float TotalBonusRareRate => rodBonusRare + baitBonusRare;
     public float TotalBonusLegendaryRate => rodBonusLegendary + baitBonusLegendary;
 
+    public bool isPlayMiniGame { get; private set; }
     private void Start()
     {
         cauButton.onClick.AddListener(PrepareCastWithSlider);
@@ -95,6 +96,7 @@ public class FishingManager : Singleton<FishingManager>
             FishInventory.Instance.AddFish(fish); // Add vào kho
             QuestManager.Instance.OnFishCaught(fish);
             ShowCaughtFish(fish);
+            isPlayMiniGame = false;
         }
 
         ChangeState(FishingState.Pulling);
@@ -105,6 +107,7 @@ public class FishingManager : Singleton<FishingManager>
 
         rhythmMinigame.SetActive(false); // Tắt minigame
         ChangeState(FishingState.Idle);  // Quay lại trạng thái Idle
+        isPlayMiniGame = false;
     }
     private void ShowCaughtFish(FishData fish)
     {
@@ -191,6 +194,7 @@ public class FishingManager : Singleton<FishingManager>
 
     private void MinigameState()
     {
+        isPlayMiniGame = true;
         playerAnimator.Play("CanCau");
         rhythmMinigame.SetActive(true);
 
@@ -200,19 +204,6 @@ public class FishingManager : Singleton<FishingManager>
 
         if (ScoreManager.Instance != null)
             ScoreManager.Instance.StartMinigame(GetDifficultyFromRarity(selectedRarity));
-    }
-
-    private void NotificationTotDifficulty(FishRarity rarity)
-    {
-        switch (rarity)
-        {
-            case FishRarity.Common:
-                break;
-            case FishRarity.Rare:
-                break;
-            case FishRarity.Legendary:
-                break;
-        }
     }
 
     private void KeoCanState()
