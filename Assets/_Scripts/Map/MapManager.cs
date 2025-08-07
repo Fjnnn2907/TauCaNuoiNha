@@ -144,16 +144,23 @@ public class MapManager : Singleton<MapManager>
             return;
         }
 
-        // Lưu scene mới
         GameData data = SaveManager.Instance.GetGameData();
-        data.currentSceneName = locations[currentLocationIndex].sceneName;
+        data.targetSceneName = locations[currentLocationIndex].sceneName;
 
         await SaveManager.Instance.SaveGameAsync();
 
-        // Chuyển scene
         transportPanel.SetActive(false);
-        SceneManager.LoadScene(locations[currentLocationIndex].sceneName);
+
+        if (transport == "Bike")
+        {
+            SceneManager.LoadScene("BikeTravelScene"); // chuyển sang scene trung gian
+        }
+        else
+        {
+            SceneManager.LoadScene(locations[currentLocationIndex].sceneName);
+        }
     }
+
     private void OnApplicationQuit()
     {
         SaveCurrentSceneName();

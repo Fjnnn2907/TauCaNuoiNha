@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MagicDraw.unity
     guid: f2092e2b486c1714b98a9a457d505544
+  - enabled: 1
+    path: Assets/Scenes/BikeTravelScene.unity
+    guid: bcb3b3cf228eb66469dd026b9d9b0540
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
