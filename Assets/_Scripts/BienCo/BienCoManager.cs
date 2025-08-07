@@ -16,6 +16,10 @@ public class BienCoManager : Singleton<BienCoManager>
     public List<(FishData fish, int quantity)> lastAffectedFish = new();
     public List<(FishingBaitData bait, int quantity)> lastAddedBaits = new();
 
+    public int lastCoinChange = 0;
+    public int lastGoldEarnedFromFish = 0;
+    public float currentRandomFactor = 1f;
+
     private void Start()
     {
         ResetTimer();
@@ -61,10 +65,13 @@ public class BienCoManager : Singleton<BienCoManager>
 
         lastLostBaits.Clear();
         lastAffectedFish.Clear();
-        BienCoLogic.PrepareBienCoData(bienCoChon);
+        lastAddedBaits.Clear();
+        lastCoinChange = 0;
 
+        BienCoLogic.PrepareBienCoData(bienCoChon);
         bienCoUI.ShowBienCo(bienCoChon);
     }
+
 
     public void XuLyBienCo(BienCoSO bienCo)
     {

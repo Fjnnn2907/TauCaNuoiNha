@@ -30,6 +30,17 @@ public static class BienCoLogic
     {
         var bcm = BienCoManager.Instance;
 
+        // Reset trước
+        bcm.lastCoinChange = 0;
+
+        // ✅ Nếu là loại cộng/trừ tiền, random hệ số và lưu lại
+        if (bienCo.loaiBienCo == bienCoType.TruTien || bienCo.loaiBienCo == bienCoType.CongTien)
+        {
+            bcm.currentRandomFactor = Random.Range(0.8f, 1.2f);
+            int actualAmount = Mathf.RoundToInt(bienCo.giaTriTien * bcm.currentRandomFactor);
+            bcm.lastCoinChange = bienCo.loaiBienCo == bienCoType.TruTien ? -actualAmount : actualAmount;
+        }
+
         if (bienCo.loaiBienCo == bienCoType.MatMoiCau)
         {
             var validBaits = bienCo.baitEffects
@@ -58,12 +69,11 @@ public static class BienCoLogic
             if (validBaits.Count > 0)
             {
                 var randomBait = validBaits[0];
-                int randomQty = Random.Range(1, 11); // 1 đến 10
+                int randomQty = Random.Range(1, 11);
 
                 bcm.lastAddedBaits.Clear();
                 bcm.lastAddedBaits.Add((randomBait.bait, randomQty));
 
-                // Gán lại cho bienCo để xử lý chính xác
                 bienCo.baitData = randomBait.bait;
                 bienCo.soLuongMoiCau = randomQty;
             }
@@ -77,6 +87,7 @@ public static class BienCoLogic
                 .ToList();
 
             int numToRemove = Mathf.Min(Random.Range(1, 3), validFish.Count);
+            bcm.lastGoldEarnedFromFish = 0;
 
             for (int i = 0; i < numToRemove; i++)
             {
@@ -84,6 +95,11 @@ public static class BienCoLogic
                 int owned = FishInventory.Instance.GetFishQuantity(fishEff.fish);
                 int qty = Random.Range(1, Mathf.Min(owned, fishEff.quantity) + 1);
                 bcm.lastAffectedFish.Add((fishEff.fish, qty));
+
+                if (bienCo.loaiBienCo == bienCoType.BanCa)
+                {
+                    bcm.lastGoldEarnedFromFish += qty * fishEff.fish.sellPrice;
+                }
             }
         }
     }
@@ -96,12 +112,20 @@ public static class BienCoLogic
         switch (bienCo.loaiBienCo)
         {
             case bienCoType.TruTien:
-                CoinManager.Instance.SpendCoins(bienCo.giaTriTien);
-                break;
+                {
+                    int actualAmount = Mathf.RoundToInt(bienCo.giaTriTien * bcm.currentRandomFactor);
+                    CoinManager.Instance.SpendCoins(actualAmount);
+                    bcm.lastCoinChange = -actualAmount;
+                    break;
+                }
 
             case bienCoType.CongTien:
-                CoinManager.Instance.AddCoins(bienCo.giaTriTien);
-                break;
+                {
+                    int actualAmount = Mathf.RoundToInt(bienCo.giaTriTien * bcm.currentRandomFactor);
+                    CoinManager.Instance.AddCoins(actualAmount);
+                    bcm.lastCoinChange = actualAmount;
+                    break;
+                }
 
             case bienCoType.MatCanCau:
                 for (int i = 0; i < bienCo.soLuongCanCau; i++)
@@ -133,11 +157,11 @@ public static class BienCoLogic
 
             case bienCoType.BanCa:
                 foreach (var fishInfo in bcm.lastAffectedFish)
-                {
                     FishInventory.Instance.RemoveFish(fishInfo.fish, fishInfo.quantity);
-                    CoinManager.Instance.AddCoins(fishInfo.quantity * fishInfo.fish.sellPrice);
-                }
+
+                CoinManager.Instance.AddCoins(bcm.lastGoldEarnedFromFish);
                 break;
         }
     }
+
 }

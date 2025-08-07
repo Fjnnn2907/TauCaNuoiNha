@@ -12669,9 +12669,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d4ace3c5c21f88f49a5fe1c1bc009601, type: 2}
   - {fileID: 11400000, guid: 063d778757026114da2a34243eba29c5, type: 2}
   - {fileID: 11400000, guid: b67bb0d5ed9726a45a6b0e80a7c52c99, type: 2}
-  minDelay: 5
-  maxDelay: 10
+  minDelay: 30
+  maxDelay: 120
   bienCoUI: {fileID: 1261629302}
+  lastCoinChange: 0
+  lastGoldEarnedFromFish: 0
+  currentRandomFactor: 1
 --- !u!4 &666389393
 Transform:
   m_ObjectHideFlags: 0

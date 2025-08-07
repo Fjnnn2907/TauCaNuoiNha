@@ -47,10 +47,10 @@ public class BienCoUI : Singleton<BienCoUI>
         switch (bienCo.loaiBienCo)
         {
             case bienCoType.CongTien:
-                return $"Nhận {bienCo.giaTriTien} vàng";
+                return $"Nhận {BienCoManager.Instance.lastCoinChange} vàng";
 
             case bienCoType.TruTien:
-                return $"Mất {bienCo.giaTriTien} vàng";
+                return $"Mất {Mathf.Abs(BienCoManager.Instance.lastCoinChange)} vàng";
 
             case bienCoType.MatCanCau:
                 return $"Mất {bienCo.soLuongCanCau} cần câu: {bienCo.rodData?.name}";
@@ -94,7 +94,7 @@ public class BienCoUI : Singleton<BienCoUI>
     {
         var moreBaits = BienCoManager.Instance.lastAddedBaits;
         if (moreBaits == null || moreBaits.Count == 0)
-            return "Mất mồi câu";
+            return "Nhận mồi câu";
 
         string result = "Nhận ";
         foreach (var baitInfo in moreBaits)
@@ -104,7 +104,6 @@ public class BienCoUI : Singleton<BienCoUI>
         }
         return result.TrimEnd(' ', ',');
     }
-
     private string GenerateFishEffectDescription(string prefix)
     {
         var fishList = BienCoManager.Instance.lastAffectedFish;
@@ -117,6 +116,17 @@ public class BienCoUI : Singleton<BienCoUI>
             if (info.fish != null && info.quantity > 0)
                 result += $"{prefix} {info.fish.fishName} x{info.quantity}, ";
         }
-        return result.TrimEnd(' ', ',');
+
+        result = result.TrimEnd(' ', ',');
+
+        if (prefix == "Bán")
+        {
+            int gold = BienCoManager.Instance.lastGoldEarnedFromFish;
+            result += $" với giá {gold} vàng";
+        }
+
+        return result;
     }
+
+
 }
