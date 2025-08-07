@@ -14,6 +14,7 @@ public class BienCoManager : Singleton<BienCoManager>
 
     public List<(FishingBaitData bait, int quantity)> lastLostBaits = new();
     public List<(FishData fish, int quantity)> lastAffectedFish = new();
+    public List<(FishingBaitData bait, int quantity)> lastAddedBaits = new();
 
     private void Start()
     {

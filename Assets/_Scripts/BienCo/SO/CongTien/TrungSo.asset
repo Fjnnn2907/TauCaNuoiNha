@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tenBienCo: " Tr\xFAng S\u1ED1"
   moTaBienCo: "B\u1EA1n tham gia mini-event quay s\u1ED1 v\xE0 \u0111\u01B0\u1EE3c
-    ti\u1EC1n."
+    ti\u1EC1n"
   iconBienCo: {fileID: 0}
   loaiBienCo: 1
-  xacSuatXuatHien: 0
+  xacSuatXuatHien: 0.2
   giaTriTien: 1000
   rodData: {fileID: 0}
   soLuongCanCau: 0

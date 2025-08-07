@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tenBienCo: "Ghe m\xE1y ch\u1EA1y ngang"
   moTaBienCo: "Ghe m\xE1y ch\u1EA1y qua, s\xF3ng \u0111\xE1nh m\u1EA1nh l\xE0m tu\u1ED9t
-    c\xE1 kh\u1ECFi l\u01B0\u1EE1i c\xE2u."
+    c\xE1 kh\u1ECFi l\u01B0\u1EE1i c\xE2u"
   iconBienCo: {fileID: 0}
   loaiBienCo: 7
-  xacSuatXuatHien: 0.55
+  xacSuatXuatHien: 0.51
   giaTriTien: 0
   rodData: {fileID: 0}
   soLuongCanCau: 0
@@ -56,3 +56,4 @@ MonoBehaviour:
     quantity: 1
   - fish: {fileID: 11400000, guid: b3ca966f976187c4dbf35cc5bf7737b7, type: 2}
     quantity: 1
+  baitEffects: []

@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tenBienCo: "Du Kh\xE1ch Tip"
   moTaBienCo: "M\u1ED9t nh\xF3m du kh\xE1ch cho b\u1EA1n ti\u1EC1n v\xEC th\u1EA5y
-    b\u1EA1n c\xE2u \u0111\u1EB9p qu\xE1."
+    b\u1EA1n c\xE2u \u0111\u1EB9p qu\xE1"
   iconBienCo: {fileID: 0}
   loaiBienCo: 1
-  xacSuatXuatHien: 0
+  xacSuatXuatHien: 0.34
   giaTriTien: 210
   rodData: {fileID: 0}
   soLuongCanCau: 0

@@ -47,7 +47,7 @@ public class BienCoUI : Singleton<BienCoUI>
         switch (bienCo.loaiBienCo)
         {
             case bienCoType.CongTien:
-                return $"Nhận +{bienCo.giaTriTien} vàng";
+                return $"Nhận {bienCo.giaTriTien} vàng";
 
             case bienCoType.TruTien:
                 return $"Mất {bienCo.giaTriTien} vàng";
@@ -62,7 +62,7 @@ public class BienCoUI : Singleton<BienCoUI>
                 return GenerateLostBaitDescription();
 
             case bienCoType.ThemMoiCau:
-                return $"Nhận {bienCo.soLuongMoiCau} mồi: {bienCo.baitData?.name}";
+                return GenerateMoreBaitDescription();
 
             case bienCoType.MatCa:
                 return GenerateFishEffectDescription("Mất");
@@ -85,7 +85,22 @@ public class BienCoUI : Singleton<BienCoUI>
         foreach (var baitInfo in lostBaits)
         {
             if (baitInfo.bait != null && baitInfo.quantity > 0)
-                result += $"{baitInfo.quantity}x {baitInfo.bait.baitName}, ";
+                result += $"{baitInfo.bait.baitName} x{baitInfo.quantity}, ";
+        }
+        return result.TrimEnd(' ', ',');
+    }
+
+    private string GenerateMoreBaitDescription()
+    {
+        var moreBaits = BienCoManager.Instance.lastAddedBaits;
+        if (moreBaits == null || moreBaits.Count == 0)
+            return "Mất mồi câu";
+
+        string result = "Nhận ";
+        foreach (var baitInfo in moreBaits)
+        {
+            if (baitInfo.bait != null && baitInfo.quantity > 0)
+                result += $"{baitInfo.bait.baitName} x{baitInfo.quantity}, ";
         }
         return result.TrimEnd(' ', ',');
     }
@@ -100,7 +115,7 @@ public class BienCoUI : Singleton<BienCoUI>
         foreach (var info in fishList)
         {
             if (info.fish != null && info.quantity > 0)
-                result += $"{prefix} {info.quantity}x {info.fish.fishName}, ";
+                result += $"{prefix} {info.fish.fishName} x{info.quantity}, ";
         }
         return result.TrimEnd(' ', ',');
     }

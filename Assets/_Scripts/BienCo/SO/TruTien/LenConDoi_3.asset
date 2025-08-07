@@ -16,7 +16,7 @@ MonoBehaviour:
   moTaBienCo: "B\u1EA1n qu\xE1 \u0111\xF3i, \u0111\xE1 b\xE1t Ph\u1EDF"
   iconBienCo: {fileID: 0}
   loaiBienCo: 0
-  xacSuatXuatHien: 0
+  xacSuatXuatHien: 0.47
   giaTriTien: 50
   rodData: {fileID: 0}
   soLuongCanCau: 0

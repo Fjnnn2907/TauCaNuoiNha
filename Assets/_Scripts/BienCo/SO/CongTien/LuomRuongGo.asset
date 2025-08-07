@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: LuomRuongGo
   m_EditorClassIdentifier: 
   tenBienCo: "L\u01B0\u1EE3m R\u01B0\u01A1ng G\u1ED7 "
-  moTaBienCo: "M\u1ED9t NPC \u0111\u1EBFn xin h\u1EBFt m\u1ED3i v\xEC \u201Ch\xF4m
-    nay kh\xF4ng c\xE2u n\u1ED5i\u201D."
+  moTaBienCo: "C\xF3 m\u1ED9t r\u01B0\u01A1ng g\u1ED7 tr\xF4i d\u1EA1t, b\u1EA1n
+    m\u1EDF ra th\u1EA5y c\xF3 \xEDt v\xE0ng"
   iconBienCo: {fileID: 0}
   loaiBienCo: 1
-  xacSuatXuatHien: 0
+  xacSuatXuatHien: 0.32
   giaTriTien: 500
   rodData: {fileID: 0}
   soLuongCanCau: 0

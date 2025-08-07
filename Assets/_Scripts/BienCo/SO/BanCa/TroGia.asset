@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: TroGia
   m_EditorClassIdentifier: 
   tenBienCo: "Tr\u1EE3 Gi\xE1"
-  moTaBienCo: "Ch\xEDnh quy\u1EC1n h\u1ED7 tr\u1EE3 thu mua c\xE1."
+  moTaBienCo: "Ch\xEDnh quy\u1EC1n h\u1ED7 tr\u1EE3 thu mua c\xE1"
   iconBienCo: {fileID: 0}
   loaiBienCo: 6
-  xacSuatXuatHien: 1
+  xacSuatXuatHien: 0.3
   giaTriTien: 0
   rodData: {fileID: 0}
   soLuongCanCau: 0

@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
-  m_Name: CuaCapMatMoi
+  m_Name: ThuyenLaXuatHien
   m_EditorClassIdentifier: 
-  tenBienCo: "Cua c\u1EAFp m\u1EA5t m\u1ED3i"
-  moTaBienCo: "Con cua d\u01B0\u1EDBi \u0111\xE1y s\xF4ng c\u1EAFp m\u1ED3i k\xE9o
-    \u0111i m\u1EA5t"
+  tenBienCo: "Thuy\u1EC1n l\u1EA1 xu\u1EA5t hi\u1EC7n"
+  moTaBienCo: "Tinh th\u1EA7n t\u01B0\u01A1ng th\xE2n t\u01B0\u01A1ng \xE1i b\u1EA1n
+    \u0111\u01B0\u1EE3c m\u1ED3i c\xE2u"
   iconBienCo: {fileID: 0}
-  loaiBienCo: 4
-  xacSuatXuatHien: 0.5
+  loaiBienCo: 5
+  xacSuatXuatHien: 0.45
   giaTriTien: 0
   rodData: {fileID: 0}
   soLuongCanCau: 0
-  baitData: {fileID: 11400000, guid: 678a64f10a3aee44e8aa4462bc176e67, type: 2}
-  soLuongMoiCau: 1
+  baitData: {fileID: 0}
+  soLuongMoiCau: 0
   fishEffects: []
   baitEffects:
   - bait: {fileID: 11400000, guid: 678a64f10a3aee44e8aa4462bc176e67, type: 2}

@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tenBienCo: "Mua B\xF9a C\xE2u May"
   moTaBienCo: "B\u1EA1n mua b\xF9a c\u1EE7a \xF4ng th\u1EA7y b\xF3i b\xEAn b\u1EDD
-    ao \u0111\u1EC3 c\xE2u c\xE1 may m\u1EAFn."
+    ao \u0111\u1EC3 c\xE2u c\xE1 may m\u1EAFn"
   iconBienCo: {fileID: 0}
   loaiBienCo: 0
-  xacSuatXuatHien: 0
+  xacSuatXuatHien: 0.35
   giaTriTien: 250
   rodData: {fileID: 0}
   soLuongCanCau: 0

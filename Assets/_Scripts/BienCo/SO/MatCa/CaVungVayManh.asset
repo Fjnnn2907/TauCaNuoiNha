@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: CaVungVayManh
   m_EditorClassIdentifier: 
   tenBienCo: "C\xE1 v\xF9ng v\u1EABy m\u1EA1nh"
-  moTaBienCo: "C\xE1 k\xE9o m\u1EA1nh qu\xE1 tu\u1ED9t m\u1EA5t d\xE2y m\u1EA5t c\xE1!"
+  moTaBienCo: "C\xE1 k\xE9o m\u1EA1nh qu\xE1 tu\u1ED9t m\u1EA5t d\xE2y m\u1EA5t c\xE1"
   iconBienCo: {fileID: 0}
   loaiBienCo: 7
-  xacSuatXuatHien: 0.65
+  xacSuatXuatHien: 0.45
   giaTriTien: 0
   rodData: {fileID: 0}
   soLuongCanCau: 0
@@ -55,3 +55,4 @@ MonoBehaviour:
     quantity: 1
   - fish: {fileID: 11400000, guid: b3ca966f976187c4dbf35cc5bf7737b7, type: 2}
     quantity: 1
+  baitEffects: []

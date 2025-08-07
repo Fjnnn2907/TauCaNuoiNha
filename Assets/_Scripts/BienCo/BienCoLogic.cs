@@ -48,6 +48,27 @@ public static class BienCoLogic
             }
         }
 
+        if (bienCo.loaiBienCo == bienCoType.ThemMoiCau)
+        {
+            var validBaits = bienCo.baitEffects
+                .Where(b => b.bait != null)
+                .OrderBy(x => Random.value)
+                .ToList();
+
+            if (validBaits.Count > 0)
+            {
+                var randomBait = validBaits[0];
+                int randomQty = Random.Range(1, 11); // 1 đến 10
+
+                bcm.lastAddedBaits.Clear();
+                bcm.lastAddedBaits.Add((randomBait.bait, randomQty));
+
+                // Gán lại cho bienCo để xử lý chính xác
+                bienCo.baitData = randomBait.bait;
+                bienCo.soLuongMoiCau = randomQty;
+            }
+        }
+
         if (bienCo.loaiBienCo == bienCoType.MatCa || bienCo.loaiBienCo == bienCoType.BanCa)
         {
             var validFish = bienCo.fishEffects
@@ -66,6 +87,7 @@ public static class BienCoLogic
             }
         }
     }
+
 
     public static void XuLyBienCo(BienCoSO bienCo)
     {

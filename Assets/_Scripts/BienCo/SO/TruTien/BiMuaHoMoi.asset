@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: BiMuaHoMoi
   m_EditorClassIdentifier: 
   tenBienCo: "B\u1ECB Mua H\u1EDB M\u1ED3i"
-  moTaBienCo: "\u1EA1n mua ph\u1EA3i m\u1ED3i gi\u1EA3, m\u1EA5t ti\u1EC1n oan."
+  moTaBienCo: "\u1EA1n mua ph\u1EA3i m\u1ED3i gi\u1EA3, m\u1EA5t ti\u1EC1n oan"
   iconBienCo: {fileID: 0}
   loaiBienCo: 0
-  xacSuatXuatHien: 0
+  xacSuatXuatHien: 0.41
   giaTriTien: 700
   rodData: {fileID: 0}
   soLuongCanCau: 0

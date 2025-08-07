@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
-  m_Name: ChoDatHang
+  m_Name: TruotTay
   m_EditorClassIdentifier: 
-  tenBienCo: "Ch\u1EE3 \u0110\u1EB7t H\xE0ng"
-  moTaBienCo: "NPC mu\u1ED1n mua lo\u1EA1i c\xE1 b\u1EA1n c\xF3"
+  tenBienCo: "Tr\u01B0\u1EE3t Tay"
+  moTaBienCo: "V\u1EEBa k\xE9o l\xEAn th\xEC b\u1EA1n tr\u01B0\u1EE3t tay \u0111\u1EC3
+    r\u1EDBt c\xE1"
   iconBienCo: {fileID: 0}
-  loaiBienCo: 6
-  xacSuatXuatHien: 0.55
+  loaiBienCo: 7
+  xacSuatXuatHien: 0.5
   giaTriTien: 0
   rodData: {fileID: 0}
   soLuongCanCau: 0
@@ -39,9 +40,9 @@ MonoBehaviour:
     quantity: 1
   - fish: {fileID: 11400000, guid: bb9f9e99cff51ec46bb98fd88265d886, type: 2}
     quantity: 1
-  - fish: {fileID: 11400000, guid: ca9e639b1f3bcd041aca5dd0474ff662, type: 2}
-    quantity: 1
   - fish: {fileID: 11400000, guid: 36485309385a94a4899dfaf3ca323b5a, type: 2}
+    quantity: 1
+  - fish: {fileID: 11400000, guid: ca9e639b1f3bcd041aca5dd0474ff662, type: 2}
     quantity: 1
   - fish: {fileID: 11400000, guid: 5c7810b6068c67747a39d985eb6e6a4d, type: 2}
     quantity: 1
