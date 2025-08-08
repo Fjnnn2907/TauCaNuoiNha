@@ -1,177 +1,111 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class BuildManager : MonoBehaviour
 {
     public static BuildManager Instance;
 
-    [Header("Grid Settings")]
-    public int gridWidth = 20;
-    public int gridHeight = 20;
-    public float cellSize = 1f;
-    private Dictionary<Vector2Int, GridCell> grid = new();
+    public GameObject[] buildPrefabs;
 
-    [Header("Prefabs")]
-    public List<GameObject> furniturePrefabs;
-
-    [Header("Current Building")]
-    private GameObject currentGhost;
-    private FurnitureItem currentItem;
-    private bool isBuilding = false;
+    private FurnitureItem currentGhost;
+    private bool isPlacing = false;
 
     private void Awake()
     {
-        Instance = this;
-        InitGrid();
-    }
-
-    void InitGrid()
-    {
-        for (int x = 0; x < gridWidth; x++)
-        {
-            for (int y = 0; y < gridHeight; y++)
-            {
-                var pos = new Vector2Int(x, y);
-                grid[pos] = new GridCell(pos);
-            }
-        }
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
     }
 
     void Update()
     {
-        if (isBuilding && currentGhost != null)
+        if (isPlacing && currentGhost != null)
         {
-            Vector2 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector2Int gridPos = WorldToGrid(mouseWorldPos);
+            Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mouseWorld.z = 0;
+            Vector2Int gridPos = GridManager.Instance.WorldToGrid(mouseWorld);
+            Vector3 snapPos = GridManager.Instance.GridToWorld(gridPos);
 
-            currentGhost.transform.position = GridToWorld(gridPos);
+            // Mượt mà hơn
+            currentGhost.transform.position = Vector3.Lerp(currentGhost.transform.position, snapPos, Time.deltaTime * 20f);
 
-            bool canPlace = CanPlaceAt(gridPos, currentItem.size);
-            SetGhostColor(canPlace ? Color.green : Color.red);
+            if (GridManager.Instance.CanPlace(gridPos))
+                currentGhost.SetValid();
+            else
+                currentGhost.SetInvalid();
 
-            if (Input.GetMouseButtonDown(0) && canPlace)
+            if (Input.GetMouseButtonDown(0))
             {
-                PlaceFurniture(gridPos);
-            }
-            if (Input.GetMouseButtonDown(1)) // Chuột phải
-            {
-                CancelBuildMode();
-            }
-        }
-    }
-
-    public void StartPlacing(string itemID)
-    {
-        GameObject prefab = furniturePrefabs.Find(p => p.GetComponent<FurnitureItem>().itemID == itemID);
-        if (prefab == null)
-        {
-            Debug.LogError("Item not found: " + itemID);
-            return;
-        }
-
-        if (currentGhost) Destroy(currentGhost);
-
-        currentGhost = Instantiate(prefab);
-        currentItem = currentGhost.GetComponent<FurnitureItem>();
-        currentGhost.GetComponent<Collider2D>().enabled = false;
-        SetGhostAlpha(0.5f);
-        isBuilding = true;
-    }
-    public void CancelBuildMode()
-    {
-        if (currentGhost != null)
-        {
-            Destroy(currentGhost);
-            currentGhost = null;
-        }
-
-        currentItem = null;
-        isBuilding = false;
-    }
-
-
-    void PlaceFurniture(Vector2Int pos)
-    {
-        GameObject placed = Instantiate(currentGhost);
-        placed.GetComponent<SpriteRenderer>().color = Color.white;
-        placed.GetComponent<Collider2D>().enabled = true;
-        placed.transform.position = GridToWorld(pos);
-
-        // Đánh dấu các ô bị chiếm
-        for (int x = 0; x < currentItem.size.x; x++)
-        {
-            for (int y = 0; y < currentItem.size.y; y++)
-            {
-                Vector2Int offset = (pos + new Vector2Int(x, y));
-                if (grid.ContainsKey(offset))
+                if (GridManager.Instance.CanPlace(gridPos))
                 {
-                    grid[offset].occupyingObject = placed;
+                    PlaceObject(gridPos);
+                }
+            }
+
+            if (Input.GetMouseButtonDown(1))
+            {
+                CancelBuild();
+            }
+        }
+        else
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                mouseWorld.z = 0f;
+
+                RaycastHit2D hit = Physics2D.Raycast(mouseWorld, Vector2.zero);
+                if (hit.collider != null)
+                {
+                    FurnitureItem item = hit.collider.GetComponent<FurnitureItem>();
+                    if (item != null && !item.IsBeingPlaced)
+                    {
+                        // Bắt đầu di chuyển lại
+                        GridManager.Instance.ClearGrid(item.GridPosition);
+                        currentGhost = item;
+                        isPlacing = true;
+                        item.IsBeingPlaced = true;
+                        item.highlightRenderer.color = new Color(1, 1, 1, 0.3f);
+                    }
                 }
             }
         }
+    }
 
-        Destroy(currentGhost);
+    public void StartPlacing(int index)
+    {
+        CancelBuild();
+
+        GameObject prefab = buildPrefabs[index];
+        GameObject ghost = Instantiate(prefab);
+        currentGhost = ghost.GetComponent<FurnitureItem>();
+        currentGhost.IsBeingPlaced = true;
+        currentGhost.highlightRenderer.color = new Color(1, 1, 1, 0.3f);
+
+        Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mouseWorld.z = 0f;
+        Vector2Int gridPos = GridManager.Instance.WorldToGrid(mouseWorld);
+        Vector3 snapPos = GridManager.Instance.GridToWorld(gridPos);
+        currentGhost.transform.position = snapPos;
+
+        isPlacing = true;
+    }
+
+    private void PlaceObject(Vector2Int gridPos)
+    {
+        GridManager.Instance.OccupyGrid(gridPos, currentGhost);
+        currentGhost.SetNormal();
+        currentGhost.GridPosition = gridPos;
+        currentGhost.IsBeingPlaced = false;
         currentGhost = null;
-        isBuilding = false;
+        isPlacing = false;
     }
 
-    void SetGhostAlpha(float a)
+    public void CancelBuild()
     {
-        var sr = currentGhost.GetComponent<SpriteRenderer>();
-        Color c = sr.color;
-        c.a = a;
-        sr.color = c;
-    }
-
-    void SetGhostColor(Color color)
-    {
-        var sr = currentGhost.GetComponent<SpriteRenderer>();
-        sr.color = color;
-    }
-
-    Vector2Int WorldToGrid(Vector2 worldPos)
-    {
-        int x = Mathf.FloorToInt(worldPos.x / cellSize);
-        int y = Mathf.FloorToInt(worldPos.y / cellSize);
-        return new Vector2Int(x, y);
-    }
-
-    Vector3 GridToWorld(Vector2Int gridPos)
-    {
-        return new Vector3(gridPos.x * cellSize, gridPos.y * cellSize, 0);
-    }
-
-    bool CanPlaceAt(Vector2Int pos, Vector2Int size)
-    {
-        for (int x = 0; x < size.x; x++)
+        if (currentGhost != null && currentGhost.IsBeingPlaced)
         {
-            for (int y = 0; y < size.y; y++)
-            {
-                Vector2Int checkPos = pos + new Vector2Int(x, y);
-                if (!grid.ContainsKey(checkPos)) return false;
-                if (grid[checkPos].IsOccupied) return false;
-            }
+            Destroy(currentGhost.gameObject);
+            currentGhost = null;
         }
-        return true;
+        isPlacing = false;
     }
-#if UNITY_EDITOR
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.gray;
-
-        for (int x = 0; x <= gridWidth; x++)
-        {
-            Vector3 start = new Vector3(x * cellSize, 0, 0);
-            Vector3 end = new Vector3(x * cellSize, gridHeight * cellSize, 0);
-            Gizmos.DrawLine(start, end);
-        }
-
-        for (int y = 0; y <= gridHeight; y++)
-        {
-            Vector3 start = new Vector3(0, y * cellSize, 0);
-            Vector3 end = new Vector3(gridWidth * cellSize, y * cellSize, 0);
-            Gizmos.DrawLine(start, end);
-        }
-    }
-#endif
 }
