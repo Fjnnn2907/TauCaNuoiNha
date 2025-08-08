@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
+  m_Name: MuaDenXe
+  m_EditorClassIdentifier: 
+  tenBienCo: "Mua \u0110\xE8n Xe"
+  moTaBienCo: "Tr\u1EDDi t\u1ED1i, ph\u1EA3i mua \u0111\xE8n g\u1EAFn xe \u0111\u1EC3
+    \u0111i v\u1EC1"
+  iconBienCo: {fileID: 0}
+  loaiBienCo: 0
+  xacSuatXuatHien: 0.41
+  giaTriTien: 20
+  rodData: {fileID: 0}
+  soLuongCanCau: 0
+  baitData: {fileID: 0}
+  soLuongMoiCau: 0
+  fishEffects: []
+  baitEffects: []

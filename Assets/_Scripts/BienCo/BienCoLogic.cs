@@ -29,11 +29,8 @@ public static class BienCoLogic
     public static void PrepareBienCoData(BienCoSO bienCo)
     {
         var bcm = BienCoManager.Instance;
-
-        // Reset trước
         bcm.lastCoinChange = 0;
 
-        // ✅ Nếu là loại cộng/trừ tiền, random hệ số và lưu lại
         if (bienCo.loaiBienCo == bienCoType.TruTien || bienCo.loaiBienCo == bienCoType.CongTien)
         {
             bcm.currentRandomFactor = Random.Range(0.8f, 1.2f);
@@ -102,8 +99,37 @@ public static class BienCoLogic
                 }
             }
         }
-    }
 
+        // ✅ THÊM CÁ NGẪU NHIÊN – lưu vào fishEffects
+        if (bienCo.loaiBienCo == bienCoType.DuocThemCa)
+        {
+            bcm.lastAffectedFish.Clear();
+            bienCo.fishEffects.Clear();
+
+            var allFish = FishDatabase.Instance.allFish
+                .Where(f => f != null)
+                .OrderBy(x => Random.value)
+                .ToList();
+
+            int fishToAdd = Mathf.Min(Random.Range(1, 4), allFish.Count); // 1–3 loài cá
+
+            for (int i = 0; i < fishToAdd; i++)
+            {
+                var fish = allFish[i];
+                int qty = Random.Range(1, 6); // 1–5 con
+
+                // Lưu vào fishEffects
+                bienCo.fishEffects.Add(new FishEffect
+                {
+                    fish = fish,
+                    quantity = qty
+                });
+
+                // Lưu vào lastAffectedFish để thực thi
+                bcm.lastAffectedFish.Add((fish, qty));
+            }
+        }
+    }
 
     public static void XuLyBienCo(BienCoSO bienCo)
     {
@@ -161,7 +187,11 @@ public static class BienCoLogic
 
                 CoinManager.Instance.AddCoins(bcm.lastGoldEarnedFromFish);
                 break;
+
+            case bienCoType.DuocThemCa:
+                foreach (var fishInfo in bcm.lastAffectedFish)
+                    FishInventory.Instance.AddFishMultiple(fishInfo.fish, fishInfo.quantity);
+                break;
         }
     }
-
 }

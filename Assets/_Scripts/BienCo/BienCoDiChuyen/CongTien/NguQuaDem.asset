@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
+  m_Name: NguQuaDem
+  m_EditorClassIdentifier: 
+  tenBienCo: "Ng\u1EE7 qua \u0111\xEAm"
+  moTaBienCo: "B\u1EA1n ng\u1EE7 b\xF9i khi nghe ho\xE0ng c\u1EA3nh c\u1EE7a b\u1EA1n
+    ch\u1EE7 nh\xE0 th\u01B0\u01A1ng c\u1EA3m"
+  iconBienCo: {fileID: 0}
+  loaiBienCo: 1
+  xacSuatXuatHien: 0.44
+  giaTriTien: 200
+  rodData: {fileID: 0}
+  soLuongCanCau: 0
+  baitData: {fileID: 0}
+  soLuongMoiCau: 0
+  fishEffects: []
+  baitEffects: []

@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
+  m_Name: DungXeNghi
+  m_EditorClassIdentifier: 
+  tenBienCo: "D\u1EEBng Xe Ngh\u1EC9"
+  moTaBienCo: "D\u1EEBng ngh\u1EC9, th\u1EA5y c\xE1 tr\xF4i v\xE0o g\u1EA7n b\u1EDD"
+  iconBienCo: {fileID: 0}
+  loaiBienCo: 8
+  xacSuatXuatHien: 0.37
+  giaTriTien: 0
+  rodData: {fileID: 0}
+  soLuongCanCau: 0
+  baitData: {fileID: 0}
+  soLuongMoiCau: 0
+  fishEffects:
+  - fish: {fileID: 11400000, guid: 750272ff19185db41b21ad9751040d8e, type: 2}
+    quantity: 1
+  - fish: {fileID: 11400000, guid: 3385afa565061144d86dd84b01f13fb2, type: 2}
+    quantity: 1
+  - fish: {fileID: 11400000, guid: de592bb903a49dd42aac5531f8ae141a, type: 2}
+    quantity: 1
+  - fish: {fileID: 11400000, guid: 1c5f193dfa1bded4baca0b80e8e408a0, type: 2}
+    quantity: 1
+  - fish: {fileID: 11400000, guid: 5d76affcdf1966644b1936860139cad4, type: 2}
+    quantity: 1
+  - fish: {fileID: 11400000, guid: abcdbd0aba9abaf4a96418d8397eb903, type: 2}
+    quantity: 1
+  - fish: {fileID: 11400000, guid: b661366c48c8aaa41ac120097102cb70, type: 2}
+    quantity: 1
+  - fish: {fileID: 11400000, guid: bb9f9e99cff51ec46bb98fd88265d886, type: 2}
+    quantity: 1
+  - fish: {fileID: 11400000, guid: 36485309385a94a4899dfaf3ca323b5a, type: 2}
+    quantity: 1
+  - fish: {fileID: 11400000, guid: ca9e639b1f3bcd041aca5dd0474ff662, type: 2}
+    quantity: 1
+  - fish: {fileID: 11400000, guid: 5c7810b6068c67747a39d985eb6e6a4d, type: 2}
+    quantity: 1
+  - fish: {fileID: 11400000, guid: e51ab8d99a0eb37488da9397c59c547d, type: 2}
+    quantity: 1
+  - fish: {fileID: 11400000, guid: 11d2ef9d882bf9946ad06a5aba273011, type: 2}
+    quantity: 1
+  - fish: {fileID: 11400000, guid: 5e982c49d3c60304db9706196f1a11c6, type: 2}
+    quantity: 1
+  - fish: {fileID: 11400000, guid: 8933586b7488cda49b3bca0d188ece7b, type: 2}
+    quantity: 1
+  - fish: {fileID: 11400000, guid: b3ca966f976187c4dbf35cc5bf7737b7, type: 2}
+    quantity: 1
+  baitEffects: []

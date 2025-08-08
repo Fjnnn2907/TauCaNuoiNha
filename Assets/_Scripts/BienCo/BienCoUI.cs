@@ -69,7 +69,8 @@ public class BienCoUI : Singleton<BienCoUI>
 
             case bienCoType.BanCa:
                 return GenerateFishEffectDescription("Bán");
-
+            case bienCoType.DuocThemCa:
+                return GenerateFishEffectDescription("Nhận");
             default:
                 return "⚠ Không xác định phần thưởng hoặc hình phạt";
         }

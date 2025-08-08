@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
+  m_Name: TinhThanSatThep
+  m_EditorClassIdentifier: 
+  tenBienCo: "Tinh th\u1EA7n s\u1EAFt th\xE9p"
+  moTaBienCo: "H\xE0nh \u0111\u1ED9ng c\u1EE7a b\u1EA1n \u0111\xE3 ch\u1EA1m \u0111\u1EBFn
+    tr\xE1i tim c\xE1 tri\u1EC7u ng\u01B0\u1EDDi tr\u1EBB"
+  iconBienCo: {fileID: 0}
+  loaiBienCo: 1
+  xacSuatXuatHien: 0.3
+  giaTriTien: 999
+  rodData: {fileID: 0}
+  soLuongCanCau: 0
+  baitData: {fileID: 0}
+  soLuongMoiCau: 0
+  fishEffects: []
+  baitEffects: []

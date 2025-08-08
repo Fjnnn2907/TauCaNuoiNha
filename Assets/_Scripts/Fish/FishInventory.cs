@@ -34,6 +34,15 @@ public class FishInventory : Singleton<FishInventory>, ISaveable
 
         RefreshUI();
     }
+    public void AddFishMultiple(FishData fish, int amount)
+    {
+        if (fishCollection.ContainsKey(fish))
+            fishCollection[fish] += amount;
+        else
+            fishCollection[fish] = amount;
+
+        RefreshUI();
+    }
 
     public int GetFishQuantity(FishData fish)
     {
