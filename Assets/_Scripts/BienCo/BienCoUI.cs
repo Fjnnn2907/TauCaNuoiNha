@@ -10,6 +10,8 @@ public class BienCoUI : Singleton<BienCoUI>
     public TextMeshProUGUI moTaText;
     public TextMeshProUGUI moTaPhanThuongText;
     public Button acceptButton;
+    public Image icon;
+
 
     private BienCoSO bienCoDangHien;
 

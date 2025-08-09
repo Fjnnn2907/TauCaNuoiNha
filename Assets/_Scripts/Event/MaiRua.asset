@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e9e6ae376be4e649811280adff3e4e0, type: 3}
+  m_Name: MaiRua
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  npcName: "Ki\u1EC7t"
+  sentences:
+  - "\u1ED2! B\u1EA1n \u0111\xE3 t\xECm th\u1EA5y mai r\xF9a r\u1ED3i sao?"
+  - "H\xE3y theo t\xF4i, t\xF4i s\u1EBD cho b\u1EA1n th\u1EA5y m\u1ED9t \u0111i\u1EC1u
+    b\xED m\u1EADt..."

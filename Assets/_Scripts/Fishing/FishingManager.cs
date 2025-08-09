@@ -93,14 +93,23 @@ public class FishingManager : Singleton<FishingManager>
         FishData fish = FishDatabase.Instance.GetRandomFish(selectedRarity);
         if (fish != null)
         {
-            FishInventory.Instance.AddFish(fish); // Add vào kho
+            FishInventory.Instance.AddFish(fish);
             QuestManager.Instance.OnFishCaught(fish);
             ShowCaughtFish(fish);
+
+            // ✅ Nếu cá là cá đặc biệt thì kích hoạt event
+            if (fish.isSpecial)
+            {
+                Debug.Log("a");
+                SpecialEventManager.Instance.TriggerSpecialEvent(fish.specialEventID);
+            }
+
             isPlayMiniGame = false;
         }
 
         ChangeState(FishingState.Pulling);
     }
+
     public void OnMinigameLose()
     {
         Debug.Log("❌ Thua minigame vì hết giờ");
@@ -119,8 +128,13 @@ public class FishingManager : Singleton<FishingManager>
         fishSprite.SetActive(true);
         StartCoroutine(AutoHideFish(fishSprite));
         FishCollection.Instance.DiscoverFish(fish);
-        NotificationManager.Instance?.ShowNotification($"Bạn câu được cá {fish.fishName} ({fish.rarity})");
+
+        if (fish.isUnique)
+            NotificationManager.Instance?.ShowNotification($"🎉 Bạn vừa câu được cá độc nhất: {fish.fishName} ({fish.rarity})!");
+        else
+            NotificationManager.Instance?.ShowNotification($"Bạn câu được cá {fish.fishName} ({fish.rarity})");
     }
+
 
     private IEnumerator AutoHideFish(GameObject go)
     {
