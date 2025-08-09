@@ -30663,7 +30663,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   symbolNames:
   - zigzag
-  - circle
   - vshape
   - square
   - triangle
