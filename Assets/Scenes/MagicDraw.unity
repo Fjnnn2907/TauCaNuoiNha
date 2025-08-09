@@ -2044,6 +2044,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d4ace3c5c21f88f49a5fe1c1bc009601, type: 2}
   - {fileID: 11400000, guid: 063d778757026114da2a34243eba29c5, type: 2}
   - {fileID: 11400000, guid: b67bb0d5ed9726a45a6b0e80a7c52c99, type: 2}
+  - {fileID: 11400000, guid: 834b91c179628fa4c8d0a59cc4078226, type: 2}
+  - {fileID: 11400000, guid: 34c98f053323cfb4b8d438a81f39c217, type: 2}
+  - {fileID: 11400000, guid: 3cfb8a18dfd97a444bad72367f2d3ff4, type: 2}
   minDelay: 30
   maxDelay: 120
   bienCoUI: {fileID: 419148728}
@@ -9214,6 +9217,7 @@ MonoBehaviour:
   moTaText: {fileID: 98777821}
   moTaPhanThuongText: {fileID: 2001182257}
   acceptButton: {fileID: 1079970390}
+  icon: {fileID: 0}
 --- !u!224 &419148729
 RectTransform:
   m_ObjectHideFlags: 0

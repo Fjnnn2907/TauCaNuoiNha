@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
+  m_Name: "Ng\xE0y h\u1ED9i th\u1EA3 \u0111\xE8n hoa \u0111\u0103ng \u1EDF H\u1ED9i
+    An"
+  m_EditorClassIdentifier: 
+  tenBienCo: "Ng\xE0y h\u1ED9i th\u1EA3 \u0111\xE8n hoa \u0111\u0103ng \u1EDF H\u1ED9i
+    An"
+  moTaBienCo: "b\u1EA1n  nh\u1EB9 nh\xE0ng th\u1EA3 chi\u1EBFc \u0111\xE8n hoa \u0111\u0103ng
+    xu\u1ED1ng s\xF4ng, ng\u1EAFm \xE1nh s\xE1ng lung linh ph\u1EA3n chi\u1EBFu tr\xEAn
+    m\u1EB7t n\u01B0\u1EDBc."
+  iconBienCo: {fileID: 0}
+  loaiBienCo: 1
+  xacSuatXuatHien: 0.5
+  giaTriTien: 0
+  rodData: {fileID: 0}
+  soLuongCanCau: 0
+  baitData: {fileID: 0}
+  soLuongMoiCau: 0
+  fishEffects: []
+  baitEffects: []
