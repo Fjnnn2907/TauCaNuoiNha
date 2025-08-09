@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class DialogueManager : Singleton<DialogueManager>
 {
@@ -9,6 +10,7 @@ public class DialogueManager : Singleton<DialogueManager>
     public GameObject dialoguePanel;
     public TMP_Text nameText;
     public TMP_Text dialogueText;
+    public Image icon;
 
     private Queue<string> sentences = new Queue<string>();
     public bool IsDialoguePlaying { get; private set; } = false;
@@ -18,6 +20,7 @@ public class DialogueManager : Singleton<DialogueManager>
     {
         dialoguePanel.SetActive(true);
         nameText.text = dialogueData.npcName;
+        icon.sprite = dialogueData.icon;
         sentences.Clear();
 
         foreach (string line in dialogueData.sentences)
@@ -60,7 +63,7 @@ public class DialogueManager : Singleton<DialogueManager>
 
     private void Update()
     {
-        if (IsDialoguePlaying && Input.GetKeyDown(KeyCode.Space))
+        if (IsDialoguePlaying && Input.GetKeyDown(KeyCode.Mouse0))
         {
             DisplayNextSentence();
         }

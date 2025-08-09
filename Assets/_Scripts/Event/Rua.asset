@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e9e6ae376be4e649811280adff3e4e0, type: 3}
-  m_Name: MaiRua
+  m_Name: Rua
   m_EditorClassIdentifier: 
-  icon: {fileID: 4723107735738678597, guid: 32264b1bee355dd44b099b9127eff718, type: 3}
-  npcName: "Ki\u1EC7t"
+  icon: {fileID: 3234629978573100161, guid: 15b13c979abeeea499bdee71335b60cf, type: 3}
+  npcName: "R\xF9a Ho\xE0n Ki\u1EBFm"
   sentences:
   - "\u1ED2! B\u1EA1n \u0111\xE3 t\xECm th\u1EA5y mai r\xF9a r\u1ED3i sao?"
   - "H\xE3y theo t\xF4i, t\xF4i s\u1EBD cho b\u1EA1n th\u1EA5y m\u1ED9t \u0111i\u1EC1u
