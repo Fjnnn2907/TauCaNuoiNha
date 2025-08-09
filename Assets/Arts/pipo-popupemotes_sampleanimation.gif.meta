@@ -1,0 +1,5580 @@
+fileFormatVersion: 2
+guid: 76bcf505b9ccd48e799b4b25ecf1c1ac
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1622778399717002274
+    second: pipo-popupemotes_sampleanimation_0
+  - first:
+      213: -3793504308386408245
+    second: pipo-popupemotes_sampleanimation_1
+  - first:
+      213: -3313313524760202970
+    second: pipo-popupemotes_sampleanimation_2
+  - first:
+      213: -666627126822204113
+    second: pipo-popupemotes_sampleanimation_3
+  - first:
+      213: -4177380228458614365
+    second: pipo-popupemotes_sampleanimation_4
+  - first:
+      213: -4517542174399538016
+    second: pipo-popupemotes_sampleanimation_5
+  - first:
+      213: 5995459959885678772
+    second: pipo-popupemotes_sampleanimation_6
+  - first:
+      213: -6007971407987605357
+    second: pipo-popupemotes_sampleanimation_7
+  - first:
+      213: -3105729247694881341
+    second: pipo-popupemotes_sampleanimation_8
+  - first:
+      213: -7697596505394885166
+    second: pipo-popupemotes_sampleanimation_9
+  - first:
+      213: 7313273956613827122
+    second: pipo-popupemotes_sampleanimation_10
+  - first:
+      213: 4648301314284240740
+    second: pipo-popupemotes_sampleanimation_11
+  - first:
+      213: -1974703316192737455
+    second: pipo-popupemotes_sampleanimation_12
+  - first:
+      213: -4188331069992939827
+    second: pipo-popupemotes_sampleanimation_13
+  - first:
+      213: -3037716762802258144
+    second: pipo-popupemotes_sampleanimation_14
+  - first:
+      213: 6678343829868140138
+    second: pipo-popupemotes_sampleanimation_15
+  - first:
+      213: -7288634684596557926
+    second: pipo-popupemotes_sampleanimation_16
+  - first:
+      213: -4515424540798088897
+    second: pipo-popupemotes_sampleanimation_17
+  - first:
+      213: 8880844686417959052
+    second: pipo-popupemotes_sampleanimation_18
+  - first:
+      213: 9019393238612636862
+    second: pipo-popupemotes_sampleanimation_19
+  - first:
+      213: -4429073279180394954
+    second: pipo-popupemotes_sampleanimation_20
+  - first:
+      213: -5514956564146876335
+    second: pipo-popupemotes_sampleanimation_21
+  - first:
+      213: -4510002237943272297
+    second: pipo-popupemotes_sampleanimation_22
+  - first:
+      213: -7860042415926710950
+    second: pipo-popupemotes_sampleanimation_23
+  - first:
+      213: -4417677806452609181
+    second: pipo-popupemotes_sampleanimation_24
+  - first:
+      213: -3959165400741362375
+    second: pipo-popupemotes_sampleanimation_25
+  - first:
+      213: -3489266673004131541
+    second: pipo-popupemotes_sampleanimation_26
+  - first:
+      213: -8219632355308538411
+    second: pipo-popupemotes_sampleanimation_27
+  - first:
+      213: -426073128401464423
+    second: pipo-popupemotes_sampleanimation_28
+  - first:
+      213: -895597786476121502
+    second: pipo-popupemotes_sampleanimation_29
+  - first:
+      213: -7418059078770496845
+    second: pipo-popupemotes_sampleanimation_30
+  - first:
+      213: 3391590023604157570
+    second: pipo-popupemotes_sampleanimation_31
+  - first:
+      213: -2759530491698211156
+    second: pipo-popupemotes_sampleanimation_32
+  - first:
+      213: -8941608120530851520
+    second: pipo-popupemotes_sampleanimation_33
+  - first:
+      213: -6249953636029337217
+    second: pipo-popupemotes_sampleanimation_34
+  - first:
+      213: 5427664641210131879
+    second: pipo-popupemotes_sampleanimation_35
+  - first:
+      213: -6958155604179660634
+    second: pipo-popupemotes_sampleanimation_36
+  - first:
+      213: -1504787047557086920
+    second: pipo-popupemotes_sampleanimation_37
+  - first:
+      213: -5168750924094614574
+    second: pipo-popupemotes_sampleanimation_38
+  - first:
+      213: 4688350547638713322
+    second: pipo-popupemotes_sampleanimation_39
+  - first:
+      213: -3319748542782522233
+    second: pipo-popupemotes_sampleanimation_40
+  - first:
+      213: 787284807994640031
+    second: pipo-popupemotes_sampleanimation_41
+  - first:
+      213: 6860843725246155627
+    second: pipo-popupemotes_sampleanimation_42
+  - first:
+      213: 8917218695234213597
+    second: pipo-popupemotes_sampleanimation_43
+  - first:
+      213: 7374195823439988366
+    second: pipo-popupemotes_sampleanimation_44
+  - first:
+      213: 2953918266912260951
+    second: pipo-popupemotes_sampleanimation_45
+  - first:
+      213: -351062293261717584
+    second: pipo-popupemotes_sampleanimation_46
+  - first:
+      213: -16392212921894699
+    second: pipo-popupemotes_sampleanimation_47
+  - first:
+      213: -6579117638963664251
+    second: pipo-popupemotes_sampleanimation_48
+  - first:
+      213: 2298875087216831038
+    second: pipo-popupemotes_sampleanimation_49
+  - first:
+      213: 1016178212244311145
+    second: pipo-popupemotes_sampleanimation_50
+  - first:
+      213: -9179920285770506123
+    second: pipo-popupemotes_sampleanimation_51
+  - first:
+      213: 270637210320731111
+    second: pipo-popupemotes_sampleanimation_52
+  - first:
+      213: -8970732744045840478
+    second: pipo-popupemotes_sampleanimation_53
+  - first:
+      213: -7797435931000848291
+    second: pipo-popupemotes_sampleanimation_54
+  - first:
+      213: 7277326735307293788
+    second: pipo-popupemotes_sampleanimation_55
+  - first:
+      213: -5467324941621270546
+    second: pipo-popupemotes_sampleanimation_56
+  - first:
+      213: 6013552850437355976
+    second: pipo-popupemotes_sampleanimation_57
+  - first:
+      213: -7301530662991225915
+    second: pipo-popupemotes_sampleanimation_58
+  - first:
+      213: -8836592884550973215
+    second: pipo-popupemotes_sampleanimation_59
+  - first:
+      213: 4685976484406237361
+    second: pipo-popupemotes_sampleanimation_60
+  - first:
+      213: -5124716609804995378
+    second: pipo-popupemotes_sampleanimation_61
+  - first:
+      213: 1614974531783311484
+    second: pipo-popupemotes_sampleanimation_62
+  - first:
+      213: -6483199484257597793
+    second: pipo-popupemotes_sampleanimation_63
+  - first:
+      213: 9130242417128902701
+    second: pipo-popupemotes_sampleanimation_64
+  - first:
+      213: 8426313282028376916
+    second: pipo-popupemotes_sampleanimation_65
+  - first:
+      213: 5327355376438465419
+    second: pipo-popupemotes_sampleanimation_66
+  - first:
+      213: -4445858759557545765
+    second: pipo-popupemotes_sampleanimation_67
+  - first:
+      213: -4388569701068955630
+    second: pipo-popupemotes_sampleanimation_68
+  - first:
+      213: -3769669376781135055
+    second: pipo-popupemotes_sampleanimation_69
+  - first:
+      213: 8073434154642952270
+    second: pipo-popupemotes_sampleanimation_70
+  - first:
+      213: -6847520178464519851
+    second: pipo-popupemotes_sampleanimation_71
+  - first:
+      213: -307221034479641708
+    second: pipo-popupemotes_sampleanimation_72
+  - first:
+      213: 6265663755464321699
+    second: pipo-popupemotes_sampleanimation_73
+  - first:
+      213: 4927874523938288408
+    second: pipo-popupemotes_sampleanimation_74
+  - first:
+      213: 8374126516839986669
+    second: pipo-popupemotes_sampleanimation_75
+  - first:
+      213: 7614884499345769531
+    second: pipo-popupemotes_sampleanimation_76
+  - first:
+      213: -2731486063910002865
+    second: pipo-popupemotes_sampleanimation_77
+  - first:
+      213: 1057684493007981975
+    second: pipo-popupemotes_sampleanimation_78
+  - first:
+      213: 7908815654319772427
+    second: pipo-popupemotes_sampleanimation_79
+  - first:
+      213: -5115773326486388347
+    second: pipo-popupemotes_sampleanimation_80
+  - first:
+      213: -1867157581596926932
+    second: pipo-popupemotes_sampleanimation_81
+  - first:
+      213: 2211531886843433268
+    second: pipo-popupemotes_sampleanimation_82
+  - first:
+      213: -7517181426546164331
+    second: pipo-popupemotes_sampleanimation_83
+  - first:
+      213: 2070539366040749891
+    second: pipo-popupemotes_sampleanimation_84
+  - first:
+      213: -8581611121539737143
+    second: pipo-popupemotes_sampleanimation_85
+  - first:
+      213: -7226805863159030237
+    second: pipo-popupemotes_sampleanimation_86
+  - first:
+      213: 2046132852280640296
+    second: pipo-popupemotes_sampleanimation_87
+  - first:
+      213: -778488847864693182
+    second: pipo-popupemotes_sampleanimation_88
+  - first:
+      213: 4585670956566988395
+    second: pipo-popupemotes_sampleanimation_89
+  - first:
+      213: -7846733972705874184
+    second: pipo-popupemotes_sampleanimation_90
+  - first:
+      213: 8869736274490105967
+    second: pipo-popupemotes_sampleanimation_91
+  - first:
+      213: -5789900340130756308
+    second: pipo-popupemotes_sampleanimation_92
+  - first:
+      213: -3293564956536562134
+    second: pipo-popupemotes_sampleanimation_93
+  - first:
+      213: 4081085173220648948
+    second: pipo-popupemotes_sampleanimation_94
+  - first:
+      213: -448636865830312475
+    second: pipo-popupemotes_sampleanimation_95
+  - first:
+      213: 9220024346508327285
+    second: pipo-popupemotes_sampleanimation_96
+  - first:
+      213: -6363639398543562210
+    second: pipo-popupemotes_sampleanimation_97
+  - first:
+      213: 7573975204659012151
+    second: pipo-popupemotes_sampleanimation_98
+  - first:
+      213: -8196804225758572219
+    second: pipo-popupemotes_sampleanimation_99
+  - first:
+      213: 3045327313331843561
+    second: pipo-popupemotes_sampleanimation_100
+  - first:
+      213: 1783142787167573941
+    second: pipo-popupemotes_sampleanimation_101
+  - first:
+      213: 3356029010549779427
+    second: pipo-popupemotes_sampleanimation_102
+  - first:
+      213: 759308030546899374
+    second: pipo-popupemotes_sampleanimation_103
+  - first:
+      213: 1040535402913372552
+    second: pipo-popupemotes_sampleanimation_104
+  - first:
+      213: 4283681255365839786
+    second: pipo-popupemotes_sampleanimation_105
+  - first:
+      213: 8442514000896293013
+    second: pipo-popupemotes_sampleanimation_106
+  - first:
+      213: -9069826253342642516
+    second: pipo-popupemotes_sampleanimation_107
+  - first:
+      213: 3615953491467150339
+    second: pipo-popupemotes_sampleanimation_108
+  - first:
+      213: -4163649118031328774
+    second: pipo-popupemotes_sampleanimation_109
+  - first:
+      213: 4807267470615355220
+    second: pipo-popupemotes_sampleanimation_110
+  - first:
+      213: 7783394609130250252
+    second: pipo-popupemotes_sampleanimation_111
+  - first:
+      213: -3792893477042476487
+    second: pipo-popupemotes_sampleanimation_112
+  - first:
+      213: 3295916091230774207
+    second: pipo-popupemotes_sampleanimation_113
+  - first:
+      213: -4746158389557595223
+    second: pipo-popupemotes_sampleanimation_114
+  - first:
+      213: -2144877611981542103
+    second: pipo-popupemotes_sampleanimation_115
+  - first:
+      213: -7922775239349895269
+    second: pipo-popupemotes_sampleanimation_116
+  - first:
+      213: 8540206303350879737
+    second: pipo-popupemotes_sampleanimation_117
+  - first:
+      213: 2566669802475408639
+    second: pipo-popupemotes_sampleanimation_118
+  - first:
+      213: -5449031190375134610
+    second: pipo-popupemotes_sampleanimation_119
+  - first:
+      213: 2444706658653803353
+    second: pipo-popupemotes_sampleanimation_120
+  - first:
+      213: -7828086534870450079
+    second: pipo-popupemotes_sampleanimation_121
+  - first:
+      213: 6368632695298875046
+    second: pipo-popupemotes_sampleanimation_122
+  - first:
+      213: 6603058329630076376
+    second: pipo-popupemotes_sampleanimation_123
+  - first:
+      213: 6406326854077071851
+    second: pipo-popupemotes_sampleanimation_124
+  - first:
+      213: -1656142131825630570
+    second: pipo-popupemotes_sampleanimation_125
+  - first:
+      213: -3764320332857001659
+    second: pipo-popupemotes_sampleanimation_126
+  - first:
+      213: -2195767489842000395
+    second: pipo-popupemotes_sampleanimation_127
+  - first:
+      213: -5378477825502891824
+    second: pipo-popupemotes_sampleanimation_128
+  - first:
+      213: -6620844549037571675
+    second: pipo-popupemotes_sampleanimation_129
+  - first:
+      213: -2851953876408483785
+    second: pipo-popupemotes_sampleanimation_130
+  - first:
+      213: -4122892375437439932
+    second: pipo-popupemotes_sampleanimation_131
+  - first:
+      213: -5641683912087317179
+    second: pipo-popupemotes_sampleanimation_132
+  - first:
+      213: -1050205038425517305
+    second: pipo-popupemotes_sampleanimation_133
+  - first:
+      213: 6422392684500445084
+    second: pipo-popupemotes_sampleanimation_134
+  - first:
+      213: 3973078690842502810
+    second: pipo-popupemotes_sampleanimation_135
+  - first:
+      213: 4154022207562707489
+    second: pipo-popupemotes_sampleanimation_136
+  - first:
+      213: -3148785204520648957
+    second: pipo-popupemotes_sampleanimation_137
+  - first:
+      213: -575710961261574289
+    second: pipo-popupemotes_sampleanimation_138
+  - first:
+      213: 6213414424980212171
+    second: pipo-popupemotes_sampleanimation_139
+  - first:
+      213: 6763565693472791047
+    second: pipo-popupemotes_sampleanimation_140
+  - first:
+      213: -3387371297342877532
+    second: pipo-popupemotes_sampleanimation_141
+  - first:
+      213: 856347444937203773
+    second: pipo-popupemotes_sampleanimation_142
+  - first:
+      213: -409433600974633760
+    second: pipo-popupemotes_sampleanimation_143
+  - first:
+      213: -7647994883044764802
+    second: pipo-popupemotes_sampleanimation_144
+  - first:
+      213: -8969775067025362446
+    second: pipo-popupemotes_sampleanimation_145
+  - first:
+      213: -2822864774233451426
+    second: pipo-popupemotes_sampleanimation_146
+  - first:
+      213: -5450316186015372715
+    second: pipo-popupemotes_sampleanimation_147
+  - first:
+      213: 2426055737442166141
+    second: pipo-popupemotes_sampleanimation_148
+  - first:
+      213: 6795743863512032287
+    second: pipo-popupemotes_sampleanimation_149
+  - first:
+      213: 2649279420255087659
+    second: pipo-popupemotes_sampleanimation_150
+  - first:
+      213: 460603378446787067
+    second: pipo-popupemotes_sampleanimation_151
+  - first:
+      213: -4410599542147473701
+    second: pipo-popupemotes_sampleanimation_152
+  - first:
+      213: 2029898461212192721
+    second: pipo-popupemotes_sampleanimation_153
+  - first:
+      213: -1788384079274076604
+    second: pipo-popupemotes_sampleanimation_154
+  - first:
+      213: -7711360715589984498
+    second: pipo-popupemotes_sampleanimation_155
+  - first:
+      213: 2440517127690055401
+    second: pipo-popupemotes_sampleanimation_156
+  - first:
+      213: -621356072215056474
+    second: pipo-popupemotes_sampleanimation_157
+  - first:
+      213: 6674541857188775590
+    second: pipo-popupemotes_sampleanimation_158
+  - first:
+      213: -1337705124524747034
+    second: pipo-popupemotes_sampleanimation_159
+  - first:
+      213: -5665553225068750069
+    second: pipo-popupemotes_sampleanimation_160
+  - first:
+      213: 8625122463919117720
+    second: pipo-popupemotes_sampleanimation_161
+  - first:
+      213: -5755151736762848880
+    second: pipo-popupemotes_sampleanimation_162
+  - first:
+      213: 6226556992856350999
+    second: pipo-popupemotes_sampleanimation_163
+  - first:
+      213: 6476372985455531804
+    second: pipo-popupemotes_sampleanimation_164
+  - first:
+      213: -4552448470615181025
+    second: pipo-popupemotes_sampleanimation_165
+  - first:
+      213: -1122583842346295759
+    second: pipo-popupemotes_sampleanimation_166
+  - first:
+      213: 4933730841798056959
+    second: pipo-popupemotes_sampleanimation_167
+  - first:
+      213: 7909374800931758072
+    second: pipo-popupemotes_sampleanimation_168
+  - first:
+      213: -4419365555364076193
+    second: pipo-popupemotes_sampleanimation_169
+  - first:
+      213: 7287319237627426958
+    second: pipo-popupemotes_sampleanimation_170
+  - first:
+      213: -6731217763821316973
+    second: pipo-popupemotes_sampleanimation_171
+  - first:
+      213: -1854469872814871533
+    second: pipo-popupemotes_sampleanimation_172
+  - first:
+      213: -2349759473694087639
+    second: pipo-popupemotes_sampleanimation_173
+  - first:
+      213: -5270626325404158856
+    second: pipo-popupemotes_sampleanimation_174
+  - first:
+      213: 8321891915617091986
+    second: pipo-popupemotes_sampleanimation_175
+  - first:
+      213: 4938415628073491826
+    second: pipo-popupemotes_sampleanimation_176
+  - first:
+      213: -6347686371962095978
+    second: pipo-popupemotes_sampleanimation_177
+  - first:
+      213: -6131148868013385274
+    second: pipo-popupemotes_sampleanimation_178
+  - first:
+      213: 6201664397592819599
+    second: pipo-popupemotes_sampleanimation_179
+  - first:
+      213: 6766886632966726812
+    second: pipo-popupemotes_sampleanimation_180
+  - first:
+      213: -4837386305075744913
+    second: pipo-popupemotes_sampleanimation_181
+  - first:
+      213: 3878291045447486098
+    second: pipo-popupemotes_sampleanimation_182
+  - first:
+      213: 7368669649245083320
+    second: pipo-popupemotes_sampleanimation_183
+  - first:
+      213: 202914298455214022
+    second: pipo-popupemotes_sampleanimation_184
+  - first:
+      213: -7613213006603387336
+    second: pipo-popupemotes_sampleanimation_185
+  - first:
+      213: -3398808495129932949
+    second: pipo-popupemotes_sampleanimation_186
+  - first:
+      213: -2763159875528820725
+    second: pipo-popupemotes_sampleanimation_187
+  - first:
+      213: -3026061695337906416
+    second: pipo-popupemotes_sampleanimation_188
+  - first:
+      213: -3362734999247314131
+    second: pipo-popupemotes_sampleanimation_189
+  - first:
+      213: -5475685929120592042
+    second: pipo-popupemotes_sampleanimation_190
+  - first:
+      213: -6492327781030791432
+    second: pipo-popupemotes_sampleanimation_191
+  - first:
+      213: -7779047647169927063
+    second: pipo-popupemotes_sampleanimation_192
+  - first:
+      213: -9170729566574464443
+    second: pipo-popupemotes_sampleanimation_193
+  - first:
+      213: 4470724381417989558
+    second: pipo-popupemotes_sampleanimation_194
+  - first:
+      213: -3753573871796766567
+    second: pipo-popupemotes_sampleanimation_195
+  - first:
+      213: 3859307940870657735
+    second: pipo-popupemotes_sampleanimation_196
+  - first:
+      213: 2442467862777865333
+    second: pipo-popupemotes_sampleanimation_197
+  - first:
+      213: -4603324166950130812
+    second: pipo-popupemotes_sampleanimation_198
+  - first:
+      213: -4503656361778198980
+    second: pipo-popupemotes_sampleanimation_199
+  - first:
+      213: -8940002816527050342
+    second: pipo-popupemotes_sampleanimation_200
+  - first:
+      213: -3959095165154958773
+    second: pipo-popupemotes_sampleanimation_201
+  - first:
+      213: 6985818052246455150
+    second: pipo-popupemotes_sampleanimation_202
+  - first:
+      213: 1744115043267764982
+    second: pipo-popupemotes_sampleanimation_203
+  - first:
+      213: -8004924344038990970
+    second: pipo-popupemotes_sampleanimation_204
+  - first:
+      213: 3719559467834695398
+    second: pipo-popupemotes_sampleanimation_205
+  - first:
+      213: -6653336362967495346
+    second: pipo-popupemotes_sampleanimation_206
+  - first:
+      213: 8360780496297511273
+    second: pipo-popupemotes_sampleanimation_207
+  - first:
+      213: -1408418432486305527
+    second: pipo-popupemotes_sampleanimation_208
+  - first:
+      213: -1832637164993344839
+    second: pipo-popupemotes_sampleanimation_209
+  - first:
+      213: 3821538595452945085
+    second: pipo-popupemotes_sampleanimation_210
+  - first:
+      213: -8209901964074053626
+    second: pipo-popupemotes_sampleanimation_211
+  - first:
+      213: -8592228438442304598
+    second: pipo-popupemotes_sampleanimation_212
+  - first:
+      213: -8105438936887585304
+    second: pipo-popupemotes_sampleanimation_213
+  - first:
+      213: -3570102099610199498
+    second: pipo-popupemotes_sampleanimation_214
+  - first:
+      213: -6007103029768571364
+    second: pipo-popupemotes_sampleanimation_215
+  - first:
+      213: -7767551662964185274
+    second: pipo-popupemotes_sampleanimation_216
+  - first:
+      213: 2088417533862793901
+    second: pipo-popupemotes_sampleanimation_217
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 544
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed3f0bfa4abba79e0800000000000000
+      internalID: -1622778399717002274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc8d6bc2ee3ca5bc0800000000000000
+      internalID: -3793504308386408245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 544
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 621bb2767eeb402d0800000000000000
+      internalID: -3313313524760202970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 512
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2d8f1cf82aafb6f0800000000000000
+      internalID: -666627126822204113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 544
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a1fbfe90d6f606c0800000000000000
+      internalID: -4177380228458614365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 512
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0acd11dc3577e41c0800000000000000
+      internalID: -4517542174399538016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 544
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b840167117243350800000000000000
+      internalID: 5995459959885678772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 512
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 390023606d56f9ca0800000000000000
+      internalID: -6007971407987605357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 544
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cdfa9e34bb36e4d0800000000000000
+      internalID: -3105729247694881341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dd46af03c4ac2590800000000000000
+      internalID: -7697596505394885166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 544
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23a25198ae7fd7560800000000000000
+      internalID: 7313273956613827122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_11
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 512
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46fb4e6ea65128040800000000000000
+      internalID: 4648301314284240740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 544
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 157cb8ddbc17894e0800000000000000
+      internalID: -1974703316192737455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 512
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcec653251f00e5c0800000000000000
+      internalID: -4188331069992939827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_14
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 544
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02ffbe0e2bcd7d5d0800000000000000
+      internalID: -3037716762802258144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_15
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 512
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a665633745e3eac50800000000000000
+      internalID: 6678343829868140138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 544
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a97e7070f5199da90800000000000000
+      internalID: -7288634684596557926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_17
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3906abcd4df551c0800000000000000
+      internalID: -4515424540798088897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_18
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 544
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c889b5780391f3b70800000000000000
+      internalID: 8880844686417959052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_19
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 512
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb4f01d1d525b2d70800000000000000
+      internalID: 9019393238612636862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63e274e9155c882c0800000000000000
+      internalID: -4429073279180394954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15011527930f673b0800000000000000
+      internalID: -5514956564146876335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_22
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 480
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79cac2f0cd04961c0800000000000000
+      internalID: -4510002237943272297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_23
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 448
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5d6f2721158be290800000000000000
+      internalID: -7860042415926710950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_24
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 480
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36fe34ed07141b2c0800000000000000
+      internalID: -4417677806452609181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_25
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9354bc96b083e09c0800000000000000
+      internalID: -3959165400741362375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_26
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 480
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2bcaf4a272a39fc0800000000000000
+      internalID: -3489266673004131541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 448
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d5f68d1ceffded80800000000000000
+      internalID: -8219632355308538411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 480
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9939a454fb8461af0800000000000000
+      internalID: -426073128401464423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_29
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 262f67bee823293f0800000000000000
+      internalID: -895597786476121502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_30
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 480
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bae5070292cd0990800000000000000
+      internalID: -7418059078770496845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_31
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 448
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28c3fa43829511f20800000000000000
+      internalID: 3391590023604157570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_32
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 480
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca6187f63ad24b9d0800000000000000
+      internalID: -2759530491698211156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_33
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 448
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 049a20ff9c609e380800000000000000
+      internalID: -8941608120530851520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_34
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 480
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f717fcd1844b349a0800000000000000
+      internalID: -6249953636029337217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_35
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 448
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a52743fb30f25b40800000000000000
+      internalID: 5427664641210131879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_36
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 480
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a05af8085aaf6f90800000000000000
+      internalID: -6958155604179660634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_37
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 448
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83140c7272ced1be0800000000000000
+      internalID: -1504787047557086920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_38
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 480
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d35ed47b68e448b0800000000000000
+      internalID: -5168750924094614574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_39
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 448
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeb738eabfd501140800000000000000
+      internalID: 4688350547638713322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78cb3d30a42ede1d0800000000000000
+      internalID: -3319748542782522233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9605959c5ffcea00800000000000000
+      internalID: 787284807994640031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_42
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 416
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6bc3ce840d963f50800000000000000
+      internalID: 6860843725246155627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_43
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 384
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd658e9682350cb70800000000000000
+      internalID: 8917218695234213597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_44
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 416
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e864f400808665660800000000000000
+      internalID: 7374195823439988366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_45
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 753c7d2630d6ef820800000000000000
+      internalID: 2953918266912260951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_46
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 416
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bfe91c44b6c02bf0800000000000000
+      internalID: -351062293261717584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_47
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 384
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d835b38e53c5cff0800000000000000
+      internalID: -16392212921894699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_48
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 416
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58a60127d5742b4a0800000000000000
+      internalID: -6579117638963664251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_49
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3aed8c36be37ef10800000000000000
+      internalID: 2298875087216831038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_50
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 416
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96c405933b03a1e00800000000000000
+      internalID: 1016178212244311145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_51
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 384
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5702f3c232f5a9080800000000000000
+      internalID: -9179920285770506123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_52
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 416
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eb7b20eb1f71c300800000000000000
+      internalID: 270637210320731111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_53
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a7be28291e818380800000000000000
+      internalID: -8970732744045840478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_54
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 416
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d50c3d55551f9c390800000000000000
+      internalID: -7797435931000848291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_55
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 384
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c54c17cdb124ef460800000000000000
+      internalID: 7277326735307293788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_56
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 416
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee7e707cee82024b0800000000000000
+      internalID: -5467324941621270546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_57
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c93b50d47e647350800000000000000
+      internalID: 6013552850437355976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_58
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 416
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cb19c31c80cbaa90800000000000000
+      internalID: -7301530662991225915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_59
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 384
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e8489bf69d1e5580800000000000000
+      internalID: -8836592884550973215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b81ed209cee70140800000000000000
+      internalID: 4685976484406237361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_61
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec47702356951e8b0800000000000000
+      internalID: -5124716609804995378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_62
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 352
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c704f38b7ca896610800000000000000
+      internalID: 1614974531783311484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_63
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9684d42b6c0706a0800000000000000
+      internalID: -6483199484257597793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_64
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 352
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d201c22ba1325be70800000000000000
+      internalID: 9130242417128902701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_65
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4531575194740f470800000000000000
+      internalID: 8426313282028376916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_66
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 352
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b83d1e44d719ee940800000000000000
+      internalID: 5327355376438465419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_67
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 320
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd0830b63032d42c0800000000000000
+      internalID: -4445858759557545765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_68
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 352
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2102eb7cb1ba813c0800000000000000
+      internalID: -4388569701068955630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_69
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 133da44aca17fabc0800000000000000
+      internalID: -3769669376781135055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_70
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 352
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e40dff8b6999a0070800000000000000
+      internalID: 8073434154642952270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_71
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 320
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5598d4a6da8b8f0a0800000000000000
+      internalID: -6847520178464519851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_72
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 352
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49b105cc8188cbbf0800000000000000
+      internalID: -307221034479641708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_73
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aaad7a1dfb14f650800000000000000
+      internalID: 6265663755464321699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_74
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 352
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 813f90145c3536440800000000000000
+      internalID: 4927874523938288408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_75
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 320
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de53d64f2bfd63470800000000000000
+      internalID: 8374126516839986669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_76
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 352
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3402255b118da960800000000000000
+      internalID: 7614884499345769531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_77
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 320
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4fd6bb95efc71ad0800000000000000
+      internalID: -2731486063910002865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_78
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 352
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79d0e2a4176adae00800000000000000
+      internalID: 1057684493007981975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_79
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 320
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0357c55fe1c1cd60800000000000000
+      internalID: 7908815654319772427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5814c5b934f1109b0800000000000000
+      internalID: -5115773326486388347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_81
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2cdc3972168616e0800000000000000
+      internalID: -1867157581596926932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_82
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43190cca880f0be10800000000000000
+      internalID: 2211531886843433268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_83
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59d3d8ef15b9da790800000000000000
+      internalID: -7517181426546164331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_84
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 347425e45980cbc10800000000000000
+      internalID: 2070539366040749891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_85
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c9151cf62ef7e880800000000000000
+      internalID: -8581611121539737143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_86
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32e12b15b5a35bb90800000000000000
+      internalID: -7226805863159030237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_87
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 823c17ffcf2556c10800000000000000
+      internalID: 2046132852280640296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_88
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24efb6974804235f0800000000000000
+      internalID: -778488847864693182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_89
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b664007607393af30800000000000000
+      internalID: 4585670956566988395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_90
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fe60ed860dca1390800000000000000
+      internalID: -7846733972705874184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_91
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f602164d522a71b70800000000000000
+      internalID: 8869736274490105967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_92
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c29c79d115426afa0800000000000000
+      internalID: -5789900340130756308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_93
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2e96f04f18ea42d0800000000000000
+      internalID: -3293564956536562134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_94
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 288
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f72eefa75de2a830800000000000000
+      internalID: 4081085173220648948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_95
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 256
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e52a03c52f16c9f0800000000000000
+      internalID: -448636865830312475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_96
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 288
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 579f41a1b4b14ff70800000000000000
+      internalID: 9220024346508327285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_97
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1a612bdeafcfa7a0800000000000000
+      internalID: -6363639398543562210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_98
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 732215be15a2c1960800000000000000
+      internalID: 7573975204659012151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_99
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 256
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5415d363cf91f3e80800000000000000
+      internalID: -8196804225758572219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_100
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 224
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e170ff7e0d234a20800000000000000
+      internalID: 3045327313331843561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_101
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 224
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b75cecdaeefeb810800000000000000
+      internalID: 1783142787167573941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_102
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 195
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eba9b5aa92039e20800000000000000
+      internalID: 3356029010549779427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_103
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 224
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea179db71aa998a00800000000000000
+      internalID: 759308030546899374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_104
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 224
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8899eda9f69b07e00800000000000000
+      internalID: 1040535402913372552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_105
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 224
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aab8415e761b27b30800000000000000
+      internalID: 4283681255365839786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_106
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 224
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5987fa2e0c5d92570800000000000000
+      internalID: 8442514000896293013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_107
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 224
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caeeffa9311812280800000000000000
+      internalID: -9069826253342642516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_108
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 224
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 304ab37da827e2230800000000000000
+      internalID: 3615953491467150339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_109
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 224
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af9cf56ef2fb736c0800000000000000
+      internalID: -4163649118031328774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_110
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 224
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45f91566b48d6b240800000000000000
+      internalID: 4807267470615355220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_111
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 193
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0026e7a82c240c60800000000000000
+      internalID: 7783394609130250252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_112
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 197
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93aacfd6a7fec5bc0800000000000000
+      internalID: -3792893477042476487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_113
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 197
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb3ed43f8327dbd20800000000000000
+      internalID: 3295916091230774207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_114
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 196
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a3fda64712422eb0800000000000000
+      internalID: -4746158389557595223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_115
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 196
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92de62b0d2ddb32e0800000000000000
+      internalID: -2144877611981542103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_116
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 197
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9ff94f75e5ac0290800000000000000
+      internalID: -7922775239349895269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_117
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 197
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f5f7cb8268e48670800000000000000
+      internalID: 8540206303350879737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_118
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 195
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffcc4482694ae9320800000000000000
+      internalID: 2566669802475408639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_119
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 195
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6a8aa7a0072164b0800000000000000
+      internalID: -5449031190375134610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_120
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 160
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9539711e0c75de120800000000000000
+      internalID: 2444706658653803353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_121
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 160
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 160470285cc0d5390800000000000000
+      internalID: -7828086534870450079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_122
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 167
+        width: 33
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ae5a34a1bde16850800000000000000
+      internalID: 6368632695298875046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_123
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 167
+        width: 33
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dde8c8f096c2ab50800000000000000
+      internalID: 6603058329630076376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_124
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 163
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be14f44e458d7e850800000000000000
+      internalID: 6406326854077071851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_125
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 165
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 692a9f671833409e0800000000000000
+      internalID: -1656142131825630570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_126
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 163
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 549374bf99272cbc0800000000000000
+      internalID: -3764320332857001659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_127
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 165
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fdcd960a111781e0800000000000000
+      internalID: -2195767489842000395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_128
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 161
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d0b5920aeecb55b0800000000000000
+      internalID: -5378477825502891824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_129
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 161
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a1c88d16f80e14a0800000000000000
+      internalID: -6620844549037571675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_130
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 128
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 730cfd84f03db68d0800000000000000
+      internalID: -2851953876408483785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_131
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 128
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44c82e28a3b88c6c0800000000000000
+      internalID: -4122892375437439932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_132
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 135
+        width: 33
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 545dff47f56b4b1b0800000000000000
+      internalID: -5641683912087317179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_133
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 135
+        width: 33
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 703525fe41cec61f0800000000000000
+      internalID: -1050205038425517305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_134
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 131
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9767b78e1ce02950800000000000000
+      internalID: 6422392684500445084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_135
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 133
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a966750e406332730800000000000000
+      internalID: 3973078690842502810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_136
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 131
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 122fbd6503d06a930800000000000000
+      internalID: 4154022207562707489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_137
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 133
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30f7a8a1a844d44d0800000000000000
+      internalID: -3148785204520648957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_138
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 129
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6784b45ee9a208f0800000000000000
+      internalID: -575710961261574289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_139
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 129
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc9cb3bdf7b7a3650800000000000000
+      internalID: 6213414424980212171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_140
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 108
+        width: 25
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70ad67ec9230ddd50800000000000000
+      internalID: 6763565693472791047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_141
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 99
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a0168b80c3adf0d0800000000000000
+      internalID: -3387371297342877532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_142
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 108
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d30abcbc67b52eb00800000000000000
+      internalID: 856347444937203773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_143
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 99
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e44cc62f46615af0800000000000000
+      internalID: -409433600974633760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_144
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 108
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e739c18bc2ddcd590800000000000000
+      internalID: -7647994883044764802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_145
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 99
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f13cc6b915f48380800000000000000
+      internalID: -8969775067025362446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_146
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 108
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e541adaa17b23d8d0800000000000000
+      internalID: -2822864774233451426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_147
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 99
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55aedfa4e469c54b0800000000000000
+      internalID: -5450316186015372715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_148
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 108
+        width: 27
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d75e983e6d41ba120800000000000000
+      internalID: 2426055737442166141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_149
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 99
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f14ec29d9055f4e50800000000000000
+      internalID: 6795743863512032287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_150
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 108
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2cae03a89124c420800000000000000
+      internalID: 2649279420255087659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_151
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 99
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf16aa21554646600800000000000000
+      internalID: 460603378446787067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_152
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 108
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bde9cc3b5176ac2c0800000000000000
+      internalID: -4410599542147473701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_153
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 99
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1df2aa645e5ab2c10800000000000000
+      internalID: 2029898461212192721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_154
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 108
+        width: 27
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44697e8b7226e27e0800000000000000
+      internalID: -1788384079274076604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_155
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 99
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0f5b54294ebbf490800000000000000
+      internalID: -7711360715589984498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_156
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 108
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eee830b5657ed120800000000000000
+      internalID: 2440517127690055401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_157
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 99
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6afe694c1ff7067f0800000000000000
+      internalID: -621356072215056474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_158
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 108
+        width: 33
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a68634b47cb0ac50800000000000000
+      internalID: 6674541857188775590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_159
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 99
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e69b76d6448f6de0800000000000000
+      internalID: -1337705124524747034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_160
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 76
+        width: 25
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0b55b3fb59ef51b0800000000000000
+      internalID: -5665553225068750069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_161
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 67
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 895142ede2792b770800000000000000
+      internalID: 8625122463919117720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_162
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 76
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09927cdccf79120b0800000000000000
+      internalID: -5755151736762848880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_163
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 67
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7116de4689c296650800000000000000
+      internalID: 6226556992856350999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_164
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 76
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c17530fbae2b0e950800000000000000
+      internalID: 6476372985455531804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_165
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 67
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1936b26c3472d0c0800000000000000
+      internalID: -4552448470615181025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_166
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 76
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13e1b5e61f7cb60f0800000000000000
+      internalID: -1122583842346295759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_167
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 67
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffb13c28f02287440800000000000000
+      internalID: 4933730841798056959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_168
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 76
+        width: 27
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ff96fcc97eb3cd60800000000000000
+      internalID: 7909374800931758072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_169
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 67
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f556de331724ba2c0800000000000000
+      internalID: -4419365555364076193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_170
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 76
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8837ab9c32c12560800000000000000
+      internalID: 7287319237627426958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_171
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 67
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39491a97b19e592a0800000000000000
+      internalID: -6731217763821316973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_172
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 76
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31ca430e9799346e0800000000000000
+      internalID: -1854469872814871533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_173
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 67
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 926eade453af36fd0800000000000000
+      internalID: -2349759473694087639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_174
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 76
+        width: 27
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87476723849fad6b0800000000000000
+      internalID: -5270626325404158856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_175
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 67
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2914d812b9c4d7370800000000000000
+      internalID: 8321891915617091986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_176
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 76
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27dde8059d6c88440800000000000000
+      internalID: 4938415628073491826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_177
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 67
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6967c9d40ec78e7a0800000000000000
+      internalID: -6347686371962095978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_178
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 76
+        width: 33
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c91609b698c9eaa0800000000000000
+      internalID: -6131148868013385274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_179
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 67
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f87f4ba69ecb01650800000000000000
+      internalID: 6201664397592819599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_180
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 44
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9422594a8fc8ed50800000000000000
+      internalID: 6766886632966726812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_181
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 35
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6fee9cf8c62edcb0800000000000000
+      internalID: -4837386305075744913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_182
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 44
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29ac973682572d530800000000000000
+      internalID: 3878291045447486098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_183
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 35
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b6947e4106c24660800000000000000
+      internalID: 7368669649245083320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_184
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 44
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c74547ba75e0d200800000000000000
+      internalID: 202914298455214022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_185
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 35
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83e75066b1f685690800000000000000
+      internalID: -7613213006603387336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_186
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 44
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6b433c6ea105d0d0800000000000000
+      internalID: -3398808495129932949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_187
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 35
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b08fd79abb847a9d0800000000000000
+      internalID: -2763159875528820725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_188
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 44
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01fb7fcbbe44106d0800000000000000
+      internalID: -3026061695337906416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_189
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 35
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d232710b55a2551d0800000000000000
+      internalID: -3362734999247314131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_190
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 35
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65f892da8a47204b0800000000000000
+      internalID: -5475685929120592042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_191
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 44
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f6724ee74e96e5a0800000000000000
+      internalID: -6492327781030791432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_192
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 35
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 968299b41654b0490800000000000000
+      internalID: -7779047647169927063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_193
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 44
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 542382d3c060bb080800000000000000
+      internalID: -9170729566574464443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_194
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 35
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b5e81353243b0e30800000000000000
+      internalID: 4470724381417989558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_195
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 44
+        width: 27
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 998bd5d6370a8ebc0800000000000000
+      internalID: -3753573871796766567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_196
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 35
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c6907eef140f8530800000000000000
+      internalID: 3859307940870657735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_197
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 44
+        width: 25
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 574ae28949365e120800000000000000
+      internalID: 2442467862777865333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_198
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 35
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48b67f24f05bd10c0800000000000000
+      internalID: -4603324166950130812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_199
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 12
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3648cd766ccf71c0800000000000000
+      internalID: -4503656361778198980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_200
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 3
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a99d9e5fdcabee380800000000000000
+      internalID: -8940002816527050342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_201
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 12
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b42e8f86ce77e09c0800000000000000
+      internalID: -3959095165154958773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_202
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 3
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6349ad818c92f060800000000000000
+      internalID: 6985818052246455150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_203
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 12
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f2e3612467543810800000000000000
+      internalID: 1744115043267764982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_204
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 3
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68bdda398bbc8e090800000000000000
+      internalID: -8004924344038990970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_205
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 12
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ee5a3101a78e9330800000000000000
+      internalID: 3719559467834695398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_206
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 3
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4d022a24d99aa3a0800000000000000
+      internalID: -6653336362967495346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_207
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 12
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 969c3d66095770470800000000000000
+      internalID: 8360780496297511273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_208
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 3
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9019a84d5ea447ce0800000000000000
+      internalID: -1408418432486305527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_209
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 3
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ba846a453a2196e0800000000000000
+      internalID: -1832637164993344839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_210
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 12
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db20b6dea15d80530800000000000000
+      internalID: 3821538595452945085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_211
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 3
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 600959e59a1901e80800000000000000
+      internalID: -8209901964074053626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_212
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 12
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aab13a142c542c880800000000000000
+      internalID: -8592228438442304598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_213
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 3
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e5123a3b32b38f80800000000000000
+      internalID: -8105438936887585304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_214
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 12
+        width: 27
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63a9bdc3e03747ec0800000000000000
+      internalID: -3570102099610199498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_215
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 3
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c16b8751f9b72aca0800000000000000
+      internalID: -6007103029768571364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_216
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 12
+        width: 25
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6476682baec143490800000000000000
+      internalID: -7767551662964185274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-popupemotes_sampleanimation_217
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 3
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da2d690aeac8bfc10800000000000000
+      internalID: 2088417533862793901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
