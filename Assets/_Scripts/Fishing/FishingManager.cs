@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using NUnit.Framework.Interfaces;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -27,6 +28,13 @@ public class FishingManager : Singleton<FishingManager>
     private FishingState currentState = FishingState.Idle;
     private Coroutine currentCoroutine;
     private FishRarity selectedRarity = FishRarity.Common;
+
+    [Header("Special Event Settings")]
+    public DialogueData winDialogue;           // Thoại khi thắng
+    public FishingRodData rewardRod;           // Cần câu thưởng
+    public FishData fishEvent;           // Mai rùa
+    public int turtleShellLoseAmount = 1;      // Số lượng mất khi thua
+
 
     public float TotalBonusRareRate => rodBonusRare + baitBonusRare;
     public float TotalBonusLegendaryRate => rodBonusLegendary + baitBonusLegendary;
@@ -101,6 +109,7 @@ public class FishingManager : Singleton<FishingManager>
             if (fish.isSpecial)
             {
                 Debug.Log("a");
+                isPlayMiniGame = true;
                 SpecialEventManager.Instance.TriggerSpecialEvent(fish.specialEventID);
             }
 
@@ -118,6 +127,38 @@ public class FishingManager : Singleton<FishingManager>
         ChangeState(FishingState.Idle);  // Quay lại trạng thái Idle
         isPlayMiniGame = false;
     }
+    public void TriggerFishingEvent(bool isWin)
+    {
+        if (isWin)
+        {
+            // ✅ Hiện thoại
+            if (winDialogue != null)
+            {
+                DialogueManager.Instance.StartDialogue(winDialogue);
+            }
+
+            // ✅ Tặng cần câu
+            if (rewardRod != null)
+            {
+                FishingInventory.Instance?.AddRod(rewardRod);
+                NotificationManager.Instance?.ShowNotification($"🎣 Bạn nhận được cần câu: {rewardRod.rodName}!");
+            }
+            isPlayMiniGame = false;
+            SpecialMinigameUI.Instance.turtleGameUI.SetActive(false);
+        }
+        else
+        {
+            // ❌ Mất mai rùa
+            if (fishEvent != null)
+            {
+                FishInventory.Instance?.RemoveFish(fishEvent, turtleShellLoseAmount);
+                NotificationManager.Instance?.ShowNotification($"Bạn đã mất {fishEvent.fishName}");
+            }
+            isPlayMiniGame = false;
+            SpecialMinigameUI.Instance.turtleGameUI.SetActive(false);
+        }
+    }
+
     private void ShowCaughtFish(FishData fish)
     {
         if (fish == null || fishSprite == null) return;
