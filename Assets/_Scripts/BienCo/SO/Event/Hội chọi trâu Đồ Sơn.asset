@@ -18,7 +18,7 @@ MonoBehaviour:
     nhau \u0111\u1EA7y s\u1EE9c m\u1EA1nh."
   iconBienCo: {fileID: 0}
   loaiBienCo: 1
-  xacSuatXuatHien: 1
+  xacSuatXuatHien: 0.4
   giaTriTien: 0
   rodData: {fileID: 0}
   soLuongCanCau: 0

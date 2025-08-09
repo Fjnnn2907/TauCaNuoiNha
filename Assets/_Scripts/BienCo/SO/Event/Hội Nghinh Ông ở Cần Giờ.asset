@@ -18,7 +18,7 @@ MonoBehaviour:
     d\xE2n ca tr\xEAn bi\u1EC3n."
   iconBienCo: {fileID: 0}
   loaiBienCo: 1
-  xacSuatXuatHien: 0.5
+  xacSuatXuatHien: 0.42
   giaTriTien: 0
   rodData: {fileID: 0}
   soLuongCanCau: 0
