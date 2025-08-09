@@ -32,7 +32,7 @@ public static class SimpleRecognizer
             }
         }
 
-        return bestScore < TOLERANCE ? bestMatch : "unknown";
+        return bestScore < TOLERANCE ? bestMatch : "";
     }
 
     // Hàm lọc điểm thừa
