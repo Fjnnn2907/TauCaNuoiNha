@@ -258,8 +258,16 @@ public class FillBlankGameManager : MonoBehaviour
         // Kiểm tra cán đích bằng GameObject finishLine
         if (canoe.position.y >= finishLine.position.y)
         {
-            if (canoe == canoePlayer) EndGame("Bạn thắng! ");
-            else EndGame("Máy thắng! ");
+            if (canoe == canoePlayer)
+            {
+                EndGame("Bạn thắng! ");
+                FishingManager.Instance?.TriggerFishingEvent(true);
+            }
+            else
+            {
+                EndGame("Máy thắng! ");
+                FishingManager.Instance?.TriggerFishingEvent(false);
+            }
             yield break;
         }
     }

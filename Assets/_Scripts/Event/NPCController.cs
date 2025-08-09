@@ -21,4 +21,9 @@ public class NPCController : Singleton<NPCController>
             yield return null;
         }
     }
+
+    public void EndGame()
+    {
+        transform.position = pointA.position;
+    }
 }

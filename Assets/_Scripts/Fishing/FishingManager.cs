@@ -30,6 +30,7 @@ public class FishingManager : Singleton<FishingManager>
     private FishRarity selectedRarity = FishRarity.Common;
 
     [Header("Special Event Settings")]
+    public GameObject canvanObj;
     public DialogueData winDialogue;           // Thoại khi thắng
     public FishingRodData rewardRod;           // Cần câu thưởng
     public FishData fishEvent;           // Mai rùa
@@ -104,16 +105,15 @@ public class FishingManager : Singleton<FishingManager>
             FishInventory.Instance.AddFish(fish);
             QuestManager.Instance.OnFishCaught(fish);
             ShowCaughtFish(fish);
-
+            isPlayMiniGame = false;
             // ✅ Nếu cá là cá đặc biệt thì kích hoạt event
             if (fish.isSpecial)
             {
                 Debug.Log("a");
                 isPlayMiniGame = true;
+                canvanObj.SetActive(false);
                 SpecialEventManager.Instance.TriggerSpecialEvent(fish.specialEventID);
-            }
-
-            isPlayMiniGame = false;
+            }           
         }
 
         ChangeState(FishingState.Pulling);
@@ -144,6 +144,8 @@ public class FishingManager : Singleton<FishingManager>
                 NotificationManager.Instance?.ShowNotification($"🎣 Bạn nhận được cần câu: {rewardRod.rodName}!");
             }
             isPlayMiniGame = false;
+            canvanObj.SetActive(true);
+            NPCController.Instance?.EndGame();
             SpecialMinigameUI.Instance.turtleGameUI.SetActive(false);
         }
         else
@@ -155,6 +157,8 @@ public class FishingManager : Singleton<FishingManager>
                 NotificationManager.Instance?.ShowNotification($"Bạn đã mất {fishEvent.fishName}");
             }
             isPlayMiniGame = false;
+            canvanObj.SetActive(true);
+            NPCController.Instance?.EndGame();
             SpecialMinigameUI.Instance.turtleGameUI.SetActive(false);
         }
     }
