@@ -15,6 +15,7 @@ MonoBehaviour:
   icon: {fileID: 3234629978573100161, guid: 15b13c979abeeea499bdee71335b60cf, type: 3}
   npcName: "R\xF9a Ho\xE0n Ki\u1EBFm"
   sentences:
-  - "\u1ED2! B\u1EA1n \u0111\xE3 t\xECm th\u1EA5y mai r\xF9a r\u1ED3i sao?"
-  - "H\xE3y theo t\xF4i, t\xF4i s\u1EBD cho b\u1EA1n th\u1EA5y m\u1ED9t \u0111i\u1EC1u
-    b\xED m\u1EADt..."
+  - "Nh\xE0 ng\u01B0\u01A1i c\xF3 t\u1EA5m l\xF2ng ki\xEAn c\u01B0\u1EDDng"
+  - "L\xF2ng y\xEAu n\u01B0\u1EDBc ki\u1EBFn th\u1EE9c d\u1ED3i d\xE0o"
+  - "Ta c\u1EA3m \u0111\u1ED9ng tinh th\u1EA7n nh\xE0 ng\u01B0\u1EDDi t\u1EB7ng nh\xE0
+    ng\u01B0\u1EDDi m\xF3n qu\xE0"

@@ -85,6 +85,7 @@ public class FishingManager : Singleton<FishingManager>
 
         FishingBaitUI.Instance?.RefreshUI();
         float totalBonusRate = TotalBonusRareRate + TotalBonusLegendaryRate;
+        Debug.Log(totalBonusRate);
         fishingSlider.StartSlider(OnSliderResult, totalBonusRate);
         //cauButton.interactable = false;
     }
@@ -175,9 +176,9 @@ public class FishingManager : Singleton<FishingManager>
         FishCollection.Instance.DiscoverFish(fish);
 
         if (fish.isUnique)
-            NotificationManager.Instance?.ShowNotification($"🎉 Bạn vừa câu được cá độc nhất: {fish.fishName} ({fish.rarity})!");
+            NotificationManager.Instance?.ShowNotification($"Bạn vừa câu được cá độc nhất: {fish.fishName})!");
         else
-            NotificationManager.Instance?.ShowNotification($"Bạn câu được cá {fish.fishName} ({fish.rarity})");
+            NotificationManager.Instance?.ShowNotification($"Bạn câu được cá {fish.fishName}");
     }
 
 

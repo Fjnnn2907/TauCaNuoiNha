@@ -796,8 +796,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2718,8 +2718,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: de592bb903a49dd42aac5531f8ae141a, type: 2}
   - {fileID: 11400000, guid: 1c5f193dfa1bded4baca0b80e8e408a0, type: 2}
   - {fileID: 11400000, guid: 8687137dc1b0d764f92663f7a67d469c, type: 2}
-  - {fileID: 11400000, guid: 4a867e87878f26f41bd0d9ac15688a94, type: 2}
   - {fileID: 11400000, guid: 5d76affcdf1966644b1936860139cad4, type: 2}
+  - {fileID: 11400000, guid: abcdbd0aba9abaf4a96418d8397eb903, type: 2}
+  - {fileID: 11400000, guid: b661366c48c8aaa41ac120097102cb70, type: 2}
+  - {fileID: 11400000, guid: 4a867e87878f26f41bd0d9ac15688a94, type: 2}
+  - {fileID: 11400000, guid: b3ca966f976187c4dbf35cc5bf7737b7, type: 2}
   allFish:
   - {fileID: 11400000, guid: 1c5f193dfa1bded4baca0b80e8e408a0, type: 2}
   - {fileID: 11400000, guid: de592bb903a49dd42aac5531f8ae141a, type: 2}
@@ -6136,11 +6139,11 @@ MonoBehaviour:
   sentences:
   - template: "V\u1ECBnh ___ \u0111\u01B0\u1EE3c UNESCO c\xF4ng nh\u1EADn l\xE0 Di
       s\u1EA3n Thi\xEAn nhi\xEAn Th\u1EBF gi\u1EDBi."
-    answer: "H\u1EA1 Long"
+    answer: Ha Long
     hint: "t\u1EADp \u0111o\xE0n "
     difficulty: 2
   - template: "Th\u1EE7 \u0111\xF4 c\u1EE7a Vi\u1EC7t Nam l\xE0 ___."
-    answer: "H\xE0 N\u1ED9i"
+    answer: Ha Noi
     hint: "N\u1EB1m \u1EDF mi\u1EC1n B\u1EAFc, n\u01A1i c\xF3 L\u0103ng B\xE1c H\u1ED3."
     difficulty: 2
   - template: "___ l\xE0 v\u1ECB vua \u0111\xE3 th\u1ED1ng nh\u1EA5t \u0111\u1EA5t
@@ -6150,13 +6153,13 @@ MonoBehaviour:
     difficulty: 2
   - template: "\u0110\u01B0\u1EDDng Tr\u01B0\u1EDDng S\u01A1n c\xF2n \u0111\u01B0\u1EE3c
       g\u1ECDi l\xE0 \u0111\u01B0\u1EDDng ___."
-    answer: "H\u1ED3 Ch\xED Minh"
+    answer: Ho Chi Minh
     hint: "Con \u0111\u01B0\u1EDDng huy\u1EBFt m\u1EA1ch trong kh\xE1ng chi\u1EBFn
       ch\u1ED1ng M\u1EF9"
     difficulty: 3
   - template: "M\xF3n \u0103n n\u1ED5i ti\u1EBFng nh\u1EA5t c\u1EE7a Vi\u1EC7t Nam
       l\xE0 ___."
-    answer: "ph\u1EDF"
+    answer: Pho
     hint: "Lo\u1EA1i th\u1ECBt \u0111\u1ECF th\u01B0\u1EDDng d\xF9ng trong m\xF3n
       \u0103n n\xE0y."
     difficulty: 1
@@ -12424,6 +12427,7 @@ Transform:
   m_Children:
   - {fileID: 1517914190}
   - {fileID: 84922511}
+  - {fileID: 1635358324}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &541391003
@@ -12711,8 +12715,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 711, y: 412}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 711, y: 389.29822}
+  m_SizeDelta: {x: 200, y: 95.4035}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &568510148
 MonoBehaviour:
@@ -12761,15 +12765,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -15885,8 +15889,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d4ace3c5c21f88f49a5fe1c1bc009601, type: 2}
   - {fileID: 11400000, guid: 063d778757026114da2a34243eba29c5, type: 2}
   - {fileID: 11400000, guid: b67bb0d5ed9726a45a6b0e80a7c52c99, type: 2}
-  - {fileID: 11400000, guid: dd1f73d5ae833dc41b66b3bf07c287d0, type: 2}
-  - {fileID: 11400000, guid: e394bc747ab91a14b83a54082fe0be46, type: 2}
   - {fileID: 11400000, guid: e4b2ab817b12a874898d28df49d81fd7, type: 2}
   minDelay: 30
   maxDelay: 120
@@ -28444,7 +28446,7 @@ Tilemap:
       - {fileID: 1394408354, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: 173622504, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: -358284151, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -2, y: 4, z: 0}
@@ -28612,7 +28614,7 @@ Tilemap:
       - {fileID: 1958928613, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: -478653590, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: 2113070652, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
-      m_AnimationSpeed: 2.5000002
+      m_AnimationSpeed: 2.5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -16, y: 5, z: 0}
@@ -28813,7 +28815,7 @@ Tilemap:
       - {fileID: -699266767, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: 1279504904, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: -1532116312, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -1, y: 5, z: 0}
@@ -28918,7 +28920,7 @@ Tilemap:
       - {fileID: -699266767, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: 1279504904, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: -1532116312, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 6, y: 5, z: 0}
@@ -29043,7 +29045,7 @@ Tilemap:
       - {fileID: 1958928613, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: -478653590, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: 2113070652, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
-      m_AnimationSpeed: 2.5000002
+      m_AnimationSpeed: 2.5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 17, y: 5, z: 0}
@@ -29500,7 +29502,7 @@ Tilemap:
       - {fileID: -276855439, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: -1615396509, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: -348901987, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 2, y: 7, z: 0}
@@ -32275,6 +32277,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1219567709}
   - component: {fileID: 1219567710}
+  - component: {fileID: 1219567711}
   m_Layer: 5
   m_Name: Slots
   m_TagString: Untagged
@@ -32325,6 +32328,20 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 20}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &1219567711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219567708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
 --- !u!1 &1223490914
 GameObject:
   m_ObjectHideFlags: 0
@@ -36602,7 +36619,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter text...
+  m_text: "Nh\u1EADp c\xE2u tr\u1EA3 l\u1EDDi ..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -36611,8 +36628,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 2150773298
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.5}
+    rgba: 2164260863
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0.5}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -39708,7 +39725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Content: {fileID: 1219567709}
-  m_Horizontal: 1
+  m_Horizontal: 0
   m_Vertical: 1
   m_MovementType: 1
   m_Elasticity: 0.1
@@ -41609,7 +41626,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: -190186048, guid: bbdb0ce0cf08a3a4c81ad79c3188f4c7, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -43563,7 +43580,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1635358323}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -43571,7 +43588,7 @@ Transform:
   - {fileID: 1234157504}
   - {fileID: 1785461542}
   - {fileID: 1516402160}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 541391002}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1635993987
 GameObject:
@@ -46025,8 +46042,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -681, y: 412}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -681, y: 389.29822}
+  m_SizeDelta: {x: 200, y: 95.4035}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1731946185
 MonoBehaviour:
@@ -46075,15 +46092,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -72100,7 +72117,7 @@ Tilemap:
       - {fileID: -1605707320451941170, guid: 207c6cbb627a0ac4b945bd03f42c381c, type: 3}
       - {fileID: -1513632301, guid: 207c6cbb627a0ac4b945bd03f42c381c, type: 3}
       - {fileID: 2015565943, guid: 207c6cbb627a0ac4b945bd03f42c381c, type: 3}
-      m_AnimationSpeed: 2.5
+      m_AnimationSpeed: 2.5000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   m_TileAssetArray:
@@ -78145,8 +78162,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.6171, y: 412}
-  m_SizeDelta: {x: 1043.0823, y: 50}
+  m_AnchoredPosition: {x: 1.6171, y: 389.29822}
+  m_SizeDelta: {x: 1043.0823, y: 95.4035}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2135953382
 MonoBehaviour:
@@ -78195,15 +78212,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -78490,10 +78507,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1889834328}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 117, y: -167}
-  m_SizeDelta: {x: 959.2925, y: 241.1155}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 438.31}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2143759108
 MonoBehaviour:
@@ -78542,8 +78559,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 90
-  m_fontSizeBase: 90
+  m_fontSize: 120
+  m_fontSizeBase: 120
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -78603,7 +78620,6 @@ SceneRoots:
   - {fileID: 234894602}
   - {fileID: 379544401}
   - {fileID: 331636039}
-  - {fileID: 1635358324}
   - {fileID: 541391002}
   - {fileID: 717623964}
   - {fileID: 82523692}

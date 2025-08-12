@@ -106,7 +106,7 @@ public class FillBlankGameManager : MonoBehaviour
         currentSentence = sentences[UnityEngine.Random.Range(0, sentences.Count)];
         ShowQuestion();
         roundActive = true;
-        float cpuDelay = 2f; // Máy sẽ trả lời sau đúng 2 giây
+        float cpuDelay = 3f; // Máy sẽ trả lời sau đúng 2 giây
         StartCoroutine(CPUThinkAndPlay(cpuDelay));
         roundTimer = StartCoroutine(RoundTimeout(timeLimitPerRound));
     }
