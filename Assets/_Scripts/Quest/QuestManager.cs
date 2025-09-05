@@ -16,8 +16,6 @@ public class QuestManager : Singleton<QuestManager>, ISaveable
     private void Start()
     {
         SaveManager.Instance.RegisterSaveable(this);
-        // Không gọi GenerateNewQuest ở đây nếu đã có data load
-
         zoneQuestLimit = Random.Range(3, 6);
     }
 
@@ -32,6 +30,7 @@ public class QuestManager : Singleton<QuestManager>, ISaveable
         {
             fishesOfRarity = FishDatabase.Instance.allFish
                 .Where(f => f.rarity == targetRarity && f.zone == currentZone)
+                .Where(f => !f.isUnique || FishInventory.Instance.GetFishQuantity(f) == 0) // ✅ Không chọn cá unique đã bắt
                 .ToList();
 
             if (fishesOfRarity.Count > 0)
@@ -40,6 +39,7 @@ public class QuestManager : Singleton<QuestManager>, ISaveable
             {
                 fishesOfRarity = FishDatabase.Instance.allFish
                     .Where(f => f.rarity == targetRarity)
+                    .Where(f => !f.isUnique || FishInventory.Instance.GetFishQuantity(f) == 0) // ✅ Không chọn cá unique đã bắt
                     .ToList();
             }
         }
@@ -47,6 +47,7 @@ public class QuestManager : Singleton<QuestManager>, ISaveable
         {
             fishesOfRarity = FishDatabase.Instance.allFish
                 .Where(f => f.rarity == targetRarity)
+                .Where(f => !f.isUnique || FishInventory.Instance.GetFishQuantity(f) == 0) // ✅ Không chọn cá unique đã bắt
                 .ToList();
         }
 
@@ -57,7 +58,10 @@ public class QuestManager : Singleton<QuestManager>, ISaveable
         }
 
         FishData targetFish = fishesOfRarity[Random.Range(0, fishesOfRarity.Count)];
-        int amount = Random.Range(1, 6);
+
+        // ✅ Cá unique chỉ yêu cầu 1 con
+        int amount = targetFish.isUnique ? 1 : Random.Range(2, 6);
+
         int baseReward = amount * (int)targetRarity * 15 + 30;
         float rewardMultiplier = 1f + questsCompleted * 0.1f;
         int finalReward = Mathf.RoundToInt(baseReward * rewardMultiplier);
@@ -77,19 +81,25 @@ public class QuestManager : Singleton<QuestManager>, ISaveable
         Debug.Log($"📜 Nhiệm vụ mới: {currentQuest.description}");
     }
 
-
-
     private string GetCurrentZoneFromScene()
     {
         string sceneName = SceneManager.GetActiveScene().name;
         var location = MapManager.Instance.locations.FirstOrDefault(loc => loc.sceneName == sceneName);
         return location != null ? location.locationName : "Không xác định";
     }
+
     public void OnFishCaught(FishData fish)
     {
         if (fish.fishName == currentQuest.requiredFishName &&
             fish.rarity == currentQuest.requiredRarity)
         {
+            // ✅ Nếu cá là unique và đã câu trong nhiệm vụ, bỏ qua
+            if (fish.isUnique && currentProgress >= 1)
+            {
+                Debug.Log($"⚠️ {fish.fishName} là cá unique, đã bắt rồi.");
+                return;
+            }
+
             currentProgress++;
             QuestUI.Instance?.UpdateUI();
             Debug.Log($"🐟 Đã câu được {currentProgress}/{currentQuest.requiredAmount} {fish.fishName}");

@@ -16,4 +16,6 @@ public class FishData : ScriptableObject
 
     public bool isSpecial; // ✅ Là cá đặc biệt (trigger event)
     public string specialEventID; // ✅ Tên hoặc ID event để kích hoạt
+
+    public bool isNotSellable;
 }

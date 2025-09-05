@@ -200,22 +200,38 @@ public class FishingManager : Singleton<FishingManager>
     {
         float roll = Random.Range(0f, 100f);
 
-        float baseRare = isInGreenZone ? 15f : 5f;
-        float baseLegendary = isInGreenZone ? 5f : 1f;
+        // Base rate (rộng rãi hơn)
+        float baseRare = isInGreenZone ? 20f : 10f;       // Hit: 20% | Miss: 10%
+        float baseLegendary = isInGreenZone ? 6f : 2f;    // Hit: 6%  | Miss: 2%
 
-        // Tăng theo tỷ lệ logarithm để giảm độ tăng đột ngột khi lên cao
-        float scaledRareBonus = Mathf.Log10(Mathf.Max(1, TotalBonusRareRate - 20)) * 20f;   // ~ 0 → 40
-        float scaledLegendaryBonus = Mathf.Log10(Mathf.Max(1, TotalBonusLegendaryRate - 20)) * 25f; // ~ 0 → 50
+        // --- Config theo range hiện tại ---
+        const float RARE_MIN = 9f, RARE_MAX = 92f;
+        const float LEG_MIN = 4f, LEG_MAX = 83f;
 
-        float finalRareChance = Mathf.Clamp(baseRare + scaledRareBonus, 0f, 80f);
-        float finalLegendaryChance = Mathf.Clamp(baseLegendary + scaledLegendaryBonus, 0f, 20f);
+        // Bonus tối đa
+        const float RARE_ADD_MAX = 25f;   // Rare có thể tăng thêm 25%
+        const float LEG_ADD_MAX = 15f;   // Legendary có thể tăng thêm 15%
 
-        if (roll < finalLegendaryChance)
-            return FishRarity.Legendary;
-        if (roll < finalLegendaryChance + finalRareChance)
-            return FishRarity.Rare;
+        // Miss vẫn có cơ hội khá cao (80% hiệu lực bonus)
+        float hitFactor = isInGreenZone ? 1f : 0.8f;
+
+        float Scale(float v, float min, float max)
+        {
+            return Mathf.Clamp01((v - min) / Mathf.Max(0.0001f, max - min));
+        }
+
+        float rareAdd = Scale(TotalBonusRareRate, RARE_MIN, RARE_MAX) * RARE_ADD_MAX * hitFactor;
+        float legAdd = Scale(TotalBonusLegendaryRate, LEG_MIN, LEG_MAX) * LEG_ADD_MAX * hitFactor;
+
+        float finalRare = Mathf.Clamp(baseRare + rareAdd, 0f, 45f);        // Rare tối đa 45%
+        float finalLegendary = Mathf.Clamp(baseLegendary + legAdd, 0f, 18f); // Legendary tối đa 18%
+
+        if (roll < finalLegendary) return FishRarity.Legendary;
+        if (roll < finalLegendary + finalRare) return FishRarity.Rare;
         return FishRarity.Common;
     }
+
+
 
 
     private void ChangeState(FishingState newState)

@@ -41,7 +41,11 @@ public class FishDetailPanel : Singleton<FishDetailPanel>
         quantityText.text = $"SL: {quantity}";
         rarityText.text = $"PL: {fish.rarity}";
         descriptionText.text = fish.description;
-        priceText.text = $"Giá: {fish.sellPrice}";
+
+        // Nếu cá không bán được thì hiện chữ "Không thể bán"
+        priceText.text = fish.isNotSellable
+            ? "Không thể bán"
+            : $"Giá: {fish.sellPrice}";
 
         // Đổi màu tên cá theo độ hiếm
         rarityText.text = fish.rarity switch
@@ -52,9 +56,12 @@ public class FishDetailPanel : Singleton<FishDetailPanel>
             _ => $"<color=#656565>PL: {fish.rarity}</color>"
         };
 
-        sellButton.interactable = quantity > 0;
+        // ✅ Luôn hiện nút Sell, nhưng disable nếu cá không thể bán
         sellButton.gameObject.SetActive(true);
+        sellButton.interactable = quantity > 0 && !fish.isNotSellable;
     }
+
+
 
     public void ClearPanel()
     {

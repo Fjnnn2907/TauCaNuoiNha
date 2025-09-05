@@ -18169,7 +18169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Content: {fileID: 2126154276}
-  m_Horizontal: 1
+  m_Horizontal: 0
   m_Vertical: 1
   m_MovementType: 1
   m_Elasticity: 0.1
@@ -25034,6 +25034,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e5bc4926b4eab1d46b9081cdcfc080e6, type: 2}
   - {fileID: 11400000, guid: 8404d13ad27013448845e7af64cf0f5a, type: 2}
   - {fileID: 11400000, guid: b3ca966f976187c4dbf35cc5bf7737b7, type: 2}
+  - {fileID: 11400000, guid: 4a867e87878f26f41bd0d9ac15688a94, type: 2}
 --- !u!1 &1292823675
 GameObject:
   m_ObjectHideFlags: 0
@@ -44094,6 +44095,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2126154276}
   - component: {fileID: 2126154277}
+  - component: {fileID: 2126154278}
   m_Layer: 5
   m_Name: Slots
   m_TagString: Untagged
@@ -44144,6 +44146,20 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 20}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &2126154278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126154275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
 --- !u!1 &2126222141
 GameObject:
   m_ObjectHideFlags: 0

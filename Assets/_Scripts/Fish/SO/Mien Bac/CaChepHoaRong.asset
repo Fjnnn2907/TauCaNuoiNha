@@ -27,3 +27,7 @@ MonoBehaviour:
   rarity: 2
   sellPrice: 9999
   zone: "Mi\u1EC1n B\u1EAFc"
+  isUnique: 0
+  isSpecial: 0
+  specialEventID: 
+  isNotSellable: 1
