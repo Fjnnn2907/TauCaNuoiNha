@@ -18,18 +18,25 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private TextMeshProUGUI progressText;
 
     [Header("Confirm Panel")]
-    [SerializeField] private GameObject confirmNewGamePanel;
+    [SerializeField] private GameObject confirmNewGamePanel; 
     [SerializeField] private Button btnConfirmOK;
     [SerializeField] private Button btnConfirmCancel;
 
-    //private void OnEnable()
-    //{
-    //    CheckSaveData(); // Kiểm tra mỗi khi màn hình Menu được bật lại
-    //}
+    [Header("Tutorial Panel")]
+    [SerializeField] private GameObject askTutorialPanel;     // hỏi Tutorial
+    [SerializeField] private Button btnTutorialYes;
+    [SerializeField] private Button btnTutorialNo;
+
+    private void Awake()
+    {
+        askTutorialPanel.SetActive(false);
+        confirmNewGamePanel.SetActive(false);
+        loadingScreen.SetActive(false);
+    }
 
     private IEnumerator Start()
     {
-        // Đợi cho đến khi GameData được load
+        // Đợi GameData load xong
         while (SaveManager.Instance.GetGameData() == null)
             yield return null;
 
@@ -41,16 +48,27 @@ public class MainMenu : MonoBehaviour
 
         btnConfirmOK.onClick.AddListener(OnConfirmNewGame);
         btnConfirmCancel.onClick.AddListener(() => confirmNewGamePanel.SetActive(false));
+
+        btnTutorialYes.onClick.AddListener(() =>
+        {
+            GameSettings.EnableTutorial = true;
+            askTutorialPanel.SetActive(false);
+            StartCoroutine(LoadSceneAsync("CutScene"));
+        });
+
+        btnTutorialNo.onClick.AddListener(() =>
+        {
+            GameSettings.EnableTutorial = false;
+            askTutorialPanel.SetActive(false);
+            StartCoroutine(LoadSceneAsync("CutScene"));
+        });
     }
 
     private void CheckSaveData()
     {
         var gameData = SaveManager.Instance.GetGameData();
         bool hasValidScene = SaveManager.Instance.HasSaveData() && !string.IsNullOrEmpty(gameData?.currentSceneName);
-
         btnContinue.gameObject.SetActive(hasValidScene);
-
-        Debug.Log($"🔍 Kiểm tra Save: Tồn tại={SaveManager.Instance.HasSaveData()} | Scene={gameData?.currentSceneName}");
     }
 
     private void OnNewGameClicked()
@@ -60,13 +78,11 @@ public class MainMenu : MonoBehaviour
 
         if (!hasValidScene)
         {
-            Debug.Log("🆕 Lần đầu chơi -> Bắt đầu luôn không hỏi");
             SaveManager.Instance.DeleteSave();
-            StartCoroutine(LoadSceneAsync("CutScene"));
+            AskTutorial(); // hỏi Tutorial ngay
         }
         else
         {
-            Debug.Log("⚠️ Đã từng chơi -> Hiện hộp thoại xác nhận");
             confirmNewGamePanel.SetActive(true);
         }
     }
@@ -75,7 +91,12 @@ public class MainMenu : MonoBehaviour
     {
         confirmNewGamePanel.SetActive(false);
         SaveManager.Instance.DeleteSave();
-        StartCoroutine(LoadSceneAsync("CutScene"));
+        AskTutorial(); // sau khi confirm thì hỏi Tutorial
+    }
+
+    private void AskTutorial()
+    {
+        askTutorialPanel.SetActive(true);
     }
 
     private void OnContinueClicked()
@@ -84,7 +105,6 @@ public class MainMenu : MonoBehaviour
 
         if (!string.IsNullOrEmpty(sceneToLoad))
         {
-            Debug.Log("▶️ Chơi tiếp");
             StartCoroutine(LoadSceneAsync(sceneToLoad));
         }
         else
@@ -105,6 +125,7 @@ public class MainMenu : MonoBehaviour
         {
             progress = Mathf.MoveTowards(progress, operation.progress, Time.deltaTime);
             float displayProgress = Mathf.Clamp01(progress / 0.9f);
+
             progressSlider.value = displayProgress;
             progressText.text = $"Đang tải... {Mathf.RoundToInt(displayProgress * 100)}%";
 
