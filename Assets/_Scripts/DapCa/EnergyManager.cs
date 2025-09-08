@@ -17,6 +17,9 @@ public class EnergyManager : MonoBehaviour
     public float timeLimit = 10f;
     private float currentTimer;
 
+    [Header("UI Elements")]
+    public TextMeshProUGUI timerText; // Thêm TextMeshPro để hiển thị thời gian
+
     private bool hasEnded = false;
 
     private void Start()
@@ -26,6 +29,9 @@ public class EnergyManager : MonoBehaviour
 
         timeSlider.maxValue = timeLimit;
         timeSlider.value = timeLimit;
+
+        // Cập nhật text thời gian ban đầu
+        UpdateTimerText();
     }
 
     private void OnEnable()
@@ -38,6 +44,9 @@ public class EnergyManager : MonoBehaviour
 
         timeSlider.maxValue = timeLimit;
         timeSlider.value = timeLimit;
+
+        // Cập nhật text thời gian khi bật minigame
+        UpdateTimerText();
     }
 
     void Update()
@@ -47,6 +56,9 @@ public class EnergyManager : MonoBehaviour
         // Thời gian giảm
         currentTimer -= Time.deltaTime;
         timeSlider.value = currentTimer;
+
+        // Cập nhật text thời gian mỗi frame
+        UpdateTimerText();
 
         // Thua nếu hết thời gian
         if (currentTimer <= 0f)
@@ -64,6 +76,22 @@ public class EnergyManager : MonoBehaviour
         if (energy >= 99f)
         {
             WinGame();
+        }
+    }
+
+    // Phương thức cập nhật text thời gian
+    private void UpdateTimerText()
+    {
+        if (timerText != null)
+        {
+            // Hiển thị thời gian với 1 chữ số thập phân
+            timerText.text = $"{currentTimer:F1} giây";
+
+            // Đổi màu khi thời gian sắp hết (dưới 3 giây)
+            if (currentTimer <= 3f)
+                timerText.color = Color.yellow;
+            else
+                timerText.color = Color.white;
         }
     }
 

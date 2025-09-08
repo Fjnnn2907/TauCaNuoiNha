@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro; // Thêm namespace TMPro
 
 public class AuditionManager : Singleton<AuditionManager>
 {
@@ -20,6 +21,9 @@ public class AuditionManager : Singleton<AuditionManager>
     public Slider timerSlider;
     private float timeLimit = 10f;
     private Coroutine countdownCoroutine;
+
+    [Header("UI Elements")]
+    public TextMeshProUGUI timerText; // Thêm TextMeshPro để hiển thị thời gian
 
     //private void OnEnable()
     //{
@@ -86,14 +90,31 @@ public class AuditionManager : Singleton<AuditionManager>
         {
             timer -= Time.deltaTime;
             timerSlider.value = timer;
+            UpdateTimerText(timer); // Cập nhật text thời gian
             yield return null;
         }
 
         timerSlider.value = 0;
+        UpdateTimerText(0); // Cập nhật text khi hết thời gian
         Debug.Log("⏰ Hết thời gian!");
         LoseGame();
     }
 
+    // Phương thức cập nhật text thời gian
+    private void UpdateTimerText(float currentTime)
+    {
+        if (timerText != null)
+        {
+            // Hiển thị thời gian với 1 chữ số thập phân
+            timerText.text = $"{currentTime:F1} giây";
+
+            // Đổi màu khi thời gian sắp hết (dưới 3 giây)
+            if (currentTime <= 3f)
+                timerText.color = Color.yellow;
+            else
+                timerText.color = Color.white;
+        }
+    }
 
     public List<ArrowDirection> GenerateAndDisplaySequence()
     {
