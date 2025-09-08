@@ -105,6 +105,7 @@ public class MainMenu : MonoBehaviour
 
         if (!string.IsNullOrEmpty(sceneToLoad))
         {
+            GameSettings.EnableTutorial = false;
             StartCoroutine(LoadSceneAsync(sceneToLoad));
         }
         else

@@ -10,7 +10,11 @@ public class TutorialManager : MonoBehaviour
     {
         [TextArea] public string dialogue;
         public Button buttonToClick; // nút cần highlight
+        public bool showArrow = true; // nếu false thì không hiện mũi tên
+        public ArrowPosition arrowPosition = ArrowPosition.Right; // vị trí mũi tên
     }
+
+    public enum ArrowPosition { Left, Right, Top, Bottom }
 
     [SerializeField] private GameObject tutorialPanel;
     [SerializeField] private TextMeshProUGUI dialogueText;
@@ -18,6 +22,7 @@ public class TutorialManager : MonoBehaviour
 
     [Header("Highlight UI")]
     [SerializeField] private RectTransform highlightImage; // mũi tên / vòng sáng UI
+    [SerializeField] private float arrowOffset = 80f;      // khoảng cách từ nút đến mũi tên
 
     private int currentStep = -1;
 
@@ -56,12 +61,37 @@ public class TutorialManager : MonoBehaviour
         var step = steps[currentStep];
         dialogueText.text = step.dialogue;
 
-        // Highlight nút
-        if (highlightImage != null && step.buttonToClick != null)
+        // Highlight nút + chỉnh hướng mũi tên
+        if (highlightImage != null && step.buttonToClick != null && step.showArrow)
         {
             highlightImage.gameObject.SetActive(true);
             RectTransform btnRect = step.buttonToClick.GetComponent<RectTransform>();
-            highlightImage.position = btnRect.position;
+
+            Vector3 offset = Vector3.zero;
+            Vector3 scale = Vector3.one;
+
+            switch (step.arrowPosition)
+            {
+                case ArrowPosition.Left:
+                    offset = new Vector3(-arrowOffset, 0, 0);
+                    scale = new Vector3(-1, 1, 1);
+                    break;
+                case ArrowPosition.Right:
+                    offset = new Vector3(arrowOffset, 0, 0);
+                    scale = new Vector3(1, 1, 1);
+                    break;
+                case ArrowPosition.Top:
+                    offset = new Vector3(0, arrowOffset, 0);
+                    scale = new Vector3(1, 1, 1);
+                    break;
+                case ArrowPosition.Bottom:
+                    offset = new Vector3(0, -arrowOffset, 0);
+                    scale = new Vector3(1, -1, 1);
+                    break;
+            }
+
+            highlightImage.position = btnRect.position + offset;
+            highlightImage.localScale = scale;
             highlightImage.SetAsLastSibling();
         }
         else if (highlightImage != null)
