@@ -126,13 +126,14 @@ public class TutorialManager : MonoBehaviour
         tutorialPanel.SetActive(false);
         if (highlightImage != null) highlightImage.gameObject.SetActive(false);
 
-        // Restore lại trạng thái gốc thay vì bật tất cả
         foreach (var kvp in originalStates)
         {
             if (kvp.Key != null)
                 kvp.Key.interactable = kvp.Value;
         }
 
+        GameSettings.EnableTutorial = false; // ✅ Tắt tutorial
         Debug.Log("✅ Tutorial finished & restored button states!");
     }
+
 }

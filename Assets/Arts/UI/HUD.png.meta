@@ -2794,12 +2794,12 @@ TextureImporter:
       name: HUD_100
       rect:
         serializedVersion: 2
-        x: 321
-        y: 33
-        width: 13
-        height: 13
+        x: 333
+        y: 34
+        width: 17
+        height: 11
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2808,28 +2808,6 @@ TextureImporter:
       bones: []
       spriteID: 76f00d353f7c1d0d0800000000000000
       internalID: -3399716395790889113
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HUD_101
-      rect:
-        serializedVersion: 2
-        x: 338
-        y: 33
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 174f51c58794eadb0800000000000000
-      internalID: -4778801373303671695
       vertices: []
       indices: 
       edges: []
@@ -4031,7 +4009,7 @@ TextureImporter:
         width: 15
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []

@@ -27,7 +27,7 @@ public class BienCoManager : Singleton<BienCoManager>
 
     private void Update()
     {
-        if (FishingManager.Instance.isPlayMiniGame)
+        if (FishingManager.Instance.isPlayMiniGame || GameSettings.EnableTutorial)
             return;
 
         timer -= Time.deltaTime;
