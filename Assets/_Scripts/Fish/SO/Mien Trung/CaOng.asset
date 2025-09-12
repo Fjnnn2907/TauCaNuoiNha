@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CaOng
   m_EditorClassIdentifier: 
   fishID: CaOng
-  fishName: "C\xE1 \xD4ng:"
+  fishName: "C\xE1 \xD4ng"
   sprite: {fileID: 868504884959497903, guid: 293cd9e37e15f1b4891d1d49380c12cd, type: 3}
   shadowSprite: {fileID: 868504884959497903, guid: 1e96dee5cc5f487448c7d16fee354ffb, type: 3}
   description: "V\u1ECB th\u1EA7n \u0111\u1ED9 m\u1EA1ng c\u1EE7a ng\u01B0 d\xE2n,
@@ -30,3 +30,5 @@ MonoBehaviour:
   isSpecial: 0
   specialEventID: 
   isNotSellable: 1
+  nameKey: CaOng
+  descKey: CaOng_mota

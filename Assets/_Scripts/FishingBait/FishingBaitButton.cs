@@ -21,7 +21,7 @@ public class FishingBaitButton : MonoBehaviour
         baitData = bait;
 
         icon.sprite = bait.icon;
-        nameText.text = bait.baitName;
+        nameText.text = bait.GetBaitName(); // ✅ Đa ngôn ngữ
 
         rareRateText.text = $"R {bait.bonusRareRate}";
         legendaryRateText.text = $"L {bait.bonusLegendaryRate}";
@@ -38,12 +38,14 @@ public class FishingBaitButton : MonoBehaviour
 
         if (isSelected)
         {
-            actionButtonText.text = "Đã sử dụng";
+            // ✅ "Đã sử dụng"
+            actionButtonText.text = LanguageManager.Instance.GetText("dang_dung");
             actionButton.interactable = false;
         }
         else
         {
-            actionButtonText.text = "Sử dụng";
+            // ✅ "Sử dụng"
+            actionButtonText.text = LanguageManager.Instance.GetText("su_dung");
             actionButton.interactable = quantity > 0;
             actionButton.onClick.AddListener(() =>
             {
@@ -57,7 +59,9 @@ public class FishingBaitButton : MonoBehaviour
 
     private void SetupBuyButton()
     {
-        buyButton.GetComponentInChildren<TextMeshProUGUI>().text = $"Mua ({baitData.price})";
+        string buyText = LanguageManager.Instance.GetText("mua"); // ✅ "Mua"
+        buyButton.GetComponentInChildren<TextMeshProUGUI>().text = $"{buyText} ({baitData.price})";
+
         buyButton.onClick.RemoveAllListeners();
         buyButton.onClick.AddListener(() => BuyBait());
     }

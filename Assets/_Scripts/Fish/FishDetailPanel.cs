@@ -23,7 +23,6 @@ public class FishDetailPanel : Singleton<FishDetailPanel>
 
     private void OnEnable()
     {
-        
         ClearPanel();
     }
 
@@ -37,31 +36,39 @@ public class FishDetailPanel : Singleton<FishDetailPanel>
         fishIcon.sprite = fish.sprite;
         fishIcon.gameObject.SetActive(true);
 
-        fishNameText.text = fish.fishName;
-        quantityText.text = $"SL: {quantity}";
-        rarityText.text = $"PL: {fish.rarity}";
-        descriptionText.text = fish.description;
+        // 🔑 lấy tên & mô tả từ LanguageManager
+        fishNameText.text = LanguageManager.Instance.GetText(fish.nameKey);
+        descriptionText.text = LanguageManager.Instance.GetText(fish.descKey);
 
-        // Nếu cá không bán được thì hiện chữ "Không thể bán"
-        priceText.text = fish.isNotSellable
-            ? "Không thể bán"
-            : $"Giá: {fish.sellPrice}";
+        // SL: (số lượng)
+        quantityText.text = $"{LanguageManager.Instance.GetText("label_quantity")} {quantity}";
 
-        // Đổi màu tên cá theo độ hiếm
+        // PL: (độ hiếm)
+        string rarityLabel = LanguageManager.Instance.GetText("label_rarity");
+
         rarityText.text = fish.rarity switch
         {
-            FishRarity.Common => $"<color=#656565>PL: {fish.rarity}</color>",
-            FishRarity.Rare => $"<color=#0069BF>PL: {fish.rarity}</color>",
-            FishRarity.Legendary => $"<color=#BF001C>PL: {fish.rarity}</color>",
-            _ => $"<color=#656565>PL: {fish.rarity}</color>"
+            FishRarity.Common => $"<color=#656565>{rarityLabel} {fish.rarity}</color>",
+            FishRarity.Rare => $"<color=#0069BF>{rarityLabel} {fish.rarity}</color>",
+            FishRarity.Legendary => $"<color=#BF001C>{rarityLabel} {fish.rarity}</color>",
+            _ => $"<color=#656565>{rarityLabel} {fish.rarity}</color>"
         };
+
+        // Giá hoặc "Không thể bán"
+        if (fish.isNotSellable)
+        {
+            priceText.text = LanguageManager.Instance.GetText("label_not_sellable");
+        }
+        else
+        {
+            string priceLabel = LanguageManager.Instance.GetText("label_price");
+            priceText.text = $"{priceLabel} {fish.sellPrice}";
+        }
 
         // ✅ Luôn hiện nút Sell, nhưng disable nếu cá không thể bán
         sellButton.gameObject.SetActive(true);
         sellButton.interactable = quantity > 0 && !fish.isNotSellable;
     }
-
-
 
     public void ClearPanel()
     {
@@ -81,13 +88,9 @@ public class FishDetailPanel : Singleton<FishDetailPanel>
     {
         if (currentFish == null || currentQuantity <= 0) return;
 
-        // Cộng tiền
         CoinManager.Instance.AddCoins(currentFish.sellPrice);
-
-        // Trừ cá khỏi kho
         FishInventory.Instance.RemoveFish(currentFish, 1);
 
-        // Lấy lại số lượng mới
         int newQty = FishInventory.Instance.GetFishQuantity(currentFish);
 
         if (newQty > 0)

@@ -12,7 +12,6 @@ public class FishingRodButton : MonoBehaviour
     public TextMeshProUGUI rareRateText;
     public TextMeshProUGUI legendaryRateText;
 
-
     private FishingRodData rodData;
     private bool isOwned;
 
@@ -22,7 +21,7 @@ public class FishingRodButton : MonoBehaviour
         isOwned = owned;
 
         icon.sprite = rodData.icon;
-        nameText.text = rodData.rodName;
+        nameText.text = rodData.GetRodName();
         rareRateText.text = $"R {data.bonusRareRate}";
         legendaryRateText.text = $"L {data.bonusLegendaryRate}";
         button.onClick.RemoveAllListeners();
@@ -36,11 +35,14 @@ public class FishingRodButton : MonoBehaviour
         {
             if (FishingManager.Instance.CurrentRod == rodData)
             {
-                useButtonText.text = "Đang dùng";
+                // ✅ "Đang dùng"
+                useButtonText.text = LanguageManager.Instance.GetText("dang_dung");
             }
             else
             {
-                useButtonText.text = "Sử dụng";
+                // ✅ "Sử dụng"
+                useButtonText.text = LanguageManager.Instance.GetText("su_dung");
+
                 button.onClick.AddListener(() =>
                 {
                     FishingManager.Instance.CurrentRod = rodData;
@@ -52,7 +54,10 @@ public class FishingRodButton : MonoBehaviour
         }
         else
         {
-            useButtonText.text = $"Mua \n({rodData.price})";
+            // ✅ "Mua (giá)"
+            string buyText = LanguageManager.Instance.GetText("mua");
+            useButtonText.text = $"{buyText}\n({rodData.price})";
+
             button.onClick.AddListener(() =>
             {
                 if (CoinManager.Instance.SpendCoins(rodData.price))

@@ -1,0 +1,108 @@
+Key,Vietnamese,English
+tiep_tuc,Tiếp tục,Continue
+choi_moi,Chơi mới,New Play
+thoat,Thoát,Exit
+ngon_ngu,Ngôn ngữ,Language
+tieng_viet,Tiếng Việt,Vietnamese
+tieng_anh,Tiếng Anh,English
+am_thanh,Âm thanh,Sound
+dong,Đóng,Close
+CH_can_cau,Cửa hàng cần câu,Fishing rod shop
+CH_moi_cau,Cửa hàng mồi câu,Fishing bait shop
+Ty_le_HT,Tỷ lệ hiện tại,Current rate
+Ban,Bán ,Sale
+mien_nam,Miền nam,Southern
+mien_bac,MIền bắc,North
+mien_trung,Miền Trung,Central region
+chuyen_nhac,chuyển nhạc,Skip Track
+am_thanh,Âm thanh,Audio
+tai_khoan,Tài khoản,Account
+he_thong,Hệ thống,Settings
+man_hinh,Màn hình,Screen 
+mua,Mua,Buy
+su_dung,Sử dụng,Use
+dang_dung,Đang dùng,In Use
+di,Đi tới,Travel
+vang,Vàng,Gold (coins)
+cau,Câu,Catch
+,,
+,,
+CanCauPhongThong,Phổ thông,Popular
+CanCauTamTrung,Tầm trung,Mid range
+CanCauCaoCap,Cao cấp,High class
+CanCauDangCap,Đẳng cấp,Level
+CanCauSieuPham,Siêu phẩm,Super product
+MoiGiunDat,Giun đất,Earthworms
+MoiBanhMi,Bánh mì,Bread
+MoiBerkleyPower,Berkley Power,Berkley Power
+MoiTuNhien,Mồi tự nhiên,Natural bait
+MoiDynamiteBaits,Dynamite Baits,Dynamite Baits
+MoiMegabass,Megabass,Megabass
+MoiSecretFormula ,Secret Formula ,Secret Formula 
+MoiTrungKienVang,Trứng kiến vàng,Yellow ant eggs
+MoiHormone,Hormone,Hormone
+quest_catch,Câu {0} con {1} ({2}),Catch {0} {1} ({2})
+quest_reward,{0} vàng,{0} gold
+quest_zone,Xuất hiện ở vùng,Appears in: {0}
+quest_unknown_zone,Không xác định,Unknown
+quest_complete,Đã hoàn thành nhiệm vụ!,Quest Completed!
+quest_new,Bạn có nhiệm vụ mới,You have a new quest
+quest_not_enough_fish,Không có cá nào thuộc loại {0} để tạo nhiệm vụ.,No fish of rarity {0} available for quest.
+stats_rod,Cần,Rod
+stats_bait,Mồi,Bait
+stats_none,(Chưa chọn),(Not selected)
+stats_current_rate,Tỉ lệ hiện tại,Current Rates
+stats_rare,Rare,Rare
+stats_legendary,Huyền thoại,Legendary
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+label_quantity,SL:,Qty:
+label_rarity,PL:,R:
+label_price,Giá:,Price:
+label_not_sellable,Không thể bán,Not sellable
+,,
+CaHoNuoc,Cá Hổ nước,Water Tiger Fish
+CaHoNuoc_mota,"Quái ngư hàm răng kiếm, vảy cứng như áo giáp, sống trong hang động nước đen kịt nơi đại ngàn. Thổ dân kể rằng chúng là hiện thân của thần Sấm, mỗi lần quẫy đuôi là sông suối nổi sóng dữ. Kẻ nào bắt được cá hổ phải thả ngay con lớn nhất, bằng không cả làng sẽ bị lũ cuốn trôi.","The saber-toothed, armor-like fish monster lives in dark caves in the jungle. The natives say it is the incarnation of the Thunder God, and every time it wags its tail, it causes huge waves in the rivers and streams. Whoever catches the tiger fish must release the biggest one, or the whole village will be swept away by the flood."
+CaLoc,Cá lóc,Snakehead fish
+CaLoc_mota,"Chúa tể đầm lầy, sống sót qua mùa khô nhờ ẩn mình trong bùn đất. Thần thoại Khmer kể rằng giết cá lóc đen sẽ bị trừng phạt bằng hạn hán. Mỗi đêm giao thừa, người ta thả cá lóc xuống sông như nghi lễ trả ơn thủy thần.","The king of the swamps, who survives the dry season by hiding in the mud. Khmer mythology says that killing the black snakehead fish will result in drought as punishment. Every New Year's Eve, people release the snakehead fish into the river as a ritual to repay the water god."
+CaThuongLuong,Thuồng luồng,Water dragon
+CaThuongLuong_mota,"Thủy quái rắn mình dài trăm thước, mắt lửa đỏ rực như cục than hồng, chuyên dìm chết kẻ xâm phạm lãnh địa sông sâu. Tương truyền chúng là linh thú canh giữ kho báu của Long Vương, chỉ khuất phục trước phép thuật của đạo sĩ. Xương thuồng luồng được táng trong đình làng như vật trấn yểm, ngăn lũ quét.",The water monster is a hundred-meter-long snake with eyes as red as burning coals. It specializes in drowning intruders in its deep river territory. Legend has it that it is a sacred beast that guards the Dragon King's treasure and can only submit to the magic of Taoists. The snake's bones are buried in the village temple as a talisman to prevent flash floods.
+CaTra,Cá tra,Pangasius fish
+CaTra_mota,"""Vàng trắng"" sông Mekong, thân dài như chiếc thuyền nan thu nhỏ. Tương truyền chúng là hạt gạo của nữ thần lúa hóa thành để cứu đói dân làng. Vảy cá phơi khô được dùng làm bùa hộ mệnh cho những chuyến đi xa.","The Mekong River's ""white gold"" has a long body like a miniature bamboo boat. Legend has it that they are the rice grains of the rice goddess who transformed to save the villagers from starvation. Dried fish scales are used as amulets for long journeys."
+CaTre,Cá trê,Catfish
+CaTre_mota,"Loài ăn tạp dai sức, nuốt chửng cả nghịch cảnh lẫn xác thối. Râu dài như ăng-ten bắt tín hiệu từ cõi âm, xương cá khi đốt lên phát ra tiếng khóc ma quái. Biểu tượng cho những kẻ cùng khổ vẫn sống sót giữa bùn lầy cuộc đời.","A resilient omnivore, devouring both adversity and carrion. Its long antennae catch signals from the underworld, and its fish bones, when burned, emit a ghostly cry. A symbol of the miserable who survive in the mire of life."
+,,
+CaSinh,Cá Sỉnh,Cá Sỉnh
+CaSinh_mota,"Dưới đáy hồ sâu thẳm, cá trắm đen già như bóng ma áo đen, râu dài quét qua lớp bùn âm u. Ngư dân kể rằng những con trắm trăm tuổi nuốt cả linh hồn kẻ chết đuối, thịt chúng đen như mực vì chứa đầy tịch khí. Ai bắt được trắm đen khổng lồ phải làm lễ tạ Thủy Thần, bằng không gặp họa sóng cuồng.","At the bottom of the deep lake, the old black carp is like a ghost in black, its long whiskers sweeping across the dark mud. Fishermen say that the hundred-year-old carp swallow the souls of drowned people, their flesh as black as ink because it is filled with negative energy. Whoever catches the giant black carp must perform a ceremony to thank the Water God, otherwise they will be hit by a raging wave."
+CaAnhVu,Cá Anh Vũ,Cá Anh Vũ
+CaAnhVu_mota,"Trong hang đá sông Giăng, cá anh vũ khoác bộ cánh màu ngọc bích, môi đỏ như son tiên nữ. Tương truyền chúng là hóa thân của những nhà sư tu luyện ngàn năm, chỉ ăn rêu tinh khiết nên thịt thơm tựa trầm hương. Ai ăn phải cá anh vũ chưa thành niên sẽ bị lời nguyền 'mù mịt như sương Yên Tử'.","In the Giang River cave, the parrot fish wears jade-colored wings and has lips as red as a fairy's lipstick. Legend has it that they are the incarnations of monks who have practiced for thousands of years, eating only pure moss, so their meat smells like agarwood. Anyone who eats a juvenile parrot fish will be cursed with 'as much fog as Yen Tu's mountain's mist'."
+CaBong,Cá Bỗng,Cá Bỗng
+CaBong_mota,"Cá bỗng dài như thanh kiếm bạc, đuôi chẻ đôi tựa đuôi én. Chúng sống ẩn dật dưới những ghềnh đá sâu, chỉ ra khỏi hang khi nghe tiếng chuông chùa văng vẳng. Ngư dân miền Tây Bắc tin rằng bắt được cá bỗng trắng là điềm gặp 'kho vàng sông Đà' – vì chúng giữ chìa khóa mở cửa long cung","The silver carp is as long as a silver sword, with a forked tail like a swallow's. They live in seclusion under deep rocks, only coming out of their caves when they hear the sound of temple bells. Fishermen in the Northwest believe that catching a white carp is a sign of finding the 'gold treasure of the Da River' - because they hold the key to open the dragon palace."
+CaChep,Cá Chép,Cá Chép
+CaChep_mota,"Cá chép kính trơn tru như viên ngọc thủy sinh, da lộ ra từng thớ thịt hồng hào. Chúng là hậu duệ của những con cá chép hóa rồng bị lưu đày vì không vượt nổi Vũ Môn. Đêm trăng, nếu thấy chép kính phóng lên khỏi mặt nước, ấy là chúng đang tập luyện cho kiếp sau – kiếp làm rồng.""","The mirror carp are as smooth as an aquatic pearl, their skin revealing each piece of rosy flesh. They are descendants of the carp that transformed into dragons and were exiled because they could not pass the Dragon Gate. On a moonlit night, if you see a mirror carp jumping out of the water, it means they are practicing for their next life - the life of a dragon."""
+CaChepHoaRong,Cá Chép Hóa Rồng,Cá Chép Hóa Rồng
+CaChepHoaRong_mota,"Cổ tích kể rằng chép đỏ vượt Vũ Môn sẽ hóa rồng, vảy rụng thành pháo hoa, râu dài ra như tơ trời. Nhưng ít ai biết: những con không qua ải sẽ thành 'ngạch ngư' - quỷ nước mặt chép thân rồng, chuyên kéo đắm thuyền kẻ kiêu ngạo. Mỗi mùa mưa bão, người ta thả chép đỏ xuống sông như lễ vật tế thần.","Legend has it that red carp that pass the Dragon Gate will turn into a dragon, their scales falling off will turn into fireworks, and their whiskers will grow long like silk. But few people know: those that fail will become 'ngach ngu' - a water demon with a carp's face and a dragon's body, specializing in sinking the boats of arrogant people. Every rainy and stormy season, people release red carp into the river as an offering to the gods."
+CaMeHoa,Cá Mè Hoa,Cá Mè Hoa
+CaMeHoa_mota,"Cá mè hoa bơi thành đàn như đám mây ngũ sắc dưới mặt nước, miệng rộng hút phù du tựa thần Lưỡng Nghi hút khí âm dương. Vảy chúng lấp lánh ánh bạc, tương truyền là những mảnh gương vỡ từ cung trăng rơi xuống. Người xưa nấu mè hoa với lá lốt để 'gọi gió' – mỗi lần cá vẫy đuôi là gió đồng lại thổi về.","Bighead carp swim in schools like colorful clouds under the water, their wide mouths sucking in plankton like the Yin and Yang God sucking in the energy of Yin and Yang. Their scales sparkle with silver, and are said to be broken pieces of mirror falling from the moon. The ancients cooked bighead carp with betel leaves to 'call the wind' - every time the fish wagged their tails, the wind from the fields would blow back."
+CaRoDong,Cá Rô Đồng,Cá Rô Đồng
+CaRoDong_mota,"Mưa rào vừa tạnh, những chú cá rô đồng dùng mang phụ như đôi chân nhỏ bò lên bãi cỏ ướt sũng, mình lấm tấm bùn non. Dân gian bảo chúng là lính tiên phong của Thủy Thần, lặn lội qua đồng khô để dò đường cho mùa nước nổi. Đứa trẻ nào bắt được cá rô đầu mùa sẽ gặp may cả năm – vì loài cá bé nhỏ này mang theo phước lành của đất và nước.","The rain had just stopped, and the perch used their gills as little legs to crawl across the wet grass, their bodies covered in mud. Folklore says they are the Water God’s vanguard, wading through the dry fields to scout for the flood season. Any child who catches the first perch of the season will have good luck all year long – because this little fish carries with it the blessings of the land and water."
+CaTramDen,Cá Trắm Đen,Cá Trắm Đen
+CaTramDen_mota,"Dưới đáy hồ sâu thẳm, cá trắm đen già như bóng ma áo đen, râu dài quét qua lớp bùn âm u. Ngư dân kể rằng những con trắm trăm tuổi nuốt cả linh hồn kẻ chết đuối, thịt chúng đen như mực vì chứa đầy tịch khí. Ai bắt được trắm đen khổng lồ phải làm lễ tạ Thủy Thần, bằng không gặp họa sóng cuồng.","At the bottom of the deep lake, the old black carp is like a ghost in black, its long whiskers sweeping across the dark mud. Fishermen say that the hundred-year-old carp swallow the souls of drowned people, their flesh as black as ink because it is filled with negative energy. Whoever catches the giant black carp must perform a ceremony to thank the Water God, otherwise they will be hit by a raging wave."
+,,
+CaDoi,Cá đối,Cá đối
+CaDoi_mota,"Bạc trắng như ánh trăng, bơi lội giữa ranh giới nước ngọt và biển khơi. Từng đàn cá nhảy lên mặt nước là dấu hiệu bão sắp ập đến. Trẻ con thường nuôi chúng trong lọ thủy tinh để nghe tiếng thì thầm của đại dương.","Silvery white as moonlight, swimming between the boundary of fresh water and the open sea. Schools of fish jumping to the surface are a sign of an approaching storm. Children often keep them in glass jars to listen to the whispers of the ocean."
+CaDuc,Cá đục,Cá đục
+CaDuc_mota,"Thân hình trong suốt lộ rõ trái tim đỏ rực, sống nơi giao thoa giữa sự sống và cái chết. Dân gian tin chúng là linh hồn trẻ thơ hóa thành, mang theo những lời nhắn từ thế giới bên kia. Ai ăn phải cá đục vảy đỏ sẽ thấy những điều không nên thấy.","Their transparent bodies reveal their glowing red hearts, living at the intersection of life and death. Folklore believes they are the reincarnated souls of children, carrying messages from the other world. Anyone who eats the red-scaled fish will see things they shouldn’t."
+CaKinh,Cá kình,Cá kình
+CaKinh_mota,"Vị thần biển cả khổng lồ, mỗi lần trồi lên là biển động sóng dữ. Xương cá dạt vào bờ biến thành đảo thiêng, nơi ngư dân dâng lễ cầu bình an. Tiếng hú của chúng vang xa hàng dặm, báo hiệu những cơn cuồng phong sắp tới.","The giant sea god, each time he emerged, the sea was in turmoil. Fish bones washed ashore and became sacred islands, where fishermen offered sacrifices for safety. His howls could be heard for miles, signaling the coming storms."
+CaMu,CaMu,CaMu
+CaMu_mota,"Lão chúa rạn san hô, da xù xì in hằn dấu răng kình ngư, có thể đổi giới tính từ đực sang cái khi trưởng thành. Thịt chúng thơm ngọt như nắng biển, được phong là ""vua của các loài cá đá ngầm"". Ngư dân tin rằng xương cá mú già hóa thành san hô đen - vật bảo hộ cho thuyền đi biển.","The king of the coral reef, with rough skin marked with whale teeth, can change sex from male to female when mature. Its meat is as sweet as the sun and is called ""king of reef fish"". Fishermen believe that the bones of old groupers turn into black coral - a protection for their boats at sea."
+CaOng,Cá Ông,Cá Ông
+CaOng_mota,"Vị thần độ mạng của ngư dân, thân trắng như tuyết, mắt hiền từ như Phật. Khi thuyền sắp đắm, cá ông hiện lên đội thuyền vào bờ rồi lặn mất. Xác cá ông dạt bờ được táng như vua, lăng thờ cá ông khói hương quanh năm - nơi thủy thủ đến xin bình an trước mỗi chuyến ra khơi.","The guardian deity of fishermen, white as snow, eyes as kind as Buddha. When the boat was about to sink, the whale appeared, led the boat to shore, then disappeared. The whale's body washed ashore was buried like a king, and the whale's shrine burned with incense all year round - a place where sailors came to pray for safety before each trip."
+CaThu,Cá thu,Cá thu
+CaThu_mota,"Chiến binh tốc độ của đại dương, thân hình thoi lao đi như tên bắn, để lại vệt nước lấp lánh dưới trời. Thần biển ban cho chúng sức mạnh rượt đuổi những con tàu ma lạc lối. Thịt cá thu đượm vị mặn mòi của gió khơi, là lời nhắn gửi từ đại dương đến bàn ăn.","The speedy warriors of the ocean, their diamond-shaped bodies darting like arrows, leaving a sparkling trail in the sky. The sea god gave them the power to chase lost ghost ships. The tuna meat, imbued with the salty taste of the offshore wind, is a message from the ocean to the dining table."

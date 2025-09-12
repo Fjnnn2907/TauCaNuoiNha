@@ -18,4 +18,6 @@ public class FishData : ScriptableObject
     public string specialEventID; // ✅ Tên hoặc ID event để kích hoạt
 
     public bool isNotSellable;
+    public string nameKey;
+    public string descKey;
 }

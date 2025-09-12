@@ -25,3 +25,9 @@ MonoBehaviour:
   rarity: 1
   sellPrice: 100
   zone: "Mi\u1EC1n Nam"
+  isUnique: 0
+  isSpecial: 0
+  specialEventID: 
+  isNotSellable: 0
+  nameKey: CaLoc
+  descKey: CaLoc_mota

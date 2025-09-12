@@ -12,4 +12,9 @@ public class FishingBaitData : ScriptableObject
     public float bonusLegendaryRate;
 
     public int price = 10;
+
+    public string GetBaitName()
+    {
+        return LanguageManager.Instance.GetText(id);
+    }
 }

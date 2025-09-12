@@ -26,3 +26,9 @@ MonoBehaviour:
   rarity: 2
   sellPrice: 4444
   zone: "Mi\u1EC1n Nam"
+  isUnique: 0
+  isSpecial: 0
+  specialEventID: 
+  isNotSellable: 0
+  nameKey: CaHoNuoc
+  descKey: CaHoNuoc_mota

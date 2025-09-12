@@ -26,3 +26,9 @@ MonoBehaviour:
   rarity: 1
   sellPrice: 250
   zone: "Mi\u1EC1n Trung"
+  isUnique: 0
+  isSpecial: 0
+  specialEventID: 
+  isNotSellable: 0
+  nameKey: CaMu
+  descKey: CaMu_mota

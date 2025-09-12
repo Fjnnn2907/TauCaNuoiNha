@@ -34,7 +34,7 @@ public class AudioUI : MonoBehaviour
         if (musicVolumeSlider == null || musicVolumeSlider == null)
             return;
 
-        musicVolumeSlider.SetValueWithoutNotify(AudioManager.Instance.musicVolume);
-        sfxVolumeSlider.SetValueWithoutNotify(AudioManager.Instance.sfxVolume);
+        musicVolumeSlider?.SetValueWithoutNotify(AudioManager.Instance.musicVolume);
+        sfxVolumeSlider?.SetValueWithoutNotify(AudioManager.Instance.sfxVolume);
     }
 }

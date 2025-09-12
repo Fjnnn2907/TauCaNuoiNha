@@ -27,3 +27,9 @@ MonoBehaviour:
   rarity: 0
   sellPrice: 300
   zone: "Mi\u1EC1n B\u1EAFc"
+  isUnique: 0
+  isSpecial: 0
+  specialEventID: 
+  isNotSellable: 0
+  nameKey: CaMeHoa
+  descKey: CaMeHoa_mota

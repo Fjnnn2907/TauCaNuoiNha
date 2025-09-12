@@ -25,3 +25,9 @@ MonoBehaviour:
   rarity: 0
   sellPrice: 70
   zone: "Mi\u1EC1n Trung"
+  isUnique: 0
+  isSpecial: 0
+  specialEventID: 
+  isNotSellable: 0
+  nameKey: CaDuc
+  descKey: CaDuc_mota

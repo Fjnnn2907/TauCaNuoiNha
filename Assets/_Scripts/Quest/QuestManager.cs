@@ -11,7 +11,7 @@ public class QuestManager : Singleton<QuestManager>, ISaveable
 
     private string currentZone;
     private int zoneLockedQuestCount = 0;
-    private int zoneQuestLimit = 0; // sẽ random trong Start
+    private int zoneQuestLimit = 0;
 
     private void Start()
     {
@@ -30,7 +30,7 @@ public class QuestManager : Singleton<QuestManager>, ISaveable
         {
             fishesOfRarity = FishDatabase.Instance.allFish
                 .Where(f => f.rarity == targetRarity && f.zone == currentZone)
-                .Where(f => !f.isUnique || FishInventory.Instance.GetFishQuantity(f) == 0) // ✅ Không chọn cá unique đã bắt
+                .Where(f => !f.isUnique || FishInventory.Instance.GetFishQuantity(f) == 0)
                 .ToList();
 
             if (fishesOfRarity.Count > 0)
@@ -39,7 +39,7 @@ public class QuestManager : Singleton<QuestManager>, ISaveable
             {
                 fishesOfRarity = FishDatabase.Instance.allFish
                     .Where(f => f.rarity == targetRarity)
-                    .Where(f => !f.isUnique || FishInventory.Instance.GetFishQuantity(f) == 0) // ✅ Không chọn cá unique đã bắt
+                    .Where(f => !f.isUnique || FishInventory.Instance.GetFishQuantity(f) == 0)
                     .ToList();
             }
         }
@@ -47,19 +47,18 @@ public class QuestManager : Singleton<QuestManager>, ISaveable
         {
             fishesOfRarity = FishDatabase.Instance.allFish
                 .Where(f => f.rarity == targetRarity)
-                .Where(f => !f.isUnique || FishInventory.Instance.GetFishQuantity(f) == 0) // ✅ Không chọn cá unique đã bắt
+                .Where(f => !f.isUnique || FishInventory.Instance.GetFishQuantity(f) == 0)
                 .ToList();
         }
 
         if (fishesOfRarity.Count == 0)
         {
-            Debug.LogError($"❌ Không có cá nào thuộc loại {targetRarity} để tạo nhiệm vụ.");
+            Debug.LogError(string.Format(LanguageManager.Instance.GetText("quest_not_enough_fish"), targetRarity));
             return;
         }
 
         FishData targetFish = fishesOfRarity[Random.Range(0, fishesOfRarity.Count)];
 
-        // ✅ Cá unique chỉ yêu cầu 1 con
         int amount = targetFish.isUnique ? 1 : Random.Range(2, 6);
 
         int baseReward = amount * (int)targetRarity * 15 + 30;
@@ -72,20 +71,23 @@ public class QuestManager : Singleton<QuestManager>, ISaveable
         currentQuest.requiredFishName = targetFish.fishName;
         currentQuest.requiredAmount = amount;
         currentQuest.rewardGold = finalReward;
-        currentQuest.description = $"Câu {amount} con {targetFish.fishName} ({targetRarity})\n" +
-                                   $"📍 Xuất hiện ở vùng: {targetFish.zone}";
+
+        // ✅ Không hardcode description, QuestUI sẽ tự build bằng ngôn ngữ
+        currentQuest.description = string.Format(
+            LanguageManager.Instance.GetText("quest_catch"),
+            amount, targetFish.fishName, targetRarity);
 
         currentProgress = 0;
         QuestUI.Instance?.UpdateUI();
 
-        Debug.Log($"📜 Nhiệm vụ mới: {currentQuest.description}");
+        Debug.Log($"📜 {currentQuest.description}");
     }
 
     private string GetCurrentZoneFromScene()
     {
         string sceneName = SceneManager.GetActiveScene().name;
         var location = MapManager.Instance.locations.FirstOrDefault(loc => loc.sceneName == sceneName);
-        return location != null ? location.locationName : "Không xác định";
+        return location != null ? location.locationName : LanguageManager.Instance.GetText("quest_unknown_zone");
     }
 
     public void OnFishCaught(FishData fish)
@@ -93,16 +95,14 @@ public class QuestManager : Singleton<QuestManager>, ISaveable
         if (fish.fishName == currentQuest.requiredFishName &&
             fish.rarity == currentQuest.requiredRarity)
         {
-            // ✅ Nếu cá là unique và đã câu trong nhiệm vụ, bỏ qua
             if (fish.isUnique && currentProgress >= 1)
             {
-                Debug.Log($"⚠️ {fish.fishName} là cá unique, đã bắt rồi.");
+                Debug.Log($"⚠️ {fish.fishName} unique, bỏ qua");
                 return;
             }
 
             currentProgress++;
             QuestUI.Instance?.UpdateUI();
-            Debug.Log($"🐟 Đã câu được {currentProgress}/{currentQuest.requiredAmount} {fish.fishName}");
 
             if (currentProgress >= currentQuest.requiredAmount)
             {
@@ -113,20 +113,18 @@ public class QuestManager : Singleton<QuestManager>, ISaveable
 
     private void CompleteQuest()
     {
-        Debug.Log($"✅ Đã hoàn thành nhiệm vụ! Nhận {currentQuest.rewardGold} vàng");
+        Debug.Log($"{LanguageManager.Instance.GetText("quest_complete")} + {currentQuest.rewardGold}");
         questsCompleted++;
-        NotificationManager.Instance?.ShowNotification($"Bạn hoàn thành nhiệm vụ nhận {currentQuest.rewardGold} vàng");
+        NotificationManager.Instance?.ShowNotification(
+            string.Format(LanguageManager.Instance.GetText("quest_reward"), currentQuest.rewardGold));
         CoinManager.Instance?.AddCoins(currentQuest.rewardGold);
 
         QuestUI.Instance?.ShowCompleteEffect();
-        NotificationManager.Instance?.ShowNotification("Bạn có nhiệm vụ mới");
+        NotificationManager.Instance?.ShowNotification(LanguageManager.Instance.GetText("quest_new"));
         GenerateNewQuest();
     }
 
-    public int GetCurrentProgress()
-    {
-        return currentProgress;
-    }
+    public int GetCurrentProgress() => currentProgress;
 
     private FishRarity GetRarityByProgress(int progress)
     {
@@ -166,14 +164,14 @@ public class QuestManager : Singleton<QuestManager>, ISaveable
         currentQuest.requiredRarity = data.questRarity;
         currentQuest.requiredAmount = data.questAmount;
         currentQuest.rewardGold = data.questReward;
-        currentQuest.description = $"Câu {data.questAmount} con {data.questFishName} ({data.questRarity})";
+
+        currentQuest.description = string.Format(
+            LanguageManager.Instance.GetText("quest_catch"),
+            data.questAmount, data.questFishName, data.questRarity);
 
         currentProgress = data.questProgress;
-
         zoneQuestLimit = data.zoneQuestLimit;
         zoneLockedQuestCount = data.zoneLockedQuestCount;
-
-        Debug.Log($"🔁 Đã load nhiệm vụ: {currentQuest.description}, Tiến độ: {currentProgress}/{currentQuest.requiredAmount}");
 
         QuestUI.Instance?.UpdateUI();
     }

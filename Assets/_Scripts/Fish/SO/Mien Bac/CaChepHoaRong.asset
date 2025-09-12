@@ -31,3 +31,5 @@ MonoBehaviour:
   isSpecial: 0
   specialEventID: 
   isNotSellable: 1
+  nameKey: CaChepHoaRong
+  descKey: CaChepHoaRong_mota

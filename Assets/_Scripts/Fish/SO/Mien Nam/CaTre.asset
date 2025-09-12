@@ -25,3 +25,9 @@ MonoBehaviour:
   rarity: 0
   sellPrice: 50
   zone: "Mi\u1EC1n Nam"
+  isUnique: 0
+  isSpecial: 0
+  specialEventID: 
+  isNotSellable: 0
+  nameKey: CaTre
+  descKey: CaTre_mota

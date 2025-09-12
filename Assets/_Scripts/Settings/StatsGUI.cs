@@ -33,24 +33,47 @@ public class StatsGUI : MonoBehaviour
 
         // ======== Rod ========
         if (manager.CurrentRod != null)
-            rodNameText.text = $"Cần: {manager.CurrentRod.rodName} : R {manager.CurrentRod.bonusRareRate} | L {manager.CurrentRod.bonusLegendaryRate}";
+        {
+            string rodLabel = LanguageManager.Instance.GetText("stats_rod");         // "Cần"
+            string rareLabel = LanguageManager.Instance.GetText("stats_rare");       // "Rare"
+            string legLabel = LanguageManager.Instance.GetText("stats_legendary");   // "Legendary"
+
+            rodNameText.text = $"{rodLabel}: {manager.CurrentRod.GetRodName()}: {rareLabel} {manager.CurrentRod.bonusRareRate}, {legLabel} {manager.CurrentRod.bonusLegendaryRate}";
+        }
         else
-            rodNameText.text = "Cần: (Chưa chọn)";
+        {
+            string rodLabel = LanguageManager.Instance.GetText("stats_rod");
+            string noneText = LanguageManager.Instance.GetText("stats_none");        // "(Chưa chọn)"
+            rodNameText.text = $"{rodLabel}: {noneText}";
+        }
 
         // ======== Bait ========
         if (manager.CurrentBait != null)
-            baitNameText.text = $"Mồi: {manager.CurrentBait.baitName} : R {manager.CurrentBait.bonusRareRate} | L {manager.CurrentBait.bonusLegendaryRate}";
-        else
-            baitNameText.text = "Mồi: (Chưa chọn)";
+        {
+            string baitLabel = LanguageManager.Instance.GetText("stats_bait");       // "Mồi"
+            string rareLabel = LanguageManager.Instance.GetText("stats_rare");
+            string legLabel = LanguageManager.Instance.GetText("stats_legendary");
 
+            baitNameText.text = $"{baitLabel}: {manager.CurrentBait.GetBaitName()}: {rareLabel} {manager.CurrentBait.bonusRareRate}, {legLabel} {manager.CurrentBait.bonusLegendaryRate}";
+        }
+        else
+        {
+            string baitLabel = LanguageManager.Instance.GetText("stats_bait");
+            string noneText = LanguageManager.Instance.GetText("stats_none");
+            baitNameText.text = $"{baitLabel}: {noneText}";
+        }
 
         // ======== Tỉ lệ hiển thị ========
         float rarePercent = GetRareRatePercent(manager.TotalBonusRareRate);
         float legPercent = GetLegendaryRatePercent(manager.TotalBonusLegendaryRate);
 
-        statsText.text = $"Tỉ lệ hiện tại:\n" +
-                         $"- Rare: {rarePercent:F1}%\n" +
-                         $"- Legendary: {legPercent:F1}%";
+        string currentRateLabel = LanguageManager.Instance.GetText("stats_current_rate"); // "Tỉ lệ hiện tại"
+        string rareLabel2 = LanguageManager.Instance.GetText("stats_rare");
+        string legLabel2 = LanguageManager.Instance.GetText("stats_legendary");
+
+        statsText.text = $"{currentRateLabel}:\n" +
+                         $"- {rareLabel2}: {rarePercent:F1}%\n" +
+                         $"- {legLabel2}: {legPercent:F1}%";
     }
 
     // ========== Helper để quy đổi ==========
@@ -67,5 +90,4 @@ public class StatsGUI : MonoBehaviour
         float scale = Mathf.Clamp01((legRate - 4f) / (83f - 4f));
         return scale * 15f;
     }
-
 }
