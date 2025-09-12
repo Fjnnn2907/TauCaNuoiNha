@@ -24,7 +24,7 @@ MonoBehaviour:
     th\u1EA5y nh\u1EEFng \u0111i\u1EC1u kh\xF4ng n\xEAn th\u1EA5y."
   rarity: 0
   sellPrice: 70
-  zone: "Mi\u1EC1n Trung"
+  zone: mien_trung
   isUnique: 0
   isSpecial: 0
   specialEventID: 

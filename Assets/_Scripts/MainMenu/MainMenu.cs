@@ -128,12 +128,16 @@ public class MainMenu : MonoBehaviour
             float displayProgress = Mathf.Clamp01(progress / 0.9f);
 
             progressSlider.value = displayProgress;
-            progressText.text = $"Đang tải... {Mathf.RoundToInt(displayProgress * 100)}%";
+
+            // 🔑 Lấy text từ LanguageManager (key: dang_tai)
+            string loadingText = LanguageManager.Instance.GetText("dang_tai");
+
+            progressText.text = $"{loadingText}... {Mathf.RoundToInt(displayProgress * 100)}%";
 
             if (progress >= 0.9f)
             {
                 progressSlider.value = 1f;
-                progressText.text = "Đang tải... 100%";
+                progressText.text = $"{loadingText}... 100%";
                 yield return new WaitForSeconds(0.5f);
                 operation.allowSceneActivation = true;
             }
@@ -141,6 +145,7 @@ public class MainMenu : MonoBehaviour
             yield return null;
         }
     }
+
 
     private void QuitGame()
     {

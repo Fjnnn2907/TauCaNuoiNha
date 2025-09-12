@@ -25,7 +25,7 @@ MonoBehaviour:
     xin b\xECnh an tr\u01B0\u1EDBc m\u1ED7i chuy\u1EBFn ra kh\u01A1i."
   rarity: 2
   sellPrice: 8888
-  zone: "Mi\u1EC1n Trung"
+  zone: mien_trung
   isUnique: 0
   isSpecial: 0
   specialEventID: 

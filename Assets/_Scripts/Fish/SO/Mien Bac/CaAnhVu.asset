@@ -25,7 +25,7 @@ MonoBehaviour:
     'm\xF9 m\u1ECBt nh\u01B0 s\u01B0\u01A1ng Y\xEAn T\u1EED'."
   rarity: 1
   sellPrice: 1500
-  zone: "Mi\u1EC1n B\u1EAFc"
+  zone: mien_bac
   isUnique: 0
   isSpecial: 0
   specialEventID: 

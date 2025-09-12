@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿// LanguageManager.cs
+using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
 
 public class LanguageManager : MonoBehaviour
@@ -11,9 +13,7 @@ public class LanguageManager : MonoBehaviour
         English
     }
 
-    // Static lưu lại ngôn ngữ đã chọn
     public static Language SavedLanguage = Language.Vietnamese;
-
     public Language currentLanguage = Language.Vietnamese;
 
     private Dictionary<string, string> localizedText = new Dictionary<string, string>();
@@ -27,7 +27,6 @@ public class LanguageManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
 
-            // Load từ PlayerPrefs nếu có
             if (PlayerPrefs.HasKey("GameLanguage"))
             {
                 SavedLanguage = (Language)PlayerPrefs.GetInt("GameLanguage");
@@ -46,30 +45,46 @@ public class LanguageManager : MonoBehaviour
     {
         localizedText.Clear();
 
-        string[] lines = csvFile.text.Split('\n');
-        if (lines.Length <= 1) return;
+        if (csvFile == null || string.IsNullOrEmpty(csvFile.text))
+        {
+            Debug.LogWarning("LanguageManager: csvFile is null or empty");
+            return;
+        }
 
-        int langIndex = 1; // Vietnamese mặc định
+        List<string[]> records = ParseCsvRecords(csvFile.text);
+
+        if (records == null || records.Count <= 1)
+        {
+            Debug.LogWarning("LanguageManager: no records found in CSV");
+            return;
+        }
+
+        int langIndex = 1; // mặc định cột 1 = Vietnamese
         if (lang == Language.English) langIndex = 2;
 
-        for (int i = 1; i < lines.Length; i++)
+        for (int i = 1; i < records.Count; i++) // bắt đầu từ 1 (bỏ header)
         {
-            string[] cols = ParseCsvLine(lines[i]); // dùng parser mới
+            var cols = records[i];
+            if (cols.Length == 0) continue;
 
-            if (cols.Length <= langIndex) continue;
+            string key = cols[0]?.Trim();
+            if (string.IsNullOrEmpty(key)) continue;
 
-            string key = cols[0].Trim();
-            string value = cols[langIndex].Trim();
+            string value = "";
+            if (cols.Length > langIndex)
+                value = cols[langIndex] ?? "";
 
             if (!localizedText.ContainsKey(key))
                 localizedText.Add(key, value);
+            else
+                localizedText[key] = value; // ghi đè nếu trùng
         }
     }
 
     public string GetText(string key)
     {
-        if (localizedText.ContainsKey(key))
-            return localizedText[key];
+        if (localizedText.TryGetValue(key, out var val))
+            return val;
         return key;
     }
 
@@ -77,46 +92,95 @@ public class LanguageManager : MonoBehaviour
     {
         currentLanguage = lang;
         SavedLanguage = lang;
-
-        // Lưu vào PlayerPrefs để không bị mất khi tắt game
         PlayerPrefs.SetInt("GameLanguage", (int)lang);
         PlayerPrefs.Save();
 
         LoadLanguage(lang);
 
-        // update toàn bộ UI có LocalizedText
         LocalizedText[] texts = FindObjectsOfType<LocalizedText>();
         foreach (var t in texts)
-        {
             t.UpdateText();
-        }
     }
 
-    // --- Parser CSV có hỗ trợ dấu phẩy trong dấu nháy kép ---
-    private string[] ParseCsvLine(string line)
+    // -------------------------
+    // Parser CSV: hỗ trợ:
+    //  - trường có dấu phẩy
+    //  - trường có ngắt dòng (newline) bên trong (phải được bao trong "")
+    //  - escape dấu nháy kép bằng ""
+    // -------------------------
+    private List<string[]> ParseCsvRecords(string text)
     {
-        List<string> result = new List<string>();
+        var records = new List<string[]>();
+        var currentRecord = new List<string>();
+        var field = new StringBuilder();
         bool insideQuotes = false;
-        string current = "";
 
-        foreach (char c in line)
+        for (int i = 0; i < text.Length; i++)
         {
-            if (c == '\"') // toggle trạng thái trong nháy
+            char c = text[i];
+
+            if (c == '"')
             {
-                insideQuotes = !insideQuotes;
+                // nếu là "" (escaped quote) -> append một " vào field và skip next "
+                if (insideQuotes && i + 1 < text.Length && text[i + 1] == '"')
+                {
+                    field.Append('"');
+                    i++; // skip the escaped quote
+                }
+                else
+                {
+                    // toggle trạng thái trong/ngoài quotes
+                    insideQuotes = !insideQuotes;
+                }
             }
-            else if (c == ',' && !insideQuotes) // ngăn cách cột
+            else if (c == ',' && !insideQuotes)
             {
-                result.Add(current.Trim());
-                current = "";
+                // kết thúc field
+                currentRecord.Add(field.ToString());
+                field.Clear();
+            }
+            else if (c == '\r')
+            {
+                // ignore CR (Windows CRLF handling)
+            }
+            else if (c == '\n' && !insideQuotes)
+            {
+                // kết thúc record
+                currentRecord.Add(field.ToString());
+                field.Clear();
+                records.Add(currentRecord.ToArray());
+                currentRecord = new List<string>();
             }
             else
             {
-                current += c;
+                // ký tự bình thường (cũng bao gồm newline nếu insideQuotes)
+                field.Append(c);
             }
         }
 
-        result.Add(current.Trim());
-        return result.ToArray();
+        // thêm phần còn lại (nếu file không kết thúc bằng newline)
+        if (field.Length > 0 || currentRecord.Count > 0)
+        {
+            currentRecord.Add(field.ToString());
+            records.Add(currentRecord.ToArray());
+        }
+
+        // Có thể file có BOM ở đầu, loại bỏ nếu có
+        if (records.Count > 0 && records[0].Length > 0)
+        {
+            records[0][0] = records[0][0].TrimStart('\uFEFF');
+        }
+
+        // Trim các field (loại bỏ khoảng trắng đầu/cuối)
+        for (int r = 0; r < records.Count; r++)
+        {
+            for (int c = 0; c < records[r].Length; c++)
+            {
+                if (records[r][c] != null)
+                    records[r][c] = records[r][c].Trim();
+            }
+        }
+
+        return records;
     }
 }

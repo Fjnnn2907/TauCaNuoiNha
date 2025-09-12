@@ -22,11 +22,17 @@ man_hinh,Màn hình,Screen
 mua,Mua,Buy
 su_dung,Sử dụng,Use
 dang_dung,Đang dùng,In Use
-di,Đi tới,Travel
+tro_ve,Trở về,Home
 vang,Vàng,Gold (coins)
 cau,Câu,Catch
-,,
-,,
+dang_tai,Đang tải,Loading
+tha,Thả,Drop
+cam_on,Cảm ơn,Thank you
+cam_on_mota,"Cảm ơn mọi người rất rất nhiều vì đã chơi game tụi mình làm! Từ những cú click đầu tiên đến lúc clear boss cuối, tụi mình biết ơn từng giây các bạn đã dành cho trò chơi này. Không có bạn thì game tụi mình thì game tụi mình vẫn tồn tại, nhưng buồn lắm
+Cảm ơn gia đình vì đã không la khi tụi mình code xuyên đêm, bạn bè vì đã test game không than vãn (mấy lần crash nhẹ mà chịu khó test lại), và đặc biệt là cộng đồng đã luôn góp ý cực nhiệt tình không có bạn thì chắc game bug toang sớm rồi.
+Nếu bạn đọc tới đây thì: bạn xịn lắm đó. Còn nếu bạn bỏ qua phần này thì… cũng không sao, tụi mình vẫn iu ","Thank you so much for playing our game! From the first clicks to clearing the final boss, we are grateful for every second you spent on this game. Without you, our game would still exist, but it would be sad
+Thank you to my family for not yelling at me when I coded all night, to my friends for testing the game without complaining (even though it crashed a few times, they tried to retest), and especially to the community for always giving us feedback so enthusiastically. Without you, the game would have been broken.
+If you read this far: you are a great person. And if you skip this part… that’s okay, we still love you"
 CanCauPhongThong,Phổ thông,Popular
 CanCauTamTrung,Tầm trung,Mid range
 CanCauCaoCap,Cao cấp,High class
@@ -38,7 +44,7 @@ MoiBerkleyPower,Berkley Power,Berkley Power
 MoiTuNhien,Mồi tự nhiên,Natural bait
 MoiDynamiteBaits,Dynamite Baits,Dynamite Baits
 MoiMegabass,Megabass,Megabass
-MoiSecretFormula ,Secret Formula ,Secret Formula 
+MoiSecretFormula,Secret Formula,Secret Formula
 MoiTrungKienVang,Trứng kiến vàng,Yellow ant eggs
 MoiHormone,Hormone,Hormone
 quest_catch,Câu {0} con {1} ({2}),Catch {0} {1} ({2})
@@ -54,18 +60,18 @@ stats_none,(Chưa chọn),(Not selected)
 stats_current_rate,Tỉ lệ hiện tại,Current Rates
 stats_rare,Rare,Rare
 stats_legendary,Huyền thoại,Legendary
-,,
-,,
-,,
-,,
-,,
-,,
-,,
+mien_bac_mota,"Nơi sông Hồng cuộn phù sa như dải lụa đào, hồ Tây gương nước lung linh in bóng liễu rủ. Những con cá rô phi lấp lánh dưới ánh chiều tà, đàn cá mè hoa quẫy đuôi khuấy động mặt nước yên bình. Từ cá kho làng Vũ Đại đến mẻ chua cá trắm đồng – mỗi dòng sông, hồ nước đều thấm đẫm hương vị quê nhà.","Where the Red River rolls with alluvium like a strip of peach silk, West Lake’s water reflects the shimmering willows. Tilapia glisten in the evening light, schools of silver carp wiggle their tails, stirring the peaceful water surface. From braised fish from Vu Dai village to sour batches of grass carp – every river and lake is imbued with the flavor of home."
+mien_trung_mota,"Nơi dòng sông Hương lững lờ trôi qua những mái nhà rêu phong xứ Huế, biển Cửa Đại rì rào trong nắng sớm, hòa tiếng sóng với câu hò xứ Quảng. Cá đối, cá hanh lượn mình giữa làn nước mặn mòi, cá thu, cá nục phơi mình trên bến cá đầy nắng. Từ tô bún cá thơm nức ở Nha Trang đến nồi cá bống kho cay xứ Nghệ – mỗi làng chài, bến nước đều giữ trọn hương vị mặn mà của biển cả và tình người.","Where the Perfume River flows slowly past the moss-covered roofs of Hue, Cua Dai beach murmurs in the early morning sun, blending the sound of waves with the folk songs of Quang Nam. Mullet and hach ​​fish swim in the salty water, mackerel and scad bask on the sunny fishing wharf. From a bowl of fragrant fish noodle soup in Nha Trang to a pot of spicy braised goby fish from Nghe An – each fishing village and wharf preserves the rich flavor of the ocean and human love."
+mien_nam_mota,"Miền Nam Việt Nam – vùng đất của nắng ấm, cây trái và những dòng sông hiền hòa. Nơi đây, hệ thống sông ngòi chằng chịt như mạch máu nuôi dưỡng từng thửa ruộng, từng vườn cây trái trĩu quả. Những con sông lớn uốn lượn quanh co, chia cắt đất liền thành những cù lao, bồi đắp phù sa màu mỡ cho ruộng vườn quanh năm xanh tốt.","Southern Vietnam – a land of warm sunshine, fruit trees and gentle rivers. Here, the intricate river system is like blood vessels that nourish each rice field and each fruit-laden orchard. Large rivers meander, dividing the mainland into islands, depositing fertile alluvium for the fields and gardens to grow green all year round."
+ban_dang_o,Bạn đang ở:,You are at
+di_toi,Đi tới,Go To
+da_toi,Đã tới,Arrived
+bike,Xe máy,Bike
+plane,Máy bay,Plane
 label_quantity,SL:,Qty:
 label_rarity,PL:,R:
 label_price,Giá:,Price:
 label_not_sellable,Không thể bán,Not sellable
-,,
 CaHoNuoc,Cá Hổ nước,Water Tiger Fish
 CaHoNuoc_mota,"Quái ngư hàm răng kiếm, vảy cứng như áo giáp, sống trong hang động nước đen kịt nơi đại ngàn. Thổ dân kể rằng chúng là hiện thân của thần Sấm, mỗi lần quẫy đuôi là sông suối nổi sóng dữ. Kẻ nào bắt được cá hổ phải thả ngay con lớn nhất, bằng không cả làng sẽ bị lũ cuốn trôi.","The saber-toothed, armor-like fish monster lives in dark caves in the jungle. The natives say it is the incarnation of the Thunder God, and every time it wags its tail, it causes huge waves in the rivers and streams. Whoever catches the tiger fish must release the biggest one, or the whole village will be swept away by the flood."
 CaLoc,Cá lóc,Snakehead fish

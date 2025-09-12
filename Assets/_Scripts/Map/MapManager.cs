@@ -8,8 +8,8 @@ public class MapManager : Singleton<MapManager>
     [System.Serializable]
     public class LocationData
     {
-        public string locationName;
-        [TextArea] public string description;
+        public string nameKey;           // 🔑 key đa ngôn ngữ (vd: bac, trung, nam)
+        public string descriptionKey;    // 🔑 key mô tả
         public string sceneName;
         public int regionIndex; // Bắc = 0, Trung = 1, Nam = 2
     }
@@ -50,7 +50,9 @@ public class MapManager : Singleton<MapManager>
         {
             if (loc.sceneName == currentSceneName)
             {
-                currentLocationText.text = "Bạn đang ở: " + loc.locationName;
+                string locName = LanguageManager.Instance.GetText(loc.nameKey);
+                string prefix = LanguageManager.Instance.GetText("ban_dang_o"); // "Bạn đang ở:" / "You are at:"
+                currentLocationText.text = $"{prefix} {locName}";
                 break;
             }
         }
@@ -61,19 +63,22 @@ public class MapManager : Singleton<MapManager>
         currentLocationIndex = index;
         LocationData data = locations[index];
 
-        titleText.text = data.locationName;
-        descriptionText.text = data.description;
+        // 🔑 Lấy text theo ngôn ngữ
+        titleText.text = LanguageManager.Instance.GetText(data.nameKey);
+        descriptionText.text = LanguageManager.Instance.GetText(data.descriptionKey);
         infoPanel.SetActive(true);
 
         bool isCurrentLocation = (data.sceneName == currentSceneName);
         goButton.interactable = !isCurrentLocation;
-        goButtonText.text = isCurrentLocation ? "Đã tới" : "Đi tới";
+        goButtonText.text = isCurrentLocation
+            ? LanguageManager.Instance.GetText("da_toi")  // "Đã tới" / "Arrived"
+            : LanguageManager.Instance.GetText("di_toi"); // "Đi tới" / "Go To"
 
-        // Tắt panel phương tiện nếu đang hiển thị
+        // Nếu đang mở transportPanel thì reset
         if (transportPanel.activeSelf)
         {
             transportPanel.SetActive(false);
-            goButtonText.text = "Đi tới";
+            goButtonText.text = LanguageManager.Instance.GetText("di_toi");
         }
     }
 
@@ -90,17 +95,21 @@ public class MapManager : Singleton<MapManager>
         if (transportPanel.activeSelf)
         {
             transportPanel.SetActive(false);
-            goButtonText.text = "Đi tới";
+            goButtonText.text = LanguageManager.Instance.GetText("di_toi");
             return;
         }
 
-        // Hiển thị UI chọn phương tiện và đổi nút thành "Đóng"
+        // Hiển thị UI chọn phương tiện
         transportPanel.SetActive(true);
-        goButtonText.text = "Đóng";
+        goButtonText.text = LanguageManager.Instance.GetText("dong"); // "Đóng" / "Close"
 
         var current = GetCurrentLocationData();
         int bikeCost = CalculateCost(current.regionIndex, target.regionIndex, "Bike");
         int planeCost = CalculateCost(current.regionIndex, target.regionIndex, "Plane");
+
+        // 🔑 Nút xe máy + giá
+        //bikeButtonText.text = $"{LanguageManager.Instance.GetText("bike")} ({bikeCost})";
+        //planeButtonText.text = $"{LanguageManager.Instance.GetText("plane")} ({planeCost})";
 
         bikeButtonText.text = $"{bikeCost}";
         planeButtonText.text = $"{planeCost}";
@@ -140,7 +149,7 @@ public class MapManager : Singleton<MapManager>
         {
             Debug.Log("❌ Không đủ tiền để di chuyển!");
             transportPanel.SetActive(false);
-            goButtonText.text = "Đi tới";
+            goButtonText.text = LanguageManager.Instance.GetText("di_toi");
             return;
         }
 

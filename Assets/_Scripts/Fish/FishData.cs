@@ -20,4 +20,9 @@ public class FishData : ScriptableObject
     public bool isNotSellable;
     public string nameKey;
     public string descKey;
+
+    public string GetZoneName()
+    {
+        return LanguageManager.Instance.GetText(zone);
+    }
 }

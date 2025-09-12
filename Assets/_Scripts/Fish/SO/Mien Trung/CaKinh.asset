@@ -24,7 +24,7 @@ MonoBehaviour:
     phong s\u1EAFp t\u1EDBi."
   rarity: 0
   sellPrice: 100
-  zone: "Mi\u1EC1n Trung"
+  zone: mien_trung
   isUnique: 0
   isSpecial: 0
   specialEventID: 

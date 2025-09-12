@@ -32,6 +32,10 @@ public class FishingSlider : MonoBehaviour
 
         if (castButton != null)
             castButton.onClick.AddListener(OnCastButtonPressed);
+
+        // 🔑 Set text mặc định khi khởi động
+        if (castButtonText != null)
+            castButtonText.text = LanguageManager.Instance.GetText("cau");
     }
 
     void Update()
@@ -56,9 +60,10 @@ public class FishingSlider : MonoBehaviour
 
         RandomizeGreenZone(bonusRate);
 
-        if (castButton != null)
+        if (castButton != null && castButtonText != null)
         {
-            castButtonText.text = "Thả";
+            // 🔑 Khi bắt đầu → "Thả"
+            castButtonText.text = LanguageManager.Instance.GetText("tha");
         }
     }
 
@@ -71,8 +76,11 @@ public class FishingSlider : MonoBehaviour
         onResult?.Invoke(inZone);
         gameObject.SetActive(false);
 
-        if (castButton != null)
-            castButtonText.text = "Câu";
+        if (castButton != null && castButtonText != null)
+        {
+            // 🔑 Khi nhấn xong → "Câu"
+            castButtonText.text = LanguageManager.Instance.GetText("cau");
+        }
     }
 
     private void RandomizeGreenZone(float bonusRate)

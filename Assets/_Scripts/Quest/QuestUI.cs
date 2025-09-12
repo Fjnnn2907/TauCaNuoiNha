@@ -64,7 +64,7 @@ public class QuestUI : Singleton<QuestUI>
         if (fish == null) return LanguageManager.Instance.GetText("zone_unknown"); // fallback
 
         // Nếu bạn muốn zone cũng dịch được thì thêm key vào Excel
-        return !string.IsNullOrEmpty(fish.zone)
+        return !string.IsNullOrEmpty(fish.GetZoneName())
             ? LanguageManager.Instance.GetText(fish.zone)
             : LanguageManager.Instance.GetText("zone_unknown");
     }

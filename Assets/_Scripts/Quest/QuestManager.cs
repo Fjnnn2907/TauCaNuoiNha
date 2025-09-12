@@ -87,7 +87,7 @@ public class QuestManager : Singleton<QuestManager>, ISaveable
     {
         string sceneName = SceneManager.GetActiveScene().name;
         var location = MapManager.Instance.locations.FirstOrDefault(loc => loc.sceneName == sceneName);
-        return location != null ? location.locationName : LanguageManager.Instance.GetText("quest_unknown_zone");
+        return location != null ? location.nameKey : LanguageManager.Instance.GetText("quest_unknown_zone");
     }
 
     public void OnFishCaught(FishData fish)
