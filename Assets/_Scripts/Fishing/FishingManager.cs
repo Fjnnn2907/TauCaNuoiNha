@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework.Interfaces;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -36,6 +37,9 @@ public class FishingManager : Singleton<FishingManager>
     public FishData fishEvent;           // Mai rùa
     public int turtleShellLoseAmount = 1;      // Số lượng mất khi thua
 
+    [Header("Objects to Hide in Minigame")]
+    public List<GameObject> objectsToHide = new List<GameObject>();
+
 
     public float TotalBonusRareRate => rodBonusRare + baitBonusRare;
     public float TotalBonusLegendaryRate => rodBonusLegendary + baitBonusLegendary;
@@ -66,20 +70,21 @@ public class FishingManager : Singleton<FishingManager>
         {
             Debug.Log("⚠️ Bạn chưa chọn cần câu!");
             NotificationManager.Instance?.ShowNotification("Hình như chưa có cần câu á");
+            NotificationManager.Instance?.ShowNotification(LanguageManager.Instance.GetText("thongbao_chua_chon_can_cau"));
             return;
         }
 
         if (CurrentBait == null)
         {
             Debug.Log("⚠️ Bạn chưa chọn mồi câu!");
-            NotificationManager.Instance?.ShowNotification("Bạn chưa chọn mồi câu");
+            NotificationManager.Instance?.ShowNotification(LanguageManager.Instance.GetText("thongbao_chua_chon_moi"));
             return;
         }
 
         if (!BaitInventory.Instance.ConsumeBait(CurrentBait))
         {
             Debug.Log("⚠️ Không đủ mồi!");
-            NotificationManager.Instance?.ShowNotification("Hết mồi mất tiêu rồi");
+            NotificationManager.Instance?.ShowNotification(LanguageManager.Instance.GetText("thongbao_khong_du_moi"));
             return;
         }
 
@@ -132,35 +137,27 @@ public class FishingManager : Singleton<FishingManager>
     {
         if (isWin)
         {
-            // ✅ Hiện thoại
-            if (winDialogue != null)
-            {
-                DialogueManager.Instance.StartDialogue(winDialogue);
-            }
-
             // ✅ Tặng cần câu
             if (rewardRod != null)
             {
                 FishingInventory.Instance?.AddRod(rewardRod);
-                NotificationManager.Instance?.ShowNotification($"🎣 Bạn nhận được cần câu: {rewardRod.rodName}!");
+                NotificationManager.Instance?.ShowNotification(
+                    string.Format(LanguageManager.Instance.GetText("thongbao_nhan_can_cau"),
+                    LanguageManager.Instance.GetText(rewardRod.rodName))
+                );
             }
-            isPlayMiniGame = false;
-            canvanObj.SetActive(true);
-            NPCController.Instance?.EndGame();
-            SpecialMinigameUI.Instance.turtleGameUI.SetActive(false);
         }
         else
         {
-            // ❌ Mất mai rùa
+            // ❌ Mất cá
             if (fishEvent != null)
             {
                 FishInventory.Instance?.RemoveFish(fishEvent, turtleShellLoseAmount);
-                NotificationManager.Instance?.ShowNotification($"Bạn đã mất {fishEvent.fishName}");
+                NotificationManager.Instance?.ShowNotification(
+                    string.Format(LanguageManager.Instance.GetText("thongbao_mat_ca"),
+                    LanguageManager.Instance.GetText(fishEvent.nameKey))
+                );
             }
-            isPlayMiniGame = false;
-            canvanObj.SetActive(true);
-            NPCController.Instance?.EndGame();
-            SpecialMinigameUI.Instance.turtleGameUI.SetActive(false);
         }
     }
 
@@ -176,9 +173,19 @@ public class FishingManager : Singleton<FishingManager>
         FishCollection.Instance.DiscoverFish(fish);
 
         if (fish.isUnique)
-            NotificationManager.Instance?.ShowNotification($"Bạn vừa câu được cá độc nhất: {fish.fishName}!");
+        {
+            NotificationManager.Instance?.ShowNotification(
+                string.Format(LanguageManager.Instance.GetText("thongbao_ca_doc_nhat"),
+                LanguageManager.Instance.GetText(fish.nameKey))
+            );
+        }
         else
-            NotificationManager.Instance?.ShowNotification($"Bạn câu được {fish.fishName}");
+        {
+            NotificationManager.Instance?.ShowNotification(
+                string.Format(LanguageManager.Instance.GetText("thongbao_ca_thuong"),
+                LanguageManager.Instance.GetText(fish.nameKey))
+            );
+        }
     }
 
 
@@ -230,10 +237,13 @@ public class FishingManager : Singleton<FishingManager>
         if (roll < finalLegendary + finalRare) return FishRarity.Rare;
         return FishRarity.Common;
     }
-
-
-
-
+    private void SetObjectsActive(List<GameObject> objects, bool state)
+    {
+        foreach (var obj in objects)
+        {
+            if (obj != null) obj.SetActive(state);
+        }
+    }
     private void ChangeState(FishingState newState)
     {
         if (currentCoroutine != null)
@@ -273,6 +283,8 @@ public class FishingManager : Singleton<FishingManager>
         isPlayMiniGame = true;
         playerAnimator.Play("CanCau");
         rhythmMinigame.SetActive(true);
+
+        SetObjectsActive(objectsToHide, false);
 
         KeySpawner.Instance?.SetDifficulty(GetDifficultyFromRarity(selectedRarity));
         if (AuditionManager.Instance != null)

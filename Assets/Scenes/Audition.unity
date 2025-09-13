@@ -14429,8 +14429,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 063d778757026114da2a34243eba29c5, type: 2}
   - {fileID: 11400000, guid: b67bb0d5ed9726a45a6b0e80a7c52c99, type: 2}
   - {fileID: 11400000, guid: b614a7bba64fa35409c0a8b0d2a14536, type: 2}
-  minDelay: 5
-  maxDelay: 10
+  minDelay: 30
+  maxDelay: 120
   bienCoUI: {fileID: 1261629302}
   lastCoinChange: 0
   lastGoldEarnedFromFish: 0
@@ -14995,7 +14995,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -4.5284, y: 57.95}
-  m_SizeDelta: {x: 935.6423, y: 348.33}
+  m_SizeDelta: {x: 886.8, y: 285.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &690345817
 MonoBehaviour:
@@ -20873,6 +20873,11 @@ MonoBehaviour:
   rewardRod: {fileID: 0}
   fishEvent: {fileID: 0}
   turtleShellLoseAmount: 1
+  objectsToHide:
+  - {fileID: 1560408998}
+  - {fileID: 1310187125}
+  - {fileID: 1785222632}
+  - {fileID: 1930393062}
 --- !u!95 &1003209361
 Animator:
   serializedVersion: 7
@@ -25764,6 +25769,7 @@ GameObject:
   - component: {fileID: 1229012294}
   - component: {fileID: 1229012296}
   - component: {fileID: 1229012295}
+  - component: {fileID: 1229012297}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -25891,6 +25897,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1229012293}
   m_CullTransparentMesh: 1
+--- !u!114 &1229012297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229012293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99f8028fdc5afa948bc96bdf63807e86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: huong_dan_map1
 --- !u!1 &1229369692
 GameObject:
   m_ObjectHideFlags: 0
@@ -41214,6 +41233,7 @@ GameObject:
   - component: {fileID: 1775486493}
   - component: {fileID: 1775486495}
   - component: {fileID: 1775486494}
+  - component: {fileID: 1775486496}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -41339,6 +41359,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1775486492}
   m_CullTransparentMesh: 1
+--- !u!114 &1775486496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775486492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99f8028fdc5afa948bc96bdf63807e86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: dong
 --- !u!1 &1785222632
 GameObject:
   m_ObjectHideFlags: 0
@@ -47613,11 +47646,11 @@ RectTransform:
   - {fileID: 1988747167}
   - {fileID: 1310187126}
   - {fileID: 1560408999}
+  - {fileID: 1606790984}
   - {fileID: 1261629301}
   - {fileID: 1785222633}
   - {fileID: 1627613664}
   - {fileID: 1455945586}
-  - {fileID: 1606790984}
   - {fileID: 1930393063}
   - {fileID: 9197230524657909066}
   - {fileID: 1860874821}

@@ -11674,6 +11674,7 @@ MonoBehaviour:
   pressedRightSprite: {fileID: -910789545885806899, guid: 90b57c7d7f8b7ac45a9d801841a21a98, type: 3}
   sequenceLength: 5
   timerSlider: {fileID: 531519817}
+  timerText: {fileID: 0}
 --- !u!114 &596940070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29357,6 +29358,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213186795}
   m_CullTransparentMesh: 1
+--- !u!1 &1214483255
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1214483257}
+  - component: {fileID: 1214483256}
+  m_Layer: 0
+  m_Name: ====Language Manager====
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1214483256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214483255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8013792e1a09814997aeead8867cba2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLanguage: 0
+  csvFile: {fileID: 4900000, guid: e8bd5f96bc2d31a4ea72a218b7180e76, type: 3}
+--- !u!4 &1214483257
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214483255}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1244.0259, y: 309.15268, z: -6.251445}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1219105960
 GameObject:
   m_ObjectHideFlags: 0
@@ -41486,6 +41533,7 @@ MonoBehaviour:
   moTaText: {fileID: 68335684}
   moTaPhanThuongText: {fileID: 680792799}
   acceptButton: {fileID: 629111942}
+  icon: {fileID: 0}
 --- !u!224 &1901011880
 RectTransform:
   m_ObjectHideFlags: 0
@@ -42252,6 +42300,12 @@ MonoBehaviour:
   baitBonusRare: 0
   baitBonusLegendary: 0
   fishSprite: {fileID: 980461467}
+  canvanObj: {fileID: 0}
+  winDialogue: {fileID: 0}
+  rewardRod: {fileID: 0}
+  fishEvent: {fileID: 0}
+  turtleShellLoseAmount: 1
+  objectsToHide: []
 --- !u!95 &1932687000
 Animator:
   serializedVersion: 7
@@ -46923,39 +46977,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locations:
-  - locationName: "Mi\u1EC1n B\u1EAFc"
-    description: "N\u01A1i s\xF4ng H\u1ED3ng cu\u1ED9n ph\xF9 sa nh\u01B0 d\u1EA3i
-      l\u1EE5a \u0111\xE0o, h\u1ED3 T\xE2y g\u01B0\u01A1ng n\u01B0\u1EDBc lung linh
-      in b\xF3ng li\u1EC5u r\u1EE7. Nh\u1EEFng con c\xE1 r\xF4 phi l\u1EA5p l\xE1nh
-      d\u01B0\u1EDBi \xE1nh chi\u1EC1u t\xE0, \u0111\xE0n c\xE1 m\xE8 hoa qu\u1EABy
-      \u0111u\xF4i khu\u1EA5y \u0111\u1ED9ng m\u1EB7t n\u01B0\u1EDBc y\xEAn b\xECnh.
-      T\u1EEB c\xE1 kho l\xE0ng V\u0169 \u0110\u1EA1i \u0111\u1EBFn m\u1EBB chua
-      c\xE1 tr\u1EAFm \u0111\u1ED3ng \u2013 m\u1ED7i d\xF2ng s\xF4ng, h\u1ED3 n\u01B0\u1EDBc
-      \u0111\u1EC1u th\u1EA5m \u0111\u1EABm h\u01B0\u01A1ng v\u1ECB qu\xEA nh\xE0."
+  - nameKey: 
+    descriptionKey: 
     sceneName: DapCa
     regionIndex: 0
-  - locationName: "Mi\u1EC1n Trung"
-    description: "N\u01A1i d\xF2ng s\xF4ng H\u01B0\u01A1ng l\u1EEFng l\u1EDD tr\xF4i
-      qua nh\u1EEFng m\xE1i nh\xE0 r\xEAu phong x\u1EE9 Hu\u1EBF, bi\u1EC3n C\u1EEDa
-      \u0110\u1EA1i r\xEC r\xE0o trong n\u1EAFng s\u1EDBm, h\xF2a ti\u1EBFng s\xF3ng
-      v\u1EDBi c\xE2u h\xF2 x\u1EE9 Qu\u1EA3ng. C\xE1 \u0111\u1ED1i, c\xE1 hanh l\u01B0\u1EE3n
-      m\xECnh gi\u1EEFa l\xE0n n\u01B0\u1EDBc m\u1EB7n m\xF2i, c\xE1 thu, c\xE1 n\u1EE5c
-      ph\u01A1i m\xECnh tr\xEAn b\u1EBFn c\xE1 \u0111\u1EA7y n\u1EAFng. T\u1EEB t\xF4
-      b\xFAn c\xE1 th\u01A1m n\u1EE9c \u1EDF Nha Trang \u0111\u1EBFn n\u1ED3i c\xE1
-      b\u1ED1ng kho cay x\u1EE9 Ngh\u1EC7 \u2013 m\u1ED7i l\xE0ng ch\xE0i, b\u1EBFn
-      n\u01B0\u1EDBc \u0111\u1EC1u gi\u1EEF tr\u1ECDn h\u01B0\u01A1ng v\u1ECB m\u1EB7n
-      m\xE0 c\u1EE7a bi\u1EC3n c\u1EA3 v\xE0 t\xECnh ng\u01B0\u1EDDi."
+  - nameKey: 
+    descriptionKey: 
     sceneName: MagicDraw
     regionIndex: 1
-  - locationName: "Mi\u1EC1n Nam"
-    description: "Mi\u1EC1n Nam Vi\u1EC7t Nam \u2013 v\xF9ng \u0111\u1EA5t c\u1EE7a
-      n\u1EAFng \u1EA5m, c\xE2y tr\xE1i v\xE0 nh\u1EEFng d\xF2ng s\xF4ng hi\u1EC1n
-      h\xF2a. N\u01A1i \u0111\xE2y, h\u1EC7 th\u1ED1ng s\xF4ng ng\xF2i ch\u1EB1ng
-      ch\u1ECBt nh\u01B0 m\u1EA1ch m\xE1u nu\xF4i d\u01B0\u1EE1ng t\u1EEBng th\u1EEDa
-      ru\u1ED9ng, t\u1EEBng v\u01B0\u1EDDn c\xE2y tr\xE1i tr\u0129u qu\u1EA3. Nh\u1EEFng
-      con s\xF4ng l\u1EDBn u\u1ED1n l\u01B0\u1EE3n quanh co, chia c\u1EAFt \u0111\u1EA5t
-      li\u1EC1n th\xE0nh nh\u1EEFng c\xF9 lao, b\u1ED3i \u0111\u1EAFp ph\xF9 sa m\xE0u
-      m\u1EE1 cho ru\u1ED9ng v\u01B0\u1EDDn quanh n\u0103m xanh t\u1ED1t."
+  - nameKey: 
+    descriptionKey: 
     sceneName: Audition
     regionIndex: 2
   titleText: {fileID: 1230306137}
@@ -47514,3 +47545,4 @@ SceneRoots:
   - {fileID: 78786692}
   - {fileID: 1758299976}
   - {fileID: 195505977}
+  - {fileID: 1214483257}

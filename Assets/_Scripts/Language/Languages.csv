@@ -189,4 +189,12 @@ thuong_them_moicau,Nhận {1} {0},Gain {1} {0}
 thuong_mat_ca,Mất {1} {0},Lose {1} {0}
 thuong_them_ca,Nhận {1} {0},Gain {1} {0}
 thuong_ban_ca,Bán {1} {0} được {2} vàng,Sell {1} {0} for {2} gold
-thuong_khong_xac_dinh,Không xác định phần thưởng hoặc hình phạt,Unknown reward or penalty
+thongbao_ca_doc_nhat,"Bạn vừa câu được cá độc nhất: {0}!","You just caught a unique fish: {0}!"
+thongbao_ca_thuong,"Bạn câu được {0}","You caught {0}"
+thongbao_chua_chon_can_cau,"Bạn chưa chọn cần câu!","You haven't selected a fishing rod!"
+thongbao_chua_chon_moi,"Bạn chưa chọn mồi câu!","You haven't selected bait!"
+thongbao_khong_du_moi,"Không đủ mồi!","Not enough bait!"
+thongbao_nhan_can_cau,"Bạn nhận được cần câu: {0}!","You received a fishing rod: {0}!"
+thongbao_mat_ca,"Bạn đã mất {0}","You lost {0}"
+thongbao_ca_doc_nhat,"Bạn vừa câu được cá độc nhất: {0}!","You just caught a unique fish: {0}!"
+thongbao_ca_thuong,"Bạn câu được {0}","You caught {0}"
