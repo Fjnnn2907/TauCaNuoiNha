@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: TruotCahnRotXuongSong
   m_EditorClassIdentifier: 
+  tenBienCoKey: truot_chan_roi_xuong_song
+  moTaBienCoKey: truot_chan_roi_xuong_song_mota
   tenBienCo: "Tr\u01B0\u1EE3t ch\xE2n r\u1EDBt xu\u1ED1ng s\xF4ng"
   moTaBienCo: "B\u1EA1n r\u1EDBt xu\u1ED1ng s\xF4ng m\u1EA5t m\u1ED9t s\u1ED1 m\u1ED3i"
   iconBienCo: {fileID: 0}

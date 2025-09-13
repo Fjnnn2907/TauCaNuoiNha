@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: CaVungVayManh
   m_EditorClassIdentifier: 
+  tenBienCoKey: ca_vung_vay_manh
+  moTaBienCoKey: ca_vung_vay_manh_mota
   tenBienCo: "C\xE1 v\xF9ng v\u1EABy m\u1EA1nh"
   moTaBienCo: "C\xE1 k\xE9o m\u1EA1nh qu\xE1 tu\u1ED9t m\u1EA5t d\xE2y m\u1EA5t c\xE1"
   iconBienCo: {fileID: 0}

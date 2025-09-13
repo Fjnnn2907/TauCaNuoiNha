@@ -24,9 +24,21 @@ public class BienCoUI : Singleton<BienCoUI>
     {
         bienCoDangHien = bienCo;
 
-        tenBienCoText.text = bienCo.tenBienCo;
-        moTaText.text = bienCo.moTaBienCo;
+        // 🔥 Lấy text từ key nếu có, fallback về text gốc
+        if (!string.IsNullOrEmpty(bienCo.tenBienCoKey))
+            tenBienCoText.text = LanguageManager.Instance.GetText(bienCo.tenBienCoKey);
+        else
+            tenBienCoText.text = bienCo.tenBienCo;
+
+        if (!string.IsNullOrEmpty(bienCo.moTaBienCoKey))
+            moTaText.text = LanguageManager.Instance.GetText(bienCo.moTaBienCoKey);
+        else
+            moTaText.text = bienCo.moTaBienCo;
+
         moTaPhanThuongText.text = GenerateRewardDescription(bienCo);
+
+        if (bienCo.iconBienCo != null)
+            icon.sprite = bienCo.iconBienCo;
 
         panel.SetActive(true);
         Time.timeScale = 0;

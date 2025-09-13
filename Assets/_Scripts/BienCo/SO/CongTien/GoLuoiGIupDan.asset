@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: GoLuoiGIupDan
   m_EditorClassIdentifier: 
+  tenBienCoKey: go_luoi_giup_dan
+  moTaBienCoKey: go_luoi_giup_dan_mota
   tenBienCo: "G\u1EE1 L\u01B0\u1EDBi Gi\xFAp D\xE2n"
   moTaBienCo: "Gi\xFAp d\xE2n l\xE0ng g\u1EE1 l\u01B0\u1EDBi c\xE1 b\u1ECB r\u1ED1i,
     \u0111\u01B0\u1EE3c th\u01B0\u1EDFng"

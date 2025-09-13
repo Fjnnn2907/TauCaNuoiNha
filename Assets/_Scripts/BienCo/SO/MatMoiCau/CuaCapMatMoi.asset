@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: CuaCapMatMoi
   m_EditorClassIdentifier: 
+  tenBienCoKey: cua_cap_mat_moi
+  moTaBienCoKey: cua_cap_mat_moi_mota
   tenBienCo: "Cua c\u1EAFp m\u1EA5t m\u1ED3i"
   moTaBienCo: "Con cua d\u01B0\u1EDBi \u0111\xE1y s\xF4ng c\u1EAFp m\u1ED3i k\xE9o
     \u0111i m\u1EA5t"

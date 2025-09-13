@@ -18,8 +18,14 @@ public class BaitEffect
 [CreateAssetMenu(fileName = "BienCoData", menuName = "BienCo")]
 public class BienCoSO : ScriptableObject
 {
+    [Header("Localization Keys")]
+    public string tenBienCoKey;
+    public string moTaBienCoKey;
+
+    [Header("Fallback (nếu không có key)")]
     public string tenBienCo;
     [TextArea(2, 5)] public string moTaBienCo;
+
     public Sprite iconBienCo;
     public bienCoType loaiBienCo;
 

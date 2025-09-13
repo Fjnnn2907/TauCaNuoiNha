@@ -16,6 +16,9 @@ public class BienCoSOEditor : Editor
         bienCo.xacSuatXuatHien = EditorGUILayout.Slider("Tỉ lệ xuất hiện", bienCo.xacSuatXuatHien, 0f, 1f);
 
         EditorGUILayout.Space();
+        bienCo.tenBienCoKey = EditorGUILayout.TextField("Key Tên Biến Cố", bienCo.tenBienCoKey);
+        bienCo.moTaBienCoKey = EditorGUILayout.TextField("Key Mô tả Biến Cố", bienCo.moTaBienCoKey);
+        EditorGUILayout.Space();
         EditorGUILayout.LabelField("Dữ liệu theo loại biến cố", EditorStyles.boldLabel);
 
         switch (bienCo.loaiBienCo)

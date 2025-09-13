@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: DuKhachTip
   m_EditorClassIdentifier: 
+  tenBienCoKey: du_khach_tip
+  moTaBienCoKey: du_khach_tip_mota
   tenBienCo: "Du Kh\xE1ch Tip"
   moTaBienCo: "M\u1ED9t nh\xF3m du kh\xE1ch cho b\u1EA1n ti\u1EC1n v\xEC th\u1EA5y
     b\u1EA1n c\xE2u \u0111\u1EB9p qu\xE1"
