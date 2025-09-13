@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: LenConDoi_3
   m_EditorClassIdentifier: 
+  tenBienCoKey: len_con_doi_3
+  moTaBienCoKey: len_con_doi_3_mota
   tenBienCo: "L\xEAn C\u01A1n \u0110\xF3i"
   moTaBienCo: "B\u1EA1n qu\xE1 \u0111\xF3i, \u0111\xE1 b\xE1t Ph\u1EDF"
   iconBienCo: {fileID: 0}

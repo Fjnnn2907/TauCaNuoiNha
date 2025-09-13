@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: ConChimDangGhet
   m_EditorClassIdentifier: 
+  tenBienCoKey: con_chim_dang_ghet
+  moTaBienCoKey: con_chim_dang_ghet_mota
   tenBienCo: "Con chim \u0111\xE1ng gh\xE9t"
   moTaBienCo: "\u0110ang c\xE2u v\xF4 t\xECnh th\u1EA5y m\u1EA5t m\xF3n \u0111\u1ED3
     ai ng\u1EDD con chim l\u1EA5y"

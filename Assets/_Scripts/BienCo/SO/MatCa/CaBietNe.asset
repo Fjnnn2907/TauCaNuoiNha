@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: CaBietNe
   m_EditorClassIdentifier: 
+  tenBienCoKey: ca_biet_ne
+  moTaBienCoKey: ca_biet_ne_mota
   tenBienCo: "C\xE1 Bi\u1EBFt N\xE9"
   moTaBienCo: "C\xE1 th\xF4ng minh, nh\u1EA3y kh\u1ECFi l\u01B0\u1EDBi"
   iconBienCo: {fileID: 0}

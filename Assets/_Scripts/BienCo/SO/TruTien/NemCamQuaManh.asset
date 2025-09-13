@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: NemCamQuaManh
   m_EditorClassIdentifier: 
+  tenBienCoKey: nem_can_qua_manh
+  moTaBienCoKey: nem_can_qua_manh_mota
   tenBienCo: "N\xE9m C\u1EA7n Qu\xE1 M\u1EA1nh"
   moTaBienCo: "B\u1EA1n n\xE9m m\u1EA1nh tay l\xE0m h\u1ECFng ph\u1EA7n m\xE1y, t\u1ED1n
     ti\u1EC1n s\u1EEDa"

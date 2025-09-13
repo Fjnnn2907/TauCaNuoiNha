@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: BaNoiTroMua
   m_EditorClassIdentifier: 
+  tenBienCoKey: ba_noi_tro_mua
+  moTaBienCoKey: ba_noi_tro_mua_mota
   tenBienCo: "B\xE0 N\u1ED9i Tr\u1EE3 Mua"
   moTaBienCo: "Ng\u01B0\u1EDDi ph\u1EE5 n\u1EEF xin mua v\xE0i con \u0111\u1EC3 n\u1EA5u
     canh"

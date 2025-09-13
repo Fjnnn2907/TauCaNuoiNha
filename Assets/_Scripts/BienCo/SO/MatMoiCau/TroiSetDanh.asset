@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: TroiSetDanh
   m_EditorClassIdentifier: 
+  tenBienCoKey: troi_set_danh
+  moTaBienCoKey: troi_set_danh_mota
   tenBienCo: "Tr\u1EDDi s\xE9t \u0111\xE1nh"
   moTaBienCo: "\u0110ang m\u01B0a gi\xF3, s\xE9t \u0111\xE1nh s\xE1t b\xEAn l\xE0m
     b\u1EA1n v\u1EE9t lu\xF4n m\u1ED3i c\xE2u ch\u1EA1y tr\u1ED1n"

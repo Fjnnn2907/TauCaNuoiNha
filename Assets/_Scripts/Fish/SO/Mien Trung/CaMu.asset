@@ -25,7 +25,7 @@ MonoBehaviour:
     b\u1EA3o h\u1ED9 cho thuy\u1EC1n \u0111i bi\u1EC3n."
   rarity: 1
   sellPrice: 250
-  zone: "Mi\u1EC1n Trung"
+  zone: mien_trung
   isUnique: 0
   isSpecial: 0
   specialEventID: 

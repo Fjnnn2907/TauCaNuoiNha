@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: ChoDatHang
   m_EditorClassIdentifier: 
+  tenBienCoKey: cho_dat_hang
+  moTaBienCoKey: cho_dat_hang_mota
   tenBienCo: "Ch\u1EE3 \u0110\u1EB7t H\xE0ng"
   moTaBienCo: "NPC mu\u1ED1n mua lo\u1EA1i c\xE1 b\u1EA1n c\xF3"
   iconBienCo: {fileID: 0}

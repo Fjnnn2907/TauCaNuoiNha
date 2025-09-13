@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: TruotTay
   m_EditorClassIdentifier: 
+  tenBienCoKey: truot_tay
+  moTaBienCoKey: truot_tay_mota
   tenBienCo: "Tr\u01B0\u1EE3t Tay"
   moTaBienCo: "V\u1EEBa k\xE9o l\xEAn th\xEC b\u1EA1n tr\u01B0\u1EE3t tay \u0111\u1EC3
     r\u1EDBt c\xE1"

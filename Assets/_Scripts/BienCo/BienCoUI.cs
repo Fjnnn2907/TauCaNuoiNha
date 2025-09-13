@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections.Generic;
 
 public class BienCoUI : Singleton<BienCoUI>
 {
@@ -11,7 +12,6 @@ public class BienCoUI : Singleton<BienCoUI>
     public TextMeshProUGUI moTaPhanThuongText;
     public Button acceptButton;
     public Image icon;
-
 
     private BienCoSO bienCoDangHien;
 
@@ -24,9 +24,21 @@ public class BienCoUI : Singleton<BienCoUI>
     {
         bienCoDangHien = bienCo;
 
-        tenBienCoText.text = bienCo.tenBienCo;
-        moTaText.text = bienCo.moTaBienCo;
+        // 🔥 Lấy text từ key nếu có, fallback về text gốc
+        if (!string.IsNullOrEmpty(bienCo.tenBienCoKey))
+            tenBienCoText.text = LanguageManager.Instance.GetText(bienCo.tenBienCoKey);
+        else
+            tenBienCoText.text = bienCo.tenBienCo;
+
+        if (!string.IsNullOrEmpty(bienCo.moTaBienCoKey))
+            moTaText.text = LanguageManager.Instance.GetText(bienCo.moTaBienCoKey);
+        else
+            moTaText.text = bienCo.moTaBienCo;
+
         moTaPhanThuongText.text = GenerateRewardDescription(bienCo);
+
+        if (bienCo.iconBienCo != null)
+            icon.sprite = bienCo.iconBienCo;
 
         panel.SetActive(true);
         Time.timeScale = 0;
@@ -49,87 +61,98 @@ public class BienCoUI : Singleton<BienCoUI>
         switch (bienCo.loaiBienCo)
         {
             case bienCoType.CongTien:
-                return $"Nhận {BienCoManager.Instance.lastCoinChange} vàng";
+                return string.Format(
+                    LanguageManager.Instance.GetText("thuong_them_tien"),
+                    BienCoManager.Instance.lastCoinChange
+                );
 
             case bienCoType.TruTien:
-                return $"Mất {Mathf.Abs(BienCoManager.Instance.lastCoinChange)} vàng";
+                return string.Format(
+                    LanguageManager.Instance.GetText("thuong_mat_tien"),
+                    Mathf.Abs(BienCoManager.Instance.lastCoinChange)
+                );
 
             case bienCoType.MatCanCau:
-                return $"Mất {bienCo.soLuongCanCau} cần câu: {bienCo.rodData?.name}";
+                return string.Format(
+                    LanguageManager.Instance.GetText("thuong_mat_cancau"),
+                    bienCo.soLuongCanCau,
+                    bienCo.rodData != null ? bienCo.rodData.name : "?"
+                );
 
             case bienCoType.ThemCanCau:
-                return $"Nhận {bienCo.soLuongCanCau} cần câu: {bienCo.rodData?.name}";
+                return string.Format(
+                    LanguageManager.Instance.GetText("thuong_them_cancau"),
+                    bienCo.soLuongCanCau,
+                    bienCo.rodData != null ? bienCo.rodData.name : "?"
+                );
 
             case bienCoType.MatMoiCau:
-                return GenerateLostBaitDescription();
+                return GenerateBaitDescription("thuong_mat_moicau", BienCoManager.Instance.lastLostBaits);
 
             case bienCoType.ThemMoiCau:
-                return GenerateMoreBaitDescription();
+                return GenerateBaitDescription("thuong_them_moicau", BienCoManager.Instance.lastAddedBaits);
 
             case bienCoType.MatCa:
-                return GenerateFishEffectDescription("Mất");
+                return GenerateFishEffectDescription("thuong_mat_ca");
 
             case bienCoType.BanCa:
-                return GenerateFishEffectDescription("Bán");
+                return GenerateFishEffectDescription("thuong_ban_ca");
+
             case bienCoType.DuocThemCa:
-                return GenerateFishEffectDescription("Nhận");
+                return GenerateFishEffectDescription("thuong_them_ca");
+
             default:
-                return "⚠ Không xác định phần thưởng hoặc hình phạt";
+                return LanguageManager.Instance.GetText("thuong_khong_xac_dinh");
         }
     }
 
-    private string GenerateLostBaitDescription()
+    private string GenerateBaitDescription(string key, List<(FishingBaitData bait, int quantity)> baitList)
     {
-        var lostBaits = BienCoManager.Instance.lastLostBaits;
-        if (lostBaits == null || lostBaits.Count == 0)
-            return "Mất mồi câu";
+        if (baitList == null || baitList.Count == 0)
+            return string.Format(LanguageManager.Instance.GetText(key), "mồi câu", 0);
 
-        string result = "Mất ";
-        foreach (var baitInfo in lostBaits)
+        string result = "";
+        foreach (var baitInfo in baitList)
         {
             if (baitInfo.bait != null && baitInfo.quantity > 0)
-                result += $"{baitInfo.bait.baitName} x{baitInfo.quantity}, ";
+            {
+                string baitName = !string.IsNullOrEmpty(baitInfo.bait.GetBaitName())
+                    ? LanguageManager.Instance.GetText(baitInfo.bait.GetBaitName())
+                    : baitInfo.bait.baitName;
+
+                result += string.Format(LanguageManager.Instance.GetText(key), baitName, baitInfo.quantity) + ", ";
+            }
         }
         return result.TrimEnd(' ', ',');
     }
 
-    private string GenerateMoreBaitDescription()
-    {
-        var moreBaits = BienCoManager.Instance.lastAddedBaits;
-        if (moreBaits == null || moreBaits.Count == 0)
-            return "Nhận mồi câu";
-
-        string result = "Nhận ";
-        foreach (var baitInfo in moreBaits)
-        {
-            if (baitInfo.bait != null && baitInfo.quantity > 0)
-                result += $"{baitInfo.bait.baitName} x{baitInfo.quantity}, ";
-        }
-        return result.TrimEnd(' ', ',');
-    }
-    private string GenerateFishEffectDescription(string prefix)
+    private string GenerateFishEffectDescription(string key)
     {
         var fishList = BienCoManager.Instance.lastAffectedFish;
         if (fishList == null || fishList.Count == 0)
-            return $"{prefix} cá";
+            return string.Format(LanguageManager.Instance.GetText(key), "cá", 0);
 
         string result = "";
         foreach (var info in fishList)
         {
             if (info.fish != null && info.quantity > 0)
-                result += $"{prefix} {info.fish.fishName} x{info.quantity}, ";
+            {
+                string fishName = !string.IsNullOrEmpty(info.fish.nameKey)
+                    ? LanguageManager.Instance.GetText(info.fish.nameKey)
+                    : info.fish.fishName;
+
+                if (key == "reward_fish_sell")
+                {
+                    int gold = BienCoManager.Instance.lastGoldEarnedFromFish;
+                    result += string.Format(LanguageManager.Instance.GetText(key), fishName, info.quantity, gold) + ", ";
+                }
+                else
+                {
+                    result += string.Format(LanguageManager.Instance.GetText(key), fishName, info.quantity) + ", ";
+                }
+            }
         }
 
-        result = result.TrimEnd(' ', ',');
-
-        if (prefix == "Bán")
-        {
-            int gold = BienCoManager.Instance.lastGoldEarnedFromFish;
-            result += $" với giá {gold} vàng";
-        }
-
-        return result;
+        return result.TrimEnd(' ', ',');
     }
-
-
 }

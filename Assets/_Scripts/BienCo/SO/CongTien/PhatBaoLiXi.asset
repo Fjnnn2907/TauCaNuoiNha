@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: PhatBaoLiXi
   m_EditorClassIdentifier: 
+  tenBienCoKey: phat_bao_li_xi
+  moTaBienCoKey: phat_bao_li_xi_mota
   tenBienCo: "Ph\xE1t Bao L\xEC X\xEC"
   moTaBienCo: "B\xE1c ng\u01B0 d\xE2n ph\xE1t l\xEC x\xEC v\xEC \u201C\u0111\u1EB9p
     trai m\xE0 c\xE2u c\xE1 gi\u1ECFi\u201D"

@@ -26,7 +26,7 @@ MonoBehaviour:
     tr\u1EA5n y\u1EC3m, ng\u0103n l\u0169 qu\xE9t."
   rarity: 2
   sellPrice: 6666
-  zone: "Mi\u1EC1n Nam"
+  zone: mien_nam
   isUnique: 0
   isSpecial: 0
   specialEventID: 

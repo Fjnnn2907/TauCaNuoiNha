@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: GheMayChayNgang
   m_EditorClassIdentifier: 
+  tenBienCoKey: ghe_may_chay_ngang
+  moTaBienCoKey: ghe_may_chay_ngang_mota
   tenBienCo: "Ghe m\xE1y ch\u1EA1y ngang"
   moTaBienCo: "Ghe m\xE1y ch\u1EA1y qua, s\xF3ng \u0111\xE1nh m\u1EA1nh l\xE0m tu\u1ED9t
     c\xE1 kh\u1ECFi l\u01B0\u1EE1i c\xE2u"
