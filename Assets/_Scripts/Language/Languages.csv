@@ -180,3 +180,13 @@ mua_bua_cau_may,Mua Bùa Câu May,Buy Lucky Charms
 mua_bua_cau_may_mota,Bạn mua bùa của ông thầy bói bên bờ ao để câu cá may mắn,You buy a talisman from the fortuneteller by the pond for good fishing luck.
 nem_can_qua_manh,Ném Cần Quá Mạnh,Throwing the Rod Too Hard
 nem_can_qua_manh_mota,"Bạn ném mạnh tay làm hỏng phần máy, tốn tiền sửa","You throw it hard and damage the machine, costing money to repair."
+thuong_them_tien,Nhận {0} vàng,Get {0} gold
+thuong_mat_tien,Mất {0} vàng,Lose {0} gold
+thuong_mat_cancau,Mất {0} cần câu: {1},Lose {0} rod(s): {1}
+thuong_them_cancau,Nhận {0} cần câu: {1},Gain {0} rod(s): {1}
+thuong_mat_moicau,Mất {1} {0},Lose {1} {0}
+thuong_them_moicau,Nhận {1} {0},Gain {1} {0}
+thuong_mat_ca,Mất {1} {0},Lose {1} {0}
+thuong_them_ca,Nhận {1} {0},Gain {1} {0}
+thuong_ban_ca,Bán {1} {0} được {2} vàng,Sell {1} {0} for {2} gold
+thuong_khong_xac_dinh,Không xác định phần thưởng hoặc hình phạt,Unknown reward or penalty

@@ -41,13 +41,15 @@ public class SceneLoader : MonoBehaviour
             if (progressSlider != null)
                 progressSlider.value = displayProgress;
 
+            string loadingText = LanguageManager.Instance.GetText("dang_tai");
+
             if (progressText != null)
-                progressText.text = $"Đang tải... {Mathf.RoundToInt(displayProgress * 100)}%";
+                progressText.text = $"{loadingText}... {Mathf.RoundToInt(displayProgress * 100)}%";
 
             if (progress >= 0.9f)
             {
                 if (progressSlider != null) progressSlider.value = 1f;
-                if (progressText != null) progressText.text = "Đang tải... 100%";
+                if (progressText != null) progressText.text = $"{loadingText}... 100%";
                 yield return new WaitForSeconds(0.5f);
                 operation.allowSceneActivation = true;
             }
