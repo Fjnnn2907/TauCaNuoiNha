@@ -2217,9 +2217,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d4ace3c5c21f88f49a5fe1c1bc009601, type: 2}
   - {fileID: 11400000, guid: 063d778757026114da2a34243eba29c5, type: 2}
   - {fileID: 11400000, guid: b67bb0d5ed9726a45a6b0e80a7c52c99, type: 2}
-  - {fileID: 11400000, guid: 834b91c179628fa4c8d0a59cc4078226, type: 2}
-  - {fileID: 11400000, guid: 34c98f053323cfb4b8d438a81f39c217, type: 2}
-  - {fileID: 11400000, guid: 3cfb8a18dfd97a444bad72367f2d3ff4, type: 2}
   minDelay: 30
   maxDelay: 120
   bienCoUI: {fileID: 419148728}
@@ -10314,79 +10311,88 @@ MonoBehaviour:
   tutorialPanel: {fileID: 1725279516}
   dialogueText: {fileID: 105961285}
   steps:
-  - dialogue: Hi welcome to "tau ca nuoi nha"
+  - dialogue: "Ch\xE0o m\u1EEBng \u0111\u1EBFn v\u1EDBi \"t\u1EADu c\xE1 nu\xF4i
+      nh\xE0\""
     buttonToClick: {fileID: 1265312345}
     showArrow: 0
     arrowPosition: 1
-  - dialogue: I hope you have a good time with this
+  - dialogue: "T\xF4i hy v\u1ECDng b\u1EA1n s\u1EBD c\xF3 tr\u1EA3i nghi\u1EC7m t\u1ED1t
+      v\u1EDBi phi\xEAn b\u1EA3n"
     buttonToClick: {fileID: 1265312345}
     showArrow: 0
     arrowPosition: 1
-  - dialogue: Now let me show you how to play.
+  - dialogue: "Gi\u1EDD h\xE3y \u0111\u1EC3 t\xF4i h\u01B0\u1EDBng d\u1EABn b\u1EA1n
+      c\xE1ch ch\u01A1i"
     buttonToClick: {fileID: 1265312345}
     showArrow: 0
     arrowPosition: 1
-  - dialogue: 'First you need a rod '
+  - dialogue: "\u0110\u1EA7u ti\xEAn ta c\u1EA7n ph\u1EA3i c\xF3 c\u1EA7n c\xE2u"
     buttonToClick: {fileID: 740019948}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: Equip a Rob
+  - dialogue: "B\u1EA5m v\xE0o \u0111\xE2y \u0111\u1EC3 mua v\xE0 s\u1EED d\u1EE5ng"
     buttonToClick: {fileID: 1847204940}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: Well done
+  - dialogue: "\u0111\u1EBFn b\u01B0\u1EDBc ti\u1EBFp theo th\xF4i"
     buttonToClick: {fileID: 1814405998}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: Now let get some bait
+  - dialogue: "gi\u1EDD ta c\u1EA7n c\xF3 m\u1ED3i "
     buttonToClick: {fileID: 734183112}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: Buy some bait
+  - dialogue: "\u0110\u1EA7u ti\xEAn l\xE0 mua "
     buttonToClick: {fileID: 275694007}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: Then use it
+  - dialogue: "Sau \u0111\xF3 l\xE0 s\u1EED d\u1EE5ng"
     buttonToClick: {fileID: 1372769588}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: very nice
+  - dialogue: "tr\u01B0\u1EDBc khi \u0111\u1EBFn ph\u1EA7n c\xE2u h\xE3y \u0111\u1EC3
+      t\xF4i n\xF3i s\u01A1 v\u1EC1 c\u01A1 ch\u1EBF game nh\xE9"
     buttonToClick: {fileID: 1156077232}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: 'Each area will have different fishing methods. You can click here
-      to see.
-
-'
+  - dialogue: "M\u1ED7i v\xF9ng n\u01B0\u1EDBc \u0111\u1EC1u c\xF3 s\u1EF1 kh\xE1c
+      bi\u1EC7t trong c\xE1ch \u0111\xE1nh b\u1EAFt n\xEAn h\xE3y b\u1EA5m v\xE0o
+      \u0111\xE2y \u0111\u1EC3 xem c\xE1ch \u0111\xE1nh b\u1EAFt c\u1EE7a v\xF9ng
+      \u0111\u1EA5t nh\xE9"
     buttonToClick: {fileID: 1704922651}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: And that how you fishing
+  - dialogue: "\u0110\xF3 l\xE0 c\xE1ch ta s\u1EBD b\u1EAFt c\xE1 \u1EDF v\xF9ng
+      n\xE0y"
     buttonToClick: {fileID: 1102861114}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: You can click here too see fishs you has catch
+  - dialogue: "B\u1EA1n c\xF3 th\u1EC3 b\u1EA5m v\xE0o \u0111\xE2y \u0111\u1EC3 xem
+      s\u1ED1 c\xE1 b\u1EA1n \u0111ang s\u1EDF h\u1EEFu v\xE0 b\xE1n ch\xFAng"
     buttonToClick: {fileID: 281483590}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: Here is your fish collect time
+  - dialogue: "\u0110\xE2y l\xE0 danh s\xE1ch nh\u01B0ng ch\xFA c\xE1 b\u1EA1n \u0111\xE3
+      t\u1EEBng g\u1EB7p b\u1EAFt g\u1EB7p"
     buttonToClick: {fileID: 111249906}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: And this where you can travel around the country
+  - dialogue: "V\xE0 \u0111\xE2y l\xE0 n\u01A1i \u0111\u1EC3 b\u1EA1n di chuy\u1EC3n
+      gi\u1EEFa c\xE1c v\xF9ng kh\xE1c nhau"
     buttonToClick: {fileID: 2033338089}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: It time to fishing
+  - dialogue: "\u0110\u01B0\u1EE3c r\u1ED3i \u0111\u1EBFn l\xFAc c\xE2u c\xE1 r\u1ED3i"
     buttonToClick: {fileID: 1324569681}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: let's catch them all
+  - dialogue: "H\xE3y b\u1EAFt h\u1EBFt ch\xFAng n\xE0o"
     buttonToClick: {fileID: 842834018}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: Click when entering the green zone to increase the chance of catching
-      a unique fish.
+  - dialogue: "B\u1EA1n c\xF3 th\u1EC3 canh \u0111\u1EC3 b\u1EA5m v\xE0o v\xF9ng
+      xanh l\xE1 n\xF3 s\u1EBD t\u0103ng t\u1EF7 l\u1EC7 c\xE2u dc c\xE1 hi\u1EBFm
+      c\u1EE7a b\u1EA1n"
     buttonToClick: {fileID: 842834018}
     showArrow: 1
     arrowPosition: 1
@@ -17369,15 +17375,16 @@ RectTransform:
   m_GameObject: {fileID: 718441970}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.86666, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 902272438}
   m_Father: {fileID: 172669791}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.5284, y: 20.883419}
-  m_SizeDelta: {x: 935.6423, y: 422.4672}
+  m_AnchoredPosition: {x: -4.5284, y: 61.293087}
+  m_SizeDelta: {x: 935.6423, y: 341.6478}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &718441972
 MonoBehaviour:
@@ -17399,7 +17406,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -2116552359341963079, guid: fe1c30b69234e8647bde61e0bb5d0d63, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -22098,6 +22105,143 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 902069977}
+  m_CullTransparentMesh: 1
+--- !u!1 &902272437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 902272438}
+  - component: {fileID: 902272440}
+  - component: {fileID: 902272439}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &902272438
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902272437}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.1250086, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 718441971}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 6.5392303, y: -211.00003}
+  m_SizeDelta: {x: 867.78, y: 68.514}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &902272439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902272437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "B\u1EA1n c\u1EA7n v\u1EBD h\xECnh trong th\u1EDDi gian \u0111\u1EC3 nh\u1EADn
+    \u0111i\u1EC3m khi \u0111\u1EE7 100 b\u1EA1n s\u1EBD c\xE2u th\xE0nh c\xF4ng"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 25
+  m_fontSizeBase: 25
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -42.56607, y: 0, z: -35.845123, w: -17.474487}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &902272440
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902272437}
   m_CullTransparentMesh: 1
 --- !u!1 &903963382
 GameObject:
@@ -43665,7 +43809,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.8039216}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.8745098}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
