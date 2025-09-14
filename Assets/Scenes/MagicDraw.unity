@@ -2812,8 +2812,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -10311,90 +10311,133 @@ MonoBehaviour:
   tutorialPanel: {fileID: 1725279516}
   dialogueText: {fileID: 105961285}
   steps:
-  - dialogue: "Ch\xE0o m\u1EEBng \u0111\u1EBFn v\u1EDBi \"t\u1EADu c\xE1 nu\xF4i
-      nh\xE0\""
+  - dialogueVN: "Ch\xE0o m\u1EEBng \u0111\u1EBFn v\u1EDBi \"tau ca nuoi nha\"\r"
+    dialogueEN: Welcome to "tau ca nuoi nha"
     buttonToClick: {fileID: 1265312345}
     showArrow: 0
     arrowPosition: 1
-  - dialogue: "T\xF4i hy v\u1ECDng b\u1EA1n s\u1EBD c\xF3 tr\u1EA3i nghi\u1EC7m t\u1ED1t
-      v\u1EDBi phi\xEAn b\u1EA3n"
+  - dialogueVN: "Ch\xFAng t\xF4i hy v\u1ECDng c\xE1c b\u1EA1n s\u1EBD c\xF3 tr\u1EA3i
+      nghi\u1EC7m t\u1ED1t v\u1EDBi t\u1EF1a game n\xE0y\r"
+    dialogueEN: We hope you will have a good experience with this game
     buttonToClick: {fileID: 1265312345}
     showArrow: 0
     arrowPosition: 1
-  - dialogue: "Gi\u1EDD h\xE3y \u0111\u1EC3 t\xF4i h\u01B0\u1EDBng d\u1EABn b\u1EA1n
+  - dialogueVN: "Gi\u1EDD h\xE3y \u0111\u1EC3 t\xF4i h\u01B0\u1EDBng d\u1EABn b\u1EA1n
       c\xE1ch ch\u01A1i"
+    dialogueEN: Now let me guide you how to play
     buttonToClick: {fileID: 1265312345}
     showArrow: 0
     arrowPosition: 1
-  - dialogue: "\u0110\u1EA7u ti\xEAn ta c\u1EA7n ph\u1EA3i c\xF3 c\u1EA7n c\xE2u"
+  - dialogueVN: "\u0110\u1EA7u ti\xEAn b\u1EA1n c\u1EA7n ph\u1EA3i c\xF3 c\u1EA7n
+      c\xE2u"
+    dialogueEN: First you need to have a fishing rod
     buttonToClick: {fileID: 740019948}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: "B\u1EA5m v\xE0o \u0111\xE2y \u0111\u1EC3 mua v\xE0 s\u1EED d\u1EE5ng"
+  - dialogueVN: "H\xE3y trang b\u1ECB c\u1EA7n c\xE2u"
+    dialogueEN: Equip the fishing rod
     buttonToClick: {fileID: 1847204940}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: "\u0111\u1EBFn b\u01B0\u1EDBc ti\u1EBFp theo th\xF4i"
+  - dialogueVN: "\u0110\u1EBFn b\u01B0\u1EDBc ti\u1EBFp theo th\xF4i\r"
+    dialogueEN: Let's go to the next step
     buttonToClick: {fileID: 1814405998}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: "gi\u1EDD ta c\u1EA7n c\xF3 m\u1ED3i "
+  - dialogueVN: "Gi\u1EDD b\u1EA1n c\u1EA7n ph\u1EA3i c\xF3 m\u1ED3i c\xE2u"
+    dialogueEN: Now you need to have bait
     buttonToClick: {fileID: 734183112}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: "\u0110\u1EA7u ti\xEAn l\xE0 mua "
+  - dialogueVN: "H\xE3y mua m\u1ED9t \xEDt"
+    dialogueEN: "Buy some\r"
     buttonToClick: {fileID: 275694007}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: "Sau \u0111\xF3 l\xE0 s\u1EED d\u1EE5ng"
+  - dialogueVN: "V\xE0 s\u1EED d\u1EE5ng "
+    dialogueEN: "And use it\r"
     buttonToClick: {fileID: 1372769588}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: "tr\u01B0\u1EDBc khi \u0111\u1EBFn ph\u1EA7n c\xE2u h\xE3y \u0111\u1EC3
-      t\xF4i n\xF3i s\u01A1 v\u1EC1 c\u01A1 ch\u1EBF game nh\xE9"
+  - dialogueVN: "T\xF4i ngh\u0129 l\xE0 b\u1EA1n s\u1EAFp s\u1EB5n s\xE0ng r\u1ED3i"
+    dialogueEN: "I think you are almost ready\r"
     buttonToClick: {fileID: 1156077232}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: "M\u1ED7i v\xF9ng n\u01B0\u1EDBc \u0111\u1EC1u c\xF3 s\u1EF1 kh\xE1c
-      bi\u1EC7t trong c\xE1ch \u0111\xE1nh b\u1EAFt n\xEAn h\xE3y b\u1EA5m v\xE0o
-      \u0111\xE2y \u0111\u1EC3 xem c\xE1ch \u0111\xE1nh b\u1EAFt c\u1EE7a v\xF9ng
-      \u0111\u1EA5t nh\xE9"
+  - dialogueVN: "M\u1ED7i v\xF9ng s\u1EBD ph\u1EA3i nh\u1EEFng c\xE1ch \u0111\xE1nh
+      b\u1EAFt kh\xE1c nhau h\xE3y b\u1EA5m v\xE0o \u0111\xE2y \u0111\u1EC3 t\xECm
+      hi\u1EC3u c\xE1ch b\u1EAFt \u1EDF v\xF9ng n\xE0y "
+    dialogueEN: "Each area will have different ways of fishing click here to learn
+      how to catch in this area\r"
     buttonToClick: {fileID: 1704922651}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: "\u0110\xF3 l\xE0 c\xE1ch ta s\u1EBD b\u1EAFt c\xE1 \u1EDF v\xF9ng
-      n\xE0y"
+  - dialogueVN: "Ok gi\u1EDD t\xF4i ngh\u0129 l\xE0 g\u1EA7n h\u1EBFt r\u1ED3i "
+    dialogueEN: 'Ok now I think it''s almost over
+
+'
     buttonToClick: {fileID: 1102861114}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: "B\u1EA1n c\xF3 th\u1EC3 b\u1EA5m v\xE0o \u0111\xE2y \u0111\u1EC3 xem
-      s\u1ED1 c\xE1 b\u1EA1n \u0111ang s\u1EDF h\u1EEFu v\xE0 b\xE1n ch\xFAng"
+  - dialogueVN: "T\xF4i su\xFDt qu\xEAn m\u1EA5t ch\u1ED7 n\xE0y h\xE3y \u0111\u1EC3
+      t\xF4i gi\u1EDBi thi\u1EC7u cho b\u1EA1n v\u1EC1 ch\u1ED7 n\xE0y"
+    dialogueEN: "I almost forgot this place let me introduce you to this place\r"
     buttonToClick: {fileID: 281483590}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: "\u0110\xE2y l\xE0 danh s\xE1ch nh\u01B0ng ch\xFA c\xE1 b\u1EA1n \u0111\xE3
-      t\u1EEBng g\u1EB7p b\u1EAFt g\u1EB7p"
+  - dialogueVN: "\u0110\u1EA7u ti\xEAn l\xE0 t\xFAi \u0111\u1ED3 b\u1EA1n c\xF3 th\u1EC3
+      xem nh\u1EEFng ch\xFA c\xE1 b\u1EA1n \u0111\xE3 b\u1EAFt \u0111\u01B0\u1EE3c
+      ngo\xE0i ra b\u1EA1n c\u0169ng c\xF3 th\u1EC3 b\xE1n ch\xFAng l\u1EA5y ti\u1EC1n"
+    dialogueEN: 'First is the inventory you can see the fish you have caught and
+      you can also sell them for money
+
+'
     buttonToClick: {fileID: 111249906}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: "V\xE0 \u0111\xE2y l\xE0 n\u01A1i \u0111\u1EC3 b\u1EA1n di chuy\u1EC3n
-      gi\u1EEFa c\xE1c v\xF9ng kh\xE1c nhau"
+  - dialogueVN: "Ti\u1EBFp \u0111\u1EBFn l\xE0 ph\xF2ng tr\u01B0ng b\xE0y n\u01A1i
+      ghi l\u1EA1i nh\u01B0ng sinh v\u1EADt b\u1EA1n \u0111\xE3 b\u1EAFt \u0111\u01B0\u1EE3c"
+    dialogueEN: "Next is the display area, where the creatures you have caught are
+      recorded\r"
     buttonToClick: {fileID: 2033338089}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: "\u0110\u01B0\u1EE3c r\u1ED3i \u0111\u1EBFn l\xFAc c\xE2u c\xE1 r\u1ED3i"
+  - dialogueVN: "Cu\u1ED1i c\xF9ng l\xE0 ph\u1EA7n di chuy\u1EC3n hi\u1EC7n t\u1EA1i
+      b\u1EA1n c\xF3 th\u1EC3 di chuy\u1EC3n gi\u1EEFa 3 v\xF9ng v\u1EDBi 2 c\xE1ch
+      di chuy\u1EC3n kh\xE1c nhau m\u1ED7i c\xE1ch s\u1EBD c\xF3 s\u01B0 kh\xE1c
+      bi\u1EC7t v\u1EDBi nhau"
+    dialogueEN: 'Finally, the current movement part, you can move between 3 areas
+      with 2 different ways of moving, each way will be different from each other
+
+      I
+      think this is the end of it'
     buttonToClick: {fileID: 1324569681}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: "H\xE3y b\u1EAFt h\u1EBFt ch\xFAng n\xE0o"
+  - dialogueVN: "T\u1EDBi ph\u1EA7n quan tr\u1ECDng r\u1ED3i h\xE3y th\u1EA3 c\u1EA7n
+      n\xE0o\r"
+    dialogueEN: "Let's go to the important part and let's drop the rod\r"
     buttonToClick: {fileID: 842834018}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: "B\u1EA1n c\xF3 th\u1EC3 canh \u0111\u1EC3 b\u1EA5m v\xE0o v\xF9ng
-      xanh l\xE1 n\xF3 s\u1EBD t\u0103ng t\u1EF7 l\u1EC7 c\xE2u dc c\xE1 hi\u1EBFm
-      c\u1EE7a b\u1EA1n"
+  - dialogueVN: "B\u1EA1n n\xEAn c\u1EA3nh \u0111\u1EC3 c\xF3 th\u1EC3 th\u1EA3 c\xE2u
+      v\xE0o v\xF9ng xanh l\xE1 \u0111\u1EC3 t\u0103ng t\u1EF7 l\u1EC7 c\xE2u \u0111\u01B0\u1EE3c
+      c\xE1 hi\u1EBFm"
+    dialogueEN: 'You should be careful to be able to drop the rod into the green
+      area to increase the rate of catching rare fish
+
+'
     buttonToClick: {fileID: 842834018}
     showArrow: 1
+    arrowPosition: 1
+  - dialogueVN: "Hy v\u1ECDng t\xF4i \u0111\xE3 c\xF3 th\u1EC3 gi\xFAp b\u1EA1n.
+      r\u1EA5t mong g\u1EB7p l\u1EA1i b\u1EA1n trong nh\u1EEFng d\u1EF1 \xE1n trong
+      t\u01B0\u01A1ng lai ho\u1EB7c l\xE0 \u1EDF 1 phi\xEAn b\u1EA3n t\u1ED1t h\u01A1n
+      c\u1EE7a \"tau ca nuoi nha\""
+    dialogueEN: Hopefully I was able to help you. I hope to see you again in future
+      projects or in a better version of "tau ca nuoi nha"
+    buttonToClick: {fileID: 1265312345}
+    showArrow: 0
     arrowPosition: 1
   highlightImage: {fileID: 1837275094}
   arrowOffset: -175
@@ -11876,39 +11919,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locations:
-  - locationName: "Mi\u1EC1n B\u1EAFc"
-    description: "N\u01A1i s\xF4ng H\u1ED3ng cu\u1ED9n ph\xF9 sa nh\u01B0 d\u1EA3i
-      l\u1EE5a \u0111\xE0o, h\u1ED3 T\xE2y g\u01B0\u01A1ng n\u01B0\u1EDBc lung linh
-      in b\xF3ng li\u1EC5u r\u1EE7. Nh\u1EEFng con c\xE1 r\xF4 phi l\u1EA5p l\xE1nh
-      d\u01B0\u1EDBi \xE1nh chi\u1EC1u t\xE0, \u0111\xE0n c\xE1 m\xE8 hoa qu\u1EABy
-      \u0111u\xF4i khu\u1EA5y \u0111\u1ED9ng m\u1EB7t n\u01B0\u1EDBc y\xEAn b\xECnh.
-      T\u1EEB c\xE1 kho l\xE0ng V\u0169 \u0110\u1EA1i \u0111\u1EBFn m\u1EBB chua
-      c\xE1 tr\u1EAFm \u0111\u1ED3ng \u2013 m\u1ED7i d\xF2ng s\xF4ng, h\u1ED3 n\u01B0\u1EDBc
-      \u0111\u1EC1u th\u1EA5m \u0111\u1EABm h\u01B0\u01A1ng v\u1ECB qu\xEA nh\xE0."
+  - nameKey: 
+    descriptionKey: 
     sceneName: DapCa
     regionIndex: 0
-  - locationName: "Mi\u1EC1n Trung"
-    description: "N\u01A1i d\xF2ng s\xF4ng H\u01B0\u01A1ng l\u1EEFng l\u1EDD tr\xF4i
-      qua nh\u1EEFng m\xE1i nh\xE0 r\xEAu phong x\u1EE9 Hu\u1EBF, bi\u1EC3n C\u1EEDa
-      \u0110\u1EA1i r\xEC r\xE0o trong n\u1EAFng s\u1EDBm, h\xF2a ti\u1EBFng s\xF3ng
-      v\u1EDBi c\xE2u h\xF2 x\u1EE9 Qu\u1EA3ng. C\xE1 \u0111\u1ED1i, c\xE1 hanh l\u01B0\u1EE3n
-      m\xECnh gi\u1EEFa l\xE0n n\u01B0\u1EDBc m\u1EB7n m\xF2i, c\xE1 thu, c\xE1 n\u1EE5c
-      ph\u01A1i m\xECnh tr\xEAn b\u1EBFn c\xE1 \u0111\u1EA7y n\u1EAFng. T\u1EEB t\xF4
-      b\xFAn c\xE1 th\u01A1m n\u1EE9c \u1EDF Nha Trang \u0111\u1EBFn n\u1ED3i c\xE1
-      b\u1ED1ng kho cay x\u1EE9 Ngh\u1EC7 \u2013 m\u1ED7i l\xE0ng ch\xE0i, b\u1EBFn
-      n\u01B0\u1EDBc \u0111\u1EC1u gi\u1EEF tr\u1ECDn h\u01B0\u01A1ng v\u1ECB m\u1EB7n
-      m\xE0 c\u1EE7a bi\u1EC3n c\u1EA3 v\xE0 t\xECnh ng\u01B0\u1EDDi."
+  - nameKey: 
+    descriptionKey: 
     sceneName: MagicDraw
     regionIndex: 1
-  - locationName: "Mi\u1EC1n Nam"
-    description: "Mi\u1EC1n Nam Vi\u1EC7t Nam \u2013 v\xF9ng \u0111\u1EA5t c\u1EE7a
-      n\u1EAFng \u1EA5m, c\xE2y tr\xE1i v\xE0 nh\u1EEFng d\xF2ng s\xF4ng hi\u1EC1n
-      h\xF2a. N\u01A1i \u0111\xE2y, h\u1EC7 th\u1ED1ng s\xF4ng ng\xF2i ch\u1EB1ng
-      ch\u1ECBt nh\u01B0 m\u1EA1ch m\xE1u nu\xF4i d\u01B0\u1EE1ng t\u1EEBng th\u1EEDa
-      ru\u1ED9ng, t\u1EEBng v\u01B0\u1EDDn c\xE2y tr\xE1i tr\u0129u qu\u1EA3. Nh\u1EEFng
-      con s\xF4ng l\u1EDBn u\u1ED1n l\u01B0\u1EE3n quanh co, chia c\u1EAFt \u0111\u1EA5t
-      li\u1EC1n th\xE0nh nh\u1EEFng c\xF9 lao, b\u1ED3i \u0111\u1EAFp ph\xF9 sa m\xE0u
-      m\u1EE1 cho ru\u1ED9ng v\u01B0\u1EDDn quanh n\u0103m xanh t\u1ED1t."
+  - nameKey: 
+    descriptionKey: 
     sceneName: Audition
     regionIndex: 2
   titleText: {fileID: 808708038}
@@ -22117,6 +22137,7 @@ GameObject:
   - component: {fileID: 902272438}
   - component: {fileID: 902272440}
   - component: {fileID: 902272439}
+  - component: {fileID: 902272441}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -22243,6 +22264,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 902272437}
   m_CullTransparentMesh: 1
+--- !u!114 &902272441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902272437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99f8028fdc5afa948bc96bdf63807e86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: draw
 --- !u!1 &903963382
 GameObject:
   m_ObjectHideFlags: 0
@@ -29599,6 +29633,7 @@ GameObject:
   - component: {fileID: 1096183455}
   - component: {fileID: 1096183457}
   - component: {fileID: 1096183456}
+  - component: {fileID: 1096183458}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -29724,6 +29759,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1096183454}
   m_CullTransparentMesh: 1
+--- !u!114 &1096183458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096183454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99f8028fdc5afa948bc96bdf63807e86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: dong
 --- !u!1 &1102861112
 GameObject:
   m_ObjectHideFlags: 0
@@ -40435,6 +40483,7 @@ GameObject:
   - component: {fileID: 1582789236}
   - component: {fileID: 1582789238}
   - component: {fileID: 1582789237}
+  - component: {fileID: 1582789239}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -40560,6 +40609,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1582789235}
   m_CullTransparentMesh: 1
+--- !u!114 &1582789239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582789235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99f8028fdc5afa948bc96bdf63807e86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: dong
 --- !u!1 &1588026617
 GameObject:
   m_ObjectHideFlags: 0
@@ -49652,6 +49714,7 @@ GameObject:
   - component: {fileID: 1930450216}
   - component: {fileID: 1930450218}
   - component: {fileID: 1930450217}
+  - component: {fileID: 1930450219}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -49777,6 +49840,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1930450215}
   m_CullTransparentMesh: 1
+--- !u!114 &1930450219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930450215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99f8028fdc5afa948bc96bdf63807e86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: dong
 --- !u!1 &1941597309
 GameObject:
   m_ObjectHideFlags: 0
@@ -51996,6 +52072,7 @@ MonoBehaviour:
   rewardRod: {fileID: 0}
   fishEvent: {fileID: 0}
   turtleShellLoseAmount: 1
+  objectsToHide: []
 --- !u!95 &2060091868
 Animator:
   serializedVersion: 7

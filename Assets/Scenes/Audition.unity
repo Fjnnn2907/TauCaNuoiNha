@@ -13042,8 +13042,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -25909,7 +25909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99f8028fdc5afa948bc96bdf63807e86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: huong_dan_map1
+  key: audition
 --- !u!1 &1229369692
 GameObject:
   m_ObjectHideFlags: 0
@@ -47739,81 +47739,133 @@ MonoBehaviour:
   tutorialPanel: {fileID: 1627613663}
   dialogueText: {fileID: 603530713}
   steps:
-  - dialogue: Hi welcome to "tau ca nuoi nha"
+  - dialogueVN: "Ch\xE0o m\u1EEBng \u0111\u1EBFn v\u1EDBi \"tau ca nuoi nha\"\r"
+    dialogueEN: Welcome to "tau ca nuoi nha"
     buttonToClick: {fileID: 311362356}
     showArrow: 0
     arrowPosition: 1
-  - dialogue: I hope you have a good time with this
+  - dialogueVN: "Ch\xFAng t\xF4i hy v\u1ECDng c\xE1c b\u1EA1n s\u1EBD c\xF3 tr\u1EA3i
+      nghi\u1EC7m t\u1ED1t v\u1EDBi t\u1EF1a game n\xE0y\r"
+    dialogueEN: We hope you will have a good experience with this game
     buttonToClick: {fileID: 311362356}
     showArrow: 0
     arrowPosition: 1
-  - dialogue: Now let me show you how to play.
+  - dialogueVN: "Gi\u1EDD h\xE3y \u0111\u1EC3 t\xF4i h\u01B0\u1EDBng d\u1EABn b\u1EA1n
+      c\xE1ch ch\u01A1i"
+    dialogueEN: Now let me guide you how to play
     buttonToClick: {fileID: 311362356}
     showArrow: 0
     arrowPosition: 1
-  - dialogue: 'First you need a rod '
+  - dialogueVN: "\u0110\u1EA7u ti\xEAn b\u1EA1n c\u1EA7n ph\u1EA3i c\xF3 c\u1EA7n
+      c\xE2u"
+    dialogueEN: First you need to have a fishing rod
     buttonToClick: {fileID: 906475969}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: Equip a Rob
+  - dialogueVN: "H\xE3y trang b\u1ECB c\u1EA7n c\xE2u"
+    dialogueEN: Equip the fishing rod
     buttonToClick: {fileID: 1539445871}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: Well done
+  - dialogueVN: "\u0110\u1EBFn b\u01B0\u1EDBc ti\u1EBFp theo th\xF4i\r"
+    dialogueEN: Let's go to the next step
     buttonToClick: {fileID: 1975909357}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: Now let get some bait
+  - dialogueVN: "Gi\u1EDD b\u1EA1n c\u1EA7n ph\u1EA3i c\xF3 m\u1ED3i c\xE2u"
+    dialogueEN: Now you need to have bait
     buttonToClick: {fileID: 1988089352}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: Buy some bait
+  - dialogueVN: "H\xE3y mua m\u1ED9t \xEDt"
+    dialogueEN: "Buy some\r"
     buttonToClick: {fileID: 273034295}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: Then use it
+  - dialogueVN: "V\xE0 s\u1EED d\u1EE5ng "
+    dialogueEN: "And use it\r"
     buttonToClick: {fileID: 688045755}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: very nice
+  - dialogueVN: "T\xF4i ngh\u0129 l\xE0 b\u1EA1n s\u1EAFp s\u1EB5n s\xE0ng r\u1ED3i"
+    dialogueEN: "I think you are almost ready\r"
     buttonToClick: {fileID: 579812426}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: 'Each area will have different fishing methods. You can click here
-      to see.
-
-'
+  - dialogueVN: "M\u1ED7i v\xF9ng s\u1EBD ph\u1EA3i nh\u1EEFng c\xE1ch \u0111\xE1nh
+      b\u1EAFt kh\xE1c nhau h\xE3y b\u1EA5m v\xE0o \u0111\xE2y \u0111\u1EC3 t\xECm
+      hi\u1EC3u c\xE1ch b\u1EAFt \u1EDF v\xF9ng n\xE0y "
+    dialogueEN: "Each area will have different ways of fishing click here to learn
+      how to catch in this area\r"
     buttonToClick: {fileID: 1296111862}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: And that how you fishing
+  - dialogueVN: "Ok gi\u1EDD t\xF4i ngh\u0129 l\xE0 g\u1EA7n h\u1EBFt r\u1ED3i "
+    dialogueEN: 'Ok now I think it''s almost over
+
+'
     buttonToClick: {fileID: 729570801}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: You can click here too see fishs you has catch
+  - dialogueVN: "T\xF4i su\xFDt qu\xEAn m\u1EA5t ch\u1ED7 n\xE0y h\xE3y \u0111\u1EC3
+      t\xF4i gi\u1EDBi thi\u1EC7u cho b\u1EA1n v\u1EC1 ch\u1ED7 n\xE0y"
+    dialogueEN: "I almost forgot this place let me introduce you to this place\r"
     buttonToClick: {fileID: 2138290174}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: Here is your fish collect time
+  - dialogueVN: "\u0110\u1EA7u ti\xEAn l\xE0 t\xFAi \u0111\u1ED3 b\u1EA1n c\xF3 th\u1EC3
+      xem nh\u1EEFng ch\xFA c\xE1 b\u1EA1n \u0111\xE3 b\u1EAFt \u0111\u01B0\u1EE3c
+      ngo\xE0i ra b\u1EA1n c\u0169ng c\xF3 th\u1EC3 b\xE1n ch\xFAng l\u1EA5y ti\u1EC1n"
+    dialogueEN: 'First is the inventory you can see the fish you have caught and
+      you can also sell them for money
+
+'
     buttonToClick: {fileID: 495762990}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: And this where you can travel around the country
+  - dialogueVN: "Ti\u1EBFp \u0111\u1EBFn l\xE0 ph\xF2ng tr\u01B0ng b\xE0y n\u01A1i
+      ghi l\u1EA1i nh\u01B0ng sinh v\u1EADt b\u1EA1n \u0111\xE3 b\u1EAFt \u0111\u01B0\u1EE3c"
+    dialogueEN: "Next is the display area, where the creatures you have caught are
+      recorded\r"
     buttonToClick: {fileID: 1879104442}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: It time to fishing
+  - dialogueVN: "Cu\u1ED1i c\xF9ng l\xE0 ph\u1EA7n di chuy\u1EC3n hi\u1EC7n t\u1EA1i
+      b\u1EA1n c\xF3 th\u1EC3 di chuy\u1EC3n gi\u1EEFa 3 v\xF9ng v\u1EDBi 2 c\xE1ch
+      di chuy\u1EC3n kh\xE1c nhau m\u1ED7i c\xE1ch s\u1EBD c\xF3 s\u01B0 kh\xE1c
+      bi\u1EC7t v\u1EDBi nhau"
+    dialogueEN: 'Finally, the current movement part, you can move between 3 areas
+      with 2 different ways of moving, each way will be different from each other
+
+      I
+      think this is the end of it'
     buttonToClick: {fileID: 1169404838}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: let's catch them all
+  - dialogueVN: "T\u1EDBi ph\u1EA7n quan tr\u1ECDng r\u1ED3i h\xE3y th\u1EA3 c\u1EA7n
+      n\xE0o\r"
+    dialogueEN: "Let's go to the important part and let's drop the rod\r"
     buttonToClick: {fileID: 512231210}
     showArrow: 1
     arrowPosition: 1
-  - dialogue: Click when entering the green zone to increase the chance of catching
-      a unique fish.
+  - dialogueVN: "B\u1EA1n n\xEAn c\u1EA3nh \u0111\u1EC3 c\xF3 th\u1EC3 th\u1EA3 c\xE2u
+      v\xE0o v\xF9ng xanh l\xE1 \u0111\u1EC3 t\u0103ng t\u1EF7 l\u1EC7 c\xE2u \u0111\u01B0\u1EE3c
+      c\xE1 hi\u1EBFm"
+    dialogueEN: 'You should be careful to be able to drop the rod into the green
+      area to increase the rate of catching rare fish
+
+'
     buttonToClick: {fileID: 512231210}
     showArrow: 1
+    arrowPosition: 1
+  - dialogueVN: "Hy v\u1ECDng t\xF4i \u0111\xE3 c\xF3 th\u1EC3 gi\xFAp b\u1EA1n.
+      r\u1EA5t mong g\u1EB7p l\u1EA1i b\u1EA1n trong nh\u1EEFng d\u1EF1 \xE1n trong
+      t\u01B0\u01A1ng lai ho\u1EB7c l\xE0 \u1EDF 1 phi\xEAn b\u1EA3n t\u1ED1t h\u01A1n
+      c\u1EE7a \"tau ca nuoi nha\""
+    dialogueEN: Hopefully I was able to help you. I hope to see you again in future
+      projects or in a better version of "tau ca nuoi nha"
+    buttonToClick: {fileID: 311362356}
+    showArrow: 0
     arrowPosition: 1
   highlightImage: {fileID: 9197230524657909066}
   arrowOffset: -175

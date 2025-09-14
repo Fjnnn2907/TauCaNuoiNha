@@ -8,10 +8,12 @@ public class TutorialManager : MonoBehaviour
     [System.Serializable]
     public class TutorialStep
     {
-        [TextArea] public string dialogue;
+        [TextArea] public string dialogueVN;   // 🇻🇳 Tiếng Việt
+        [TextArea] public string dialogueEN;   // 🇬🇧 Tiếng Anh
+
         public Button buttonToClick; // nút cần highlight
-        public bool showArrow = true; // nếu false thì không hiện mũi tên
-        public ArrowPosition arrowPosition = ArrowPosition.Right; // vị trí mũi tên
+        public bool showArrow = true; 
+        public ArrowPosition arrowPosition = ArrowPosition.Right;
     }
 
     public enum ArrowPosition { Left, Right, Top, Bottom }
@@ -21,19 +23,16 @@ public class TutorialManager : MonoBehaviour
     [SerializeField] private List<TutorialStep> steps;
 
     [Header("Highlight UI")]
-    [SerializeField] private RectTransform highlightImage; // mũi tên / vòng sáng UI
-    [SerializeField] private float arrowOffset = 80f;      // khoảng cách từ nút đến mũi tên
+    [SerializeField] private RectTransform highlightImage;
+    [SerializeField] private float arrowOffset = 80f;
 
     private int currentStep = -1;
-
-    // Lưu trạng thái gốc của tất cả button
     private Dictionary<Button, bool> originalStates = new Dictionary<Button, bool>();
 
     private void Start()
     {
         if (GameSettings.EnableTutorial)
         {
-            // Lưu lại trạng thái gốc
             originalStates.Clear();
             foreach (var b in FindObjectsOfType<Button>(true))
                 originalStates[b] = b.interactable;
@@ -59,9 +58,14 @@ public class TutorialManager : MonoBehaviour
         }
 
         var step = steps[currentStep];
-        dialogueText.text = step.dialogue;
 
-        // Highlight nút + chỉnh hướng mũi tên
+        // 🔥 Chọn ngôn ngữ hiển thị
+        if (LanguageManager.Instance.currentLanguage == LanguageManager.Language.Vietnamese)
+            dialogueText.text = step.dialogueVN;
+        else
+            dialogueText.text = step.dialogueEN;
+
+        // Highlight + mũi tên
         if (highlightImage != null && step.buttonToClick != null && step.showArrow)
         {
             highlightImage.gameObject.SetActive(true);
@@ -82,7 +86,6 @@ public class TutorialManager : MonoBehaviour
                     break;
                 case ArrowPosition.Top:
                     offset = new Vector3(0, arrowOffset, 0);
-                    scale = new Vector3(1, 1, 1);
                     break;
                 case ArrowPosition.Bottom:
                     offset = new Vector3(0, -arrowOffset, 0);
@@ -99,25 +102,21 @@ public class TutorialManager : MonoBehaviour
             highlightImage.gameObject.SetActive(false);
         }
 
-        // Disable toàn bộ button
+        // Disable tất cả button
         foreach (var b in originalStates.Keys)
             b.interactable = false;
 
-        // Chỉ bật nút cần bấm
+        // Bật lại button cần bấm
         if (step.buttonToClick != null)
         {
             step.buttonToClick.interactable = true;
-
-            // Thêm listener tạm thời
             step.buttonToClick.onClick.AddListener(OnTutorialButtonClicked);
         }
     }
 
     private void OnTutorialButtonClicked()
     {
-        // Gỡ listener tạm
         steps[currentStep].buttonToClick.onClick.RemoveListener(OnTutorialButtonClicked);
-
         NextStep();
     }
 
@@ -132,8 +131,7 @@ public class TutorialManager : MonoBehaviour
                 kvp.Key.interactable = kvp.Value;
         }
 
-        GameSettings.EnableTutorial = false; // ✅ Tắt tutorial
+        GameSettings.EnableTutorial = false;
         Debug.Log("✅ Tutorial finished & restored button states!");
     }
-
 }

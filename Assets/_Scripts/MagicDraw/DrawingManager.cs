@@ -179,7 +179,7 @@ public class DrawingManager : MonoBehaviour
         }
         else
         {
-            resultText.text = $"Sai rồi ({predicted}) -" + (scoreManager?.pointsDeductionPerWrong ?? 5) + " điểm";
+            resultText.text = $"Sai rồi" + (scoreManager?.pointsDeductionPerWrong ?? 5) + " điểm";
             resultText.color = Color.red;
 
             // Trừ điểm khi vẽ sai
