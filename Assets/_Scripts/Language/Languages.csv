@@ -13,7 +13,7 @@ Ty_le_HT,Tỷ lệ hiện tại,Current rate
 Ban,Bán ,Sale
 mien_nam,Miền nam,Southern
 mien_bac,MIền bắc,North
-mien_trung,Miền Trung,Central region
+mien_trung,Miền Trung,Central 
 chuyen_nhac,chuyển nhạc,Skip Track
 am_thanh,Âm thanh,Audio
 tai_khoan,Tài khoản,Account
@@ -266,8 +266,8 @@ thongbao_nhan_can_cau,Bạn nhận được cần câu: {0}!,You received a fish
 thongbao_mat_ca,Bạn đã mất {0},You lost {0}
 thongbao_ca_doc_nhat,Bạn vừa câu được cá độc nhất: {0}!,You just caught a unique fish: {0}!
 thongbao_ca_thuong,Bạn câu được {0},You caught {0}
-thongbao_choi_moi,Ấn OK là mất hết sức lực của bữa tiệc lúc đó!,Pressing OK is the end of the party!
-thongbao_khong_ok,Không OK,No Ok
+thongbao_choi_moi,"Tiến trình hiện tại sẽ bị xóa. Bạn có chắc chắn muốn chơi mới không?","Your save data will be erased. Do you want to continue?"
+thongbao_khong_ok,Không ,No 
 hoi_tutorial,Bạn đã biết cách để chơi trò chơi này chưa?,Do you know to play this game?
 ko_biet,Chưa,Not yet
 biet,Rồi,I know
