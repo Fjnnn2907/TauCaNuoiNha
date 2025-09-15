@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: ChoKhachDiDuLich
   m_EditorClassIdentifier: 
+  tenBienCoKey: ChoKhachDiDuLich
+  moTaBienCoKey: ChoKhachDiDuLich_mota
   tenBienCo: "Ch\u1EDF Kh\xE1ch Du L\u1ECBch Tham Quan"
   moTaBienCo: "Kh\xE1ch T\xE2y tr\u1EA3 ti\u1EC1n \u0111\u1EC3 b\u1EA1n ch\u1EDF
     \u0111i ng\u1EAFm \u0111\xEA."

@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: CotCaLongTay
   m_EditorClassIdentifier: 
+  tenBienCoKey: CotCaLongTay
+  moTaBienCoKey: CotCaLongTay_mota
   tenBienCo: "Th\xF9ng c\xE1 b\u1ECB l\u1ECFng"
   moTaBienCo: "G\u1EA5p c\u1EE5c \u0111\xE1 r\u01A1i th\xF9ng c\xE1 v\xE0i c\xE1
     ch\u1EA1y tr\u1ED1n \u0111\u01B0\u1EE3c"

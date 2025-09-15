@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: ChoRuot
   m_EditorClassIdentifier: 
+  tenBienCoKey: ChoRuot
+  moTaBienCoKey: ChoRuot_mota
   tenBienCo: "Ch\xF3 R\u01B0\u1EE3t"
   moTaBienCo: "\u0110\xE1m tr\u1EBB ch\u1ECDc ch\xF3 b\u1ECB ch\xF3 r\u01B0\u1EE3t
     b\u1EA1n nhanh \xFD phi xu\u1ED1ng s\xF4ng m\u1EA5t v\xE0i con c\xE1"

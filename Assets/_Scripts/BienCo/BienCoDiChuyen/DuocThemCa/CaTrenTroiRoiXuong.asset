@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: CaTrenTroiRoiXuong
   m_EditorClassIdentifier: 
+  tenBienCoKey: CaTrenTroiRoiXuong
+  moTaBienCoKey: CaTrenTroiRoiXuong_mota
   tenBienCo: "C\xE1 T\u1EEB Tr\xEAn Tr\u1EDDi R\u01A1i Xu\u1ED1ng"
   moTaBienCo: "Chim l\xE0m r\u01A1i c\xE1 xu\u1ED1ng tr\xFAng gi\u1ECF xe b\u1EA1n"
   iconBienCo: {fileID: 0}

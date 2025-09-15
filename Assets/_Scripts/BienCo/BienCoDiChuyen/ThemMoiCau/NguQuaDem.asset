@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: NguQuaDem
   m_EditorClassIdentifier: 
+  tenBienCoKey: NguQuaDem
+  moTaBienCoKey: NguQuaDem_mota
   tenBienCo: "Ng\u1EE7 qua \u0111\xEAm"
-  moTaBienCo: "G\u1EB7p ch\u1EE7 nh\xE0 may m\u1EAFn cho b\u1EA1n m\xF3n qu\xE0"
+  moTaBienCo: "\t"
   iconBienCo: {fileID: 0}
   loaiBienCo: 5
   xacSuatXuatHien: 0.42

@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: TeXe
   m_EditorClassIdentifier: 
+  tenBienCoKey: TeXe
+  moTaBienCoKey: TeXe_mota
   tenBienCo: "Tr\u01B0\u1EE3t Ng\xE3 Do \u0110\xE1"
   moTaBienCo: "Ng\xE3 xe v\xEC \u0111\xE1 tr\u01A1n, b\u1EA7m m\xF4ng, ph\u1EA3i
     mua thu\u1ED1c"

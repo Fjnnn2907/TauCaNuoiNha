@@ -7,12 +7,10 @@ public class CutsceneText : MonoBehaviour
 {
     [Header("UI References")]
     public TextMeshProUGUI dialogueText;
-    //public GameObject continueIndicator;
     public GameObject finalObjectToShow;
 
     [Header("Text Settings")]
-    [TextArea(3, 10)]
-    public List<string> cutsceneLines;
+    public List<string> cutsceneKeys;
     public float typingSpeed = 0.05f;
 
     private int currentLineIndex = 0;
@@ -21,7 +19,6 @@ public class CutsceneText : MonoBehaviour
 
     void Start()
     {
-        //continueIndicator.SetActive(false);
         finalObjectToShow.SetActive(false);
         StartCoroutine(TypeLine());
     }
@@ -32,19 +29,16 @@ public class CutsceneText : MonoBehaviour
         {
             if (isTyping)
             {
-                // Show full line immediately
                 StopAllCoroutines();
-                dialogueText.text = cutsceneLines[currentLineIndex];
+                dialogueText.text = GetLocalizedLine(cutsceneKeys[currentLineIndex]);
                 isTyping = false;
                 isWaitingForNext = true;
-                //continueIndicator.SetActive(true);
             }
             else if (isWaitingForNext)
             {
-                //continueIndicator.SetActive(false);
                 currentLineIndex++;
 
-                if (currentLineIndex < cutsceneLines.Count)
+                if (currentLineIndex < cutsceneKeys.Count)
                     StartCoroutine(TypeLine());
                 else
                     EndCutscene();
@@ -58,7 +52,7 @@ public class CutsceneText : MonoBehaviour
         isWaitingForNext = false;
         dialogueText.text = "";
 
-        string line = cutsceneLines[currentLineIndex];
+        string line = GetLocalizedLine(cutsceneKeys[currentLineIndex]);
         foreach (char letter in line.ToCharArray())
         {
             dialogueText.text += letter;
@@ -67,13 +61,19 @@ public class CutsceneText : MonoBehaviour
 
         isTyping = false;
         isWaitingForNext = true;
-        //continueIndicator.SetActive(true);
     }
 
     void EndCutscene()
     {
         dialogueText.text = "";
         finalObjectToShow.SetActive(true);
-        gameObject.SetActive(false); // hoặc disable cutscene UI
+        gameObject.SetActive(false);
+    }
+
+    string GetLocalizedLine(string key)
+    {
+        if (LanguageManager.Instance != null)
+            return LanguageManager.Instance.GetText(key);
+        return key; // fallback nếu chưa load ngôn ngữ
     }
 }

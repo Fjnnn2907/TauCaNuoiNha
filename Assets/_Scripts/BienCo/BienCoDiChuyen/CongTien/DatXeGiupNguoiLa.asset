@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: DatXeGiupNguoiLa
   m_EditorClassIdentifier: 
+  tenBienCoKey: DatXeGiupNguoiLa
+  moTaBienCoKey: DatXeGiupNguoiLa_mota
   tenBienCo: "D\u1EAFt Xe Gi\xFAp Ng\u01B0\u1EDDi Kh\xE1c"
   moTaBienCo: "B\u1EA1n gi\xFAp ng\u01B0\u1EDDi ta d\u1EAFt xe qua su\u1ED1i, \u0111\u01B0\u1EE3c
     c\u1EA3m \u01A1n b\u1EB1ng ti\u1EC1n"

@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: VaVaoNguoiDiDuong
   m_EditorClassIdentifier: 
+  tenBienCoKey: VaVaoNguoiDiDuong
+  moTaBienCoKey: VaVaoNguoiDiDuong_mota
   tenBienCo: "Va V\xE0o Ng\u01B0\u1EDDi \u0110i \u0110\u01B0\u1EDDng"
   moTaBienCo: "Ch\u1EA1y xe m\u1EC7t m\u1ED1i va ch\u1EA1m ng\u01B0\u1EDDi r\u01A1i
     m\u1EA5t v\xE0i con c\xE1"

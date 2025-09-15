@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: KhachTayMuaGiaCao
   m_EditorClassIdentifier: 
+  tenBienCoKey: KhachTayMuaGiaCao
+  moTaBienCoKey: KhachTayMuaGiaCao_mota
   tenBienCo: "Kh\xE1ch T\xE2y Mua C\xE1 T\u01B0\u01A1i"
   moTaBienCo: "Du kh\xE1ch n\u01B0\u1EDBc ngo\xE0i th\u1EA5y c\xE1 l\u1EA1 n\xEAn
     mua"

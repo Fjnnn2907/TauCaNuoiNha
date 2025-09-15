@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: ThangGapQua
   m_EditorClassIdentifier: 
+  tenBienCoKey: ThangGapQua
+  moTaBienCoKey: ThangGapQua_mota
   tenBienCo: "D\u1EEBng G\u1EA5p L\xE0m V\u0103ng C\xE1"
   moTaBienCo: "B\u1EA1n th\u1EAFng g\u1EA5p, c\xE1 bay kh\u1ECFi r\u1ED5 v\u0103ng
     r\u01A1i xu\u1ED1ng s\xF4ng"

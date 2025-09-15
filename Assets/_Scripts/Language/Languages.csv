@@ -190,6 +190,71 @@ thuong_mat_ca,Mất {1} {0},Lose {1} {0}
 thuong_them_ca,Nhận {1} {0},Gain {1} {0}
 thuong_ban_ca,Bán {1} {0} được {2} vàng,Sell {1} {0} for {2} gold
 thuong_khong_xac_dinh,Không xác định phần thưởng hoặc hình phạt,Unknown reward or penalty
+BanCaBangXe,Chở Cá Đi Bán Bằng Xe,Carrying Fish to Sell by Bicycle
+BanCaBangXe_mota,"Giao cá tận chợ bằng xe, bán được","Deliver fish to market by car, sell well"
+DapXeQuaKhuCho,Đạp Xe Qua Khu Chợ,Cycling Through the Market
+DapXeQuaKhuCho_mota,"Vô tình vào chợ, bán được vài con cá",Accidentally went to the market and sold a few fish.
+KhachTayMuaGiaCao,Khách Tây Mua Cá Tươi,Westerners Buy Fresh Fish
+KhachTayMuaGiaCao_mota,Du khách nước ngoài thấy cá lạ nên mua,Foreign tourists see strange fish so buy
+NguoiDiDuongMuaCa,Người Đi Đường Mua Cá,Passerby Buying Fish
+NguoiDiDuongMuaCa_mota,"Người khác thấy cá ngon, trả tiền mua tại chỗ",Others found the fish delicious and paid for it on the spot.
+ChoKhachDiDuLich,Chở Khách Du Lịch Tham Quan,Tourist Sightseeing Tour
+ChoKhachDiDuLich_mota,Khách Tây trả tiền để bạn chở đi ngắm đê.,Westerners pay you to take them around to see the dike.
+DatXeGiupNguoiLa,Dắt Xe Giúp Người Khác,Help Others Ride Their Bikes
+DatXeGiupNguoiLa_mota,"Bạn giúp người ta dắt xe qua suối, được cảm ơn bằng tiền",You help people push their bikes across the stream and get thanked with money.
+NguQuaDem,Ngủ qua đêm,Sleep Over
+NguQuaDem_mota,Bạn ngủ bùi khi nghe hoàng cảnh của bạn chủ nhà thương cảm,You sleep soundly when hearing about your situation the landlord sympathizes
+ThueChoCa,Thuê Chở Cá,Fish Transport Service
+ThueChoCa_mota,"Trên đường đi có người nhờ bạn chở cá, trả công","On the way, someone asked you to carry fish and pay you."
+TinhThanSatThep,Tinh thần sắt thép,Iron spirit
+TinhThanSatThep_mota,Hành động của bạn đã chạm đến trái tim cá triệu người trẻ,Your actions have touched the hearts of millions of young people.
+CaMacLuoiVenDuong,Cá Mắc Lưới Ven Đường,Fish Caught in Net on the Roadside
+CaMacLuoiVenDuong_mota,Đạp xe thấy cá mắc lưới người bỏ quên,Cycling saw fish caught in someone's abandoned net
+CaTrenTroiRoiXuong,Cá Từ Trên Trời Rơi Xuống,Fish Falling From The Sky
+CaTrenTroiRoiXuong_mota,Chim làm rơi cá xuống trúng giỏ xe bạn,The bird dropped a fish on your bicycle basket.
+DungXeNghi,Dừng Xe Nghỉ,Stop and Rest
+DungXeNghi_mota,"Dừng nghỉ, thấy cá trôi vào gần bờ","Stop to rest, see fish drifting near the shore"
+GiupNguoiChoCa,Giúp Người Khác Chở Cá,Help Others Carry Fish
+GiupNguoiChoCa_mota,"Xe đường đi bạn giúp ai đó, họ tặng lại cá","Help someone on the road, they give you fish in return"
+ChoRuot,Chó Rượt,Dog Chase
+ChoRuot_mota,Đám trẻ chọc chó bị chó rượt bạn nhanh ý phi xuống sông mất vài con cá,The children teased the dog and got chased by the dog. One of them quickly jumped into the river and lost a few fish.
+CotCaLongTay,Thùng cá bị lỏng,The fish tank is loose.
+CotCaLongTay_mota,Gấp cục đá rơi thùng cá vài cá chạy trốn được,"Fold the rock and fall into the fish barrel, some fish can escape."
+DuongDoc,Dóc cao,Cycling uphill
+DuongDoc_mota,Đạp xe vào đường dóc cao,Stop Folding Fish Splash
+ThangGapQua,Dừng Gấp Làm Văng Cá,Stop Folding Fish Splash
+ThangGapQua_mota,"Bạn thắng gấp, cá bay khỏi rổ văng rơi xuống sông","You win double, the fish fly out of the basket and fall into the river"
+VaVaoNguoiDiDuong,Va Vào Người Đi Đường,Hitting a Pedestrian
+VaVaoNguoiDiDuong_mota,Chạy xe mệt mối va chạm người rơi mất vài con cá,"Tired of driving, collision, person dropped some fish"
+DapXeKhuSuKien,Đạp Xe Qua Khu Sự Kiện,Cycling Through the Event Area
+DapXeKhuSuKien_mota,Xe đi ngang sự kiện và nhận được mồi miễn phí,Bike through the event and get free bait
+LuomTrenDuong,Lượm Trên Đường,Picked Up On The Road
+LuomTrenDuong_mota,Thấy hộp mồi nằm giữa đường khi đang đạp xe,Found bait box in the middle of the road while cycling
+NguQuaDem,Ngủ qua đêm,Sleep Over
+NguQuaDem_mota,Gặp chủ nhà may mắn cho bạn món quà,Meet the lucky host who gives you a gift
+TangMoiViXeDep,Tặng Mồi Vì Xe Đạp Đẹp,Give Bait For Nice Bike
+TangMoiViXeDep_mota,"Có người thấy bạn dễ thương, tặng luôn mồi quý","Someone saw you were cute, so they gave you a precious gift."
+DeMoiTrenYen,Để Mồi Trên Yên,To Bait On The Saddle
+DeMoiTrenYen_mota,Chim sà xuống lấy hộp mồi đặt trên yên xe,The bird swooped down to get the bait box placed on the saddle.
+DuaBeLamMatMoi_mota,Đứa Bé Dò Mồi Trong Giỏ,The Child Who Searched for Bait in the Basket
+LacXeRoiMoiCau,Trẻ nhỏ thọc tay vào giỏ xe lấy mồi chơi,Children put their hands in the bicycle basket to get food to play with.
+LacXeRoiMoiCau_mota,Lắc Xe Làm Rớt Hộp Mồi,Shake the Bike and Drop the Bait Box
+MoiBiMuaLamHu,"Xe bị sóc, hộp mồi văng ra ngoài","The bike was shaken, the bait box flew out."
+MoiBiMuaLamHu_mota,"Đạp xe trong mưa mồi ướt, hư",Cycling in the rain gets wet and damaged
+QuetXeBungNapMoi,Cọ Quẹt Xe Làm Bung Mồi,Bicycle Brush to Make Lures
+QuetXeBungNapMoi_mota,"Xe bạn quẹt xe khác, bung hộp mồi","Your bike hit another bike, the bait box popped out."
+GheVenDuongAn,Ghé ven đường ăn,Stop by the roadside to eat
+GheVenDuongAn_mota,Đang đi bụng kêu cồn cào tạp vào quán ăn,Stomach growling while walking into restaurant
+MuaDenXe,Mua Đèn Xe,Buy Bicycle Lights
+MuaDenXe_mota,"Trời tối, phải mua đèn gắn xe để đi về","It's dark, I have to buy a bicycle light to go home."
+NguQuaDem,Ngủ Qua Đêm,Sleep Over Night
+NguQuaDem_mota,Buối mệt rã rời bạn quyết định vào khách sạn,"Feeling exhausted, you decide to check into a hotel."
+TeXe,Trượt Ngã Do Đá,Slip and Fall Due to Rock
+TeXe_mota,"Ngã xe vì đá trơn, bầm mông, phải mua thuốc","Fell off bike because of slippery rock, bruised butt, had to buy medicine"
+XeHuPhanh,Xe Đạp Hư Phanh,Bicycle Brake Failure
+XeHuPhanh_mota,"Phanh xe bị mòn, bạn phải thay","Bicycle brakes are worn out, you have to replace them"
+XiLopXe,Xì Lốp Xe,Bicycle Flat Tire
+XiLopXe_mota,"Bánh xe bị xì, phải tốn tiền vá",The bicycle tire is flat and needs to be patched.
 huong_dan_map1,Bạn cần nhấn đúng các mũi tên mũi tên trong quy định thời gian để có thể câu được cá,You need to press the correct arrows within the given time to be able to catch fish.
 huong_dan_map2,Bạn cần vẽ hình trong thời gian để nhận điểm khi đủ 100 bạn sẽ câu thành công,You need to draw the picture in time to get points when you reach 100 you will catch it successfully
 huong_dan_map3,Bạn cần bấm đúng các phím hiện trên màn hình trong thời gian quy định để có thể câu được cá ,You need to press the correct keys shown on the screen within the specified time to be able to catch fish.
@@ -206,6 +271,21 @@ thongbao_khong_ok,Không OK,No Ok
 hoi_tutorial,Bạn đã biết cách để chơi trò chơi này chưa?,Do you know to play this game?
 ko_biet,Chưa,Not yet
 biet,Rồi,I know
-dap_ca,"Bạn cần bấm đúng các phím hiện trên màn hình trong thời gian quy định để có thể câu được cá","You need to press the correct keys present on the screen within the defined time to be able to fish"
-audition,"Bạn cần bấm đúng các phím mũi tên trong giời gian quy định để có thể câu được cá","You need to press the correct arrow keys within the specified time to be able to catch fish."
+dap_ca,"Bạn cần bấm đúng các phím hiện trên màn hình trong thời gian quy định để có thể câu được cá""","You need to press the correct keys present on the screen within the defined time to be able to fish"""
+audition,Bạn cần bấm đúng các phím mũi tên trong giời gian quy định để có thể câu được cá,You need to press the correct arrow keys within the specified time to be able to catch fish.
 draw,"Bạn cần vẽ theo các mẫu trong thời gian cho phép để nhận điểm, khi đạt 100 điểm bạn sẽ câu thành công cá.","You need to draw the patterns within the given time to earn points. Once you reach 100 points, you will successfully catch the fish"
+cutscene_intro_1,Cú điện thoại đến lúc 15 giờ. Dòng tin nhắn lạnh lùng của Sếp: 'Game công ty đã hoàn thành cảm ơn em đã đồng thành cùng anh. Vị trí của em sẽ được thay thế cho một vị trí phù hợp hơn.,The phone call came at 3pm. The boss's cold message: 'The company game has been completed. Thank you for joining me. Your position will be replaced with a more suitable one.
+cutscene_intro_2,"Mười tám năm. Từ thời sinh viên nghèo vừa học vừa làm, đến đêm thức trắng fix bug cho deadline của sếp. Mười tám năm, nghĩ rằng nếu mình chịu khó, mình giỏi giang, thì ít nhất… mình sẽ không bị bỏ rơi.","Eighteen years. From the time I was a poor student working and studying, to staying up all night fixing bugs for my boss’s deadline. Eighteen years, thinking that if I was diligent and talented, then at least… I wouldn’t be abandoned."
+cutscene_intro_3,Nhưng không. Chỉ một tin nhắn dài 3 dòng. Một cái shake hand miễn cưỡng. Vài đồng nghiệp nhìn bạn với ánh mắt thương hại rồi quay đi. Bạn ra về với một tâm trạng nặng trĩu suy nghĩ về tương lai công việc vợ con cuối cùng là cuộc sống.,"But no. Just a 3-line text message. A reluctant handshake. A few colleagues look at you with pity and then turn away. You leave with a heavy heart, thinking about the future of work, wife, children and finally life."
+cutscene_intro_4,"Căn phòng tối om. Bạn ngồi xuống, bật laptop, lại những trang tuyển dụng đầy rẫy yêu cầu. '5 năm kinh nghiệm, lương cạnh tranh, làm việc như gia đình.' Nhưng gia đình nào đuổi nhau ra đường chỉ sau một buổi sáng?","The room is dark. You sit down, turn on your laptop, and see the job postings filled with requirements. '5 years experience, competitive salary, work like family.' But what family kicks each other out in the street after just one morning?"
+cutscene_intro_5,"Trong lúc dọn đồ, bạn thấy chiếc hộp gỗ cũ kỹ ba gửi từ quê năm nào. Bụi phủ dày, nhưng dòng chữ viết tay vẫn rõ: 'Khi nào con khó khăn, hãy mở ra.""","While cleaning, you found the old wooden box your father sent you from the countryside years ago. It was covered in dust, but the handwriting was still clear: 'Whenever you are in trouble, open it.'"
+cutscene_intro_6,"Bạn mở nắp. Bên trong: một tấm vé máy bay một chiều miến phí tới bất kỳ đâu, một cuốn sách đầy hình ảnh cá nhưng chưa có dữ liệu. Và một cây cần câu cũ, cây cần câu ba bạn vẫn dùng ngày xưa, khi còn dắt tay bạn ra sông, dạy bạn kiên nhẫn chờ đợi những điều tốt đẹp.","You open the lid. Inside: a free one-way ticket to anywhere, a book full of pictures of fish but no data. And an old fishing rod, the one your father used when he took you to the river and taught you to wait patiently for good things."
+cutscene_intro_7,"Bạn cầm lên. Gỗ đã mòn, nhưng vết khắc tên ba vẫn còn đó. Một cảm giác gì đó nghẹn lại trong ngực. Lần đầu tiên sau bao năm, bạn khóc.","You pick it up. The wood is worn, but the engraving of your father's name is still there. Something catches in your chest. For the first time in years, you cry."
+cutscene_intro_8,Và bạn quyết định lên đường.,And you decide to hit the road.
+ve_may_bay,Vé máy bay,Airline tickets
+tu,Từ Nhà,From : Home
+nha,Đến,To
+cua,Cửa 05,Door 05
+ghe,Ghế 7A,Chair 7A
+thoi_gian_co_mat_san_bay,Thời gian có mặt sân bay 12:00,Airport arrival time 12:00
+khu_vuc,Khu vực 1,Zone 1

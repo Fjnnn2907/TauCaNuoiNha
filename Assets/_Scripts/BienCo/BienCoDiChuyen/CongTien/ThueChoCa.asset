@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: ThueChoCa
   m_EditorClassIdentifier: 
+  tenBienCoKey: ThueChoCa
+  moTaBienCoKey: ThueChoCa_mota
   tenBienCo: "Thu\xEA Ch\u1EDF C\xE1"
   moTaBienCo: "Tr\xEAn \u0111\u01B0\u1EDDng \u0111i c\xF3 ng\u01B0\u1EDDi nh\u1EDD
     b\u1EA1n ch\u1EDF c\xE1, tr\u1EA3 c\xF4ng"

@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: QuetXeBungNapMoi
   m_EditorClassIdentifier: 
+  tenBienCoKey: QuetXeBungNapMoi
+  moTaBienCoKey: QuetXeBungNapMoi_mota
   tenBienCo: "C\u1ECD Qu\u1EB9t Xe L\xE0m Bung M\u1ED3i"
   moTaBienCo: "Xe b\u1EA1n qu\u1EB9t xe kh\xE1c, bung h\u1ED9p m\u1ED3i"
   iconBienCo: {fileID: 0}

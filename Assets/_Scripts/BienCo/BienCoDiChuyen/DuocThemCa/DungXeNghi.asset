@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: DungXeNghi
   m_EditorClassIdentifier: 
+  tenBienCoKey: DungXeNghi
+  moTaBienCoKey: DungXeNghi_mota
   tenBienCo: "D\u1EEBng Xe Ngh\u1EC9"
   moTaBienCo: "D\u1EEBng ngh\u1EC9, th\u1EA5y c\xE1 tr\xF4i v\xE0o g\u1EA7n b\u1EDD"
   iconBienCo: {fileID: 0}

@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: MuaDenXe
   m_EditorClassIdentifier: 
+  tenBienCoKey: MuaDenXe
+  moTaBienCoKey: MuaDenXe_mota
   tenBienCo: "Mua \u0110\xE8n Xe"
   moTaBienCo: "Tr\u1EDDi t\u1ED1i, ph\u1EA3i mua \u0111\xE8n g\u1EAFn xe \u0111\u1EC3
     \u0111i v\u1EC1"

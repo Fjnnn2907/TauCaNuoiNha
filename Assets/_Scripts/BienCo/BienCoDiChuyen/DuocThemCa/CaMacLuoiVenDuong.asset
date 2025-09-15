@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: CaMacLuoiVenDuong
   m_EditorClassIdentifier: 
+  tenBienCoKey: CaMacLuoiVenDuong
+  moTaBienCoKey: CaMacLuoiVenDuong_mota
   tenBienCo: "C\xE1 M\u1EAFc L\u01B0\u1EDBi Ven \u0110\u01B0\u1EDDng"
   moTaBienCo: "\u0110\u1EA1p xe th\u1EA5y c\xE1 m\u1EAFc l\u01B0\u1EDBi ng\u01B0\u1EDDi
     b\u1ECF qu\xEAn"

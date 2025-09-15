@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: DeMoiTrenYen
   m_EditorClassIdentifier: 
+  tenBienCoKey: DeMoiTrenYen
+  moTaBienCoKey: DeMoiTrenYen_mota
   tenBienCo: "\u0110\u1EC3 M\u1ED3i Tr\xEAn Y\xEAn"
   moTaBienCo: "Chim s\xE0 xu\u1ED1ng l\u1EA5y h\u1ED9p m\u1ED3i \u0111\u1EB7t tr\xEAn
     y\xEAn xe"

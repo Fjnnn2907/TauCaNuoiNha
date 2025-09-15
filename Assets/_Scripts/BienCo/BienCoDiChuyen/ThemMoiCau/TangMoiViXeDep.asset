@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: TangMoiViXeDep
   m_EditorClassIdentifier: 
+  tenBienCoKey: TangMoiViXeDep
+  moTaBienCoKey: TangMoiViXeDep_mota
   tenBienCo: "T\u1EB7ng M\u1ED3i V\xEC Xe \u0110\u1EA1p \u0110\u1EB9p"
   moTaBienCo: "C\xF3 ng\u01B0\u1EDDi th\u1EA5y b\u1EA1n d\u1EC5 th\u01B0\u01A1ng,
     t\u1EB7ng lu\xF4n m\u1ED3i qu\xFD"

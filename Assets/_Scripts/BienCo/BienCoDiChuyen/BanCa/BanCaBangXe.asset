@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: BanCaBangXe
   m_EditorClassIdentifier: 
+  tenBienCoKey: BanCaBangXe
+  moTaBienCoKey: BanCaBangXe_mota
   tenBienCo: "Ch\u1EDF C\xE1 \u0110i B\xE1n B\u1EB1ng Xe"
   moTaBienCo: "Giao c\xE1 t\u1EADn ch\u1EE3 b\u1EB1ng xe, b\xE1n \u0111\u01B0\u1EE3c"
   iconBienCo: {fileID: 0}

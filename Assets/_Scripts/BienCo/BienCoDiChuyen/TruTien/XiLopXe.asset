@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8bbcd17bffda34fb1b31d692446cc5, type: 3}
   m_Name: XiLopXe
   m_EditorClassIdentifier: 
+  tenBienCoKey: XiLopXe
+  moTaBienCoKey: XiLopXe_mota
   tenBienCo: "X\xEC L\u1ED1p Xe"
   moTaBienCo: "B\xE1nh xe b\u1ECB x\xEC, ph\u1EA3i t\u1ED1n ti\u1EC1n v\xE1"
   iconBienCo: {fileID: 0}
