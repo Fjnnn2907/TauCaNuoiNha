@@ -85,7 +85,7 @@ public class EnergyManager : MonoBehaviour
         if (timerText != null)
         {
             // Hiển thị thời gian với 1 chữ số thập phân
-            timerText.text = $"{currentTimer:F1} giây";
+            timerText.text = $"{currentTimer:F1}s";
 
             // Đổi màu khi thời gian sắp hết (dưới 3 giây)
             if (currentTimer <= 3f)

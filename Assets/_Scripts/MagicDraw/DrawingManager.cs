@@ -1,6 +1,6 @@
-using UnityEngine;
 using System.Collections.Generic;
 using TMPro;
+using UnityEngine;
 
 public class DrawingManager : MonoBehaviour
 {
@@ -168,29 +168,26 @@ public class DrawingManager : MonoBehaviour
 
         if (predicted == symbolManager.currentSymbol)
         {
-            resultText.text = "Đúng +" + (scoreManager?.pointsPerCorrectAnswer ?? 20) + " điểm";
+            string format = LanguageManager.Instance.GetText("draw_correct");
+            resultText.text = string.Format(format, scoreManager?.pointsPerCorrectAnswer ?? 20);
             resultText.color = Color.green;
 
             // Tăng điểm khi nhận dạng đúng
-            if (scoreManager != null)
-            {
-                scoreManager.AddScore();
-            }
+            scoreManager?.AddScore();
         }
         else
         {
-            resultText.text = $"Sai rồi" + (scoreManager?.pointsDeductionPerWrong ?? 5) + " điểm";
+            string format = LanguageManager.Instance.GetText("draw_wrong");
+            resultText.text = string.Format(format, scoreManager?.pointsDeductionPerWrong ?? 5);
             resultText.color = Color.red;
 
             // Trừ điểm khi vẽ sai
-            if (scoreManager != null)
-            {
-                scoreManager.DeductScore();
-            }
+            scoreManager?.DeductScore();
         }
 
         Invoke(nameof(ResetForNext), 1.5f);
     }
+
 
     void ResetForNext()
     {

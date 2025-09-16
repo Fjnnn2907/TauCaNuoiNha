@@ -106,7 +106,7 @@ public class AuditionManager : Singleton<AuditionManager>
         if (timerText != null)
         {
             // Hiển thị thời gian với 1 chữ số thập phân
-            timerText.text = $"{currentTime:F1} giây";
+            timerText.text = $"{currentTime:F1}s";
 
             // Đổi màu khi thời gian sắp hết (dưới 3 giây)
             if (currentTime <= 3f)

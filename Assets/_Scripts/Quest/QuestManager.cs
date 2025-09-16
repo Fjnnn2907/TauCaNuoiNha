@@ -61,8 +61,9 @@ public class QuestManager : Singleton<QuestManager>, ISaveable
 
         int amount = targetFish.isUnique ? 1 : Random.Range(2, 6);
 
-        int baseReward = amount * (int)targetRarity * 15 + 30;
-        float rewardMultiplier = 1f + questsCompleted * 0.1f;
+        //int baseReward = amount * (int)targetRarity * 15 + 30;
+        int baseReward = amount * (int)targetRarity * 150 + 300;
+        float rewardMultiplier = 1f + questsCompleted * 0.35f;
         int finalReward = Mathf.RoundToInt(baseReward * rewardMultiplier);
 
         currentQuest = ScriptableObject.CreateInstance<QuestData>();

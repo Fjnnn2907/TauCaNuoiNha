@@ -32,8 +32,8 @@ public class SymbolManager : MonoBehaviour
         // Cập nhật text (nếu có)
         if (targetSymbolText != null)
         {
-            //targetSymbolText.text = $"Draw: {currentSymbol}";
-            targetSymbolText.text = $"Vẽ:";
+            string format = LanguageManager.Instance.GetText("ui_draw");
+            targetSymbolText.text = format;
         }
 
         // Cập nhật ảnh (nếu có)
@@ -51,12 +51,13 @@ public class SymbolManager : MonoBehaviour
                 targetSymbolImage.enabled = false;
                 if (targetSymbolText != null)
                 {
-                    //targetSymbolText.text = $"Draw: {currentSymbol}";
-                    targetSymbolText.text = $"Vẽ:";
+                    string format = LanguageManager.Instance.GetText("ui_draw");
+                    targetSymbolText.text = format;
                 }
             }
         }
     }
+
 
     // Lấy sprite tương ứng với symbol
     private Sprite GetSpriteForSymbol(string symbolName)

@@ -17,9 +17,9 @@ public class ScoreManager : Singleton<ScoreManager>
     public int maxScore = 100;
 
     [Header("Time Settings")]
-    public float easyTime = 60f; // 2 phút cho Easy
-    public float mediumTime = 30f; // 1.5 phút cho Medium  
-    public float hardTime = 15f; // 1 phút cho Hard
+    public float easyTime = 30; // 2 phút cho Easy
+    public float mediumTime = 20; // 1.5 phút cho Medium  
+    public float hardTime = 10; // 1 phút cho Hard
 
     private int currentScore = 0;
     private float remainingTime;
@@ -218,7 +218,8 @@ public class ScoreManager : Singleton<ScoreManager>
     {
         if (scoreText != null)
         {
-            scoreText.text = $"Điểm: {currentScore}/{maxScore}";
+            string format = LanguageManager.Instance.GetText("ui_score");
+            scoreText.text = string.Format(format, currentScore, maxScore);
         }
     }
 
@@ -228,9 +229,12 @@ public class ScoreManager : Singleton<ScoreManager>
         {
             int minutes = Mathf.FloorToInt(remainingTime / 60f);
             int seconds = Mathf.FloorToInt(remainingTime % 60f);
-            timeText.text = $"Thời gian: {minutes:00}:{seconds:00}";
+
+            string format = LanguageManager.Instance.GetText("ui_time");
+            timeText.text = string.Format(format, minutes.ToString("00"), seconds.ToString("00"));
         }
     }
+
 
     private void UpdateDifficultyDisplay()
     {
