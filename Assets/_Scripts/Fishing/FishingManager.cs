@@ -208,8 +208,8 @@ public class FishingManager : Singleton<FishingManager>
         float roll = Random.Range(0f, 100f);
 
         // Base rate (rộng rãi hơn)
-        float baseRare = isInGreenZone ? 20f : 10f;       // Hit: 20% | Miss: 10%
-        float baseLegendary = isInGreenZone ? 6f : 2f;    // Hit: 6%  | Miss: 2%
+        float baseRare = isInGreenZone ? 20/2f : 10/2f;       // Hit: 20% | Miss: 10%
+        float baseLegendary = isInGreenZone ? 6/2f : 2/2f;    // Hit: 6%  | Miss: 2%
 
         // --- Config theo range hiện tại ---
         const float RARE_MIN = 9f, RARE_MAX = 92f;
@@ -232,6 +232,9 @@ public class FishingManager : Singleton<FishingManager>
 
         float finalRare = Mathf.Clamp(baseRare + rareAdd, 0f, 45f);        // Rare tối đa 45%
         float finalLegendary = Mathf.Clamp(baseLegendary + legAdd, 0f, 18f); // Legendary tối đa 18%
+
+        Debug.Log("Diểm Final Rare " + finalRare);
+        Debug.Log("Diểm Final Rare " + finalLegendary);
 
         if (roll < finalLegendary) return FishRarity.Legendary;
         if (roll < finalLegendary + finalRare) return FishRarity.Rare;

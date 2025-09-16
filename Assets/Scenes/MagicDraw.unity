@@ -53967,7 +53967,11 @@ MonoBehaviour:
   rewardRod: {fileID: 0}
   fishEvent: {fileID: 0}
   turtleShellLoseAmount: 1
-  objectsToHide: []
+  objectsToHide:
+  - {fileID: 602412919}
+  - {fileID: 1898161584}
+  - {fileID: 2040246083}
+  - {fileID: 1446865661}
 --- !u!95 &2060091868
 Animator:
   serializedVersion: 7
