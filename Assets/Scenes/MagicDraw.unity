@@ -34984,9 +34984,9 @@ MonoBehaviour:
   pointsPerCorrectAnswer: 15
   pointsDeductionPerWrong: 10
   maxScore: 50
-  easyTime: 120
-  mediumTime: 90
-  hardTime: 60
+  easyTime: 60
+  mediumTime: 30
+  hardTime: 15
 --- !u!114 &1313432056
 MonoBehaviour:
   m_ObjectHideFlags: 0

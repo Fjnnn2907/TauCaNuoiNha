@@ -17,9 +17,9 @@ public class ScoreManager : Singleton<ScoreManager>
     public int maxScore = 100;
 
     [Header("Time Settings")]
-    public float easyTime = 120f; // 2 phút cho Easy
-    public float mediumTime = 90f; // 1.5 phút cho Medium  
-    public float hardTime = 60f; // 1 phút cho Hard
+    public float easyTime = 60f; // 2 phút cho Easy
+    public float mediumTime = 30f; // 1.5 phút cho Medium  
+    public float hardTime = 15f; // 1 phút cho Hard
 
     private int currentScore = 0;
     private float remainingTime;

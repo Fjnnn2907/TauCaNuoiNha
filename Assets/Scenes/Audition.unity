@@ -47954,6 +47954,14 @@ MonoBehaviour:
     buttonToClick: {fileID: 729570801}
     showArrow: 1
     arrowPosition: 1
+  - dialogueVN: "Thi tho\u1EA3ng c\u0169ng s\u1EBD c\xF3 1 s\u1ED1 ng\u01B0\u1EDDi
+      mu\u1ED1n mua l\u1EA1i c\xE1 c\u1EE7a b\u1EA1n, b\u1EA1n c\xF3 th\u1EC3 ki\u1EC3m
+      tra \u1EDF \u0111\xE2y"
+    dialogueEN: 'Sometimes there will be some people who want to buy your fish, you
+      can check here '
+    buttonToClick: {fileID: 1747716579}
+    showArrow: 1
+    arrowPosition: 1
   - dialogueVN: "T\xF4i su\xFDt qu\xEAn m\u1EA5t ch\u1ED7 n\xE0y h\xE3y \u0111\u1EC3
       t\xF4i gi\u1EDBi thi\u1EC7u cho b\u1EA1n v\u1EC1 ch\u1ED7 n\xE0y"
     dialogueEN: "I almost forgot this place let me introduce you to this place\r"

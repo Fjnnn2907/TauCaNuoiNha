@@ -31675,7 +31675,7 @@ Tilemap:
       - {fileID: 1958928613, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: -478653590, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: 2113070652, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
-      m_AnimationSpeed: 2.5000002
+      m_AnimationSpeed: 2.5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -12, y: 5, z: 0}
@@ -34729,6 +34729,14 @@ MonoBehaviour:
 
 '
     buttonToClick: {fileID: 2017578510}
+    showArrow: 1
+    arrowPosition: 1
+  - dialogueVN: "Thi tho\u1EA3ng c\u0169ng s\u1EBD c\xF3 1 s\u1ED1 ng\u01B0\u1EDDi
+      mu\u1ED1n mua l\u1EA1i c\xE1 c\u1EE7a b\u1EA1n, b\u1EA1n c\xF3 th\u1EC3 ki\u1EC3m
+      tra \u1EDF \u0111\xE2y"
+    dialogueEN: 'Sometimes there will be some people who want to buy your fish, you
+      can check here '
+    buttonToClick: {fileID: 1186834502}
     showArrow: 1
     arrowPosition: 1
   - dialogueVN: "T\xF4i su\xFDt qu\xEAn m\u1EA5t ch\u1ED7 n\xE0y h\xE3y \u0111\u1EC3
@@ -77213,7 +77221,7 @@ Tilemap:
       - {fileID: -1605707320451941170, guid: 207c6cbb627a0ac4b945bd03f42c381c, type: 3}
       - {fileID: -1513632301, guid: 207c6cbb627a0ac4b945bd03f42c381c, type: 3}
       - {fileID: 2015565943, guid: 207c6cbb627a0ac4b945bd03f42c381c, type: 3}
-      m_AnimationSpeed: 2.5000002
+      m_AnimationSpeed: 2.5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -8, y: 9, z: 0}
