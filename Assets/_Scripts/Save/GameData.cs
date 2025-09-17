@@ -27,6 +27,6 @@ public class GameData
     public int zoneQuestLimit;
     public int zoneLockedQuestCount;
 
-    public float savedMusicVolume = .3f;
-    public float savedSFXVolume = .3f;
+    //public float savedMusicVolume = .3f;
+    //public float savedSFXVolume = .3f;
 }

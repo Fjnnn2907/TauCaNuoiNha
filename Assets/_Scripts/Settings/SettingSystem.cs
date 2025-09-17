@@ -17,7 +17,7 @@ public class SettingSystem : MonoBehaviour
     {
         new Vector2Int(1920, 1080),
         new Vector2Int(1280, 720),
-        new Vector2Int(800, 600)
+        //new Vector2Int(800, 600)
     };
 
     private void Start()

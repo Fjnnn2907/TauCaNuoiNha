@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioManager : Singleton<AudioManager>, ISaveable
+public class AudioManager : Singleton<AudioManager>
 {
     [Header("Audio Sources")]
     public AudioSource musicSource;
@@ -13,29 +13,25 @@ public class AudioManager : Singleton<AudioManager>, ISaveable
     [Range(0, 1)] public float sfxVolume = 1;
 
     [Header("Music Playlist")]
-    public List<string> musicTracks = new(); // Danh sach ten file trong Resources/Audio/Music
+    public List<string> musicTracks = new(); // Danh sách tên file trong Resources/Audio/Music
 
     private int currentTrackIndex = -1;
 
+    private const string MUSIC_VOLUME_KEY = "MusicVolume";
+    private const string SFX_VOLUME_KEY = "SFXVolume";
+
     private void Start()
     {
-        SaveManager.Instance?.RegisterSaveable(this);
+        LoadSettings();
         PlayRandomMusic();
     }
-    private void OnDestroy()
-    {
-        if (SaveManager.Instance != null)
-            SaveManager.Instance?.UnregisterSaveable(this);
-    }
+
     private void Update()
     {
         if (!musicSource.isPlaying)
             PlayNextTrack();
     }
 
-    /// <summary>
-    /// Phát âm thanh ngắn
-    /// </summary>
     public void PlaySFX(string sfxName)
     {
         AudioClip clip = Resources.Load<AudioClip>("Audio/SFX/" + sfxName);
@@ -45,9 +41,6 @@ public class AudioManager : Singleton<AudioManager>, ISaveable
             Debug.LogWarning("SFX không tìm thấy: " + sfxName);
     }
 
-    /// <summary>
-    /// Phát nhạc nền theo tên
-    /// </summary>
     public void PlayMusic(string musicName)
     {
         AudioClip clip = Resources.Load<AudioClip>("Audio/Music/" + musicName);
@@ -55,14 +48,11 @@ public class AudioManager : Singleton<AudioManager>, ISaveable
         {
             musicSource.clip = clip;
             musicSource.volume = musicVolume;
-            musicSource.loop = false; // Không lặp để còn chuyển bài
+            musicSource.loop = false;
             musicSource.Play();
         }
     }
 
-    /// <summary>
-    /// Phát nhạc ngẫu nhiên khi bắt đầu
-    /// </summary>
     private void PlayRandomMusic()
     {
         if (musicTracks.Count == 0) return;
@@ -71,9 +61,6 @@ public class AudioManager : Singleton<AudioManager>, ISaveable
         PlayMusic(musicTracks[currentTrackIndex]);
     }
 
-    /// <summary>
-    /// Chuyển sang bài tiếp theo trong danh sách
-    /// </summary>
     public void PlayNextTrack()
     {
         if (musicTracks.Count == 0) return;
@@ -91,29 +78,31 @@ public class AudioManager : Singleton<AudioManager>, ISaveable
     {
         musicVolume = value;
         musicSource.volume = musicVolume;
+        SaveSettings();
     }
 
     public void SetSFXVolume(float value)
     {
         sfxVolume = value;
+        sfxSource.volume = sfxVolume;
+        SaveSettings();
     }
 
-    #region ISaveable
-    public void SaveData(ref GameData data)
+    private void SaveSettings()
     {
-        data.savedMusicVolume = musicVolume;
-        data.savedSFXVolume = sfxVolume;
+        PlayerPrefs.SetFloat(MUSIC_VOLUME_KEY, musicVolume);
+        PlayerPrefs.SetFloat(SFX_VOLUME_KEY, sfxVolume);
+        PlayerPrefs.Save();
     }
 
-    public void LoadData(GameData data)
+    private void LoadSettings()
     {
-        musicVolume = data.savedMusicVolume;
-        sfxVolume = data.savedSFXVolume;
+        musicVolume = PlayerPrefs.GetFloat(MUSIC_VOLUME_KEY, 1f);
+        sfxVolume = PlayerPrefs.GetFloat(SFX_VOLUME_KEY, 1f);
 
         musicSource.volume = musicVolume;
         sfxSource.volume = sfxVolume;
 
-        audioUI.RefreshSliders();
+        audioUI?.RefreshSliders();
     }
-    #endregion
 }
