@@ -22,6 +22,11 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadSceneWithLoading(string sceneName)
     {
+        StartCoroutine(LoadSceneAsync(sceneName));
+    }
+
+    public void LoadSceneWithLoadingToSaveGame(string sceneName)
+    {
         _ = SaveManager.Instance.SaveGameAsync();
         StartCoroutine(LoadSceneAsync(sceneName));
     }

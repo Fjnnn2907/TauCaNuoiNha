@@ -91,6 +91,7 @@ public class MainMenu : MonoBehaviour
     {
         confirmNewGamePanel.SetActive(false);
         SaveManager.Instance.DeleteSave();
+        Debug.Log("a");
         AskTutorial(); // sau khi confirm thì hỏi Tutorial
     }
 

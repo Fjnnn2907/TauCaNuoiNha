@@ -441,10 +441,10 @@ TextureImporter:
       name: button_9
       rect:
         serializedVersion: 2
-        x: 326
-        y: 532
-        width: 5
-        height: 10
+        x: 320
+        y: 528
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
