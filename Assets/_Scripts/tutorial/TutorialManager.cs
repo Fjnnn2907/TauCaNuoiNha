@@ -12,7 +12,7 @@ public class TutorialManager : MonoBehaviour
         [TextArea] public string dialogueEN;   // 🇬🇧 Tiếng Anh
 
         public Button buttonToClick; // nút cần highlight
-        public bool showArrow = true; 
+        public bool showArrow = true;
         public ArrowPosition arrowPosition = ArrowPosition.Right;
     }
 
@@ -71,30 +71,45 @@ public class TutorialManager : MonoBehaviour
             highlightImage.gameObject.SetActive(true);
             RectTransform btnRect = step.buttonToClick.GetComponent<RectTransform>();
 
-            Vector3 offset = Vector3.zero;
+            // Đưa highlight về cùng canvas (đảm bảo đúng hệ quy chiếu)
+            Canvas rootCanvas = tutorialPanel.GetComponentInParent<Canvas>();
+            highlightImage.SetParent(rootCanvas.transform, false);
+
+            // Lấy vị trí button trong local của canvas
+            Vector3 worldPos = btnRect.position;
+            Vector2 localPoint;
+            RectTransformUtility.ScreenPointToLocalPointInRectangle(
+                rootCanvas.transform as RectTransform,
+                RectTransformUtility.WorldToScreenPoint(null, worldPos),
+                rootCanvas.worldCamera,
+                out localPoint
+            );
+
+            Vector2 offset = Vector2.zero;
             Vector3 scale = Vector3.one;
 
             switch (step.arrowPosition)
             {
                 case ArrowPosition.Left:
-                    offset = new Vector3(-arrowOffset, 0, 0);
+                    offset = new Vector2(-arrowOffset, 0);
                     scale = new Vector3(-1, 1, 1);
                     break;
                 case ArrowPosition.Right:
-                    offset = new Vector3(arrowOffset, 0, 0);
+                    offset = new Vector2(arrowOffset, 0);
                     scale = new Vector3(1, 1, 1);
                     break;
                 case ArrowPosition.Top:
-                    offset = new Vector3(0, arrowOffset, 0);
+                    offset = new Vector2(0, arrowOffset);
                     break;
                 case ArrowPosition.Bottom:
-                    offset = new Vector3(0, -arrowOffset, 0);
+                    offset = new Vector2(0, -arrowOffset);
                     scale = new Vector3(1, -1, 1);
                     break;
             }
 
-            highlightImage.position = btnRect.position + offset;
+            highlightImage.localPosition = localPoint + offset;
             highlightImage.localScale = scale;
+
             highlightImage.SetAsLastSibling();
         }
         else if (highlightImage != null)
@@ -102,11 +117,11 @@ public class TutorialManager : MonoBehaviour
             highlightImage.gameObject.SetActive(false);
         }
 
-        // Disable tất cả button
+        // 🔒 Khóa toàn bộ button
         foreach (var b in originalStates.Keys)
             b.interactable = false;
 
-        // Bật lại button cần bấm
+        // ✅ Chỉ bật nút cần bấm
         if (step.buttonToClick != null)
         {
             step.buttonToClick.interactable = true;

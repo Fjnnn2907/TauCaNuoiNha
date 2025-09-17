@@ -47966,11 +47966,9 @@ MonoBehaviour:
     buttonToClick: {fileID: 729570801}
     showArrow: 1
     arrowPosition: 1
-  - dialogueVN: "Thi tho\u1EA3ng c\u0169ng s\u1EBD c\xF3 1 s\u1ED1 ng\u01B0\u1EDDi
-      mu\u1ED1n mua l\u1EA1i c\xE1 c\u1EE7a b\u1EA1n, b\u1EA1n c\xF3 th\u1EC3 ki\u1EC3m
-      tra \u1EDF \u0111\xE2y"
-    dialogueEN: 'Sometimes there will be some people who want to buy your fish, you
-      can check here '
+  - dialogueVN: "\u1EDE \u0111\xE2y s\u1EBD c\xF3 1 s\u1ED1 nhi\u1EC7m v\u1EE5 nh\u1ECF
+      \u0111\u1EC3 b\u1EA1n nh\u1EADn th\xEAm m\u1ED9t kho\u1EA3n "
+    dialogueEN: There will be some small tasks here for you to get some extra money.
     buttonToClick: {fileID: 1747716579}
     showArrow: 1
     arrowPosition: 1

@@ -31445,7 +31445,7 @@ Tilemap:
       - {fileID: 1394408354, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: 173622504, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: -358284151, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -4, y: 4, z: 0}
@@ -31934,7 +31934,7 @@ Tilemap:
       - {fileID: -699266767, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: 1279504904, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: -1532116312, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 5, y: 5, z: 0}
@@ -32231,7 +32231,7 @@ Tilemap:
       - {fileID: 1487229122, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: 193930371, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: 2001241965, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -1, y: 6, z: 0}
@@ -32396,7 +32396,7 @@ Tilemap:
       - {fileID: -276855439, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: -1615396509, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: -348901987, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -7, y: 7, z: 0}
@@ -32441,7 +32441,7 @@ Tilemap:
       - {fileID: -276855439, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: -1615396509, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: -348901987, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -4, y: 7, z: 0}
@@ -32456,7 +32456,7 @@ Tilemap:
       - {fileID: -276855439, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: -1615396509, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
       - {fileID: -348901987, guid: 3cad78b91d23ad74cba3a62d07ae7918, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -3, y: 7, z: 0}
@@ -34743,11 +34743,9 @@ MonoBehaviour:
     buttonToClick: {fileID: 2017578510}
     showArrow: 1
     arrowPosition: 1
-  - dialogueVN: "Thi tho\u1EA3ng c\u0169ng s\u1EBD c\xF3 1 s\u1ED1 ng\u01B0\u1EDDi
-      mu\u1ED1n mua l\u1EA1i c\xE1 c\u1EE7a b\u1EA1n, b\u1EA1n c\xF3 th\u1EC3 ki\u1EC3m
-      tra \u1EDF \u0111\xE2y"
-    dialogueEN: 'Sometimes there will be some people who want to buy your fish, you
-      can check here '
+  - dialogueVN: "\u1EDE \u0111\xE2y s\u1EBD c\xF3 1 s\u1ED1 nhi\u1EC7m v\u1EE5 nh\u1ECF
+      \u0111\u1EC3 b\u1EA1n nh\u1EADn th\xEAm m\u1ED9t kho\u1EA3n "
+    dialogueEN: There will be some small tasks here for you to get some extra money.
     buttonToClick: {fileID: 1186834502}
     showArrow: 1
     arrowPosition: 1
@@ -76929,7 +76927,7 @@ Tilemap:
       - {fileID: 1400252135, guid: 207c6cbb627a0ac4b945bd03f42c381c, type: 3}
       - {fileID: 19803169, guid: 207c6cbb627a0ac4b945bd03f42c381c, type: 3}
       - {fileID: 1401425682, guid: 207c6cbb627a0ac4b945bd03f42c381c, type: 3}
-      m_AnimationSpeed: 2.5000002
+      m_AnimationSpeed: 2.5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 1, y: -3, z: 0}
@@ -77017,7 +77015,7 @@ Tilemap:
       - {fileID: -4871644234308700824, guid: 6072f4179ec19df42beb5ca9b1872935, type: 3}
       - {fileID: 7466427622202046938, guid: 6072f4179ec19df42beb5ca9b1872935, type: 3}
       - {fileID: 4489838820935638777, guid: 6072f4179ec19df42beb5ca9b1872935, type: 3}
-      m_AnimationSpeed: 2.5
+      m_AnimationSpeed: 2.5000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 6, y: 1, z: 0}
