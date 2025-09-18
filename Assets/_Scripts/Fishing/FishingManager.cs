@@ -50,6 +50,12 @@ public class FishingManager : Singleton<FishingManager>
         cauButton.onClick.AddListener(PrepareCastWithSlider);
     }
 
+    private void Update()
+    {
+        if ((Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
+            && currentState == FishingState.Idle && !fishingSlider.gameObject.activeSelf)
+            PrepareCastWithSlider();
+    }
     public void SetRodBonus(FishingRodData rod)
     {
         rodBonusRare = rod != null ? rod.bonusRareRate : 0f;

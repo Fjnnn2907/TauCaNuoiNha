@@ -47,6 +47,9 @@ public class FishingSlider : MonoBehaviour
         else if (value <= 0f) { value = 0f; movingRight = true; }
 
         slider.value = value;
+
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
+            OnCastButtonPressed();
     }
 
     public void StartSlider(Action<bool> callback, float bonusRate)
