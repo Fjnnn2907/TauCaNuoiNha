@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class StatsGUI : MonoBehaviour
+public class StatsGUI : Singleton<StatsGUI>
 {
     public GameObject panel;
     public Button button;

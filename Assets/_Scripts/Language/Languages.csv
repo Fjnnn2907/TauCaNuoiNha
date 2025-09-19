@@ -13,7 +13,7 @@ Ty_le_HT,Tỷ lệ hiện tại,Current rate
 Ban,Bán ,Sale
 mien_nam,Miền nam,Southern
 mien_bac,MIền bắc,North
-mien_trung,Miền Trung,Central 
+mien_trung,Miền Trung,Central
 chuyen_nhac,chuyển nhạc,Skip Track
 am_thanh,Âm thanh,Audio
 tai_khoan,Tài khoản,Account
@@ -28,6 +28,11 @@ cau,Câu,Catch
 dang_tai,Đang tải,Loading
 tha,Thả,Drop
 cam_on,Cảm ơn,Thank you
+ui_score,Điểm: {0}/{1},Score: {0}/{1}
+ui_time,Thời gian: {0}:{1},Time: {0}:{1}
+ui_draw,Vẽ: {0},Draw: {0}
+draw_correct,Đúng! +{0} điểm,Correct! +{0} points
+draw_wrong,"Sai rồi -{0} điểm""",Wrong -{0} points
 cam_on_mota,"Cảm ơn mọi người rất rất nhiều vì đã chơi game tụi mình làm! Từ những cú click đầu tiên đến lúc clear boss cuối, tụi mình biết ơn từng giây các bạn đã dành cho trò chơi này. Không có bạn thì game tụi mình thì game tụi mình vẫn tồn tại, nhưng buồn lắm
 Cảm ơn gia đình vì đã không la khi tụi mình code xuyên đêm, bạn bè vì đã test game không than vãn (mấy lần crash nhẹ mà chịu khó test lại), và đặc biệt là cộng đồng đã luôn góp ý cực nhiệt tình không có bạn thì chắc game bug toang sớm rồi.
 Nếu bạn đọc tới đây thì: bạn xịn lắm đó. Còn nếu bạn bỏ qua phần này thì… cũng không sao, tụi mình vẫn iu ","Thank you so much for playing our game! From the first clicks to clearing the final boss, we are grateful for every second you spent on this game. Without you, our game would still exist, but it would be sad
@@ -48,7 +53,7 @@ MoiSecretFormula,Secret Formula,Secret Formula
 MoiTrungKienVang,Trứng kiến vàng,Yellow ant eggs
 MoiHormone,Hormone,Hormone
 quest_catch,Câu {0} con {1} ({2}),Catch {0} {1} ({2})
-quest_reward,nhận {0} vàng,Get {0} gold
+quest_reward,Nhận {0} vàng,Get {0} gold
 quest_zone,Xuất hiện ở vùng,Appears in: {0}
 quest_unknown_zone,Không xác định,Unknown
 quest_complete,Đã hoàn thành nhiệm vụ!,Quest Completed!
@@ -266,8 +271,10 @@ thongbao_nhan_can_cau,Bạn nhận được cần câu: {0}!,You received a fish
 thongbao_mat_ca,Bạn đã mất {0},You lost {0}
 thongbao_ca_doc_nhat,Bạn vừa câu được cá độc nhất: {0}!,You just caught a unique fish: {0}!
 thongbao_ca_thuong,Bạn câu được {0},You caught {0}
-thongbao_choi_moi,"Tiến trình hiện tại sẽ bị xóa. Bạn có chắc chắn muốn chơi mới không?","Your save data will be erased. Do you want to continue?"
-thongbao_khong_ok,Không ,No 
+thongbao_choi_moi,Ấn OK là mất hết sức lực của bữa tiệc lúc đó!,Pressing OK is the end of the party!
+thongbao_khong_ok,Không OK,No Ok
+thongbao_doi_moi,"Bạn đã hết mồi, tự động đổi sang: {0}","You have run out of bait, automatically switch to: {0}"
+thongbao_het_moi,Bạn đã sử dụng hết mồi trong túi, Used up all the bait in the bag
 hoi_tutorial,Bạn đã biết cách để chơi trò chơi này chưa?,Do you know to play this game?
 ko_biet,Chưa,Not yet
 biet,Rồi,I know
@@ -284,13 +291,8 @@ cutscene_intro_7,"Bạn cầm lên. Gỗ đã mòn, nhưng vết khắc tên ba 
 cutscene_intro_8,Và bạn quyết định lên đường.,And you decide to hit the road.
 ve_may_bay,Vé máy bay,Airline tickets
 tu,Từ Nhà,From : Home
-nha,Đến,To
+den,Đến,To
 cua,Cửa 05,Door 05
 ghe,Ghế 7A,Chair 7A
-thoi_gian_co_mat_san_bay,Thời gian có mặt sân bay 12:00,Airport arrival time 12:00
+thoi_gian_co_mat_san_bay,Thời gian có mặt sân bay 12:00,Time 12:00
 khu_vuc,Khu vực 1,Zone 1
-ui_score,"Điểm: {0}/{1}","Score: {0}/{1}"
-ui_time,"Thời gian: {0}:{1}","Time: {0}:{1}"
-ui_draw,"Vẽ: ","Draw: "
-draw_correct,"Đúng! +{0} điểm","Correct! +{0} points"
-draw_wrong,"Sai rồi -{0} điểm","Wrong -{0} points"

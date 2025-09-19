@@ -42,25 +42,30 @@ public class FishingBaitUI : Singleton<FishingBaitUI>
         currentBait = bait;
         FishingManager.Instance.CurrentBait = bait;
 
+        // Cập nhật icon (kiểm tra null an toàn)
         if (selectedBaitIcon != null)
         {
-            selectedBaitIcon.sprite = bait.icon;
+            if (bait != null && bait.icon != null)
+                selectedBaitIcon.sprite = bait.icon;
         }
 
         UpdateSelectedBaitQuantity();
         RefreshUI();
-        Debug.Log($"🎯 Đã chọn mồi: {bait.baitName}");
     }
 
     private void UpdateSelectedBaitQuantity()
     {
-        if (currentBait == null || quantityText == null)
+        if (quantityText == null) return;
+
+        if (currentBait == null)
+        {
+            // nếu không còn mồi thì xóa text hiển thị
+            quantityText.text = "";
             return;
+        }
 
         int qty = BaitInventory.Instance.GetQuantity(currentBait);
-        if (qty < 1)
-            quantityText.text = "";
-        else
-            quantityText.text = qty.ToString();
+        quantityText.text = qty > 0 ? qty.ToString() : "";
     }
+
 }

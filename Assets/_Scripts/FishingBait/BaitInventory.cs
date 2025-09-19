@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using UnityEngine;
 
 public class BaitInventory : Singleton<BaitInventory>, ISaveable
 {
@@ -14,6 +13,7 @@ public class BaitInventory : Singleton<BaitInventory>, ISaveable
     {
         if (!baitQuantities.ContainsKey(bait))
             baitQuantities[bait] = 0;
+
         baitQuantities[bait] += quantity;
 
         FishingBaitUI.Instance?.RefreshUI();
@@ -25,38 +25,61 @@ public class BaitInventory : Singleton<BaitInventory>, ISaveable
     }
 
     public bool ConsumeBait(FishingBaitData bait)
-    {
-        if (!HasBait(bait)) return false;
-
-        baitQuantities[bait] -= bait.quantityRequired;
-
-        // Nếu hết mồi hiện tại thì tự động đổi sang mồi khác
-        if (baitQuantities[bait] <= 0 && FishingManager.Instance.CurrentBait == bait)
-        {
-            AutoSwitchBait();
-        }
-
-        return true;
+    { 
+        if (!HasBait(bait)) 
+            return false; 
+        
+        baitQuantities[bait] -= bait.quantityRequired; 
+        return true; 
     }
 
-    private void AutoSwitchBait()
+    public void CheckAndAutoSwitchBait()
     {
-        foreach (var newBait in FishingBaitUI.Instance.allBaits)
+        var currentBait = FishingManager.Instance?.CurrentBait;
+        if (currentBait == null || GetQuantity(currentBait) > 0)
+            return;
+
+        var ui = FishingBaitUI.Instance;
+        if (ui == null)
+        {
+            FishingManager.Instance?.SetBaitBonus(null);
+            return;
+        }
+
+        // Tìm mồi mới còn trong túi
+        FishingBaitData nextBait = null;
+        foreach (var newBait in ui.allBaits)
         {
             if (GetQuantity(newBait) > 0)
             {
-                FishingBaitUI.Instance.SetCurrentBait(newBait);
-                FishingManager.Instance.SetBaitBonus(newBait);
-                Debug.Log($"🔄 Tự động đổi sang mồi: {newBait.baitName}");
-                return;
+                nextBait = newBait;
+                break;
             }
         }
 
-        // Nếu không còn mồi nào
-        FishingBaitUI.Instance.SetCurrentBait(null);
-        FishingManager.Instance.SetBaitBonus(null);
-        Debug.Log("❌ Hết sạch mồi, không thể đổi!");
+        if (nextBait != null)
+        {
+            // 🔄 Còn mồi khác => tự động đổi
+            ui.SetCurrentBait(nextBait);
+            FishingManager.Instance.SetBaitBonus(nextBait);
+
+            NotificationManager.Instance?.ShowNotification(
+                string.Format(LanguageManager.Instance.GetText("thongbao_doi_moi"),
+                LanguageManager.Instance.GetText(nextBait.baitName))
+            );
+        }
+        else
+        {
+            // ❌ Không còn mồi nào => reset + thông báo hết mồi
+            ui.SetCurrentBait(null);
+            FishingManager.Instance.SetBaitBonus(null);
+
+            NotificationManager.Instance?.ShowNotification(
+                LanguageManager.Instance.GetText("thongbao_het_moi")
+            );
+        }
     }
+
 
     public int GetQuantity(FishingBaitData bait)
     {

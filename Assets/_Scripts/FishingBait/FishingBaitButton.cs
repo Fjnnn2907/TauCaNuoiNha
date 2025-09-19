@@ -52,6 +52,7 @@ public class FishingBaitButton : MonoBehaviour
                 if (quantity > 0)
                 {
                     UseBait();
+                    StatsGUI.Instance?.RefreshUI();
                 }
             });
         }

@@ -117,6 +117,7 @@ public class FishingManager : Singleton<FishingManager>
             FishInventory.Instance.AddFish(fish);
             QuestManager.Instance.OnFishCaught(fish);
             ShowCaughtFish(fish);
+            BaitInventory.Instance?.CheckAndAutoSwitchBait();
             isPlayMiniGame = false;
             // ✅ Nếu cá là cá đặc biệt thì kích hoạt event
             if (fish.isSpecial)
@@ -138,6 +139,7 @@ public class FishingManager : Singleton<FishingManager>
         rhythmMinigame.SetActive(false); // Tắt minigame
         ChangeState(FishingState.Idle);  // Quay lại trạng thái Idle
         isPlayMiniGame = false;
+        BaitInventory.Instance?.CheckAndAutoSwitchBait();
     }
     public void TriggerFishingEvent(bool isWin)
     {

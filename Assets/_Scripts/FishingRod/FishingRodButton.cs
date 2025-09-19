@@ -49,6 +49,7 @@ public class FishingRodButton : MonoBehaviour
                     FishingManager.Instance.SetRodBonus(rodData);
                     FishingRodUI.Instance.UpdateSelectedRodIcon(rodData.icon);
                     FishingRodUI.Instance.RefreshUI();
+                    StatsGUI.Instance?.RefreshUI();
                 });
             }
         }
