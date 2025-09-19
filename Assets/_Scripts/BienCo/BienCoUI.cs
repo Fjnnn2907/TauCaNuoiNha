@@ -141,7 +141,7 @@ public class BienCoUI : Singleton<BienCoUI>
                     ? LanguageManager.Instance.GetText(info.fish.nameKey)
                     : info.fish.fishName;
 
-                if (key == "reward_fish_sell")
+                if (key == "thuong_ban_ca")
                 {
                     int gold = BienCoManager.Instance.lastGoldEarnedFromFish;
                     result += string.Format(LanguageManager.Instance.GetText(key), fishName, info.quantity, gold) + ", ";

@@ -26,8 +26,12 @@ public class TutorialManager : MonoBehaviour
     [SerializeField] private RectTransform highlightImage;
     [SerializeField] private float arrowOffset = 80f;
 
+    [Header("Tutorial Settings")]
+    [SerializeField] private float endTutorialDelay = 3f; // ⏱ thời gian chờ trước khi tắt tutorial
+
     private int currentStep = -1;
     private Dictionary<Button, bool> originalStates = new Dictionary<Button, bool>();
+    private bool isEnding = false;
 
     private void Start()
     {
@@ -71,11 +75,9 @@ public class TutorialManager : MonoBehaviour
             highlightImage.gameObject.SetActive(true);
             RectTransform btnRect = step.buttonToClick.GetComponent<RectTransform>();
 
-            // Đưa highlight về cùng canvas (đảm bảo đúng hệ quy chiếu)
             Canvas rootCanvas = tutorialPanel.GetComponentInParent<Canvas>();
             highlightImage.SetParent(rootCanvas.transform, false);
 
-            // Lấy vị trí button trong local của canvas
             Vector3 worldPos = btnRect.position;
             Vector2 localPoint;
             RectTransformUtility.ScreenPointToLocalPointInRectangle(
@@ -109,7 +111,6 @@ public class TutorialManager : MonoBehaviour
 
             highlightImage.localPosition = localPoint + offset;
             highlightImage.localScale = scale;
-
             highlightImage.SetAsLastSibling();
         }
         else if (highlightImage != null)
@@ -127,12 +128,29 @@ public class TutorialManager : MonoBehaviour
             step.buttonToClick.interactable = true;
             step.buttonToClick.onClick.AddListener(OnTutorialButtonClicked);
         }
+
+        // 🕒 Nếu là bước cuối cùng thì set timer auto tắt
+        if (currentStep == steps.Count - 1 && !isEnding)
+        {
+            isEnding = true;
+            Invoke(nameof(EndTutorial), endTutorialDelay);
+        }
     }
 
     private void OnTutorialButtonClicked()
     {
         steps[currentStep].buttonToClick.onClick.RemoveListener(OnTutorialButtonClicked);
-        NextStep();
+
+        // Nếu đang ở bước cuối -> tắt ngay (hủy timer auto)
+        if (currentStep == steps.Count - 1)
+        {
+            CancelInvoke(nameof(EndTutorial));
+            EndTutorial();
+        }
+        else
+        {
+            NextStep();
+        }
     }
 
     private void EndTutorial()

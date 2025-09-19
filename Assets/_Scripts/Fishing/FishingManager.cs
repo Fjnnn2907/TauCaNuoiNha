@@ -47,11 +47,14 @@ public class FishingManager : Singleton<FishingManager>
     public bool isPlayMiniGame { get; private set; }
     private void Start()
     {
-        cauButton.onClick.AddListener(PrepareCastWithSlider);
+        if(cauButton != null)    
+            cauButton.onClick.AddListener(PrepareCastWithSlider);
     }
 
     private void Update()
     {
+        if(cauButton == null)
+            return;
         if ((Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
             && currentState == FishingState.Idle && !fishingSlider.gameObject.activeSelf)
             PrepareCastWithSlider();

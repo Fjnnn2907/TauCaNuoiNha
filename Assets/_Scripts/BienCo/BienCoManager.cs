@@ -62,7 +62,7 @@ public class BienCoManager : Singleton<BienCoManager>
         }
 
         BienCoSO bienCoChon = danhSachHopLe[Random.Range(0, danhSachHopLe.Count)];
-
+        Debug.Log(bienCoChon.tenBienCoKey + "\n " + bienCoChon.moTaBienCoKey);
         lastLostBaits.Clear();
         lastAffectedFish.Clear();
         lastAddedBaits.Clear();

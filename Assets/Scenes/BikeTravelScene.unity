@@ -42292,7 +42292,7 @@ MonoBehaviour:
   playerAnimator: {fileID: 1932687000}
   rhythmMinigame: {fileID: 596940068}
   fishingSlider: {fileID: 1696174306}
-  cauButton: {fileID: 630557677}
+  cauButton: {fileID: 0}
   waitTimeMin: 3
   waitTimeMax: 8
   rodBonusRare: 0
