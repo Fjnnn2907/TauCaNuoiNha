@@ -30,7 +30,7 @@ tha,Thả,Drop
 cam_on,Cảm ơn,Thank you
 ui_score,Điểm: {0}/{1},Score: {0}/{1}
 ui_time,Thời gian: {0}:{1},Time: {0}:{1}
-ui_draw,Vẽ: {0},Draw: {0}
+ui_draw,Vẽ: ,Draw: 
 draw_correct,Đúng! +{0} điểm,Correct! +{0} points
 draw_wrong,"Sai rồi -{0} điểm""",Wrong -{0} points
 cam_on_mota,"Cảm ơn mọi người rất rất nhiều vì đã chơi game tụi mình làm! Từ những cú click đầu tiên đến lúc clear boss cuối, tụi mình biết ơn từng giây các bạn đã dành cho trò chơi này. Không có bạn thì game tụi mình thì game tụi mình vẫn tồn tại, nhưng buồn lắm
@@ -296,3 +296,4 @@ cua,Cửa 05,Door 05
 ghe,Ghế 7A,Chair 7A
 thoi_gian_co_mat_san_bay,Thời gian có mặt sân bay 12:00,Time 12:00
 khu_vuc,Khu vực 1,Zone 1
+bo_qua,Bỏ quả,Skip

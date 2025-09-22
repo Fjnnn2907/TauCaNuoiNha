@@ -27,7 +27,7 @@ public class TutorialManager : MonoBehaviour
     [SerializeField] private float arrowOffset = 80f;
 
     [Header("Tutorial Settings")]
-    [SerializeField] private float endTutorialDelay = 3f; // ⏱ thời gian chờ trước khi tắt tutorial
+    [SerializeField] private float endTutorialDelay = 4.5f; // ⏱ thời gian chờ trước khi tắt tutorial
 
     private int currentStep = -1;
     private Dictionary<Button, bool> originalStates = new Dictionary<Button, bool>();

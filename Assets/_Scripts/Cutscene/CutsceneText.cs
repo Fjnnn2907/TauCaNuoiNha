@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CutsceneText : MonoBehaviour
 {
     [Header("UI References")]
     public TextMeshProUGUI dialogueText;
     public GameObject finalObjectToShow;
+    public Button skipButton;
 
     [Header("Text Settings")]
     public List<string> cutsceneKeys;
@@ -20,6 +22,13 @@ public class CutsceneText : MonoBehaviour
     void Start()
     {
         finalObjectToShow.SetActive(false);
+        if (skipButton != null)
+        {
+            skipButton.onClick.AddListener(SkipCutscene);
+            skipButton.gameObject.SetActive(true);
+            
+        }
+
         StartCoroutine(TypeLine());
     }
 
@@ -67,6 +76,10 @@ public class CutsceneText : MonoBehaviour
     {
         dialogueText.text = "";
         finalObjectToShow.SetActive(true);
+
+        if (skipButton != null)
+            skipButton.gameObject.SetActive(false);
+
         gameObject.SetActive(false);
     }
 
@@ -75,5 +88,12 @@ public class CutsceneText : MonoBehaviour
         if (LanguageManager.Instance != null)
             return LanguageManager.Instance.GetText(key);
         return key; // fallback nếu chưa load ngôn ngữ
+    }
+
+    // Gán hàm này vào OnClick của nút Skip
+    public void SkipCutscene()
+    {
+        StopAllCoroutines();
+        EndCutscene();
     }
 }

@@ -129,8 +129,8 @@ public class QuestManager : Singleton<QuestManager>, ISaveable
 
     private FishRarity GetRarityByProgress(int progress)
     {
-        if (progress < 3) return FishRarity.Common;
-        if (progress < 6) return FishRarity.Rare;
+        if (progress < 7) return FishRarity.Common;
+        if (progress < 15) return FishRarity.Rare;
         return FishRarity.Legendary;
     }
 

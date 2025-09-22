@@ -11000,6 +11000,7 @@ MonoBehaviour:
     arrowPosition: 1
   highlightImage: {fileID: 825127427}
   arrowOffset: -175
+  endTutorialDelay: 3
 --- !u!1 &423222930
 GameObject:
   m_ObjectHideFlags: 0
@@ -33330,8 +33331,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 426.31628}
-  m_SizeDelta: {x: -62.58423, y: -921.9815}
+  m_AnchoredPosition: {x: 0, y: 446.1535}
+  m_SizeDelta: {x: 20, y: -882.307}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1243436634
 MonoBehaviour:
@@ -34909,9 +34910,9 @@ MonoBehaviour:
   pointsPerCorrectAnswer: 15
   pointsDeductionPerWrong: 10
   maxScore: 50
-  easyTime: 60
-  mediumTime: 30
-  hardTime: 15
+  easyTime: 30
+  mediumTime: 25
+  hardTime: 20
 --- !u!114 &1313432056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43102,11 +43103,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Producer:                      GFC Studio\r\r\nLevel Designer:            
-    GFC Sudio\r\nGame Programmer:       GFC Studio\r\nSocial Media:               
-    Dat Du\r\nMusic:                          David KBD\r\nArtist:                          
-    Emanuelle\r\nInvestor:                       FPT Polytechnic\r\nEngine:                       
-    Unity\r\nMade In:                      Vietnam\r\nThank You For Playing\r\n"
+  m_text: "Game Programmer:     Fjnn, Huy\r\r\nMusic:                          David
+    KBD\r\nArtist:                           Emanuelle\r\nInvestor:                      
+    FPT Polytechnic\r\nEngine:                        Unity\r\nThank You For Playing"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
