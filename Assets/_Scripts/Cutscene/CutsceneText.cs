@@ -4,15 +4,23 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+[System.Serializable]
+public class CutsceneLine
+{
+    public string key;        // Key cho text
+    public Sprite image;      // Ảnh đi kèm
+}
+
 public class CutsceneText : MonoBehaviour
 {
     [Header("UI References")]
     public TextMeshProUGUI dialogueText;
+    public Image cutsceneImage;             // Thêm image để hiển thị
     public GameObject finalObjectToShow;
     public Button skipButton;
 
-    [Header("Text Settings")]
-    public List<string> cutsceneKeys;
+    [Header("Cutscene Settings")]
+    public List<CutsceneLine> cutsceneLines;  // thay List<string> thành List<CutsceneLine>
     public float typingSpeed = 0.05f;
 
     private int currentLineIndex = 0;
@@ -22,11 +30,11 @@ public class CutsceneText : MonoBehaviour
     void Start()
     {
         finalObjectToShow.SetActive(false);
+
         if (skipButton != null)
         {
             skipButton.onClick.AddListener(SkipCutscene);
             skipButton.gameObject.SetActive(true);
-            
         }
 
         StartCoroutine(TypeLine());
@@ -39,7 +47,7 @@ public class CutsceneText : MonoBehaviour
             if (isTyping)
             {
                 StopAllCoroutines();
-                dialogueText.text = GetLocalizedLine(cutsceneKeys[currentLineIndex]);
+                dialogueText.text = GetLocalizedLine(cutsceneLines[currentLineIndex].key);
                 isTyping = false;
                 isWaitingForNext = true;
             }
@@ -47,7 +55,7 @@ public class CutsceneText : MonoBehaviour
             {
                 currentLineIndex++;
 
-                if (currentLineIndex < cutsceneKeys.Count)
+                if (currentLineIndex < cutsceneLines.Count)
                     StartCoroutine(TypeLine());
                 else
                     EndCutscene();
@@ -61,7 +69,18 @@ public class CutsceneText : MonoBehaviour
         isWaitingForNext = false;
         dialogueText.text = "";
 
-        string line = GetLocalizedLine(cutsceneKeys[currentLineIndex]);
+        // Lấy dữ liệu từ cutsceneLines
+        CutsceneLine lineData = cutsceneLines[currentLineIndex];
+
+        // Đổi hình ảnh theo đoạn
+        if (cutsceneImage != null)
+        {
+            cutsceneImage.sprite = lineData.image;
+            cutsceneImage.gameObject.SetActive(lineData.image != null);
+        }
+
+        // Hiện text kiểu typing
+        string line = GetLocalizedLine(lineData.key);
         foreach (char letter in line.ToCharArray())
         {
             dialogueText.text += letter;
