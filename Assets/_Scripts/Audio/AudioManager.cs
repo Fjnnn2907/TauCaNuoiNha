@@ -32,11 +32,22 @@ public class AudioManager : Singleton<AudioManager>
             PlayNextTrack();
     }
 
-    public void PlaySFX(string sfxName)
+    public void PlaySFX(string sfxName, bool isLoop = false)
     {
         AudioClip clip = Resources.Load<AudioClip>("Audio/SFX/" + sfxName);
         if (clip)
-            sfxSource.PlayOneShot(clip, sfxVolume);
+        {
+            if (isLoop)
+            {
+                // Dùng sfxSource để loop
+                sfxSource.clip = clip;
+                sfxSource.loop = true;
+                sfxSource.volume = sfxVolume;
+                sfxSource.Play();
+            }
+            else
+                sfxSource.PlayOneShot(clip, sfxVolume);
+        }
         else
             Debug.LogWarning("SFX không tìm thấy: " + sfxName);
     }
@@ -73,7 +84,12 @@ public class AudioManager : Singleton<AudioManager>
     {
         musicSource.Stop();
     }
-
+    public void StopSFX()
+    {
+        sfxSource.Stop();
+        sfxSource.clip = null;
+        sfxSource.loop = false;
+    }
     public void SetMusicVolume(float value)
     {
         musicVolume = value;

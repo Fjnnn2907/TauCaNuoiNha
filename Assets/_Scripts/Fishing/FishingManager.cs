@@ -238,14 +238,21 @@ public class FishingManager : Singleton<FishingManager>
             return Mathf.Clamp01((v - min) / Mathf.Max(0.0001f, max - min));
         }
 
+
         float rareAdd = Scale(TotalBonusRareRate, RARE_MIN, RARE_MAX) * RARE_ADD_MAX * hitFactor;
         float legAdd = Scale(TotalBonusLegendaryRate, LEG_MIN, LEG_MAX) * LEG_ADD_MAX * hitFactor;
+
+        if (WeatherManager.Instance != null && WeatherManager.Instance.isRaining)
+        {
+            rareAdd += 5f;       // +5% Rare
+            legAdd += 2f;        // +2% Legendary
+        }
 
         float finalRare = Mathf.Clamp(baseRare + rareAdd, 0f, 45f);        // Rare tối đa 45%
         float finalLegendary = Mathf.Clamp(baseLegendary + legAdd, 0f, 18f); // Legendary tối đa 18%
 
-        Debug.Log("Diểm Final Rare " + finalRare);
-        Debug.Log("Diểm Final Rare " + finalLegendary);
+        Debug.Log("Diểm rare Add " + rareAdd);
+        Debug.Log("Diểm leg Add " + legAdd);
 
         if (roll < finalLegendary) return FishRarity.Legendary;
         if (roll < finalLegendary + finalRare) return FishRarity.Rare;
