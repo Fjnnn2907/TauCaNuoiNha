@@ -27778,10 +27778,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rainEffect: {fileID: 774033349}
+  globalLight: {fileID: 1325250395}
   isRaining: 0
   rainChance: 0.5
-  rainDurationRange: {x: 30, y: 90}
-  clearDurationRange: {x: 30, y: 90}
+  rainDurationRange: {x: 10, y: 30}
+  clearDurationRange: {x: 10, y: 30}
+  rainLightRange: {x: 0.25, y: 0.35}
+  lightTransitionDuration: 2
 --- !u!4 &1151112740
 Transform:
   m_ObjectHideFlags: 0
