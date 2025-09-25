@@ -107,7 +107,7 @@ CaDoi,Cá đối,Mullet
 CaDoi_mota,"Bạc trắng như ánh trăng, bơi lội giữa ranh giới nước ngọt và biển khơi. Từng đàn cá nhảy lên mặt nước là dấu hiệu bão sắp ập đến. Trẻ con thường nuôi chúng trong lọ thủy tinh để nghe tiếng thì thầm của đại dương.","Silvery white as moonlight, swimming between the boundary of fresh water and the open sea. Schools of fish jumping to the surface are a sign of an approaching storm. Children often keep them in glass jars to listen to the whispers of the ocean."
 CaDuc,Cá đục,Goby
 CaDuc_mota,"Thân hình trong suốt lộ rõ trái tim đỏ rực, sống nơi giao thoa giữa sự sống và cái chết. Dân gian tin chúng là linh hồn trẻ thơ hóa thành, mang theo những lời nhắn từ thế giới bên kia. Ai ăn phải cá đục vảy đỏ sẽ thấy những điều không nên thấy.","Their transparent bodies reveal their glowing red hearts, living at the intersection of life and death. Folklore believes they are the reincarnated souls of children, carrying messages from the other world. Anyone who eats the red-scaled fish will see things they shouldn’t."
-CaKinh,Cá kình,Killer Whale
+CaKinh,Cá kình,pinspotted spinefoot
 CaKinh_mota,"Vị thần biển cả khổng lồ, mỗi lần trồi lên là biển động sóng dữ. Xương cá dạt vào bờ biến thành đảo thiêng, nơi ngư dân dâng lễ cầu bình an. Tiếng hú của chúng vang xa hàng dặm, báo hiệu những cơn cuồng phong sắp tới.","The giant sea god, each time he emerged, the sea was in turmoil. Fish bones washed ashore and became sacred islands, where fishermen offered sacrifices for safety. His howls could be heard for miles, signaling the coming storms."
 CaMu,Cá mú,Grouper
 CaMu_mota,"Lão chúa rạn san hô, da xù xì in hằn dấu răng kình ngư, có thể đổi giới tính từ đực sang cái khi trưởng thành. Thịt chúng thơm ngọt như nắng biển, được phong là ""vua của các loài cá đá ngầm"". Ngư dân tin rằng xương cá mú già hóa thành san hô đen - vật bảo hộ cho thuyền đi biển.","The king of the coral reef, with rough skin marked with whale teeth, can change sex from male to female when mature. Its meat is as sweet as the sun and is called ""king of reef fish"". Fishermen believe that the bones of old groupers turn into black coral - a protection for their boats at sea."
@@ -271,7 +271,7 @@ thongbao_nhan_can_cau,Bạn nhận được cần câu: {0}!,You received a fish
 thongbao_mat_ca,Bạn đã mất {0},You lost {0}
 thongbao_ca_doc_nhat,Bạn vừa câu được cá độc nhất: {0}!,You just caught a unique fish: {0}!
 thongbao_ca_thuong,Bạn câu được {0},You caught {0}
-thongbao_choi_moi,Ấn OK là mất hết sức lực của bữa tiệc lúc đó!,Pressing OK is the end of the party!
+thongbao_choi_moi,Ấn OK là mất hết dữ liệu đó!,"Are you sure, your data will be lost!"
 thongbao_khong_ok,Không OK,No Ok
 thongbao_doi_moi,"Bạn đã hết mồi, tự động đổi sang: {0}","You have run out of bait, automatically switch to: {0}"
 thongbao_het_moi,Bạn đã sử dụng hết mồi trong túi, Used up all the bait in the bag
