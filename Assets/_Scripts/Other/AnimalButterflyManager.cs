@@ -55,8 +55,12 @@ public class AnimalButterflyManager : MonoBehaviour
     {
         if (butterflyPrefabs.Count == 0 || spawnArea == null) return false;
 
-        GameObject butterfly = butterflyPrefabs.Find(b => !b.activeInHierarchy);
-        if (butterfly == null) return false;
+        // Lấy danh sách prefab chưa active
+        List<GameObject> inactiveList = butterflyPrefabs.FindAll(b => !b.activeInHierarchy);
+        if (inactiveList.Count == 0) return false;
+
+        // Chọn ngẫu nhiên 1 prefab trong số chưa active
+        GameObject butterfly = inactiveList[Random.Range(0, inactiveList.Count)];
 
         Vector3 startPos = GetRandomPointOnEdge(spawnArea);
         butterfly.transform.position = startPos;
@@ -81,8 +85,11 @@ public class AnimalButterflyManager : MonoBehaviour
             }
         }, randSpeed, randScale);
 
+        butterfly.SetActive(true); // đừng quên bật nó lên
+
         return true;
     }
+
 
     private IEnumerator SpawnAfterDelay(float delay)
     {

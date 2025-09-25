@@ -17872,7 +17872,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 3
       scalar: 1
-      minScalar: 0.1
+      minScalar: 0.01
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -17978,7 +17978,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0, g: 0.18487705, b: 0.7132075, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -36895,6 +36895,8 @@ Transform:
   - {fileID: 666389393}
   - {fileID: 1453503319}
   - {fileID: 1151112740}
+  - {fileID: 1914125830}
+  - {fileID: 1536760758}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1448530091
@@ -39117,14 +39119,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1536760756}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.9852624, y: -0.6537786, z: 0.020042626}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1349791194}
   - {fileID: 1029008755}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1445824650}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1537640091
 GameObject:
@@ -51393,14 +51395,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1914125828}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 8.071708, y: -3.4141428, z: 0.048408754}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1351841382}
   - {fileID: 423153680}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1445824650}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1916657275
 GameObject:
@@ -57724,5 +57726,3 @@ SceneRoots:
   - {fileID: 765073285}
   - {fileID: 1445824650}
   - {fileID: 244833720}
-  - {fileID: 1914125830}
-  - {fileID: 1536760758}
