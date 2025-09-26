@@ -6,6 +6,7 @@ public class GameData
 {
     public int currentCoins = 9999;
     public List<string> discoveredFishIDs = new();
+    public bool hasShownAllFishPanel = false;
 
     public SerializableDirectory<string, int> fishInventory = new();
 
