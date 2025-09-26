@@ -28729,8 +28729,8 @@ MonoBehaviour:
   globalLight: {fileID: 1325250395}
   isRaining: 0
   rainChance: 0.5
-  rainDurationRange: {x: 10, y: 30}
-  clearDurationRange: {x: 10, y: 30}
+  rainDurationRange: {x: 60, y: 90}
+  clearDurationRange: {x: 60, y: 90}
   rainLightRange: {x: 0.25, y: 0.35}
   lightTransitionDuration: 2
 --- !u!4 &1151112740

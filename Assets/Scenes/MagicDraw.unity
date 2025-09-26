@@ -11998,11 +11998,11 @@ RectTransform:
   - {fileID: 285881998}
   - {fileID: 1278350388}
   - {fileID: 1247272509}
-  - {fileID: 645402883}
   - {fileID: 1898161585}
   - {fileID: 2040246084}
   - {fileID: 332856754}
   - {fileID: 1036999275}
+  - {fileID: 645402883}
   - {fileID: 602412920}
   - {fileID: 1243436633}
   - {fileID: 1991910901}
@@ -13961,8 +13961,8 @@ MonoBehaviour:
   globalLight: {fileID: 1491412977}
   isRaining: 0
   rainChance: 0.5
-  rainDurationRange: {x: 10, y: 30}
-  clearDurationRange: {x: 10, y: 30}
+  rainDurationRange: {x: 60, y: 90}
+  clearDurationRange: {x: 60, y: 90}
   rainLightRange: {x: 0.55, y: 0.65}
   lightTransitionDuration: 2
 --- !u!4 &482100336
